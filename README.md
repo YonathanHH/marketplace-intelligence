@@ -8,7 +8,7 @@ and tells the Ads Sales team **who to call next**.
 Built end-to-end: synthetic data generation → leakage audit → opportunity model →
 analytics → REST API → React dashboard.
 
-![Stack](https://img.shields.io/badge/python-3.13-blue) ![Stack](https://img.shields.io/badge/FastAPI-0.14x-009688) ![Stack](https://img.shields.io/badge/React-18-61dafb) ![Stack](https://img.shields.io/badge/TypeScript-5.6-3178c6) ![Tests](https://img.shields.io/badge/tests-74%20passing-brightgreen) ![Deploy](https://img.shields.io/badge/deploy-Vercel%20ready-black)
+![Stack](https://img.shields.io/badge/python-3.13-blue) ![Stack](https://img.shields.io/badge/FastAPI-0.14x-009688) ![Stack](https://img.shields.io/badge/React-18-61dafb) ![Stack](https://img.shields.io/badge/TypeScript-5.6-3178c6) ![Tests](https://img.shields.io/badge/tests-76%20passing-brightgreen) ![Deploy](https://img.shields.io/badge/deploy-Vercel%20ready-black)
 
 ---
 
@@ -97,8 +97,9 @@ python run.py --rebuild            # rebuild the DB from existing CSVs
 python scripts/generate_data.py    # dataset only
 python scripts/audit_data.py       # leakage & determinism diagnostics
 python scripts/score_opportunities.py   # ranked lead list to CSV
+python scripts/build_geo.py        # rebuild the Indonesia map asset
 python run.py --deploy-build       # slim database for deployment
-python -m pytest -q                # 74 tests
+python -m pytest -q                # 76 tests
 ```
 
 ## The product
@@ -116,11 +117,17 @@ revenue estimate, daily traction, listings, campaign history, and an activity
 timeline. Logging a call **rescores the account immediately** — a Hot lead that
 was just contacted drops out of the queue, because it's now being worked.
 
-**Marketplace / Advertising / Pipeline / Coverage** — the analytics behind the
-scores: demand trends and the featured-listing lift that makes promotion
-sellable; ad product efficiency (CTR, CPC, cost per conversion); pipeline stages,
-outcomes and rep performance; and territory coverage versus where the value
-actually sits.
+**Coverage** — an interactive choropleth of Indonesia showing where sales
+effort is and isn't landing. Shade the map by uncovered headroom, missed
+priority accounts or coverage rate; hover any province for its full breakdown;
+click one to jump straight into that territory's uncontacted queue. Provinces
+with no sellers are drawn muted, so the map also shows where the business
+simply isn't yet.
+
+**Marketplace / Advertising / Pipeline** — the analytics behind the scores:
+demand trends and the featured-listing lift that makes promotion sellable; ad
+product efficiency (CTR, CPC, cost per conversion); and pipeline stages,
+outcomes and rep performance.
 
 ## Data foundation
 
@@ -187,7 +194,7 @@ api/index.py     Vercel serverless entrypoint
 scripts/         generate_data · audit_data · score_opportunities
 schema/          schema.sql
 web/             Vite + React + TypeScript frontend
-tests/           74 tests (model properties · API contract · deployment guarantees)
+tests/           76 tests (model properties · API contract · deployment guarantees)
 docs/            data model · scoring methodology · architecture · deployment
 vercel.json      build, routing and function config
 ```

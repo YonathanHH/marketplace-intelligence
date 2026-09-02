@@ -187,3 +187,47 @@ def test_serverless_copies_database_to_a_writable_location(tmp_path, monkeypatch
 def _any_db() -> Path:
     from olxads.config import DB_PATH
     return DB_PATH
+
+
+# ---------------------------------------------------------------------------
+# Geographic asset
+# ---------------------------------------------------------------------------
+
+GEO_ASSET = PROJECT_ROOT / "web" / "src" / "data" / "indonesia.json"
+
+
+def test_map_asset_covers_every_province_in_the_dataset():
+    """A province the data knows about but the map doesn't would silently vanish.
+
+    Natural Earth uses "Jakarta Raya" and "Yogyakarta"; scripts/build_geo.py
+    renames them to the dataset's spellings. This asserts that mapping still
+    holds for all 12 provinces we actually operate in.
+    """
+    if not GEO_ASSET.exists():
+        pytest.skip("Map asset not built. Run: python scripts/build_geo.py")
+    if not DEPLOY_DB_PATH.exists():
+        pytest.skip("Database required")
+
+    asset = json.loads(GEO_ASSET.read_text(encoding="utf-8"))
+    drawn = {p["name"] for p in asset["provinces"]}
+
+    conn = connect(DEPLOY_DB_PATH)
+    try:
+        in_data = {r["province"] for r in conn.execute(
+            "SELECT DISTINCT province FROM seller_scores"
+        ).fetchall()}
+    finally:
+        conn.close()
+
+    missing = in_data - drawn
+    assert not missing, f"provinces present in the data but absent from the map: {sorted(missing)}"
+
+
+def test_map_asset_is_indonesia_only_and_compact():
+    if not GEO_ASSET.exists():
+        pytest.skip("Map asset not built")
+    asset = json.loads(GEO_ASSET.read_text(encoding="utf-8"))
+    size_kb = GEO_ASSET.stat().st_size / 1024
+    assert size_kb < 250, f"map asset is {size_kb:.0f} KB - simplify further"
+    assert 25 <= len(asset["provinces"]) <= 40, "expected Indonesian provinces only"
+    assert all(p["d"].startswith("M") for p in asset["provinces"]), "paths must be pre-projected"

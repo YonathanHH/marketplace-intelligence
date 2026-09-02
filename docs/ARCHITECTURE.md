@@ -103,9 +103,20 @@ runs on :5173 and proxies `/api` to FastAPI on :8000. In production,
 `npm run build` emits `web/dist` and FastAPI serves it, so everything is
 same-origin and the app uses relative URLs in both modes with no config switch.
 
+**The map is a build artefact, not a mapping library.** The Coverage
+choropleth needs Indonesian province geometry, which normally means a mapping
+library plus a runtime GeoJSON or tile fetch. Instead `scripts/build_geo.py`
+takes public-domain Natural Earth 1:50m admin-1 data, isolates Indonesia, drops
+sub-pixel islands, runs Ramer-Douglas-Peucker simplification and Mercator-projects
+the result into SVG path strings — 44 KB, committed. The component is then plain
+SVG: no dependency, no network call, works offline, and themes through the same
+CSS variables as everything else. A test asserts every province present in the
+data is present in the map, so a rename can't silently drop a territory.
+
 **Route-level code splitting.** The charting library is ~426KB. The opportunity
 queue — the view reps actually live in — doesn't need it up front, so views are
-lazily imported. Initial JS is ~59KB gzipped.
+lazily imported. Initial JS is ~59KB gzipped; the map asset rides along with
+the Coverage chunk and is only fetched when that view is opened.
 
 ## Data flow for one request
 
@@ -137,7 +148,7 @@ the slim database. It also covers the four path shapes a host might hand to the
 function.
 
 ```bash
-python -m pytest -q     # 74 tests
+python -m pytest -q     # 76 tests
 ```
 
 See [DEPLOYMENT.md](DEPLOYMENT.md) for the hosting setup.

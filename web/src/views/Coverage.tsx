@@ -1,11 +1,46 @@
-import { Link } from "react-router-dom";
+import { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import { api, useAsync } from "../api/client";
 import { Bars } from "../components/charts";
+import { IndonesiaMap } from "../components/IndonesiaMap";
 import { Card, ErrorState, Insight, Kpi, LoadingCard, PageHeader, TierBadge } from "../components/ui";
-import { daysAgo, formatIDR, formatNumber, formatPercent } from "../lib/format";
+import { daysAgo, formatCompact, formatIDR, formatNumber, formatPercent } from "../lib/format";
+import type { CoverageAnalytics } from "../api/types";
+
+type ProvinceRow = CoverageAnalytics["by_province"][number];
+type MapMetric = "headroom" | "coverage" | "uncovered";
+
+/** What the choropleth encodes. Each answers a different territory question. */
+const MAP_METRICS: Record<MapMetric, {
+  label: string;
+  subtitle: string;
+  value: (p: ProvinceRow) => number;
+  format: (v: number) => string;
+}> = {
+  headroom: {
+    label: "Uncovered headroom",
+    subtitle: "Monthly revenue sitting with sellers nobody has called, by province",
+    value: (p) => p.uncovered_headroom,
+    format: (v) => formatIDR(v),
+  },
+  uncovered: {
+    label: "Missed priority accounts",
+    subtitle: "Hot and Warm sellers with no outreach on record, by province",
+    value: (p) => p.uncovered_priority,
+    format: (v) => formatCompact(v),
+  },
+  coverage: {
+    label: "Coverage rate",
+    subtitle: "Share of sellers the team has contacted at least once, by province",
+    value: (p) => p.coverage_pct,
+    format: (v) => formatPercent(v),
+  },
+};
 
 export default function Coverage() {
   const { data, loading, error, reload } = useAsync(() => api.coverage(), []);
+  const [metric, setMetric] = useState<MapMetric>("headroom");
+  const navigate = useNavigate();
 
   if (error) return <ErrorState message={error} onRetry={reload} />;
   if (loading || !data) return <LoadingCard height={520} />;
@@ -56,8 +91,48 @@ export default function Coverage() {
         the single clearest efficiency gain available to the team.
       </Insight>
 
+      <Card
+        title="Territory map"
+        subtitle={MAP_METRICS[metric].subtitle}
+        actions={
+          <div className="row gap-1">
+            {(Object.keys(MAP_METRICS) as MapMetric[]).map((key) => (
+              <button
+                key={key}
+                className={`chip ${metric === key ? "active" : ""}`}
+                onClick={() => setMetric(key)}
+              >
+                {MAP_METRICS[key].label}
+              </button>
+            ))}
+          </div>
+        }
+      >
+        <IndonesiaMap
+          rows={data.by_province.map((p) => ({
+            province: p.province,
+            value: MAP_METRICS[metric].value(p),
+            detail: [
+              { label: "Sellers", value: formatNumber(p.sellers) },
+              { label: "Contacted", value: `${formatNumber(p.contacted)} (${formatPercent(p.coverage_pct)})` },
+              { label: "Priority leads", value: formatNumber(p.priority_leads) },
+              { label: "Missed priority", value: formatNumber(p.uncovered_priority) },
+              { label: "Uncovered headroom", value: formatIDR(p.uncovered_headroom) },
+            ],
+          }))}
+          legendLabel={MAP_METRICS[metric].label}
+          formatValue={MAP_METRICS[metric].format}
+          onSelect={(province) =>
+            navigate(
+              `/opportunities?province=${encodeURIComponent(province)}&contact_status=uncontacted`
+            )
+          }
+        />
+      </Card>
+
+      {/* The map shows the geographic pattern; these give the exact ordering. */}
       <div className="grid grid-2">
-        <Card title="Uncovered headroom by province" subtitle="Where the unworked value sits">
+        <Card title="Top territories by unworked value" subtitle="Uncovered headroom, ranked">
           <Bars
             data={data.by_province.slice(0, 9)}
             xKey="province"

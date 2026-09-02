@@ -15,3 +15,7 @@ web/dist/
 
 # Vercel
 .vercel/
+
+# Cached Natural Earth download for scripts/build_geo.py
+# (the built asset web/src/data/indonesia.json IS committed)
+.tmpgeo/
