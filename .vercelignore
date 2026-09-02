@@ -1,0 +1,16 @@
+# Keep the serverless bundle small: ship the code and the slim database only.
+.venv/
+__pycache__/
+.pytest_cache/
+tests/
+scripts/
+docs/
+notebooks/
+
+# Raw CSVs (~19 MB) are build inputs, not runtime inputs.
+data/raw/
+# The full local database; the slim deploy artefact is included via vercel.json.
+data/processed/olxads.db
+data/processed/opportunity_scores.csv
+
+web/node_modules/

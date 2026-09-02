@@ -1,0 +1,17 @@
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.pytest_cache/
+
+# Full local database (~67 MB) — rebuild with `python run.py --rebuild`.
+# The slim deployment artefact (data/processed/olxads-deploy.db) IS committed,
+# because Vercel deploys from git and the function needs it at runtime.
+data/processed/olxads.db
+
+# Frontend
+web/node_modules/
+web/dist/
+
+# Vercel
+.vercel/

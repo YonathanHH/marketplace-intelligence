@@ -1,0 +1,10 @@
+# Serverless runtime dependencies ONLY.
+#
+# Vercel installs this file to build the Python function, so it must stay
+# minimal: pandas + numpy are ~90 MB and are needed only to GENERATE and SCORE
+# the dataset, never to serve it. The serving path (api -> analytics -> db ->
+# rules) is stdlib sqlite3 plus FastAPI.
+#
+# For local development and data generation, install requirements-dev.txt.
+fastapi>=0.110
+pydantic>=2.6

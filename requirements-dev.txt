@@ -1,0 +1,14 @@
+# Everything needed to develop, generate data, score, and test.
+-r requirements.txt
+
+# Local ASGI server
+uvicorn[standard]>=0.27
+
+# Dataset generation + scoring (build-time only, never shipped to the function)
+pandas>=2.2
+numpy>=1.26
+faker>=24.0
+
+# Tests
+pytest>=8.0
+httpx>=0.27

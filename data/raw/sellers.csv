@@ -1,0 +1,1501 @@
+seller_id,seller_name,seller_type,primary_category,city,province,registration_date,account_tier,is_verified,phone_verified,rating_avg,rating_count,response_rate_pct,response_time_hours,last_active_date
+SEL-000001,PT Saefullah,small_business,Fashion & Beauty,Tangerang Selatan,Banten,2025-02-13,free,True,True,3.72,11,65.8,1.9,2026-07-08
+SEL-000002,Darmana Mandala,individual,Hobbies & Sports,Makassar,Sulawesi Selatan,2020-04-17,free,True,True,4.31,10,92.1,5.8,2026-06-05
+SEL-000003,Perum Irawan,dealer,Fashion & Beauty,Bogor,Jawa Barat,2025-06-05,premium,True,True,4.72,5,77.6,2.7,2026-07-18
+SEL-000004,PT Dabukke Iswahyudi (Persero) Tbk,small_business,Baby & Kids,Surabaya,Jawa Timur,2025-06-18,free,True,True,3.78,10,54.4,5.7,2026-06-17
+SEL-000005,Johan Suartini,individual,Services,Palembang,Sumatera Selatan,2019-06-17,free,False,False,4.44,8,88.0,0.2,2026-08-15
+SEL-000006,Perum Napitupulu,enterprise,Electronics & Gadgets,Malang,Jawa Timur,2018-07-15,basic,True,True,5.0,7,59.1,1.8,2026-06-20
+SEL-000007,CV Hassanah Rahmawati Tbk,small_business,Home & Furniture,Medan,Sumatera Utara,2023-06-29,basic,True,True,4.93,6,99.4,14.8,2026-06-24
+SEL-000008,CV Anggraini,small_business,Vehicles,Surabaya,Jawa Timur,2022-08-23,basic,False,False,4.63,5,68.8,0.6,2026-06-09
+SEL-000009,Indah Mangunsong,individual,Vehicles,Jakarta Timur,DKI Jakarta,2020-06-23,free,False,False,4.08,6,61.1,0.5,2026-07-30
+SEL-000010,Yusuf Sirait,individual,Home & Furniture,Medan,Sumatera Utara,2026-05-02,free,True,True,3.89,7,99.7,6.0,2026-08-13
+SEL-000011,Bakiman Wibowo,individual,Vehicles,Jakarta Barat,DKI Jakarta,2018-11-10,free,False,True,4.74,2,74.0,0.6,2026-06-14
+SEL-000012,UD Situmorang,dealer,Fashion & Beauty,Jakarta Pusat,DKI Jakarta,2021-07-21,premium,True,True,3.52,2,44.1,0.9,2026-06-27
+SEL-000013,Tgk. Yani Gunawan,individual,Vehicles,Tangerang Selatan,Banten,2026-03-04,basic,False,False,4.7,2,96.5,1.4,2026-08-18
+SEL-000014,Perum Maheswara Waluyo (Persero),small_business,Fashion & Beauty,Binjai,Sumatera Utara,2019-03-05,free,True,True,4.05,16,44.6,4.1,2026-07-11
+SEL-000015,T. Radit Utami,individual,Services,Denpasar,Bali,2020-03-13,free,True,True,4.08,2,92.8,0.7,2026-08-14
+SEL-000016,dr. Ratih Nababan,individual,Vehicles,Bekasi,Jawa Barat,2026-05-09,free,False,False,4.09,1,92.2,1.6,2026-07-12
+SEL-000017,"Betania Gunawan, S.H.",individual,Hobbies & Sports,Jakarta Barat,DKI Jakarta,2022-07-04,free,True,True,4.65,3,39.9,1.6,2026-07-24
+SEL-000018,"T. Bahuwirya Pradipta, S.IP",individual,Electronics & Gadgets,Makassar,Sulawesi Selatan,2022-10-25,free,False,True,4.71,4,83.9,6.4,2026-08-08
+SEL-000019,UD Hasanah Usada Tbk,small_business,Vehicles,Jakarta Timur,DKI Jakarta,2023-08-28,basic,False,True,4.37,4,98.6,0.1,2026-08-25
+SEL-000020,Hairyanto Thamrin,individual,Home & Furniture,Jakarta Utara,DKI Jakarta,2018-12-12,free,True,True,4.29,3,69.3,0.5,2026-07-29
+SEL-000021,UD Zulaika Yuliarti,small_business,Fashion & Beauty,Bekasi,Jawa Barat,2018-07-20,free,True,True,3.93,15,19.1,7.5,2026-08-13
+SEL-000022,Lulut Usada,individual,Fashion & Beauty,Magelang,Jawa Tengah,2018-08-27,free,True,True,3.49,3,35.3,18.9,2026-07-31
+SEL-000023,Perum Prasasta Marpaung,enterprise,Vehicles,Denpasar,Bali,2019-05-14,premium,False,False,3.89,15,75.9,35.3,2026-09-01
+SEL-000024,PD Saputra Uyainah (Persero) Tbk,dealer,Home & Furniture,Binjai,Sumatera Utara,2022-11-01,premium,True,True,4.7,2,88.1,4.1,2026-08-23
+SEL-000025,PT Pradana (Persero) Tbk,small_business,Fashion & Beauty,Medan,Sumatera Utara,2021-04-22,basic,True,True,4.83,6,89.9,8.1,2026-06-03
+SEL-000026,"Tgk. Himawan Santoso, S.Pt",individual,Electronics & Gadgets,Jakarta Utara,DKI Jakarta,2022-05-06,free,True,True,4.04,8,58.8,2.6,2026-08-30
+SEL-000027,Vino Purnawati,individual,Vehicles,Cimahi,Jawa Barat,2020-02-06,basic,False,True,4.13,11,47.5,4.9,2026-08-19
+SEL-000028,"Iriana Prabowo, M.Kom.",individual,Electronics & Gadgets,Malang,Jawa Timur,2020-10-07,free,True,True,4.8,9,79.2,5.7,2026-08-03
+SEL-000029,Syahrini Haryanti,individual,Vehicles,Jakarta Barat,DKI Jakarta,2018-01-14,free,False,True,4.36,8,88.8,3.4,2026-07-18
+SEL-000030,UD Mandala Prayoga,small_business,Fashion & Beauty,Depok,Jawa Barat,2023-09-28,premium,True,True,3.5,5,72.2,5.7,2026-07-31
+SEL-000031,Perum Aryani Tbk,small_business,Vehicles,Bekasi,Jawa Barat,2018-12-23,free,True,True,4.25,10,65.6,4.0,2026-08-16
+SEL-000032,CV Mandala Tbk,enterprise,Hobbies & Sports,Jakarta Pusat,DKI Jakarta,2021-07-31,basic,True,True,5.0,18,69.4,0.1,2026-08-26
+SEL-000033,Perkasa Hardiansyah,individual,Hobbies & Sports,Magelang,Jawa Tengah,2021-03-16,free,True,True,4.97,6,86.3,6.1,2026-07-02
+SEL-000034,"Puti Eva Utami, S.E.",individual,Vehicles,Medan,Sumatera Utara,2020-07-27,free,True,True,4.42,16,55.8,13.0,2026-07-28
+SEL-000035,"Ir. Indra Riyanti, S.Pt",individual,Home & Furniture,Jakarta Barat,DKI Jakarta,2018-11-12,basic,False,False,4.36,7,77.0,2.8,2026-08-10
+SEL-000036,Kezia Riyanti,individual,Fashion & Beauty,Kediri,Jawa Timur,2018-09-24,free,False,True,3.75,3,55.5,10.9,2026-06-23
+SEL-000037,Paris Ramadan,individual,Fashion & Beauty,Palembang,Sumatera Selatan,2023-09-08,basic,False,False,3.65,8,42.3,1.3,2026-08-04
+SEL-000038,Dt. Maman Latupono,individual,Vehicles,Medan,Sumatera Utara,2025-02-04,free,False,False,4.61,1,79.7,6.7,2026-06-16
+SEL-000039,"Timbul Nasyiah, S.T.",individual,Baby & Kids,Palembang,Sumatera Selatan,2020-03-12,free,True,True,4.88,4,61.2,4.7,2026-08-14
+SEL-000040,PT Sihombing Tbk,small_business,Baby & Kids,Surabaya,Jawa Timur,2020-10-25,basic,True,True,4.42,19,58.7,4.4,2026-06-09
+SEL-000041,Jaeman Adriansyah,individual,Services,Yogyakarta,DI Yogyakarta,2023-03-23,free,False,False,4.12,6,61.2,1.1,2026-06-23
+SEL-000042,Perum Nugroho (Persero) Tbk,small_business,Property,Cimahi,Jawa Barat,2020-05-21,free,True,True,,0,77.2,0.3,2026-07-24
+SEL-000043,Perum Sudiati (Persero) Tbk,small_business,Home & Furniture,Cimahi,Jawa Barat,2021-08-05,premium,True,True,4.42,9,71.8,4.0,2026-06-12
+SEL-000044,Hardi Marpaung,individual,Home & Furniture,Jakarta Barat,DKI Jakarta,2018-10-31,basic,True,True,4.07,6,49.9,9.1,2026-08-15
+SEL-000045,Perum Sinaga,small_business,Hobbies & Sports,Surabaya,Jawa Timur,2022-08-10,free,False,False,3.58,5,52.5,13.8,2026-07-02
+SEL-000046,PT Kusumo Tarihoran Tbk,small_business,Vehicles,Surabaya,Jawa Timur,2025-06-11,free,True,False,3.87,3,58.5,11.3,2026-08-21
+SEL-000047,Asmianto Permadi,individual,Electronics & Gadgets,Bekasi,Jawa Barat,2018-10-11,free,True,True,4.03,2,59.1,7.7,2026-06-07
+SEL-000048,Puti Chelsea Laksita,individual,Property,Binjai,Sumatera Utara,2018-01-29,free,True,True,,0,95.6,6.7,2026-07-06
+SEL-000049,Perum Mahendra,small_business,Home & Furniture,Bandung,Jawa Barat,2019-07-20,free,True,True,4.71,5,100.0,0.1,2026-07-02
+SEL-000050,Maryanto Kusmawati,individual,Property,Bogor,Jawa Barat,2026-06-02,free,False,False,4.91,5,76.3,16.2,2026-06-20
+SEL-000051,R.M. Eman Nuraini,individual,Jobs,Jakarta Pusat,DKI Jakarta,2021-10-19,free,False,True,4.05,6,56.3,7.0,2026-08-10
+SEL-000052,"Ir. Lintang Prabowo, M.Pd",individual,Fashion & Beauty,Surabaya,Jawa Timur,2019-10-16,free,True,True,3.96,4,47.3,6.9,2026-06-13
+SEL-000053,UD Wacana Winarsih,small_business,Property,Bekasi,Jawa Barat,2024-04-05,basic,False,False,4.76,9,75.9,1.0,2026-08-29
+SEL-000054,PD Maryati Tbk,small_business,Home & Furniture,Bogor,Jawa Barat,2023-01-24,basic,True,True,4.47,7,75.1,4.6,2026-08-25
+SEL-000055,CV Prasetyo,small_business,Home & Furniture,Depok,Jawa Barat,2025-10-20,basic,True,True,4.68,3,70.6,0.4,2026-06-11
+SEL-000056,UD Damanik,small_business,Electronics & Gadgets,Binjai,Sumatera Utara,2018-08-31,free,True,True,4.62,10,65.4,4.8,2026-07-10
+SEL-000057,Drs. Ghaliyati Rahmawati,individual,Property,Balikpapan,Kalimantan Timur,2023-06-27,free,True,True,4.37,6,61.2,3.1,2026-08-30
+SEL-000058,Adiarja Hidayanto,individual,Vehicles,Kediri,Jawa Timur,2025-11-08,free,True,True,4.25,3,19.6,15.8,2026-06-15
+SEL-000059,"Siti Halim, S.H.",individual,Jobs,Tangerang,Banten,2024-05-29,free,True,True,4.9,6,75.7,4.3,2026-07-24
+SEL-000060,Utama Firmansyah,individual,Fashion & Beauty,Badung,Bali,2025-08-16,free,True,False,4.71,10,69.5,3.5,2026-06-19
+SEL-000061,PT Mulyani (Persero) Tbk,small_business,Vehicles,Batam,Kepulauan Riau,2019-04-25,basic,True,True,4.39,9,69.9,3.8,2026-06-19
+SEL-000062,Salsabila Laksita,individual,Electronics & Gadgets,Serang,Banten,2018-05-12,basic,True,True,3.73,5,76.4,9.9,2026-07-10
+SEL-000063,Kayun Mustofa,individual,Electronics & Gadgets,Denpasar,Bali,2019-07-02,free,False,True,4.72,7,82.5,10.6,2026-07-26
+SEL-000064,CV Kusmawati Wasita (Persero) Tbk,small_business,Electronics & Gadgets,Denpasar,Bali,2025-04-30,premium,True,True,4.32,27,44.8,7.4,2026-06-05
+SEL-000065,Bakti Wahyuni,individual,Vehicles,Palembang,Sumatera Selatan,2025-03-20,free,True,True,4.5,4,76.2,9.6,2026-06-24
+SEL-000066,Kamila Anggraini,individual,Services,Sidoarjo,Jawa Timur,2022-06-07,free,False,True,4.25,2,77.0,6.1,2026-07-01
+SEL-000067,Nadia Habibi,individual,Fashion & Beauty,Jakarta Selatan,DKI Jakarta,2019-06-04,free,False,True,4.91,3,59.7,5.3,2026-06-14
+SEL-000068,"Martani Yuliarti, S.IP",individual,Fashion & Beauty,Jakarta Utara,DKI Jakarta,2020-02-16,free,True,True,3.58,8,78.4,4.3,2026-08-01
+SEL-000069,Hadi Sirait,individual,Fashion & Beauty,Kediri,Jawa Timur,2024-08-28,free,True,True,4.28,1,76.7,1.9,2026-08-15
+SEL-000070,"R. Drajat Nababan, S.Kom",individual,Hobbies & Sports,Kediri,Jawa Timur,2018-11-10,free,False,False,4.46,3,76.2,0.2,2026-07-06
+SEL-000071,drg. Cahyono Anggraini,individual,Services,Surabaya,Jawa Timur,2025-03-26,free,False,False,4.55,3,69.7,10.2,2026-09-01
+SEL-000072,Estiawan Hariyah,individual,Property,Magelang,Jawa Tengah,2018-10-21,free,False,True,4.11,8,61.9,2.5,2026-08-24
+SEL-000073,PT Handayani Pudjiastuti,dealer,Electronics & Gadgets,Semarang,Jawa Tengah,2020-05-01,premium,True,True,4.29,4,80.3,13.5,2026-08-30
+SEL-000074,Asirwanda Yulianti,individual,Vehicles,Yogyakarta,DI Yogyakarta,2019-01-18,free,True,True,4.13,9,38.4,9.6,2026-07-11
+SEL-000075,Dt. Bakiman Prakasa,individual,Vehicles,Jakarta Pusat,DKI Jakarta,2018-11-10,free,True,False,4.54,3,57.2,8.1,2026-07-06
+SEL-000076,Hasim Laksita,individual,Home & Furniture,Cimahi,Jawa Barat,2024-08-10,free,False,False,4.34,3,66.1,8.3,2026-07-12
+SEL-000077,Gabriella Wacana,individual,Vehicles,Palembang,Sumatera Selatan,2025-04-15,free,True,True,4.8,9,50.6,2.0,2026-08-25
+SEL-000078,CV Wibowo,small_business,Electronics & Gadgets,Yogyakarta,DI Yogyakarta,2020-11-05,basic,False,False,4.59,6,100.0,4.9,2026-07-31
+SEL-000079,Harsaya Saptono,individual,Property,Batam,Kepulauan Riau,2022-05-26,basic,False,False,4.48,5,66.4,2.6,2026-08-31
+SEL-000080,UD Anggraini Puspita Tbk,small_business,Property,Denpasar,Bali,2019-01-24,basic,True,True,3.93,2,73.7,25.2,2026-06-03
+SEL-000081,CV Sihombing Pratama,small_business,Fashion & Beauty,Denpasar,Bali,2018-12-03,free,True,True,4.76,17,69.3,0.3,2026-08-19
+SEL-000082,Labuh Namaga,individual,Home & Furniture,Bekasi,Jawa Barat,2023-10-28,free,True,True,4.55,8,91.5,8.0,2026-06-15
+SEL-000083,UD Hakim,small_business,Electronics & Gadgets,Kediri,Jawa Timur,2021-10-25,free,True,True,5.0,11,93.0,4.5,2026-07-04
+SEL-000084,Lanang Kuswandari,individual,Electronics & Gadgets,Bandung,Jawa Barat,2019-08-08,free,False,True,4.11,6,61.3,2.9,2026-07-22
+SEL-000085,Dr. Candrakanta Hakim,individual,Jobs,Tangerang,Banten,2019-12-09,free,True,True,5.0,4,68.7,10.5,2026-07-02
+SEL-000086,R. Soleh Nashiruddin,individual,Fashion & Beauty,Samarinda,Kalimantan Timur,2022-02-18,free,True,True,,0,50.2,0.1,2026-08-25
+SEL-000087,Perum Hidayat,small_business,Electronics & Gadgets,Bogor,Jawa Barat,2018-08-24,free,True,True,4.07,10,53.4,6.5,2026-08-16
+SEL-000088,"Setya Prakasa, S.Sos",individual,Property,Semarang,Jawa Tengah,2025-12-30,free,True,True,4.23,5,64.4,24.4,2026-08-28
+SEL-000089,Wardaya Purnawati,individual,Baby & Kids,Cimahi,Jawa Barat,2022-05-12,free,True,True,4.13,7,67.1,14.2,2026-06-19
+SEL-000090,Labuh Riyanti,individual,Hobbies & Sports,Jakarta Barat,DKI Jakarta,2025-08-09,free,True,True,4.2,2,100.0,13.0,2026-06-09
+SEL-000091,Lukman Hutapea,individual,Vehicles,Jakarta Selatan,DKI Jakarta,2024-12-01,free,False,True,4.66,4,75.0,2.9,2026-07-21
+SEL-000092,Perum Pratiwi Nurdiyanti Tbk,small_business,Home & Furniture,Jakarta Barat,DKI Jakarta,2020-02-02,basic,True,True,4.37,15,33.6,3.4,2026-07-26
+SEL-000093,Farhunnisa Winarsih,individual,Electronics & Gadgets,Makassar,Sulawesi Selatan,2023-07-03,free,True,True,4.48,6,100.0,11.6,2026-09-01
+SEL-000094,"Iriana Permadi, S.T.",individual,Vehicles,Malang,Jawa Timur,2019-11-11,free,True,False,3.92,3,39.9,4.8,2026-07-02
+SEL-000095,Diah Winarsih,individual,Property,Yogyakarta,DI Yogyakarta,2024-02-26,free,False,False,4.15,7,60.1,20.6,2026-08-26
+SEL-000096,"Eja Haryanti, S.Psi",individual,Jobs,Tangerang Selatan,Banten,2018-06-02,free,False,False,3.74,3,37.5,1.3,2026-07-27
+SEL-000097,"R. Adika Haryanti, M.Ak",individual,Electronics & Gadgets,Jakarta Barat,DKI Jakarta,2018-01-29,free,True,True,4.16,1,65.5,21.3,2026-08-11
+SEL-000098,Puti Belinda Nasyiah,individual,Property,Jakarta Barat,DKI Jakarta,2024-11-12,free,True,True,3.84,2,67.6,0.3,2026-06-17
+SEL-000099,Jono Saptono,individual,Fashion & Beauty,Palembang,Sumatera Selatan,2020-11-28,free,False,True,4.21,9,42.5,11.3,2026-06-22
+SEL-000100,UD Hidayat Prasasta,enterprise,Fashion & Beauty,Depok,Jawa Barat,2023-05-29,premium,True,True,4.22,12,39.0,14.1,2026-08-28
+SEL-000101,UD Manullang Tbk,dealer,Property,Samarinda,Kalimantan Timur,2019-11-17,basic,True,True,4.6,15,61.8,2.0,2026-06-16
+SEL-000102,Perum Yolanda (Persero) Tbk,small_business,Fashion & Beauty,Jakarta Selatan,DKI Jakarta,2022-09-19,basic,True,True,5.0,8,77.1,1.9,2026-08-25
+SEL-000103,"Rendy Puspasari, S.Pd",individual,Vehicles,Serang,Banten,2021-07-23,free,True,False,4.05,8,77.0,0.3,2026-07-25
+SEL-000104,CV Saptono,enterprise,Fashion & Beauty,Palembang,Sumatera Selatan,2024-05-19,premium,True,True,4.02,8,73.1,0.8,2026-08-17
+SEL-000105,PT Puspasari,small_business,Property,Bogor,Jawa Barat,2021-10-10,premium,False,True,4.64,10,84.2,10.9,2026-06-16
+SEL-000106,UD Suryono Suartini,small_business,Electronics & Gadgets,Bandung,Jawa Barat,2023-08-04,free,True,True,3.83,5,48.6,16.9,2026-06-22
+SEL-000107,Nasim Siregar,individual,Hobbies & Sports,Makassar,Sulawesi Selatan,2026-02-06,free,True,True,4.3,3,78.6,9.5,2026-06-07
+SEL-000108,Mahfud Usada,individual,Home & Furniture,Bogor,Jawa Barat,2023-03-23,free,False,False,4.47,3,71.8,2.3,2026-06-17
+SEL-000109,"Tgk. Ophelia Lestari, S.T.",individual,Vehicles,Surabaya,Jawa Timur,2025-09-22,free,False,False,4.12,2,97.1,8.7,2026-07-14
+SEL-000110,PT Usada,dealer,Vehicles,Kediri,Jawa Timur,2019-03-08,basic,True,True,3.84,6,65.8,13.3,2026-07-10
+SEL-000111,Yance Saefullah,individual,Vehicles,Bekasi,Jawa Barat,2023-12-30,free,True,True,4.11,3,22.5,0.8,2026-08-16
+SEL-000112,Ade Sitorus,individual,Property,Palembang,Sumatera Selatan,2025-08-30,basic,True,False,4.7,7,63.4,6.7,2026-08-21
+SEL-000113,"R.M. Makuta Saptono, S.E.",individual,Property,Palembang,Sumatera Selatan,2022-04-28,free,True,True,3.93,5,70.3,2.5,2026-07-28
+SEL-000114,"Maimunah Puspasari, S.Farm",individual,Fashion & Beauty,Bandung,Jawa Barat,2018-02-08,premium,True,True,,0,77.4,5.2,2026-08-11
+SEL-000115,Dt. Balidin Hutagalung,individual,Vehicles,Yogyakarta,DI Yogyakarta,2020-10-26,free,False,True,3.93,3,78.6,4.7,2026-08-07
+SEL-000116,Perum Firgantoro Uwais,dealer,Hobbies & Sports,Jakarta Utara,DKI Jakarta,2020-01-12,basic,True,True,4.47,18,66.4,20.1,2026-06-28
+SEL-000117,PD Mahendra Gunarto,small_business,Electronics & Gadgets,Jakarta Utara,DKI Jakarta,2023-02-11,free,True,True,5.0,10,84.3,1.7,2026-07-20
+SEL-000118,UD Gunarto Tbk,small_business,Property,Magelang,Jawa Tengah,2024-04-26,free,True,True,4.11,12,45.0,2.9,2026-08-07
+SEL-000119,Mahmud Prayoga,individual,Vehicles,Batam,Kepulauan Riau,2019-01-15,free,True,True,3.81,2,65.1,5.7,2026-07-23
+SEL-000120,"Baktiono Thamrin, M.Pd",individual,Electronics & Gadgets,Jakarta Pusat,DKI Jakarta,2021-04-21,free,True,False,4.55,8,95.7,1.5,2026-06-03
+SEL-000121,"drg. Raina Mangunsong, S.H.",individual,Services,Jakarta Utara,DKI Jakarta,2022-02-01,free,True,True,4.62,3,71.5,3.7,2026-06-27
+SEL-000122,"R. Wirda Nugroho, S.Farm",individual,Home & Furniture,Semarang,Jawa Tengah,2018-11-30,free,False,False,4.52,2,92.5,8.0,2026-08-01
+SEL-000123,Cemani Sitorus,individual,Vehicles,Palembang,Sumatera Selatan,2026-07-30,free,True,True,4.99,5,82.1,0.2,2026-08-17
+SEL-000124,"dr. Rama Winarsih, S.H.",individual,Vehicles,Jakarta Barat,DKI Jakarta,2023-06-16,free,False,False,4.48,6,100.0,6.1,2026-07-19
+SEL-000125,Endah Kurniawan,individual,Electronics & Gadgets,Malang,Jawa Timur,2020-02-22,free,True,True,4.33,2,73.2,1.3,2026-07-16
+SEL-000126,Ani Halimah,individual,Vehicles,Medan,Sumatera Utara,2018-10-17,free,False,False,4.02,3,58.1,2.8,2026-08-29
+SEL-000127,Daliono Haryanti,individual,Home & Furniture,Depok,Jawa Barat,2020-11-09,free,False,True,4.41,2,65.9,8.9,2026-08-19
+SEL-000128,Ina Pradana,individual,Vehicles,Jakarta Barat,DKI Jakarta,2018-12-03,free,False,False,4.51,8,67.3,0.9,2026-08-31
+SEL-000129,Ajiono Wahyuni,individual,Electronics & Gadgets,Jakarta Selatan,DKI Jakarta,2022-12-07,free,True,True,3.99,1,79.5,7.0,2026-07-12
+SEL-000130,Heru Sitompul,individual,Property,Sidoarjo,Jawa Timur,2019-04-17,free,False,True,4.46,3,53.4,7.1,2026-07-13
+SEL-000131,Zelaya Hidayat,individual,Vehicles,Surabaya,Jawa Timur,2018-08-12,free,True,True,4.09,4,66.4,1.8,2026-08-08
+SEL-000132,UD Yuniar Tbk,dealer,Electronics & Gadgets,Badung,Bali,2021-02-28,basic,False,False,3.83,12,65.3,1.1,2026-06-29
+SEL-000133,"Saiful Nasyiah, S.Psi",individual,Electronics & Gadgets,Serang,Banten,2025-06-13,free,False,True,4.6,5,56.7,0.5,2026-07-04
+SEL-000134,Bambang Rajata,individual,Vehicles,Serang,Banten,2025-02-27,free,True,True,4.0,6,65.9,1.9,2026-06-08
+SEL-000135,Laksana Saptono,individual,Vehicles,Batam,Kepulauan Riau,2023-10-10,free,False,False,4.34,7,75.7,9.9,2026-08-22
+SEL-000136,Balangga Riyanti,individual,Vehicles,Malang,Jawa Timur,2023-11-03,free,False,False,4.92,4,83.0,11.5,2026-07-04
+SEL-000137,UD Sihotang Fujiati (Persero) Tbk,enterprise,Electronics & Gadgets,Kediri,Jawa Timur,2023-11-17,premium,True,True,4.52,11,92.0,7.2,2026-07-10
+SEL-000138,Ratih Nainggolan,individual,Property,Balikpapan,Kalimantan Timur,2025-06-08,free,False,False,4.14,8,53.3,13.0,2026-08-21
+SEL-000139,PT Fujiati (Persero) Tbk,small_business,Hobbies & Sports,Bogor,Jawa Barat,2021-02-26,basic,True,True,3.89,11,50.0,4.7,2026-06-08
+SEL-000140,KH. Kawaya Winarsih,individual,Electronics & Gadgets,Medan,Sumatera Utara,2019-06-30,free,False,True,3.46,12,55.6,1.3,2026-06-09
+SEL-000141,Galih Astuti,individual,Electronics & Gadgets,Medan,Sumatera Utara,2026-01-23,free,False,True,4.61,3,72.7,10.9,2026-07-03
+SEL-000142,Warta Widiastuti,individual,Property,Jakarta Timur,DKI Jakarta,2022-10-05,free,True,True,,0,53.7,9.8,2026-07-25
+SEL-000143,Perum Sihotang (Persero) Tbk,dealer,Vehicles,Surabaya,Jawa Timur,2018-08-29,premium,True,True,4.37,12,79.6,8.6,2026-06-18
+SEL-000144,"Ifa Mayasari, S.Pd",individual,Services,Jakarta Pusat,DKI Jakarta,2018-09-24,free,True,True,4.28,10,82.1,2.4,2026-08-11
+SEL-000145,"Hasan Simbolon, S.Sos",individual,Services,Jakarta Selatan,DKI Jakarta,2022-11-14,free,True,True,,0,100.0,2.9,2026-06-12
+SEL-000146,"Ida Puspasari, S.E.I",individual,Vehicles,Malang,Jawa Timur,2022-10-27,free,False,False,4.3,9,56.9,12.0,2026-07-30
+SEL-000147,Imam Widiastuti,individual,Vehicles,Depok,Jawa Barat,2021-03-22,free,True,True,3.97,4,40.8,0.2,2026-08-16
+SEL-000148,Shania Natsir,individual,Vehicles,Palembang,Sumatera Selatan,2026-06-12,free,False,True,4.4,6,77.8,5.7,2026-07-22
+SEL-000149,Ir. Ilsa Waskita,individual,Property,Denpasar,Bali,2025-02-07,free,True,True,4.61,4,80.2,5.0,2026-06-09
+SEL-000150,Dt. Gadang Suwarno,individual,Fashion & Beauty,Palembang,Sumatera Selatan,2019-01-08,free,True,True,4.61,2,58.2,13.3,2026-07-19
+SEL-000151,PD Prastuti Sudiati,small_business,Baby & Kids,Bogor,Jawa Barat,2021-12-25,premium,True,True,5.0,11,90.5,17.6,2026-08-31
+SEL-000152,PD Handayani Tbk,dealer,Property,Depok,Jawa Barat,2025-11-01,basic,True,True,4.64,18,91.9,0.7,2026-06-26
+SEL-000153,"Dariati Melani, M.Kom.",individual,Vehicles,Bandung,Jawa Barat,2026-01-15,free,False,False,4.61,6,64.9,4.5,2026-06-15
+SEL-000154,"KH. Oman Narpati, S.Pt",individual,Electronics & Gadgets,Jakarta Utara,DKI Jakarta,2023-05-17,free,False,True,5.0,4,55.7,12.3,2026-08-08
+SEL-000155,Oliva Wijayanti,individual,Vehicles,Makassar,Sulawesi Selatan,2021-03-20,free,False,True,4.45,4,78.8,6.9,2026-07-23
+SEL-000156,PT Prakasa Tbk,small_business,Jobs,Malang,Jawa Timur,2022-01-22,free,True,True,4.63,1,37.8,5.9,2026-07-08
+SEL-000157,Reksa Napitupulu,individual,Home & Furniture,Bekasi,Jawa Barat,2023-07-04,free,True,True,,0,82.7,7.9,2026-08-04
+SEL-000158,PT Gunawan Prasasta,small_business,Jobs,Yogyakarta,DI Yogyakarta,2023-08-01,free,False,False,4.69,10,73.7,16.5,2026-06-03
+SEL-000159,Perum Hidayanto Hasanah Tbk,small_business,Electronics & Gadgets,Sidoarjo,Jawa Timur,2019-09-11,premium,True,True,4.85,10,100.0,0.8,2026-07-24
+SEL-000160,PD Lailasari Wacana,small_business,Fashion & Beauty,Jakarta Utara,DKI Jakarta,2023-05-08,premium,True,True,4.1,8,55.5,0.1,2026-07-04
+SEL-000161,Cakrajiya Yolanda,individual,Fashion & Beauty,Jakarta Barat,DKI Jakarta,2025-10-02,free,True,True,4.46,7,54.8,3.3,2026-06-25
+SEL-000162,PT Anggraini,dealer,Electronics & Gadgets,Tangerang,Banten,2018-08-24,premium,True,True,4.33,12,65.6,10.6,2026-07-01
+SEL-000163,Cecep Maryati,individual,Baby & Kids,Palembang,Sumatera Selatan,2021-01-24,basic,False,True,4.42,4,100.0,2.1,2026-07-29
+SEL-000164,Alika Puspita,individual,Vehicles,Jakarta Timur,DKI Jakarta,2018-08-06,free,True,True,3.83,13,98.5,2.5,2026-06-06
+SEL-000165,Vero Maheswara,individual,Vehicles,Samarinda,Kalimantan Timur,2022-06-24,free,True,True,4.58,2,100.0,0.9,2026-06-24
+SEL-000166,Diana Hariyah,individual,Hobbies & Sports,Yogyakarta,DI Yogyakarta,2021-04-01,free,False,True,4.45,6,38.7,12.4,2026-06-11
+SEL-000167,PD Suryatmi Tbk,small_business,Electronics & Gadgets,Yogyakarta,DI Yogyakarta,2025-07-25,free,True,False,4.02,9,34.0,3.3,2026-07-29
+SEL-000168,CV Kusmawati Hartati Tbk,small_business,Property,Depok,Jawa Barat,2021-04-18,basic,True,True,4.81,9,68.4,3.3,2026-07-23
+SEL-000169,"Sutan Saadat Uyainah, S.T.",individual,Property,Jakarta Timur,DKI Jakarta,2023-05-18,free,False,False,,0,74.4,0.5,2026-06-13
+SEL-000170,CV Saefullah Farida (Persero) Tbk,enterprise,Services,Badung,Bali,2018-12-16,premium,True,True,3.76,8,68.1,4.0,2026-06-21
+SEL-000171,"Irma Prakasa, S.T.",individual,Electronics & Gadgets,Cimahi,Jawa Barat,2019-03-04,free,True,True,4.71,12,78.5,4.9,2026-08-09
+SEL-000172,Jamalia Namaga,individual,Home & Furniture,Tangerang Selatan,Banten,2024-12-11,free,True,True,3.92,10,82.7,2.1,2026-07-19
+SEL-000173,Cahyo Maryadi,individual,Jobs,Medan,Sumatera Utara,2018-05-23,free,True,True,5.0,2,77.0,8.6,2026-07-03
+SEL-000174,PD Mangunsong Prabowo,dealer,Vehicles,Jakarta Pusat,DKI Jakarta,2020-10-16,free,True,True,4.23,18,44.2,3.7,2026-08-19
+SEL-000175,Heryanto Wasita,individual,Fashion & Beauty,Palembang,Sumatera Selatan,2024-07-12,free,True,True,4.15,7,54.0,10.1,2026-08-13
+SEL-000176,Puput Hastuti,individual,Home & Furniture,Balikpapan,Kalimantan Timur,2026-07-10,free,True,True,4.85,4,66.0,0.7,2026-07-25
+SEL-000177,Almira Putra,individual,Property,Binjai,Sumatera Utara,2018-09-22,free,True,True,3.6,5,56.2,6.1,2026-08-18
+SEL-000178,PD Padmasari Damanik Tbk,enterprise,Home & Furniture,Surabaya,Jawa Timur,2022-07-28,premium,True,True,4.63,3,93.5,11.2,2026-07-02
+SEL-000179,PT Thamrin Salahudin Tbk,dealer,Property,Badung,Bali,2024-05-23,basic,True,False,4.28,6,60.3,11.1,2026-08-05
+SEL-000180,Perum Palastri Suartini (Persero),small_business,Fashion & Beauty,Solo,Jawa Tengah,2020-03-15,free,False,True,4.25,2,56.6,13.2,2026-07-06
+SEL-000181,CV Saputra Fujiati Tbk,dealer,Home & Furniture,Medan,Sumatera Utara,2023-09-10,free,True,True,4.12,8,31.4,0.4,2026-08-03
+SEL-000182,PD Sirait,dealer,Vehicles,Yogyakarta,DI Yogyakarta,2026-01-22,basic,True,False,4.62,7,100.0,3.9,2026-08-25
+SEL-000183,"Mustika Waskita, S.E.",individual,Electronics & Gadgets,Binjai,Sumatera Utara,2025-04-03,free,True,True,4.51,5,74.9,4.4,2026-07-14
+SEL-000184,"Dr. Dian Oktaviani, M.Pd",individual,Electronics & Gadgets,Depok,Jawa Barat,2024-08-21,basic,False,True,4.83,7,70.3,5.0,2026-06-08
+SEL-000185,PD Rahayu,small_business,Hobbies & Sports,Jakarta Selatan,DKI Jakarta,2023-05-20,basic,True,True,3.81,9,57.0,3.5,2026-06-22
+SEL-000186,PT Yuniar,small_business,Property,Bogor,Jawa Barat,2020-06-27,free,True,True,,0,92.9,13.2,2026-07-27
+SEL-000187,Diana Hariyah,individual,Electronics & Gadgets,Sidoarjo,Jawa Timur,2025-10-24,free,False,False,4.51,5,71.3,0.7,2026-08-25
+SEL-000188,Asirwanda Rajata,individual,Fashion & Beauty,Kediri,Jawa Timur,2022-07-15,free,True,True,4.05,10,53.6,3.2,2026-07-08
+SEL-000189,UD Prabowo Hasanah Tbk,small_business,Electronics & Gadgets,Magelang,Jawa Tengah,2019-05-11,basic,True,True,3.92,8,59.6,3.7,2026-07-09
+SEL-000190,Vanya Wibowo,individual,Fashion & Beauty,Surabaya,Jawa Timur,2023-01-11,free,False,False,3.99,7,72.3,6.9,2026-06-20
+SEL-000191,PD Ramadan (Persero) Tbk,dealer,Services,Palembang,Sumatera Selatan,2025-08-27,premium,False,False,4.52,13,59.3,3.3,2026-08-23
+SEL-000192,Anita Namaga,individual,Property,Balikpapan,Kalimantan Timur,2020-10-25,free,True,True,4.19,6,56.7,8.8,2026-08-07
+SEL-000193,Wawan Tampubolon,individual,Vehicles,Bogor,Jawa Barat,2026-04-22,free,True,True,3.75,2,72.0,1.4,2026-06-08
+SEL-000194,PT Yulianti Gunarto,small_business,Vehicles,Binjai,Sumatera Utara,2025-12-14,basic,False,True,5.0,10,71.6,7.2,2026-06-09
+SEL-000195,"Dt. Wasis Prayoga, S.Kom",individual,Hobbies & Sports,Serang,Banten,2025-12-03,free,True,True,4.78,4,78.2,6.5,2026-07-04
+SEL-000196,"Cut Sarah Mangunsong, S.H.",individual,Home & Furniture,Magelang,Jawa Tengah,2023-07-13,basic,False,True,4.58,13,65.8,16.4,2026-07-07
+SEL-000197,Jasmani Winarsih,individual,Fashion & Beauty,Jakarta Selatan,DKI Jakarta,2021-09-05,free,True,True,3.71,6,88.1,14.4,2026-08-07
+SEL-000198,Perum Pratama,dealer,Fashion & Beauty,Palembang,Sumatera Selatan,2025-01-22,premium,True,True,4.48,11,73.7,1.5,2026-06-05
+SEL-000199,Tira Rajasa,individual,Vehicles,Makassar,Sulawesi Selatan,2018-08-13,basic,True,True,4.2,4,88.0,0.1,2026-06-26
+SEL-000200,"Tgk. Caturangga Sudiati, M.Ak",individual,Vehicles,Binjai,Sumatera Utara,2022-07-15,premium,True,True,3.76,7,58.6,0.1,2026-07-27
+SEL-000201,CV Saragih,small_business,Property,Balikpapan,Kalimantan Timur,2021-11-30,free,True,True,4.29,8,75.8,0.8,2026-06-14
+SEL-000202,Perum Dongoran,enterprise,Electronics & Gadgets,Batam,Kepulauan Riau,2020-09-19,basic,True,True,4.08,12,76.7,22.3,2026-08-19
+SEL-000203,Ratih Wastuti,individual,Property,Bekasi,Jawa Barat,2024-10-28,free,False,False,3.89,2,90.3,2.3,2026-08-13
+SEL-000204,Lala Napitupulu,individual,Property,Tangerang,Banten,2024-12-08,free,True,True,4.63,8,79.9,6.4,2026-06-26
+SEL-000205,Lega Utami,individual,Property,Sidoarjo,Jawa Timur,2025-06-16,premium,True,True,5.0,3,74.7,2.5,2026-07-03
+SEL-000206,Baktiono Sihombing,individual,Jobs,Batam,Kepulauan Riau,2024-02-14,free,False,False,3.88,7,53.7,3.7,2026-07-11
+SEL-000207,"Hj. Rahayu Lazuardi, M.Farm",individual,Baby & Kids,Jakarta Utara,DKI Jakarta,2018-07-10,free,True,True,,0,70.4,17.7,2026-07-10
+SEL-000208,UD Nasyidah,small_business,Property,Kediri,Jawa Timur,2025-12-02,free,True,True,4.13,7,75.8,3.8,2026-06-11
+SEL-000209,Salimah Uwais,individual,Electronics & Gadgets,Denpasar,Bali,2025-07-19,premium,False,True,4.74,6,40.2,2.7,2026-06-03
+SEL-000210,Jono Yuliarti,individual,Vehicles,Bandung,Jawa Barat,2022-07-01,free,True,True,4.05,9,87.4,5.7,2026-08-16
+SEL-000211,PT Andriani Tbk,small_business,Hobbies & Sports,Palembang,Sumatera Selatan,2022-02-20,basic,True,True,3.56,13,79.5,1.2,2026-07-01
+SEL-000212,Ian Tarihoran,individual,Baby & Kids,Malang,Jawa Timur,2025-09-14,free,False,False,4.58,6,79.9,10.3,2026-08-06
+SEL-000213,"Tri Haryanti, S.E.I",individual,Fashion & Beauty,Batam,Kepulauan Riau,2022-02-02,free,True,True,4.34,4,51.2,17.6,2026-08-09
+SEL-000214,CV Nurdiyanti Yulianti Tbk,small_business,Baby & Kids,Denpasar,Bali,2018-09-06,basic,True,True,5.0,4,63.1,0.8,2026-08-17
+SEL-000215,PD Fujiati Rahayu Tbk,small_business,Services,Cimahi,Jawa Barat,2018-03-15,free,True,True,4.53,11,61.5,5.7,2026-07-14
+SEL-000216,CV Irawan Tbk,small_business,Home & Furniture,Palembang,Sumatera Selatan,2022-11-01,premium,True,True,4.24,6,95.4,12.1,2026-07-08
+SEL-000217,Hesti Hariyah,individual,Electronics & Gadgets,Bandung,Jawa Barat,2022-03-14,free,True,True,4.8,7,63.7,1.3,2026-06-08
+SEL-000218,Ir. Salsabila Wibowo,individual,Services,Tangerang,Banten,2021-08-31,free,True,True,,0,43.2,6.9,2026-07-11
+SEL-000219,PT Lailasari Tbk,dealer,Property,Tangerang,Banten,2018-02-14,premium,True,True,3.79,12,73.1,17.5,2026-07-20
+SEL-000220,Jinawi Prabowo,individual,Jobs,Yogyakarta,DI Yogyakarta,2019-10-26,free,True,True,4.01,8,49.5,12.7,2026-08-08
+SEL-000221,Wirda Rajata,individual,Vehicles,Jakarta Utara,DKI Jakarta,2025-07-21,free,True,True,4.7,6,87.5,5.6,2026-06-03
+SEL-000222,Indah Riyanti,individual,Fashion & Beauty,Bogor,Jawa Barat,2026-03-17,free,False,True,,0,39.6,2.5,2026-08-26
+SEL-000223,Perum Anggriawan (Persero) Tbk,small_business,Fashion & Beauty,Binjai,Sumatera Utara,2020-11-30,premium,True,True,4.33,7,81.6,14.6,2026-06-19
+SEL-000224,CV Wasita,enterprise,Jobs,Solo,Jawa Tengah,2026-08-02,basic,True,True,4.94,11,80.9,16.5,2026-08-16
+SEL-000225,Puti Permadi,individual,Electronics & Gadgets,Sidoarjo,Jawa Timur,2023-05-05,free,True,True,4.39,2,85.9,5.2,2026-06-04
+SEL-000226,PD Hassanah Budiyanto (Persero),dealer,Fashion & Beauty,Jakarta Utara,DKI Jakarta,2026-04-04,premium,True,True,4.64,12,63.9,6.6,2026-07-24
+SEL-000227,Gawati Waskita,individual,Property,Bogor,Jawa Barat,2023-06-06,free,False,True,4.14,3,54.0,8.2,2026-06-23
+SEL-000228,"Hesti Samosir, M.Farm",individual,Baby & Kids,Denpasar,Bali,2023-08-01,free,True,True,4.24,3,68.3,15.1,2026-06-06
+SEL-000229,Nabila Puspasari,individual,Baby & Kids,Jakarta Barat,DKI Jakarta,2025-12-02,free,False,False,4.62,4,83.3,3.1,2026-08-16
+SEL-000230,Tgk. Irwan Pudjiastuti,individual,Electronics & Gadgets,Surabaya,Jawa Timur,2023-09-26,free,False,True,,0,64.4,1.2,2026-06-18
+SEL-000231,Kamila Hasanah,individual,Baby & Kids,Makassar,Sulawesi Selatan,2026-02-19,free,False,False,4.45,3,90.6,17.8,2026-08-08
+SEL-000232,Ina Ramadan,individual,Property,Jakarta Utara,DKI Jakarta,2022-01-11,free,True,True,3.61,7,67.3,3.8,2026-06-08
+SEL-000233,PT Nababan Sihotang,enterprise,Fashion & Beauty,Medan,Sumatera Utara,2023-06-07,premium,True,False,4.28,5,51.2,8.1,2026-08-02
+SEL-000234,Paiman Nasyiah,individual,Electronics & Gadgets,Bekasi,Jawa Barat,2018-05-22,free,True,True,3.17,7,64.4,6.0,2026-06-05
+SEL-000235,CV Pratama Laksmiwati,dealer,Electronics & Gadgets,Denpasar,Bali,2024-09-10,basic,True,True,4.61,2,59.7,3.6,2026-08-26
+SEL-000236,Perum Novitasari Tbk,small_business,Vehicles,Binjai,Sumatera Utara,2024-09-21,basic,True,True,4.47,16,31.3,1.1,2026-08-01
+SEL-000237,Rafi Nababan,individual,Baby & Kids,Badung,Bali,2021-01-07,free,True,True,5.0,5,57.6,8.8,2026-06-10
+SEL-000238,CV Tarihoran (Persero) Tbk,small_business,Property,Jakarta Utara,DKI Jakarta,2021-07-29,free,True,False,4.18,9,49.4,5.7,2026-07-18
+SEL-000239,Amalia Nasyidah,individual,Electronics & Gadgets,Magelang,Jawa Tengah,2025-07-10,free,True,True,4.09,2,41.8,0.4,2026-08-15
+SEL-000240,Endra Gunawan,individual,Property,Palembang,Sumatera Selatan,2022-10-04,free,False,False,3.59,4,45.9,1.2,2026-07-10
+SEL-000241,Perum Siregar,small_business,Fashion & Beauty,Bogor,Jawa Barat,2021-10-05,free,True,True,4.02,8,48.2,3.0,2026-07-03
+SEL-000242,PD Jailani Budiman,small_business,Hobbies & Sports,Bekasi,Jawa Barat,2020-01-30,basic,True,True,3.38,4,45.5,0.8,2026-06-06
+SEL-000243,Tgk. Nadine Kuswandari,individual,Jobs,Jakarta Utara,DKI Jakarta,2018-05-01,basic,True,True,3.94,4,58.2,24.9,2026-08-30
+SEL-000244,Jasmin Nashiruddin,individual,Fashion & Beauty,Makassar,Sulawesi Selatan,2019-07-28,basic,True,True,4.8,4,54.1,10.8,2026-06-09
+SEL-000245,Dono Kuswandari,individual,Hobbies & Sports,Binjai,Sumatera Utara,2026-06-02,free,False,True,4.68,4,48.6,2.8,2026-06-26
+SEL-000246,PT Wacana,dealer,Property,Tangerang Selatan,Banten,2019-03-12,basic,True,True,4.12,5,44.6,25.5,2026-06-22
+SEL-000247,Belinda Permata,individual,Electronics & Gadgets,Binjai,Sumatera Utara,2023-10-27,free,True,False,4.19,3,69.3,1.2,2026-08-06
+SEL-000248,"Mahfud Habibi, S.E.I",individual,Jobs,Semarang,Jawa Tengah,2023-11-09,free,False,False,4.19,3,98.4,3.2,2026-08-23
+SEL-000249,Rosman Pratiwi,individual,Property,Sidoarjo,Jawa Timur,2018-06-24,free,True,True,4.77,9,76.4,2.3,2026-06-30
+SEL-000250,Chelsea Prayoga,individual,Fashion & Beauty,Malang,Jawa Timur,2023-08-18,free,False,True,3.74,4,78.6,3.4,2026-06-20
+SEL-000251,Perum Agustina,small_business,Hobbies & Sports,Serang,Banten,2018-09-19,free,True,True,3.83,8,66.1,17.5,2026-06-17
+SEL-000252,Perum Wibowo Hartati,dealer,Fashion & Beauty,Jakarta Barat,DKI Jakarta,2023-05-27,premium,True,True,4.68,11,45.3,18.1,2026-08-10
+SEL-000253,Ifa Rahmawati,individual,Fashion & Beauty,Badung,Bali,2019-10-23,free,False,True,5.0,1,64.7,5.5,2026-07-13
+SEL-000254,Ina Purnawati,individual,Fashion & Beauty,Palembang,Sumatera Selatan,2018-08-31,free,False,True,4.32,2,91.9,2.3,2026-08-09
+SEL-000255,Cut Rahmi Januar,individual,Fashion & Beauty,Cimahi,Jawa Barat,2024-11-07,free,False,True,4.15,3,64.3,20.1,2026-07-03
+SEL-000256,CV Saptono Wijayanti,small_business,Electronics & Gadgets,Magelang,Jawa Tengah,2020-03-21,basic,True,True,4.18,16,52.6,1.9,2026-07-27
+SEL-000257,CV Permadi,small_business,Fashion & Beauty,Jakarta Timur,DKI Jakarta,2023-11-21,premium,True,False,4.6,10,59.5,1.9,2026-07-25
+SEL-000258,Kusuma Hutagalung,individual,Fashion & Beauty,Batam,Kepulauan Riau,2020-01-23,free,True,True,4.55,5,77.0,6.5,2026-07-25
+SEL-000259,Ade Wasita,individual,Property,Badung,Bali,2023-05-14,free,True,True,4.5,3,67.4,8.8,2026-06-24
+SEL-000260,Shakila Riyanti,individual,Vehicles,Balikpapan,Kalimantan Timur,2024-04-04,free,True,True,4.02,5,38.4,14.1,2026-08-19
+SEL-000261,Icha Firmansyah,individual,Baby & Kids,Bandung,Jawa Barat,2018-12-12,free,False,True,3.89,3,77.5,11.3,2026-08-10
+SEL-000262,UD Suryono Hasanah,small_business,Jobs,Jakarta Barat,DKI Jakarta,2023-03-08,basic,True,True,5.0,4,68.0,0.9,2026-06-25
+SEL-000263,Mahfud Pradipta,individual,Electronics & Gadgets,Jakarta Utara,DKI Jakarta,2021-03-10,free,False,True,4.1,7,71.6,7.7,2026-06-07
+SEL-000264,Winda Utami,individual,Vehicles,Jakarta Barat,DKI Jakarta,2018-12-05,free,True,True,4.58,5,96.8,2.6,2026-07-04
+SEL-000265,PD Latupono Palastri,dealer,Electronics & Gadgets,Jakarta Utara,DKI Jakarta,2020-08-17,free,True,True,4.45,15,60.9,7.5,2026-06-18
+SEL-000266,Marsudi Maryadi,individual,Home & Furniture,Jakarta Barat,DKI Jakarta,2020-07-25,free,True,True,4.52,1,80.5,11.1,2026-08-17
+SEL-000267,Yunita Megantara,individual,Hobbies & Sports,Batam,Kepulauan Riau,2024-04-07,free,True,True,4.3,3,53.2,0.6,2026-08-15
+SEL-000268,Asmuni Marbun,individual,Fashion & Beauty,Jakarta Barat,DKI Jakarta,2021-08-16,free,True,True,4.5,3,63.2,4.0,2026-07-24
+SEL-000269,"T. Legawa Purnawati, S.Pd",individual,Fashion & Beauty,Jakarta Timur,DKI Jakarta,2018-09-09,free,True,True,3.77,1,78.7,9.1,2026-08-02
+SEL-000270,Dewi Hastuti,individual,Hobbies & Sports,Yogyakarta,DI Yogyakarta,2020-07-23,free,False,False,4.74,3,62.9,3.2,2026-06-20
+SEL-000271,"Ilsa Waskita, S.T.",individual,Electronics & Gadgets,Solo,Jawa Tengah,2026-04-20,free,False,True,3.73,7,64.1,2.8,2026-08-12
+SEL-000272,Dr. Jumadi Farida,individual,Electronics & Gadgets,Palembang,Sumatera Selatan,2018-03-11,free,True,True,4.12,10,63.5,1.0,2026-06-30
+SEL-000273,Liman Gunarto,individual,Jobs,Tangerang Selatan,Banten,2024-12-14,free,True,True,4.79,5,63.9,3.4,2026-07-10
+SEL-000274,Unjani Sinaga,individual,Electronics & Gadgets,Badung,Bali,2025-12-31,basic,False,False,4.05,4,87.1,11.2,2026-07-03
+SEL-000275,PT Iswahyudi (Persero) Tbk,small_business,Fashion & Beauty,Tangerang,Banten,2024-09-09,premium,True,True,3.49,2,70.5,3.6,2026-07-18
+SEL-000276,"Raihan Permata, M.Farm",individual,Property,Magelang,Jawa Tengah,2024-06-06,free,True,True,4.17,5,46.2,9.6,2026-08-25
+SEL-000277,Prakosa Wulandari,individual,Home & Furniture,Binjai,Sumatera Utara,2020-11-18,free,False,False,4.29,3,55.2,28.7,2026-07-28
+SEL-000278,"Tgk. Ratih Gunarto, S.E.",individual,Home & Furniture,Kediri,Jawa Timur,2021-11-28,free,False,False,4.28,3,75.9,17.5,2026-07-26
+SEL-000279,Perum Yulianti Handayani Tbk,dealer,Vehicles,Bekasi,Jawa Barat,2020-01-13,premium,True,True,4.14,7,85.2,3.0,2026-07-12
+SEL-000280,Perum Fujiati Usada,dealer,Vehicles,Sidoarjo,Jawa Timur,2020-03-27,basic,True,True,3.99,13,71.3,0.7,2026-08-19
+SEL-000281,"Dr. Cornelia Halimah, S.I.Kom",individual,Baby & Kids,Jakarta Barat,DKI Jakarta,2020-03-12,basic,True,True,4.24,1,72.6,0.8,2026-07-10
+SEL-000282,Juli Sinaga,individual,Property,Palembang,Sumatera Selatan,2019-10-06,free,False,True,4.71,7,67.8,1.1,2026-07-02
+SEL-000283,"Bala Marpaung, S.Psi",individual,Electronics & Gadgets,Depok,Jawa Barat,2023-08-21,free,False,False,4.6,8,79.0,1.6,2026-06-18
+SEL-000284,Talia Lailasari,individual,Hobbies & Sports,Jakarta Selatan,DKI Jakarta,2024-09-23,free,True,True,4.2,5,66.2,0.2,2026-07-19
+SEL-000285,Salimah Wacana,individual,Home & Furniture,Bandung,Jawa Barat,2021-01-03,free,False,False,4.41,8,100.0,11.6,2026-07-26
+SEL-000286,"Drs. Ani Hasanah, S.Pt",individual,Electronics & Gadgets,Yogyakarta,DI Yogyakarta,2021-04-01,free,True,True,4.26,8,100.0,1.4,2026-08-21
+SEL-000287,Hafshah Sinaga,individual,Property,Bekasi,Jawa Barat,2022-03-22,free,True,True,3.74,3,59.0,2.5,2026-06-18
+SEL-000288,Prasetyo Waskita,individual,Vehicles,Tangerang,Banten,2023-10-21,free,False,False,3.86,7,69.5,4.4,2026-07-16
+SEL-000289,"Drs. Yunita Adriansyah, M.Pd",individual,Fashion & Beauty,Yogyakarta,DI Yogyakarta,2022-02-06,free,True,True,4.12,13,63.7,3.1,2026-09-01
+SEL-000290,Laras Habibi,individual,Hobbies & Sports,Jakarta Pusat,DKI Jakarta,2018-05-31,basic,True,False,4.31,4,68.7,7.4,2026-08-07
+SEL-000291,Perum Tarihoran Oktaviani,small_business,Fashion & Beauty,Medan,Sumatera Utara,2024-09-08,premium,True,True,3.61,19,40.0,5.8,2026-08-30
+SEL-000292,"drg. Luis Handayani, S.Gz",individual,Fashion & Beauty,Cimahi,Jawa Barat,2018-03-18,free,True,True,4.3,1,78.5,2.0,2026-06-09
+SEL-000293,UD Pudjiastuti Mustofa,dealer,Home & Furniture,Jakarta Barat,DKI Jakarta,2022-03-20,premium,True,True,3.85,8,50.4,5.4,2026-08-05
+SEL-000294,Maida Laksita,individual,Baby & Kids,Tangerang Selatan,Banten,2024-02-20,free,False,True,3.62,3,50.7,10.6,2026-06-24
+SEL-000295,PT Usamah,small_business,Electronics & Gadgets,Denpasar,Bali,2018-01-22,basic,True,True,5.0,18,79.2,0.1,2026-07-26
+SEL-000296,CV Saragih Puspasari,dealer,Baby & Kids,Depok,Jawa Barat,2023-09-09,basic,True,True,3.42,8,37.9,3.9,2026-06-15
+SEL-000297,Perum Wasita,enterprise,Fashion & Beauty,Semarang,Jawa Tengah,2024-01-25,premium,True,True,4.67,3,76.7,7.7,2026-08-12
+SEL-000298,CV Latupono,small_business,Fashion & Beauty,Depok,Jawa Barat,2020-10-14,premium,True,True,4.46,11,92.6,0.2,2026-07-31
+SEL-000299,PT Yuliarti Mangunsong Tbk,small_business,Home & Furniture,Magelang,Jawa Tengah,2022-09-14,free,True,True,3.64,10,72.4,12.5,2026-07-15
+SEL-000300,"Icha Melani, S.T.",individual,Hobbies & Sports,Tangerang Selatan,Banten,2020-09-13,free,False,False,4.36,1,63.6,9.9,2026-07-15
+SEL-000301,PD Halimah Prasasta Tbk,small_business,Fashion & Beauty,Tangerang Selatan,Banten,2018-10-07,premium,True,True,4.59,23,100.0,3.8,2026-06-27
+SEL-000302,R.M. Harjo Nainggolan,individual,Fashion & Beauty,Tangerang Selatan,Banten,2024-02-18,free,True,True,4.25,4,55.4,0.6,2026-08-03
+SEL-000303,Drs. Ulva Mansur,individual,Jobs,Jakarta Timur,DKI Jakarta,2020-04-15,free,True,True,4.33,15,83.4,1.2,2026-06-15
+SEL-000304,"Puti Ika Agustina, S.Psi",individual,Fashion & Beauty,Tangerang Selatan,Banten,2025-01-03,free,False,False,3.61,5,65.0,3.2,2026-08-19
+SEL-000305,PT Suryono Tbk,dealer,Vehicles,Serang,Banten,2020-09-16,basic,False,True,3.99,2,71.0,7.8,2026-06-07
+SEL-000306,"Ir. Ratna Wahyuni, M.Kom.",individual,Electronics & Gadgets,Serang,Banten,2019-05-23,free,True,True,4.26,3,84.7,0.8,2026-06-12
+SEL-000307,"R. Melinda Nasyiah, M.Kom.",individual,Services,Jakarta Timur,DKI Jakarta,2025-10-01,free,True,True,4.68,6,81.7,4.4,2026-06-22
+SEL-000308,Juli Puspasari,individual,Fashion & Beauty,Surabaya,Jawa Timur,2020-05-28,free,True,True,4.34,7,100.0,5.5,2026-06-25
+SEL-000309,"Dr. Harja Hasanah, S.Psi",individual,Services,Sidoarjo,Jawa Timur,2019-05-24,free,True,True,4.25,4,75.3,14.0,2026-06-13
+SEL-000310,"R.A. Tami Permadi, M.Farm",individual,Services,Jakarta Utara,DKI Jakarta,2018-01-21,free,True,True,4.04,12,73.1,16.9,2026-06-29
+SEL-000311,Gina Zulkarnain,individual,Hobbies & Sports,Bekasi,Jawa Barat,2022-01-13,basic,False,True,3.27,6,70.7,18.3,2026-06-09
+SEL-000312,Galiono Kusmawati,individual,Electronics & Gadgets,Sidoarjo,Jawa Timur,2019-07-28,free,False,False,3.84,3,69.4,9.9,2026-06-10
+SEL-000313,"Yessi Wibowo, S.Sos",individual,Baby & Kids,Binjai,Sumatera Utara,2025-03-31,free,False,True,3.61,2,61.3,1.6,2026-07-03
+SEL-000314,"Prima Yulianti, S.E.I",individual,Electronics & Gadgets,Bogor,Jawa Barat,2024-05-30,free,True,True,3.86,4,56.9,18.9,2026-07-21
+SEL-000315,Ani Mahendra,individual,Property,Yogyakarta,DI Yogyakarta,2024-02-21,free,True,True,4.07,5,51.6,14.6,2026-07-30
+SEL-000316,Drs. Gamblang Januar,individual,Jobs,Solo,Jawa Tengah,2022-05-28,free,False,False,4.99,3,80.3,11.7,2026-07-05
+SEL-000317,"Dr. Cinthia Novitasari, M.M.",individual,Electronics & Gadgets,Medan,Sumatera Utara,2022-01-10,free,True,True,3.57,14,60.7,12.5,2026-08-26
+SEL-000318,CV Wasita,small_business,Property,Sidoarjo,Jawa Timur,2021-01-22,premium,True,True,5.0,8,55.6,1.3,2026-08-27
+SEL-000319,"Hj. Eva Hutagalung, M.Kom.",individual,Fashion & Beauty,Kediri,Jawa Timur,2025-10-03,free,True,True,3.77,2,86.8,0.4,2026-06-28
+SEL-000320,UD Oktaviani Tbk,dealer,Home & Furniture,Tangerang Selatan,Banten,2024-11-17,premium,True,True,4.0,6,52.2,0.3,2026-08-13
+SEL-000321,UD Wulandari,dealer,Electronics & Gadgets,Balikpapan,Kalimantan Timur,2020-06-23,premium,True,True,3.62,9,66.3,1.5,2026-08-30
+SEL-000322,"Drs. Kezia Simanjuntak, M.Kom.",individual,Fashion & Beauty,Malang,Jawa Timur,2023-12-07,free,True,True,4.68,1,56.5,1.8,2026-08-17
+SEL-000323,"Drs. Ani Safitri, S.Pt",individual,Electronics & Gadgets,Magelang,Jawa Tengah,2020-09-18,free,False,False,3.91,9,66.3,12.6,2026-06-30
+SEL-000324,Laswi Suwarno,individual,Electronics & Gadgets,Serang,Banten,2026-03-11,free,False,True,3.83,3,67.4,5.3,2026-07-17
+SEL-000325,PT Fujiati Januar,small_business,Home & Furniture,Binjai,Sumatera Utara,2019-10-31,free,True,True,3.94,7,33.9,0.8,2026-06-15
+SEL-000326,PD Marbun,small_business,Hobbies & Sports,Jakarta Pusat,DKI Jakarta,2019-12-06,premium,True,True,4.37,12,80.2,13.6,2026-07-22
+SEL-000327,PT Gunawan Tbk,small_business,Fashion & Beauty,Solo,Jawa Tengah,2024-06-14,basic,True,True,4.21,3,76.2,7.8,2026-06-20
+SEL-000328,"Dt. Emil Tamba, S.I.Kom",individual,Vehicles,Kediri,Jawa Timur,2024-03-21,free,False,False,4.04,3,57.0,7.5,2026-08-02
+SEL-000329,Dalima Prasasta,individual,Fashion & Beauty,Samarinda,Kalimantan Timur,2024-10-19,free,True,True,3.88,8,58.2,2.8,2026-06-29
+SEL-000330,dr. Karya Zulaika,individual,Property,Malang,Jawa Timur,2024-07-09,free,True,True,4.93,1,96.0,4.8,2026-06-13
+SEL-000331,CV Natsir Hutapea,small_business,Fashion & Beauty,Malang,Jawa Timur,2020-04-27,premium,True,True,4.54,6,66.0,0.2,2026-06-05
+SEL-000332,drg. Raina Zulaika,individual,Vehicles,Makassar,Sulawesi Selatan,2019-11-12,free,True,True,3.65,2,69.6,0.5,2026-08-30
+SEL-000333,PD Padmasari Megantara,small_business,Vehicles,Sidoarjo,Jawa Timur,2025-04-07,basic,False,True,3.97,7,21.1,2.7,2026-06-29
+SEL-000334,PD Uyainah Rajasa,dealer,Electronics & Gadgets,Jakarta Timur,DKI Jakarta,2019-01-31,premium,True,True,4.24,5,91.4,5.0,2026-07-25
+SEL-000335,Hamima Widiastuti,individual,Home & Furniture,Jakarta Timur,DKI Jakarta,2018-04-29,free,True,True,4.4,8,70.0,1.2,2026-06-13
+SEL-000336,Uda Hastuti,individual,Fashion & Beauty,Jakarta Timur,DKI Jakarta,2021-10-11,free,True,True,4.19,2,61.4,16.9,2026-06-22
+SEL-000337,Shania Palastri,individual,Home & Furniture,Jakarta Selatan,DKI Jakarta,2023-11-29,free,False,False,4.22,2,56.9,2.8,2026-06-11
+SEL-000338,PT Handayani Situmorang,small_business,Jobs,Kediri,Jawa Timur,2026-01-16,basic,True,True,4.99,12,93.0,2.7,2026-08-24
+SEL-000339,Tgk. Suci Anggraini,individual,Fashion & Beauty,Binjai,Sumatera Utara,2019-08-02,free,False,False,4.37,4,69.1,3.5,2026-07-26
+SEL-000340,PD Sihombing (Persero) Tbk,dealer,Vehicles,Binjai,Sumatera Utara,2021-08-21,free,True,True,3.94,8,86.2,4.2,2026-08-26
+SEL-000341,Zulaikha Laksmiwati,individual,Electronics & Gadgets,Jakarta Timur,DKI Jakarta,2019-07-04,free,True,True,4.07,3,55.2,23.7,2026-07-22
+SEL-000342,CV Wibowo,enterprise,Jobs,Solo,Jawa Tengah,2021-07-28,premium,True,True,3.33,7,55.9,2.5,2026-08-05
+SEL-000343,Perum Sihombing Tbk,small_business,Property,Jakarta Utara,DKI Jakarta,2025-08-27,basic,True,True,4.26,17,74.8,2.0,2026-06-03
+SEL-000344,Radit Wahyuni,individual,Jobs,Makassar,Sulawesi Selatan,2020-05-05,free,False,True,4.8,5,71.1,10.3,2026-06-22
+SEL-000345,UD Anggriawan Pratiwi (Persero),small_business,Electronics & Gadgets,Jakarta Selatan,DKI Jakarta,2019-01-12,basic,True,True,4.77,26,76.8,2.1,2026-07-03
+SEL-000346,UD Pradana Sudiati Tbk,small_business,Vehicles,Tangerang Selatan,Banten,2023-07-08,basic,True,True,5.0,15,80.3,4.0,2026-07-29
+SEL-000347,CV Safitri Ramadan,dealer,Vehicles,Bekasi,Jawa Barat,2021-04-27,basic,True,True,4.19,12,43.7,4.3,2026-07-05
+SEL-000348,"Perkasa Wahyuni, S.E.I",individual,Home & Furniture,Tangerang Selatan,Banten,2020-09-26,free,True,True,4.18,4,61.4,2.3,2026-08-18
+SEL-000349,"Bakti Utami, S.Gz",individual,Home & Furniture,Kediri,Jawa Timur,2022-08-04,free,False,True,4.2,2,60.9,10.3,2026-07-25
+SEL-000350,Winda Farida,individual,Vehicles,Medan,Sumatera Utara,2018-01-04,free,True,True,4.51,2,58.1,2.0,2026-06-27
+SEL-000351,Labuh Utama,individual,Property,Cimahi,Jawa Barat,2020-07-22,free,False,True,4.77,3,80.4,2.7,2026-06-12
+SEL-000352,"Diah Iswahyudi, S.Pd",individual,Hobbies & Sports,Badung,Bali,2023-12-26,free,True,True,4.01,8,74.8,10.0,2026-06-28
+SEL-000353,Ulva Agustina,individual,Electronics & Gadgets,Malang,Jawa Timur,2021-10-04,free,False,True,4.17,1,66.2,10.0,2026-06-30
+SEL-000354,Daliono Mustofa,individual,Services,Medan,Sumatera Utara,2018-02-04,free,True,True,5.0,3,70.7,1.6,2026-08-03
+SEL-000355,"Dr. Taufik Utama, M.TI.",individual,Baby & Kids,Yogyakarta,DI Yogyakarta,2022-06-15,free,True,True,4.29,11,64.0,1.2,2026-07-09
+SEL-000356,T. Radika Marbun,individual,Property,Batam,Kepulauan Riau,2022-04-29,basic,True,True,4.34,2,87.9,6.5,2026-08-31
+SEL-000357,PD Sihombing Tbk,small_business,Property,Bekasi,Jawa Barat,2022-08-12,premium,True,True,3.96,17,52.3,1.0,2026-06-22
+SEL-000358,PD Hutagalung,small_business,Fashion & Beauty,Bogor,Jawa Barat,2024-01-10,basic,True,True,4.67,2,82.9,10.3,2026-06-26
+SEL-000359,Perkasa Prasetyo,individual,Home & Furniture,Bogor,Jawa Barat,2025-02-09,free,False,False,3.71,4,61.3,1.1,2026-08-06
+SEL-000360,"Hj. Tari Wulandari, S.Sos",individual,Property,Bekasi,Jawa Barat,2018-01-11,free,True,True,4.42,5,66.6,6.0,2026-06-13
+SEL-000361,PT Widodo (Persero) Tbk,dealer,Vehicles,Magelang,Jawa Tengah,2018-03-11,basic,True,True,4.61,2,84.0,0.4,2026-06-25
+SEL-000362,Paulin Maheswara,individual,Services,Batam,Kepulauan Riau,2023-06-26,free,True,False,3.94,3,70.7,5.1,2026-08-03
+SEL-000363,Kartika Wulandari,individual,Electronics & Gadgets,Batam,Kepulauan Riau,2020-05-10,premium,True,True,3.71,2,53.8,18.4,2026-07-26
+SEL-000364,"Samiah Saptono, M.Farm",individual,Fashion & Beauty,Solo,Jawa Tengah,2020-12-22,premium,True,True,5.0,6,81.6,10.0,2026-08-02
+SEL-000365,UD Kurniawan Wulandari (Persero),small_business,Property,Serang,Banten,2020-04-21,basic,False,True,3.94,15,51.3,11.8,2026-08-07
+SEL-000366,Aisyah Safitri,individual,Electronics & Gadgets,Yogyakarta,DI Yogyakarta,2022-09-02,free,False,False,4.14,3,73.6,2.6,2026-08-03
+SEL-000367,Perum Prasetya (Persero) Tbk,small_business,Jobs,Balikpapan,Kalimantan Timur,2024-03-26,basic,True,True,4.34,8,81.4,0.2,2026-07-11
+SEL-000368,UD Yulianti Wasita (Persero) Tbk,small_business,Baby & Kids,Jakarta Barat,DKI Jakarta,2024-01-10,premium,True,True,3.42,5,59.0,7.2,2026-08-15
+SEL-000369,Arsipatra Firgantoro,individual,Vehicles,Magelang,Jawa Tengah,2019-06-22,free,True,True,4.65,3,66.9,16.1,2026-08-28
+SEL-000370,PD Latupono (Persero) Tbk,dealer,Property,Yogyakarta,DI Yogyakarta,2021-08-13,basic,False,False,4.61,7,91.2,23.6,2026-06-15
+SEL-000371,Perum Mansur Wibisono,small_business,Home & Furniture,Bandung,Jawa Barat,2024-05-28,premium,True,True,4.9,7,77.9,2.1,2026-06-25
+SEL-000372,Kartika Winarsih,individual,Vehicles,Kediri,Jawa Timur,2023-06-15,free,False,False,3.97,5,45.8,19.6,2026-07-19
+SEL-000373,"Tami Namaga, S.Farm",individual,Fashion & Beauty,Batam,Kepulauan Riau,2024-06-28,free,True,True,3.3,4,84.3,31.8,2026-07-02
+SEL-000374,R. Lidya Yolanda,individual,Services,Batam,Kepulauan Riau,2021-09-21,free,True,True,4.37,10,76.6,5.9,2026-08-03
+SEL-000375,Rafi Lestari,individual,Property,Badung,Bali,2019-11-07,free,False,False,4.44,10,89.6,11.3,2026-08-26
+SEL-000376,drg. Indah Firmansyah,individual,Jobs,Palembang,Sumatera Selatan,2021-05-19,free,True,True,4.48,3,100.0,5.6,2026-07-11
+SEL-000377,CV Handayani Tbk,dealer,Electronics & Gadgets,Bekasi,Jawa Barat,2024-11-20,basic,True,True,4.88,8,69.7,5.6,2026-06-19
+SEL-000378,Sabar Tarihoran,individual,Services,Bogor,Jawa Barat,2018-01-27,free,True,True,4.5,4,86.4,6.1,2026-08-12
+SEL-000379,Mahfud Uwais,individual,Fashion & Beauty,Semarang,Jawa Tengah,2025-08-31,free,False,False,4.27,1,68.7,6.3,2026-07-20
+SEL-000380,PT Widodo Tbk,small_business,Property,Semarang,Jawa Tengah,2025-06-06,basic,True,True,4.21,12,70.5,13.3,2026-06-27
+SEL-000381,Banawi Hasanah,individual,Fashion & Beauty,Malang,Jawa Timur,2026-02-23,free,False,True,4.62,7,68.1,0.5,2026-07-18
+SEL-000382,CV Yuniar,dealer,Fashion & Beauty,Tangerang Selatan,Banten,2021-05-29,premium,True,True,4.54,15,69.2,4.7,2026-08-21
+SEL-000383,PT Sitorus,small_business,Fashion & Beauty,Kediri,Jawa Timur,2019-07-06,free,True,True,4.71,11,59.5,14.1,2026-08-02
+SEL-000384,Budi Pratiwi,individual,Baby & Kids,Medan,Sumatera Utara,2025-12-08,free,False,False,5.0,4,97.4,3.1,2026-08-13
+SEL-000385,Bagiya Puspasari,individual,Vehicles,Bekasi,Jawa Barat,2025-09-24,free,True,True,4.82,2,74.2,2.8,2026-08-12
+SEL-000386,Perum Pratama Pradipta,enterprise,Electronics & Gadgets,Cimahi,Jawa Barat,2021-05-28,premium,True,True,4.38,4,61.1,10.4,2026-08-09
+SEL-000387,CV Riyanti (Persero) Tbk,small_business,Property,Jakarta Utara,DKI Jakarta,2019-07-29,premium,True,True,3.5,6,61.5,1.3,2026-08-06
+SEL-000388,CV Mustofa Tbk,enterprise,Services,Jakarta Barat,DKI Jakarta,2026-06-22,basic,True,True,4.73,3,68.2,1.6,2026-06-29
+SEL-000389,"R.M. Balapati Wijayanti, S.Ked",individual,Electronics & Gadgets,Yogyakarta,DI Yogyakarta,2018-12-03,free,False,False,4.36,6,62.6,11.1,2026-08-06
+SEL-000390,PT Tamba Prakasa,dealer,Home & Furniture,Surabaya,Jawa Timur,2023-11-23,premium,True,True,3.92,10,58.8,4.4,2026-08-11
+SEL-000391,dr. Anita Natsir,individual,Property,Depok,Jawa Barat,2019-01-15,free,False,False,5.0,7,99.4,4.2,2026-08-12
+SEL-000392,Anastasia Mahendra,individual,Services,Medan,Sumatera Utara,2023-11-14,free,False,True,,0,78.7,0.5,2026-08-13
+SEL-000393,"Lili Novitasari, S.IP",individual,Baby & Kids,Magelang,Jawa Tengah,2020-04-05,free,False,False,4.08,4,48.2,7.8,2026-08-06
+SEL-000394,PD Hassanah,small_business,Electronics & Gadgets,Jakarta Barat,DKI Jakarta,2025-09-10,free,True,True,3.93,18,42.1,4.9,2026-08-01
+SEL-000395,"Tgk. Kambali Rahayu, S.IP",individual,Jobs,Cimahi,Jawa Barat,2022-03-17,free,True,False,3.57,3,60.0,11.7,2026-07-15
+SEL-000396,Olivia Prasetya,individual,Fashion & Beauty,Jakarta Utara,DKI Jakarta,2019-02-19,basic,False,True,4.02,2,60.1,4.6,2026-07-03
+SEL-000397,Perum Sihombing,small_business,Vehicles,Tangerang,Banten,2021-02-27,free,True,False,4.07,7,42.1,8.8,2026-08-06
+SEL-000398,Syahrini Dabukke,individual,Jobs,Bekasi,Jawa Barat,2019-01-12,free,True,True,4.43,10,73.7,4.0,2026-06-23
+SEL-000399,Jatmiko Wacana,individual,Property,Jakarta Barat,DKI Jakarta,2023-06-14,free,False,False,4.12,2,66.8,3.4,2026-09-01
+SEL-000400,Silvia Kurniawan,individual,Property,Jakarta Selatan,DKI Jakarta,2021-03-05,free,True,True,4.39,3,72.3,2.7,2026-07-03
+SEL-000401,Tania Handayani,individual,Electronics & Gadgets,Magelang,Jawa Tengah,2020-06-22,free,False,True,4.72,4,59.2,8.2,2026-07-11
+SEL-000402,PT Sinaga,dealer,Fashion & Beauty,Jakarta Timur,DKI Jakarta,2025-06-12,premium,True,True,5.0,8,62.6,3.0,2026-08-03
+SEL-000403,PT Mahendra Saefullah,small_business,Electronics & Gadgets,Yogyakarta,DI Yogyakarta,2018-12-01,basic,True,True,3.45,4,52.4,8.0,2026-06-29
+SEL-000404,Hj. Restu Pudjiastuti,individual,Vehicles,Jakarta Barat,DKI Jakarta,2020-01-09,free,False,False,4.27,3,97.6,5.1,2026-08-30
+SEL-000405,PD Riyanti Tbk,enterprise,Vehicles,Tangerang Selatan,Banten,2019-03-13,premium,True,True,4.37,8,90.2,16.9,2026-08-23
+SEL-000406,Perum Suartini Astuti (Persero),dealer,Fashion & Beauty,Kediri,Jawa Timur,2020-11-20,basic,True,True,4.53,17,81.2,4.2,2026-07-19
+SEL-000407,"H. Balijan Yolanda, M.Pd",individual,Home & Furniture,Sidoarjo,Jawa Timur,2019-01-03,free,False,False,3.72,1,78.6,6.2,2026-08-31
+SEL-000408,PD Hartati Pradana,small_business,Jobs,Jakarta Utara,DKI Jakarta,2026-05-07,basic,True,True,3.94,7,59.0,2.5,2026-06-14
+SEL-000409,Jessica Hasanah,individual,Vehicles,Palembang,Sumatera Selatan,2020-09-08,free,False,False,5.0,5,77.8,0.9,2026-09-01
+SEL-000410,PD Kuswoyo Sihotang Tbk,enterprise,Jobs,Badung,Bali,2021-12-21,premium,True,True,3.91,7,68.6,6.4,2026-06-16
+SEL-000411,UD Wahyudin (Persero) Tbk,small_business,Property,Jakarta Pusat,DKI Jakarta,2020-12-25,free,True,True,4.11,14,61.9,10.5,2026-06-08
+SEL-000412,PT Iswahyudi Hutasoit (Persero),small_business,Hobbies & Sports,Jakarta Timur,DKI Jakarta,2026-03-27,basic,True,True,4.81,2,65.2,1.7,2026-08-16
+SEL-000413,Cinta Wahyudin,individual,Electronics & Gadgets,Denpasar,Bali,2021-09-19,free,False,True,4.17,19,89.2,0.4,2026-07-03
+SEL-000414,Perum Halim Rahmawati,dealer,Electronics & Gadgets,Semarang,Jawa Tengah,2020-02-06,premium,True,True,4.48,5,55.9,1.4,2026-08-18
+SEL-000415,Dr. Gambira Winarsih,individual,Baby & Kids,Jakarta Timur,DKI Jakarta,2020-10-29,free,False,True,4.08,6,73.2,3.6,2026-06-21
+SEL-000416,Hendra Thamrin,individual,Property,Jakarta Selatan,DKI Jakarta,2023-02-16,free,True,True,3.75,2,62.1,25.1,2026-07-20
+SEL-000417,"Hj. Umi Anggraini, S.Gz",individual,Hobbies & Sports,Serang,Banten,2020-05-16,free,False,False,3.9,3,79.8,16.0,2026-08-07
+SEL-000418,Perum Saragih Tbk,small_business,Jobs,Medan,Sumatera Utara,2026-02-18,basic,True,True,4.06,32,42.5,23.9,2026-07-27
+SEL-000419,Koko Mayasari,individual,Vehicles,Semarang,Jawa Tengah,2022-03-17,free,True,True,3.97,3,56.4,5.7,2026-08-07
+SEL-000420,CV Wahyuni Laksmiwati,dealer,Fashion & Beauty,Makassar,Sulawesi Selatan,2020-12-06,premium,True,True,4.47,11,77.6,0.2,2026-08-18
+SEL-000421,PT Tampubolon Puspita,small_business,Hobbies & Sports,Kediri,Jawa Timur,2019-04-25,basic,True,True,4.62,4,93.2,5.3,2026-08-19
+SEL-000422,Calista Setiawan,individual,Vehicles,Bekasi,Jawa Barat,2022-01-18,free,True,True,,0,79.9,1.2,2026-08-31
+SEL-000423,R.A. Yani Aryani,individual,Fashion & Beauty,Malang,Jawa Timur,2026-07-26,free,True,True,4.29,4,67.1,4.8,2026-08-14
+SEL-000424,"Drs. Vivi Oktaviani, M.Ak",individual,Vehicles,Depok,Jawa Barat,2019-10-20,free,True,True,4.2,5,68.5,12.7,2026-06-08
+SEL-000425,"Margana Puspita, S.Ked",individual,Vehicles,Depok,Jawa Barat,2022-12-13,free,True,True,4.06,1,50.9,8.8,2026-06-17
+SEL-000426,PT Najmudin Tbk,small_business,Fashion & Beauty,Jakarta Timur,DKI Jakarta,2019-11-27,premium,True,True,4.03,11,76.3,13.0,2026-08-17
+SEL-000427,"Vanesa Saragih, S.Psi",individual,Jobs,Bandung,Jawa Barat,2026-05-07,free,True,True,4.66,3,71.7,9.3,2026-08-31
+SEL-000428,PT Najmudin (Persero) Tbk,small_business,Vehicles,Binjai,Sumatera Utara,2024-10-07,basic,True,True,4.25,6,65.9,3.2,2026-06-12
+SEL-000429,Hj. Lalita Hidayat,individual,Electronics & Gadgets,Jakarta Pusat,DKI Jakarta,2024-10-03,free,False,False,4.43,6,72.5,8.3,2026-07-18
+SEL-000430,PT Iswahyudi Nuraini,small_business,Electronics & Gadgets,Surabaya,Jawa Timur,2019-08-29,basic,True,True,4.2,11,90.9,9.2,2026-07-28
+SEL-000431,PD Andriani Hasanah,dealer,Services,Tangerang Selatan,Banten,2019-04-02,premium,True,True,4.08,6,90.7,3.3,2026-08-17
+SEL-000432,CV Uwais Tbk,small_business,Electronics & Gadgets,Tangerang Selatan,Banten,2026-02-17,premium,False,False,4.08,14,61.0,16.1,2026-07-14
+SEL-000433,Perum Riyanti (Persero) Tbk,small_business,Home & Furniture,Palembang,Sumatera Selatan,2025-09-19,premium,True,True,4.45,5,35.7,0.3,2026-07-21
+SEL-000434,CV Manullang,small_business,Vehicles,Palembang,Sumatera Selatan,2023-05-07,premium,True,True,4.42,2,59.4,27.3,2026-07-04
+SEL-000435,"Drs. Asirwanda Wulandari, S.Pt",individual,Hobbies & Sports,Medan,Sumatera Utara,2019-07-22,free,False,True,4.74,4,86.5,4.4,2026-06-03
+SEL-000436,Maimunah Wijayanti,individual,Vehicles,Jakarta Pusat,DKI Jakarta,2024-03-23,free,False,False,4.41,3,56.3,0.2,2026-07-29
+SEL-000437,Nova Sudiati,individual,Electronics & Gadgets,Sidoarjo,Jawa Timur,2019-11-30,free,True,True,4.22,5,51.7,20.2,2026-06-16
+SEL-000438,Lidya Saputra,individual,Home & Furniture,Tangerang,Banten,2026-07-18,free,True,True,4.04,7,90.8,3.9,2026-08-15
+SEL-000439,Perum Latupono Situmorang,small_business,Services,Cimahi,Jawa Barat,2026-01-05,basic,True,True,4.34,18,62.5,1.2,2026-08-26
+SEL-000440,Carla Suryono,individual,Vehicles,Jakarta Barat,DKI Jakarta,2018-05-21,free,False,True,4.23,8,72.0,2.1,2026-06-14
+SEL-000441,Perum Widiastuti Samosir,dealer,Baby & Kids,Bekasi,Jawa Barat,2021-02-27,basic,True,True,4.29,40,95.8,0.9,2026-08-27
+SEL-000442,Harto Rahimah,individual,Fashion & Beauty,Surabaya,Jawa Timur,2022-08-31,free,True,True,4.39,5,67.3,6.2,2026-08-04
+SEL-000443,PT Putra,small_business,Fashion & Beauty,Surabaya,Jawa Timur,2019-04-27,basic,True,True,3.99,14,41.6,25.8,2026-08-23
+SEL-000444,Gabriella Mandala,individual,Electronics & Gadgets,Jakarta Pusat,DKI Jakarta,2018-01-01,basic,False,False,3.78,7,72.1,7.9,2026-07-28
+SEL-000445,"T. Elvin Simbolon, S.IP",individual,Jobs,Yogyakarta,DI Yogyakarta,2020-06-14,free,False,False,4.95,3,76.9,8.3,2026-07-27
+SEL-000446,PD Astuti,small_business,Electronics & Gadgets,Samarinda,Kalimantan Timur,2025-05-05,free,False,False,4.11,4,61.6,1.7,2026-06-21
+SEL-000447,CV Wibowo Nasyidah,enterprise,Jobs,Jakarta Barat,DKI Jakarta,2024-03-08,premium,True,True,3.89,6,68.3,15.8,2026-06-23
+SEL-000448,"Ghaliyati Mardhiyah, M.Pd",individual,Hobbies & Sports,Samarinda,Kalimantan Timur,2020-03-16,free,True,True,3.15,3,52.3,13.6,2026-06-10
+SEL-000449,"Hj. Yani Thamrin, S.Pt",individual,Services,Jakarta Timur,DKI Jakarta,2020-02-24,basic,True,True,4.22,7,67.1,1.9,2026-06-07
+SEL-000450,Zelda Gunarto,individual,Hobbies & Sports,Balikpapan,Kalimantan Timur,2020-09-25,free,True,True,4.55,6,54.4,10.1,2026-08-11
+SEL-000451,Anita Haryanti,individual,Electronics & Gadgets,Makassar,Sulawesi Selatan,2022-10-16,basic,True,True,4.14,5,84.5,5.4,2026-08-30
+SEL-000452,UD Permata,dealer,Electronics & Gadgets,Jakarta Pusat,DKI Jakarta,2020-05-05,basic,True,True,4.54,7,75.6,1.5,2026-09-01
+SEL-000453,Perum Waskita Uyainah Tbk,small_business,Fashion & Beauty,Medan,Sumatera Utara,2025-06-07,free,True,True,4.36,14,58.7,5.1,2026-06-13
+SEL-000454,Calista Waskita,individual,Home & Furniture,Batam,Kepulauan Riau,2021-04-12,free,True,True,4.29,7,79.4,1.8,2026-08-04
+SEL-000455,Gamani Narpati,individual,Electronics & Gadgets,Badung,Bali,2022-11-29,basic,True,True,3.98,6,58.9,0.2,2026-07-31
+SEL-000456,"Drs. Jagaraga Tarihoran, S.Pt",individual,Fashion & Beauty,Batam,Kepulauan Riau,2025-12-15,free,True,True,4.76,5,60.9,12.1,2026-06-18
+SEL-000457,PT Prasasta Fujiati Tbk,enterprise,Fashion & Beauty,Semarang,Jawa Tengah,2023-06-03,premium,True,True,4.37,2,64.4,7.2,2026-07-24
+SEL-000458,R. Harto Saragih,individual,Jobs,Jakarta Pusat,DKI Jakarta,2020-12-11,basic,True,True,4.0,3,46.3,6.0,2026-07-30
+SEL-000459,CV Sitorus (Persero) Tbk,small_business,Home & Furniture,Yogyakarta,DI Yogyakarta,2020-11-29,basic,True,True,4.3,24,89.3,2.1,2026-07-19
+SEL-000460,Kajen Usada,individual,Property,Tangerang Selatan,Banten,2023-11-12,basic,False,False,4.82,6,93.6,6.1,2026-08-19
+SEL-000461,Karta Melani,individual,Property,Tangerang,Banten,2023-12-07,free,True,True,4.62,3,70.4,2.3,2026-08-11
+SEL-000462,Utama Tampubolon,individual,Home & Furniture,Malang,Jawa Timur,2026-02-07,free,False,True,4.23,5,69.2,4.6,2026-07-17
+SEL-000463,CV Prakasa (Persero) Tbk,dealer,Vehicles,Magelang,Jawa Tengah,2021-07-12,basic,True,True,4.18,14,100.0,2.4,2026-06-21
+SEL-000464,Edi Napitupulu,individual,Electronics & Gadgets,Jakarta Timur,DKI Jakarta,2023-10-17,free,True,True,,0,62.4,0.6,2026-07-18
+SEL-000465,Luhung Mangunsong,individual,Fashion & Beauty,Medan,Sumatera Utara,2023-08-14,free,False,True,4.03,10,87.1,2.2,2026-06-27
+SEL-000466,CV Utami,small_business,Baby & Kids,Jakarta Utara,DKI Jakarta,2021-09-05,free,False,False,4.01,23,51.7,38.0,2026-08-10
+SEL-000467,Malika Pratiwi,individual,Vehicles,Medan,Sumatera Utara,2021-10-27,free,True,True,3.77,3,56.5,14.6,2026-06-04
+SEL-000468,Perum Yuniar Usada Tbk,dealer,Electronics & Gadgets,Yogyakarta,DI Yogyakarta,2021-01-13,premium,True,True,4.17,7,64.8,8.3,2026-07-20
+SEL-000469,"Hj. Iriana Maryadi, M.M.",individual,Fashion & Beauty,Kediri,Jawa Timur,2026-02-24,basic,False,True,4.65,1,72.5,2.9,2026-06-08
+SEL-000470,Jarwadi Handayani,individual,Vehicles,Kediri,Jawa Timur,2019-01-26,free,True,True,4.09,3,87.9,2.3,2026-08-30
+SEL-000471,"Gadang Saefullah, M.Farm",individual,Hobbies & Sports,Depok,Jawa Barat,2020-05-23,free,False,False,3.9,2,70.7,9.7,2026-06-27
+SEL-000472,Garan Mayasari,individual,Property,Makassar,Sulawesi Selatan,2018-12-31,free,False,True,4.08,8,66.5,2.4,2026-07-17
+SEL-000473,Galak Hariyah,individual,Property,Medan,Sumatera Utara,2023-05-13,free,False,False,4.3,2,70.1,11.3,2026-07-17
+SEL-000474,Ani Hakim,individual,Home & Furniture,Bekasi,Jawa Barat,2025-05-03,free,True,True,4.49,4,78.9,0.9,2026-07-13
+SEL-000475,Yance Suwarno,individual,Home & Furniture,Jakarta Selatan,DKI Jakarta,2024-03-03,free,False,True,4.71,8,52.0,5.2,2026-06-17
+SEL-000476,Mariadi Iswahyudi,individual,Fashion & Beauty,Jakarta Selatan,DKI Jakarta,2021-03-27,free,False,True,4.61,5,87.9,6.7,2026-08-07
+SEL-000477,Ir. Ophelia Winarno,individual,Fashion & Beauty,Kediri,Jawa Timur,2018-12-02,free,True,True,4.68,7,44.7,10.3,2026-06-25
+SEL-000478,Ratna Puspasari,individual,Fashion & Beauty,Makassar,Sulawesi Selatan,2024-06-13,basic,True,True,4.32,6,78.3,0.5,2026-08-10
+SEL-000479,"H. Umar Gunarto, M.M.",individual,Fashion & Beauty,Binjai,Sumatera Utara,2024-10-27,free,True,False,4.75,8,76.9,9.0,2026-08-07
+SEL-000480,"Drs. Martana Nainggolan, S.Psi",individual,Electronics & Gadgets,Jakarta Timur,DKI Jakarta,2023-07-15,free,True,True,4.44,4,47.8,6.7,2026-07-24
+SEL-000481,Dr. Olivia Maryadi,individual,Baby & Kids,Yogyakarta,DI Yogyakarta,2021-05-23,basic,True,True,4.53,6,65.6,0.9,2026-06-23
+SEL-000482,Ihsan Jailani,individual,Services,Depok,Jawa Barat,2022-12-02,free,True,True,4.55,5,66.9,1.4,2026-08-25
+SEL-000483,"Tgk. Nasab Hutasoit, M.TI.",individual,Fashion & Beauty,Yogyakarta,DI Yogyakarta,2022-08-21,free,False,False,4.58,9,73.5,0.1,2026-08-15
+SEL-000484,"Cawuk Gunarto, S.H.",individual,Vehicles,Cimahi,Jawa Barat,2026-01-09,basic,False,True,4.23,3,79.9,1.6,2026-06-14
+SEL-000485,"Maida Farida, M.TI.",individual,Fashion & Beauty,Tangerang,Banten,2019-10-07,free,True,True,4.36,4,63.9,4.6,2026-07-23
+SEL-000486,Drs. Capa Utama,individual,Electronics & Gadgets,Samarinda,Kalimantan Timur,2025-01-26,free,True,True,4.7,2,79.0,2.2,2026-08-07
+SEL-000487,Intan Wibisono,individual,Vehicles,Bogor,Jawa Barat,2024-08-02,free,False,False,4.86,3,81.1,4.9,2026-06-03
+SEL-000488,Vicky Sirait,individual,Fashion & Beauty,Tangerang,Banten,2020-03-29,basic,False,True,4.03,3,68.9,13.7,2026-07-30
+SEL-000489,"Liman Habibi, S.Psi",individual,Services,Batam,Kepulauan Riau,2024-08-11,free,True,True,4.28,5,71.6,0.7,2026-08-18
+SEL-000490,Gambira Kuswoyo,individual,Property,Jakarta Timur,DKI Jakarta,2026-01-08,free,False,False,4.81,2,94.6,2.1,2026-06-22
+SEL-000491,UD Ramadan Wahyuni (Persero) Tbk,small_business,Baby & Kids,Jakarta Barat,DKI Jakarta,2020-04-11,free,True,True,4.38,6,82.3,6.7,2026-07-30
+SEL-000492,Cindy Padmasari,individual,Jobs,Tangerang Selatan,Banten,2021-05-28,free,False,True,4.95,3,60.7,2.2,2026-06-04
+SEL-000493,UD Saragih Yolanda,small_business,Fashion & Beauty,Bandung,Jawa Barat,2025-05-06,free,True,True,4.29,17,75.7,0.2,2026-07-26
+SEL-000494,"Salimah Wijaya, S.E.I",individual,Property,Jakarta Barat,DKI Jakarta,2022-05-11,free,False,True,4.29,4,74.3,1.8,2026-07-28
+SEL-000495,UD Purwanti,small_business,Fashion & Beauty,Sidoarjo,Jawa Timur,2021-06-01,basic,True,False,4.69,5,82.3,9.7,2026-07-25
+SEL-000496,Syahrini Sitompul,individual,Vehicles,Binjai,Sumatera Utara,2021-05-04,free,True,True,4.16,6,56.1,0.5,2026-07-02
+SEL-000497,"R. Salsabila Novitasari, S.Pt",individual,Hobbies & Sports,Bekasi,Jawa Barat,2023-02-17,free,True,True,4.6,2,100.0,6.1,2026-08-18
+SEL-000498,"Mumpuni Anggraini, M.TI.",individual,Electronics & Gadgets,Bogor,Jawa Barat,2021-08-22,free,False,True,4.29,7,100.0,6.4,2026-07-02
+SEL-000499,Anita Tarihoran,individual,Property,Yogyakarta,DI Yogyakarta,2020-03-28,free,False,True,3.7,1,55.7,1.8,2026-08-22
+SEL-000500,Elvina Prabowo,individual,Vehicles,Solo,Jawa Tengah,2020-07-31,free,True,True,4.3,1,100.0,6.2,2026-07-04
+SEL-000501,PD Nababan (Persero) Tbk,small_business,Fashion & Beauty,Yogyakarta,DI Yogyakarta,2018-04-27,premium,True,True,3.95,3,82.0,17.5,2026-07-28
+SEL-000502,CV Hutagalung Sihombing,dealer,Vehicles,Kediri,Jawa Timur,2021-01-02,premium,True,True,4.22,26,96.5,7.6,2026-07-10
+SEL-000503,Perum Namaga,dealer,Property,Makassar,Sulawesi Selatan,2021-09-02,premium,True,True,3.89,4,69.1,2.4,2026-08-31
+SEL-000504,"Drs. Ani Wijayanti, S.Psi",individual,Vehicles,Tangerang,Banten,2025-10-11,free,True,True,4.94,1,71.0,3.6,2026-07-10
+SEL-000505,"Drs. Cahyadi Riyanti, S.Sos",individual,Fashion & Beauty,Jakarta Selatan,DKI Jakarta,2026-02-19,free,True,True,4.59,1,88.6,5.1,2026-08-28
+SEL-000506,CV Najmudin Oktaviani,small_business,Vehicles,Badung,Bali,2023-02-04,free,True,True,4.73,7,81.1,9.6,2026-08-26
+SEL-000507,"R.M. Najam Farida, S.Gz",individual,Electronics & Gadgets,Malang,Jawa Timur,2021-07-25,basic,True,True,5.0,4,87.9,0.5,2026-06-06
+SEL-000508,UD Wastuti Prakasa Tbk,small_business,Fashion & Beauty,Jakarta Selatan,DKI Jakarta,2026-01-16,free,False,True,4.04,7,76.3,3.9,2026-07-05
+SEL-000509,Tgk. Umi Hassanah,individual,Electronics & Gadgets,Jakarta Timur,DKI Jakarta,2018-02-01,free,True,True,4.16,6,60.9,2.6,2026-07-28
+SEL-000510,Kasusra Permadi,individual,Fashion & Beauty,Tangerang Selatan,Banten,2025-07-20,free,True,True,4.47,1,51.8,6.2,2026-08-02
+SEL-000511,Yessi Halimah,individual,Home & Furniture,Jakarta Utara,DKI Jakarta,2018-12-13,free,True,True,4.15,1,56.1,1.7,2026-08-27
+SEL-000512,UD Wastuti Pertiwi,small_business,Vehicles,Bogor,Jawa Barat,2020-12-20,basic,True,True,4.12,16,64.8,1.9,2026-07-15
+SEL-000513,Malika Suryono,individual,Baby & Kids,Jakarta Timur,DKI Jakarta,2023-05-08,free,False,False,4.37,10,75.8,2.4,2026-07-03
+SEL-000514,"dr. Jefri Nuraini, S.Farm",individual,Fashion & Beauty,Surabaya,Jawa Timur,2021-11-11,free,False,False,4.58,3,59.6,7.0,2026-08-01
+SEL-000515,Rendy Pangestu,individual,Property,Kediri,Jawa Timur,2020-10-07,free,True,True,4.65,1,84.7,5.2,2026-07-11
+SEL-000516,"Drs. Cahyo Ramadan, S.Gz",individual,Property,Solo,Jawa Tengah,2019-03-16,free,True,True,4.86,3,31.5,8.3,2026-07-17
+SEL-000517,"Jaya Wahyudin, M.Pd",individual,Home & Furniture,Cimahi,Jawa Barat,2025-08-20,free,False,False,4.17,4,63.1,2.4,2026-08-01
+SEL-000518,Perum Maheswara,small_business,Fashion & Beauty,Jakarta Selatan,DKI Jakarta,2023-12-09,basic,False,False,3.94,6,64.7,6.5,2026-06-06
+SEL-000519,Chelsea Marpaung,individual,Vehicles,Tangerang Selatan,Banten,2024-08-22,free,False,True,4.79,6,100.0,5.9,2026-08-25
+SEL-000520,PD Mulyani (Persero) Tbk,small_business,Property,Bekasi,Jawa Barat,2025-11-15,premium,True,True,3.28,13,60.9,0.1,2026-06-30
+SEL-000521,PT Prasetya Hartati Tbk,dealer,Hobbies & Sports,Tangerang,Banten,2021-06-03,basic,True,False,4.15,7,53.2,1.7,2026-08-19
+SEL-000522,Heryanto Habibi,individual,Home & Furniture,Jakarta Barat,DKI Jakarta,2022-07-26,free,False,False,4.02,7,61.8,2.5,2026-06-16
+SEL-000523,Olivia Wahyudin,individual,Vehicles,Jakarta Selatan,DKI Jakarta,2026-07-08,free,False,True,4.4,4,83.4,2.3,2026-07-31
+SEL-000524,Harsana Hutapea,individual,Jobs,Bekasi,Jawa Barat,2021-09-20,free,False,False,5.0,5,100.0,7.9,2026-07-06
+SEL-000525,Genta Dabukke,individual,Jobs,Kediri,Jawa Timur,2023-02-16,free,True,True,4.87,3,65.3,15.3,2026-08-31
+SEL-000526,Cinthia Yulianti,individual,Property,Malang,Jawa Timur,2020-03-21,free,False,True,4.11,1,71.3,0.5,2026-06-28
+SEL-000527,CV Mandala (Persero) Tbk,enterprise,Home & Furniture,Palembang,Sumatera Selatan,2026-03-13,premium,True,True,4.37,14,100.0,1.6,2026-08-09
+SEL-000528,PD Mandala Tbk,enterprise,Property,Bandung,Jawa Barat,2021-03-09,premium,True,True,3.88,10,37.9,2.5,2026-08-13
+SEL-000529,Perum Ardianto Hutapea (Persero),small_business,Vehicles,Solo,Jawa Tengah,2023-10-10,free,True,True,5.0,7,96.2,1.3,2026-08-30
+SEL-000530,Gasti Maryadi,individual,Electronics & Gadgets,Semarang,Jawa Tengah,2025-09-01,free,False,False,4.53,3,100.0,5.3,2026-08-21
+SEL-000531,PT Suwarno Prakasa Tbk,small_business,Electronics & Gadgets,Jakarta Selatan,DKI Jakarta,2022-08-30,free,True,True,3.76,5,50.2,2.2,2026-08-14
+SEL-000532,PT Permadi,small_business,Hobbies & Sports,Semarang,Jawa Tengah,2024-02-09,premium,True,True,5.0,2,57.8,1.5,2026-08-31
+SEL-000533,Suci Oktaviani,individual,Property,Depok,Jawa Barat,2020-10-14,free,True,True,4.0,4,20.6,3.4,2026-07-08
+SEL-000534,Bella Kusumo,individual,Electronics & Gadgets,Malang,Jawa Timur,2018-07-13,basic,True,True,4.6,2,50.9,21.6,2026-08-02
+SEL-000535,"Dr. Rina Nasyiah, S.Ked",individual,Hobbies & Sports,Jakarta Utara,DKI Jakarta,2019-10-19,free,False,True,4.43,9,56.3,1.4,2026-09-01
+SEL-000536,"Kamidin Permata, S.H.",individual,Vehicles,Palembang,Sumatera Selatan,2023-12-31,free,True,True,5.0,7,97.7,3.5,2026-07-25
+SEL-000537,"Dinda Siregar, S.Farm",individual,Fashion & Beauty,Makassar,Sulawesi Selatan,2025-01-05,basic,True,True,,0,73.6,6.4,2026-07-20
+SEL-000538,Luwes Thamrin,individual,Property,Jakarta Utara,DKI Jakarta,2022-10-26,free,False,True,3.98,5,59.1,0.1,2026-06-23
+SEL-000539,Kenzie Agustina,individual,Property,Tangerang,Banten,2018-08-11,basic,True,True,4.43,6,94.6,3.5,2026-07-28
+SEL-000540,PT Novitasari Tarihoran,small_business,Vehicles,Medan,Sumatera Utara,2021-07-16,free,True,True,4.2,7,86.6,2.2,2026-07-26
+SEL-000541,Perum Palastri,enterprise,Property,Depok,Jawa Barat,2024-04-14,basic,True,True,4.52,13,64.3,1.9,2026-07-05
+SEL-000542,KH. Jono Puspasari,individual,Electronics & Gadgets,Palembang,Sumatera Selatan,2021-05-24,basic,False,False,4.17,8,69.9,4.3,2026-07-11
+SEL-000543,PD Halimah,small_business,Baby & Kids,Tangerang Selatan,Banten,2026-07-05,basic,True,True,3.86,9,71.7,5.1,2026-07-27
+SEL-000544,PD Wahyudin,enterprise,Vehicles,Samarinda,Kalimantan Timur,2019-06-27,basic,False,False,4.94,15,75.7,3.0,2026-08-21
+SEL-000545,Ulva Budiyanto,individual,Electronics & Gadgets,Batam,Kepulauan Riau,2022-10-31,free,True,True,4.27,6,52.2,4.9,2026-08-06
+SEL-000546,Winda Hidayat,individual,Electronics & Gadgets,Jakarta Utara,DKI Jakarta,2025-07-10,free,False,True,4.42,8,96.0,6.9,2026-08-12
+SEL-000547,Halima Wahyuni,individual,Vehicles,Malang,Jawa Timur,2019-03-05,free,True,True,4.86,7,81.4,16.3,2026-09-01
+SEL-000548,"Bala Prastuti, S.Psi",individual,Fashion & Beauty,Magelang,Jawa Tengah,2026-03-29,basic,True,True,4.7,7,33.2,13.4,2026-06-11
+SEL-000549,PT Thamrin Palastri,small_business,Home & Furniture,Jakarta Barat,DKI Jakarta,2020-01-23,basic,True,True,4.67,13,43.6,5.1,2026-06-24
+SEL-000550,Yulia Yuniar,individual,Property,Bandung,Jawa Barat,2018-05-29,free,False,False,4.44,1,75.9,7.1,2026-06-29
+SEL-000551,Radika Hariyah,individual,Services,Batam,Kepulauan Riau,2023-02-20,free,False,False,4.15,5,55.2,2.9,2026-07-09
+SEL-000552,"Natalia Usamah, S.E.",individual,Vehicles,Jakarta Barat,DKI Jakarta,2018-06-30,free,True,True,4.56,4,78.6,5.9,2026-06-10
+SEL-000553,"R.M. Atma Haryanti, S.Gz",individual,Jobs,Surabaya,Jawa Timur,2020-10-02,free,True,True,4.1,4,59.7,6.2,2026-07-02
+SEL-000554,CV Gunawan (Persero) Tbk,dealer,Baby & Kids,Yogyakarta,DI Yogyakarta,2023-07-03,basic,True,True,3.58,13,70.8,1.9,2026-07-04
+SEL-000555,Galih Saragih,individual,Vehicles,Depok,Jawa Barat,2026-02-09,free,False,False,5.0,4,100.0,3.5,2026-07-31
+SEL-000556,dr. Rahman Palastri,individual,Fashion & Beauty,Surabaya,Jawa Timur,2022-04-12,free,False,True,4.41,4,70.8,3.2,2026-07-14
+SEL-000557,Hafshah Firgantoro,individual,Electronics & Gadgets,Batam,Kepulauan Riau,2018-09-11,free,False,True,4.78,5,95.3,8.2,2026-07-30
+SEL-000558,"Ir. Dadap Suwarno, S.I.Kom",individual,Hobbies & Sports,Kediri,Jawa Timur,2021-12-12,basic,True,True,4.95,4,79.9,2.7,2026-08-08
+SEL-000559,"Cut Zelaya Yolanda, S.Psi",individual,Hobbies & Sports,Jakarta Timur,DKI Jakarta,2020-09-23,basic,True,False,4.04,7,74.1,2.9,2026-08-27
+SEL-000560,Dewi Uwais,individual,Property,Jakarta Barat,DKI Jakarta,2020-09-17,free,True,True,4.99,1,45.3,14.6,2026-07-28
+SEL-000561,Lalita Farida,individual,Fashion & Beauty,Makassar,Sulawesi Selatan,2020-05-24,free,True,True,4.85,10,69.1,3.1,2026-07-28
+SEL-000562,Jessica Nashiruddin,individual,Vehicles,Depok,Jawa Barat,2022-10-13,free,True,True,4.41,11,62.7,4.7,2026-08-25
+SEL-000563,PD Uwais Maryati Tbk,small_business,Vehicles,Kediri,Jawa Timur,2020-06-18,basic,True,True,5.0,13,89.7,1.6,2026-07-29
+SEL-000564,"R. Ozy Anggraini, S.Pt",individual,Vehicles,Jakarta Selatan,DKI Jakarta,2023-04-25,free,True,True,4.06,2,60.8,36.2,2026-08-23
+SEL-000565,Rahmi Najmudin,individual,Hobbies & Sports,Kediri,Jawa Timur,2020-04-19,free,False,True,4.37,4,79.8,8.8,2026-06-03
+SEL-000566,UD Jailani (Persero) Tbk,small_business,Baby & Kids,Samarinda,Kalimantan Timur,2026-01-04,basic,True,True,4.92,12,64.3,2.1,2026-08-30
+SEL-000567,UD Samosir Tbk,small_business,Home & Furniture,Surabaya,Jawa Timur,2024-08-09,basic,True,True,4.32,4,63.0,18.0,2026-07-21
+SEL-000568,drg. Eli Handayani,individual,Baby & Kids,Batam,Kepulauan Riau,2020-02-10,free,False,True,3.79,9,57.0,0.6,2026-08-22
+SEL-000569,Melinda Gunarto,individual,Home & Furniture,Cimahi,Jawa Barat,2021-06-03,free,False,False,4.13,7,49.2,20.0,2026-08-14
+SEL-000570,"Kamila Susanti, S.Farm",individual,Baby & Kids,Kediri,Jawa Timur,2021-09-24,free,False,True,4.65,5,59.8,3.2,2026-06-10
+SEL-000571,Suci Hakim,individual,Vehicles,Yogyakarta,DI Yogyakarta,2022-06-09,free,True,True,4.31,4,70.0,0.9,2026-06-15
+SEL-000572,PD Utama,small_business,Home & Furniture,Kediri,Jawa Timur,2024-07-29,premium,True,True,4.65,11,65.4,1.9,2026-07-02
+SEL-000573,KH. Pangestu Wastuti,individual,Property,Bogor,Jawa Barat,2020-07-24,free,False,False,4.26,8,90.0,1.1,2026-06-30
+SEL-000574,PT Megantara Sudiati,small_business,Hobbies & Sports,Yogyakarta,DI Yogyakarta,2019-04-24,basic,True,True,4.64,5,66.4,18.9,2026-06-08
+SEL-000575,PT Mahendra Hidayat (Persero) Tbk,dealer,Home & Furniture,Surabaya,Jawa Timur,2022-07-13,basic,True,False,5.0,1,78.5,9.1,2026-07-02
+SEL-000576,"Ir. Ghani Tarihoran, S.Sos",individual,Electronics & Gadgets,Semarang,Jawa Tengah,2021-10-18,free,True,True,4.25,13,96.6,4.0,2026-08-01
+SEL-000577,Perum Mangunsong,dealer,Vehicles,Batam,Kepulauan Riau,2020-12-03,basic,True,True,4.65,7,60.3,3.5,2026-07-02
+SEL-000578,"Ihsan Uwais, S.I.Kom",individual,Vehicles,Jakarta Utara,DKI Jakarta,2019-10-29,free,False,True,4.44,7,57.3,0.4,2026-08-17
+SEL-000579,PT Pertiwi Mandala Tbk,dealer,Fashion & Beauty,Depok,Jawa Barat,2025-05-23,basic,False,True,4.46,5,92.3,3.5,2026-06-10
+SEL-000580,Iriana Yulianti,individual,Services,Jakarta Barat,DKI Jakarta,2021-12-15,free,False,False,4.47,5,55.4,12.5,2026-06-30
+SEL-000581,Hilda Latupono,individual,Vehicles,Sidoarjo,Jawa Timur,2023-09-14,free,True,False,5.0,3,84.6,1.0,2026-08-17
+SEL-000582,Oman Nashiruddin,individual,Vehicles,Jakarta Selatan,DKI Jakarta,2023-08-29,free,False,True,5.0,13,92.4,2.3,2026-07-05
+SEL-000583,Padma Wibisono,individual,Property,Serang,Banten,2026-03-05,free,False,True,3.62,5,53.8,2.6,2026-06-15
+SEL-000584,R. Eluh Rajata,individual,Electronics & Gadgets,Jakarta Selatan,DKI Jakarta,2020-05-10,basic,False,False,4.4,4,51.9,2.7,2026-08-06
+SEL-000585,CV Suryatmi Suwarno Tbk,dealer,Home & Furniture,Tangerang,Banten,2021-11-19,basic,True,True,4.6,12,57.5,0.4,2026-07-14
+SEL-000586,Banawi Mansur,individual,Fashion & Beauty,Bandung,Jawa Barat,2025-01-20,free,False,True,,0,47.3,8.0,2026-07-29
+SEL-000587,"Puti Mila Natsir, M.M.",individual,Vehicles,Cimahi,Jawa Barat,2019-09-04,free,False,False,4.71,6,80.5,6.0,2026-06-11
+SEL-000588,Rusman Zulaika,individual,Property,Bandung,Jawa Barat,2023-02-03,free,True,True,3.63,2,93.4,14.6,2026-08-15
+SEL-000589,"dr. Salwa Situmorang, S.Pt",individual,Hobbies & Sports,Medan,Sumatera Utara,2023-03-23,free,True,True,4.3,2,73.2,12.6,2026-07-28
+SEL-000590,Dr. Elvin Salahudin,individual,Hobbies & Sports,Sidoarjo,Jawa Timur,2026-01-12,free,True,True,4.82,2,87.2,5.1,2026-07-17
+SEL-000591,CV Tarihoran Melani,dealer,Electronics & Gadgets,Cimahi,Jawa Barat,2026-02-17,basic,True,True,4.71,15,60.1,3.3,2026-09-01
+SEL-000592,Banawi Pangestu,individual,Home & Furniture,Yogyakarta,DI Yogyakarta,2024-02-16,free,True,True,4.07,5,75.6,1.4,2026-08-01
+SEL-000593,"R.M. Dasa Lailasari, S.Ked",individual,Electronics & Gadgets,Semarang,Jawa Tengah,2023-10-09,free,True,True,4.61,4,71.9,6.7,2026-06-25
+SEL-000594,Puspa Pertiwi,individual,Electronics & Gadgets,Jakarta Utara,DKI Jakarta,2020-02-24,free,False,True,4.1,6,73.6,1.3,2026-06-04
+SEL-000595,Nadia Puspasari,individual,Electronics & Gadgets,Badung,Bali,2024-08-21,free,False,False,4.4,13,74.1,17.6,2026-06-06
+SEL-000596,Luwar Irawan,individual,Fashion & Beauty,Cimahi,Jawa Barat,2026-07-07,free,False,True,4.9,3,76.6,12.8,2026-07-13
+SEL-000597,UD Widodo,small_business,Baby & Kids,Jakarta Pusat,DKI Jakarta,2021-09-27,free,True,True,4.92,18,80.1,3.7,2026-08-06
+SEL-000598,"Tantri Kuswandari, M.TI.",individual,Property,Surabaya,Jawa Timur,2025-06-11,free,False,True,4.84,15,63.2,1.1,2026-08-18
+SEL-000599,PD Permata Hidayanto (Persero) Tbk,enterprise,Fashion & Beauty,Jakarta Pusat,DKI Jakarta,2019-07-08,premium,True,True,4.52,8,87.4,1.6,2026-08-18
+SEL-000600,Syahrini Hidayanto,individual,Jobs,Bandung,Jawa Barat,2019-01-07,free,True,True,4.69,9,100.0,0.9,2026-06-19
+SEL-000601,Nadia Zulaika,individual,Services,Binjai,Sumatera Utara,2021-02-25,basic,True,True,4.21,5,91.6,3.7,2026-08-05
+SEL-000602,CV Puspasari (Persero) Tbk,small_business,Jobs,Jakarta Selatan,DKI Jakarta,2024-04-18,basic,True,True,4.58,19,79.4,8.8,2026-07-18
+SEL-000603,PD Mardhiyah Hakim,dealer,Hobbies & Sports,Palembang,Sumatera Selatan,2025-12-22,premium,True,True,4.7,1,59.9,4.5,2026-06-22
+SEL-000604,Perum Mangunsong,small_business,Home & Furniture,Balikpapan,Kalimantan Timur,2021-06-10,free,True,True,3.78,5,50.2,2.6,2026-06-24
+SEL-000605,CV Marpaung Tbk,enterprise,Property,Tangerang,Banten,2024-10-28,premium,True,True,3.57,8,92.7,3.2,2026-07-02
+SEL-000606,UD Maryati Suryono,small_business,Electronics & Gadgets,Medan,Sumatera Utara,2020-05-10,basic,True,True,4.58,9,80.7,13.4,2026-07-06
+SEL-000607,UD Napitupulu,dealer,Property,Binjai,Sumatera Utara,2023-07-15,premium,True,False,4.83,15,91.7,6.3,2026-07-27
+SEL-000608,"Yahya Puspasari, S.T.",individual,Vehicles,Batam,Kepulauan Riau,2020-05-18,free,True,False,,0,71.8,1.2,2026-06-20
+SEL-000609,UD Susanti Nasyidah,small_business,Vehicles,Depok,Jawa Barat,2024-06-12,basic,True,True,4.43,9,85.6,2.5,2026-08-15
+SEL-000610,Jefri Yuniar,individual,Vehicles,Jakarta Selatan,DKI Jakarta,2019-05-11,free,True,True,4.45,5,88.9,1.7,2026-08-31
+SEL-000611,Lega Prastuti,individual,Home & Furniture,Semarang,Jawa Tengah,2018-10-26,free,True,True,4.09,3,77.9,1.5,2026-07-24
+SEL-000612,CV Wahyuni Oktaviani,small_business,Baby & Kids,Semarang,Jawa Tengah,2022-09-24,free,False,False,4.34,8,88.0,5.6,2026-07-25
+SEL-000613,Perum Gunarto (Persero) Tbk,enterprise,Electronics & Gadgets,Jakarta Selatan,DKI Jakarta,2018-10-29,free,True,True,4.3,10,62.7,2.8,2026-07-21
+SEL-000614,PT Yuniar,enterprise,Property,Serang,Banten,2018-12-08,premium,True,True,4.15,3,39.0,1.4,2026-06-28
+SEL-000615,"Drs. Eman Yulianti, S.Kom",individual,Property,Jakarta Pusat,DKI Jakarta,2026-04-02,free,True,True,4.16,5,72.2,16.4,2026-06-18
+SEL-000616,Perum Uyainah Dabukke Tbk,small_business,Vehicles,Balikpapan,Kalimantan Timur,2026-06-21,free,True,True,3.92,16,87.0,0.4,2026-08-08
+SEL-000617,UD Laksmiwati (Persero) Tbk,small_business,Home & Furniture,Bekasi,Jawa Barat,2020-11-11,premium,True,True,4.4,13,57.2,0.6,2026-07-27
+SEL-000618,"KH. Mahdi Waskita, S.Pd",individual,Vehicles,Jakarta Pusat,DKI Jakarta,2019-03-16,free,True,True,4.0,2,45.7,1.3,2026-06-14
+SEL-000619,Belinda Halim,individual,Hobbies & Sports,Jakarta Selatan,DKI Jakarta,2018-11-12,free,False,True,3.98,7,61.9,15.6,2026-07-11
+SEL-000620,Irnanto Agustina,individual,Home & Furniture,Cimahi,Jawa Barat,2019-07-29,free,True,True,5.0,2,77.4,1.0,2026-06-12
+SEL-000621,PD Putra Siregar (Persero) Tbk,small_business,Home & Furniture,Bekasi,Jawa Barat,2023-06-13,basic,True,True,4.43,7,84.4,10.0,2026-07-24
+SEL-000622,Zelda Simanjuntak,individual,Fashion & Beauty,Jakarta Barat,DKI Jakarta,2023-04-26,free,False,True,4.86,8,55.9,20.2,2026-06-23
+SEL-000623,PD Mustofa Tbk,enterprise,Hobbies & Sports,Depok,Jawa Barat,2022-11-07,premium,True,True,3.46,6,52.7,3.3,2026-06-05
+SEL-000624,Dr. Balamantri Simanjuntak,individual,Vehicles,Jakarta Utara,DKI Jakarta,2022-09-29,free,False,False,3.78,4,62.2,11.2,2026-06-29
+SEL-000625,PD Maheswara Santoso,enterprise,Property,Cimahi,Jawa Barat,2021-08-22,premium,True,True,4.72,28,70.7,15.5,2026-06-21
+SEL-000626,Hilda Megantara,individual,Property,Malang,Jawa Timur,2023-02-11,free,True,True,3.98,5,40.3,0.1,2026-08-09
+SEL-000627,PT Siregar,small_business,Vehicles,Depok,Jawa Barat,2025-04-10,basic,True,True,4.17,9,84.8,5.1,2026-06-30
+SEL-000628,Zelaya Susanti,individual,Property,Bekasi,Jawa Barat,2019-11-05,free,False,False,4.64,2,75.2,5.2,2026-08-16
+SEL-000629,Hilda Manullang,individual,Property,Jakarta Pusat,DKI Jakarta,2026-02-17,free,False,True,3.71,1,70.9,16.0,2026-08-15
+SEL-000630,Perum Sihotang (Persero) Tbk,small_business,Hobbies & Sports,Jakarta Barat,DKI Jakarta,2024-06-28,free,True,False,3.32,12,50.4,10.7,2026-07-30
+SEL-000631,PD Mulyani Hastuti,dealer,Hobbies & Sports,Jakarta Utara,DKI Jakarta,2023-10-10,free,True,True,4.15,6,41.1,4.5,2026-07-30
+SEL-000632,UD Mandasari Damanik (Persero) Tbk,small_business,Fashion & Beauty,Binjai,Sumatera Utara,2023-09-04,basic,True,True,4.5,5,62.9,4.9,2026-08-10
+SEL-000633,Ophelia Haryanti,individual,Services,Batam,Kepulauan Riau,2023-08-04,free,True,True,4.03,8,34.4,1.9,2026-07-08
+SEL-000634,Darijan Padmasari,individual,Vehicles,Balikpapan,Kalimantan Timur,2022-03-19,premium,True,True,4.18,2,70.3,6.4,2026-08-01
+SEL-000635,Alika Hardiansyah,individual,Electronics & Gadgets,Sidoarjo,Jawa Timur,2022-09-05,free,False,False,4.47,8,92.2,2.9,2026-08-31
+SEL-000636,Nilam Riyanti,individual,Electronics & Gadgets,Solo,Jawa Tengah,2023-04-15,basic,False,True,4.1,7,89.7,4.3,2026-06-13
+SEL-000637,UD Nasyiah Anggriawan (Persero),small_business,Services,Bandung,Jawa Barat,2022-03-22,free,True,True,4.51,7,63.5,3.5,2026-08-27
+SEL-000638,CV Saptono Utama Tbk,small_business,Property,Palembang,Sumatera Selatan,2022-03-25,free,True,False,4.75,10,93.1,6.1,2026-08-28
+SEL-000639,PT Wacana (Persero) Tbk,small_business,Vehicles,Medan,Sumatera Utara,2025-12-31,premium,True,True,3.81,7,70.6,9.0,2026-08-10
+SEL-000640,UD Puspasari Suwarno,dealer,Baby & Kids,Yogyakarta,DI Yogyakarta,2025-03-20,premium,True,True,3.79,7,41.9,8.3,2026-08-02
+SEL-000641,PD Mayasari,small_business,Hobbies & Sports,Badung,Bali,2018-09-02,basic,True,True,4.4,7,78.8,1.1,2026-08-16
+SEL-000642,Perum Setiawan Oktaviani,small_business,Fashion & Beauty,Malang,Jawa Timur,2024-07-25,free,True,True,4.07,8,64.1,3.1,2026-06-10
+SEL-000643,Bakti Wijaya,individual,Electronics & Gadgets,Binjai,Sumatera Utara,2022-04-01,free,True,True,4.58,4,49.7,28.3,2026-07-21
+SEL-000644,Wulan Sirait,individual,Vehicles,Palembang,Sumatera Selatan,2021-05-14,free,False,False,4.31,5,74.6,3.6,2026-07-27
+SEL-000645,Tgk. Perkasa Megantara,individual,Home & Furniture,Cimahi,Jawa Barat,2022-07-18,free,True,True,4.38,13,56.7,23.8,2026-08-04
+SEL-000646,Perum Melani Wacana,dealer,Property,Balikpapan,Kalimantan Timur,2024-04-27,free,False,True,3.99,15,81.2,3.2,2026-07-20
+SEL-000647,Dt. Arsipatra Firgantoro,individual,Property,Jakarta Barat,DKI Jakarta,2025-02-15,free,True,True,3.93,1,69.9,19.8,2026-06-06
+SEL-000648,Nasab Sitorus,individual,Jobs,Batam,Kepulauan Riau,2025-05-25,free,True,True,4.3,3,89.1,7.3,2026-07-26
+SEL-000649,Perum Hasanah Maryadi (Persero),small_business,Property,Palembang,Sumatera Selatan,2022-01-25,free,True,True,4.27,19,73.5,0.6,2026-08-18
+SEL-000650,Rahmi Simanjuntak,individual,Fashion & Beauty,Jakarta Selatan,DKI Jakarta,2024-11-10,basic,True,True,3.8,7,90.7,3.5,2026-08-14
+SEL-000651,Hartana Susanti,individual,Vehicles,Serang,Banten,2018-10-14,free,True,True,3.35,4,60.8,0.8,2026-07-16
+SEL-000652,Perum Sirait Tbk,dealer,Fashion & Beauty,Jakarta Selatan,DKI Jakarta,2024-05-06,basic,False,False,4.56,6,76.3,1.2,2026-08-15
+SEL-000653,PD Budiyanto Tbk,small_business,Jobs,Palembang,Sumatera Selatan,2024-06-13,free,True,True,3.61,10,47.6,4.7,2026-08-28
+SEL-000654,Samiah Kusumo,individual,Home & Furniture,Palembang,Sumatera Selatan,2024-03-07,free,False,True,4.85,5,85.5,1.1,2026-07-24
+SEL-000655,Perum Samosir Usamah (Persero) Tbk,dealer,Electronics & Gadgets,Tangerang,Banten,2025-01-26,basic,False,False,3.58,20,94.8,1.2,2026-08-03
+SEL-000656,Dr. Hani Yolanda,individual,Hobbies & Sports,Yogyakarta,DI Yogyakarta,2025-07-24,free,True,True,5.0,3,51.3,10.1,2026-07-08
+SEL-000657,PT Padmasari Kuswandari,dealer,Vehicles,Jakarta Pusat,DKI Jakarta,2023-08-01,premium,True,False,4.43,20,77.5,14.4,2026-08-22
+SEL-000658,Karna Usamah,individual,Vehicles,Bogor,Jawa Barat,2023-11-14,premium,False,True,4.31,3,61.1,5.2,2026-08-15
+SEL-000659,"Raina Wibowo, S.E.I",individual,Services,Surabaya,Jawa Timur,2020-01-31,free,True,True,4.26,9,66.9,7.5,2026-06-23
+SEL-000660,"Hj. Hesti Firmansyah, M.Farm",individual,Property,Jakarta Barat,DKI Jakarta,2023-08-15,free,True,True,3.39,6,63.8,2.7,2026-06-14
+SEL-000661,"Carla Nainggolan, S.Ked",individual,Vehicles,Malang,Jawa Timur,2021-05-09,free,True,True,3.73,6,64.0,5.4,2026-07-29
+SEL-000662,UD Andriani Maryadi Tbk,dealer,Vehicles,Cimahi,Jawa Barat,2020-09-23,basic,True,True,4.48,14,64.7,5.4,2026-06-30
+SEL-000663,"Farhunnisa Zulkarnain, M.TI.",individual,Property,Kediri,Jawa Timur,2025-11-10,free,True,True,4.1,6,86.3,1.3,2026-08-20
+SEL-000664,"Drs. Viman Halimah, S.Gz",individual,Fashion & Beauty,Kediri,Jawa Timur,2025-01-05,free,True,True,5.0,6,78.7,8.2,2026-08-02
+SEL-000665,"Dina Maryati, S.Kom",individual,Home & Furniture,Denpasar,Bali,2022-06-30,free,True,True,4.34,5,64.9,14.3,2026-06-14
+SEL-000666,PD Novitasari Tbk,small_business,Home & Furniture,Bogor,Jawa Barat,2019-09-01,basic,True,True,4.42,8,88.8,6.3,2026-08-11
+SEL-000667,CV Haryanti Tbk,small_business,Electronics & Gadgets,Badung,Bali,2026-08-02,free,True,True,4.35,13,71.0,5.4,2026-08-10
+SEL-000668,UD Suryatmi Tbk,enterprise,Baby & Kids,Surabaya,Jawa Timur,2026-05-01,premium,False,False,5.0,7,90.5,6.0,2026-08-29
+SEL-000669,Yusuf Prayoga,individual,Property,Bekasi,Jawa Barat,2024-12-02,free,True,True,4.09,8,61.4,1.4,2026-07-22
+SEL-000670,Puti Salahudin,individual,Vehicles,Kediri,Jawa Timur,2022-12-04,free,False,True,4.0,2,82.5,9.6,2026-07-24
+SEL-000671,Wardaya Salahudin,individual,Fashion & Beauty,Surabaya,Jawa Timur,2020-05-23,basic,False,True,4.6,4,77.2,0.1,2026-08-11
+SEL-000672,"T. Niyaga Pranowo, M.Kom.",individual,Home & Furniture,Bogor,Jawa Barat,2023-06-24,free,True,True,4.62,1,48.8,0.1,2026-07-01
+SEL-000673,PD Tampubolon Tbk,enterprise,Services,Sidoarjo,Jawa Timur,2019-06-06,premium,True,True,4.24,5,37.2,12.3,2026-08-14
+SEL-000674,PT Pertiwi Tbk,small_business,Vehicles,Jakarta Timur,DKI Jakarta,2020-05-25,premium,True,True,4.44,8,100.0,0.1,2026-08-07
+SEL-000675,Yuliana Situmorang,individual,Vehicles,Bandung,Jawa Barat,2020-10-19,free,False,True,4.39,12,84.3,0.2,2026-06-04
+SEL-000676,"KH. Cakrabuana Siregar, S.Gz",individual,Electronics & Gadgets,Magelang,Jawa Tengah,2023-05-20,free,False,True,4.21,4,56.3,10.3,2026-08-17
+SEL-000677,PT Situmorang Tbk,dealer,Hobbies & Sports,Malang,Jawa Timur,2026-04-22,basic,True,True,3.87,5,57.6,21.7,2026-07-07
+SEL-000678,"Edi Kuswandari, S.Kom",individual,Electronics & Gadgets,Yogyakarta,DI Yogyakarta,2021-11-15,free,False,True,4.1,6,88.0,0.7,2026-06-10
+SEL-000679,Raden Nasyiah,individual,Electronics & Gadgets,Bandung,Jawa Barat,2023-08-21,free,False,True,4.39,14,67.1,3.2,2026-07-22
+SEL-000680,Putri Saputra,individual,Fashion & Beauty,Makassar,Sulawesi Selatan,2019-09-13,free,False,False,4.17,4,66.3,3.8,2026-08-04
+SEL-000681,Balangga Susanti,individual,Baby & Kids,Palembang,Sumatera Selatan,2026-07-28,premium,True,True,4.04,1,69.1,4.4,2026-08-14
+SEL-000682,"Rini Permadi, S.H.",individual,Vehicles,Makassar,Sulawesi Selatan,2020-12-12,free,True,True,4.62,3,49.2,6.6,2026-08-22
+SEL-000683,Mulyono Nuraini,individual,Baby & Kids,Yogyakarta,DI Yogyakarta,2019-02-21,free,True,True,4.02,9,73.2,0.3,2026-06-18
+SEL-000684,Makuta Pradipta,individual,Home & Furniture,Jakarta Utara,DKI Jakarta,2021-10-14,free,True,True,4.03,2,66.2,0.1,2026-06-28
+SEL-000685,Baktianto Zulkarnain,individual,Vehicles,Solo,Jawa Tengah,2018-11-23,free,False,False,,0,59.4,11.3,2026-07-31
+SEL-000686,Tina Halimah,individual,Vehicles,Jakarta Pusat,DKI Jakarta,2023-07-22,basic,True,True,4.46,4,86.5,0.6,2026-06-12
+SEL-000687,Maman Mandala,individual,Vehicles,Palembang,Sumatera Selatan,2024-06-16,free,True,True,4.6,2,83.8,2.9,2026-07-29
+SEL-000688,Perum Manullang,enterprise,Vehicles,Semarang,Jawa Tengah,2019-02-23,premium,True,True,4.57,6,64.7,2.4,2026-07-21
+SEL-000689,PD Kuswandari Yulianti (Persero),small_business,Jobs,Bogor,Jawa Barat,2021-05-14,basic,False,False,3.94,15,62.4,7.2,2026-08-09
+SEL-000690,"T. Galur Suwarno, S.Gz",individual,Vehicles,Samarinda,Kalimantan Timur,2025-04-22,basic,False,True,4.64,7,61.3,2.7,2026-07-15
+SEL-000691,"R. Martana Pertiwi, S.H.",individual,Home & Furniture,Jakarta Pusat,DKI Jakarta,2024-02-08,basic,False,False,4.2,4,87.8,3.6,2026-07-01
+SEL-000692,CV Agustina,dealer,Vehicles,Semarang,Jawa Tengah,2019-04-28,premium,True,True,3.91,2,68.2,2.1,2026-07-17
+SEL-000693,"R. Ani Widodo, M.Kom.",individual,Fashion & Beauty,Binjai,Sumatera Utara,2018-10-07,free,False,False,4.3,4,40.1,7.4,2026-06-14
+SEL-000694,Waluyo Siregar,individual,Fashion & Beauty,Jakarta Timur,DKI Jakarta,2021-01-28,free,True,True,3.9,7,64.6,5.9,2026-07-30
+SEL-000695,PT Salahudin,dealer,Vehicles,Semarang,Jawa Tengah,2020-02-29,premium,True,True,4.43,11,55.0,8.0,2026-08-05
+SEL-000696,Ir. Cici Sitorus,individual,Electronics & Gadgets,Palembang,Sumatera Selatan,2024-06-30,free,False,False,4.44,2,63.2,3.6,2026-08-31
+SEL-000697,PD Yuniar Tbk,small_business,Jobs,Jakarta Pusat,DKI Jakarta,2018-08-04,premium,True,True,4.2,15,33.4,0.1,2026-08-20
+SEL-000698,Soleh Mayasari,individual,Fashion & Beauty,Solo,Jawa Tengah,2025-10-29,free,True,True,4.5,6,67.4,0.1,2026-07-20
+SEL-000699,UD Nababan Kusumo Tbk,small_business,Vehicles,Bandung,Jawa Barat,2026-01-14,premium,True,True,4.27,2,70.4,13.0,2026-06-06
+SEL-000700,Opan Haryanti,individual,Property,Tangerang Selatan,Banten,2024-03-03,basic,True,True,4.84,1,60.9,7.3,2026-06-14
+SEL-000701,"Edi Nashiruddin, S.Ked",individual,Property,Jakarta Timur,DKI Jakarta,2019-01-01,free,True,True,3.91,2,91.0,3.8,2026-08-18
+SEL-000702,"Jessica Sihombing, M.Farm",individual,Fashion & Beauty,Balikpapan,Kalimantan Timur,2019-06-25,free,False,True,3.94,9,70.5,0.1,2026-07-22
+SEL-000703,"Praba Nababan, S.E.",individual,Home & Furniture,Denpasar,Bali,2025-07-03,free,False,False,4.41,3,43.9,2.2,2026-07-09
+SEL-000704,PD Mulyani Simbolon (Persero) Tbk,dealer,Fashion & Beauty,Jakarta Timur,DKI Jakarta,2021-12-08,premium,True,True,3.67,1,25.3,0.4,2026-08-27
+SEL-000705,Salsabila Kuswoyo,individual,Jobs,Bandung,Jawa Barat,2023-08-18,free,True,True,4.97,3,86.4,14.6,2026-07-18
+SEL-000706,Cahyono Kuswandari,individual,Vehicles,Semarang,Jawa Tengah,2019-08-06,free,False,True,4.17,6,89.6,0.1,2026-07-25
+SEL-000707,CV Ardianto Tbk,small_business,Vehicles,Medan,Sumatera Utara,2025-09-25,basic,True,True,4.39,4,81.2,4.1,2026-07-30
+SEL-000708,CV Hassanah Santoso Tbk,small_business,Hobbies & Sports,Malang,Jawa Timur,2025-05-15,free,False,False,4.47,15,57.1,4.4,2026-08-24
+SEL-000709,Restu Pertiwi,individual,Home & Furniture,Jakarta Pusat,DKI Jakarta,2018-03-03,premium,True,True,4.25,3,80.2,2.6,2026-07-16
+SEL-000710,Elon Yolanda,individual,Vehicles,Jakarta Utara,DKI Jakarta,2021-01-09,free,True,True,5.0,4,88.9,1.7,2026-07-24
+SEL-000711,CV Halim (Persero) Tbk,enterprise,Fashion & Beauty,Batam,Kepulauan Riau,2025-11-03,premium,True,True,4.38,15,47.2,1.2,2026-08-22
+SEL-000712,UD Manullang Waskita Tbk,small_business,Services,Surabaya,Jawa Timur,2023-03-04,basic,True,True,4.18,9,91.8,2.3,2026-06-05
+SEL-000713,UD Uwais,small_business,Fashion & Beauty,Denpasar,Bali,2019-08-25,free,False,False,4.45,6,80.7,8.9,2026-06-25
+SEL-000714,CV Mansur Kuswandari,dealer,Vehicles,Surabaya,Jawa Timur,2022-02-20,premium,True,True,4.99,3,89.1,1.8,2026-08-16
+SEL-000715,PD Sudiati Wahyudin,small_business,Electronics & Gadgets,Samarinda,Kalimantan Timur,2020-11-23,free,True,True,5.0,10,82.7,3.2,2026-07-04
+SEL-000716,Tira Pudjiastuti,individual,Property,Jakarta Pusat,DKI Jakarta,2026-04-08,free,False,True,4.18,10,54.8,6.5,2026-06-29
+SEL-000717,Usyi Nasyiah,individual,Vehicles,Jakarta Utara,DKI Jakarta,2018-07-18,free,False,True,,0,68.0,2.7,2026-06-25
+SEL-000718,"Ir. Rudi Pratama, S.H.",individual,Electronics & Gadgets,Balikpapan,Kalimantan Timur,2023-01-23,free,True,True,4.25,10,90.0,1.8,2026-07-25
+SEL-000719,Perum Hassanah,small_business,Jobs,Makassar,Sulawesi Selatan,2022-08-11,premium,True,True,4.48,4,77.3,24.7,2026-07-05
+SEL-000720,PT Pratiwi (Persero) Tbk,enterprise,Vehicles,Cimahi,Jawa Barat,2019-09-29,basic,True,True,3.46,18,64.3,9.8,2026-07-31
+SEL-000721,Radit Pudjiastuti,individual,Fashion & Beauty,Bogor,Jawa Barat,2023-01-21,free,True,True,4.58,4,73.6,5.8,2026-07-25
+SEL-000722,Sutan Kemal Nasyiah,individual,Baby & Kids,Sidoarjo,Jawa Timur,2019-08-19,free,False,True,4.4,2,68.0,0.3,2026-07-04
+SEL-000723,Catur Simbolon,individual,Property,Surabaya,Jawa Timur,2022-08-08,free,True,True,4.27,4,57.9,12.0,2026-08-16
+SEL-000724,PT Zulaika Putra Tbk,enterprise,Hobbies & Sports,Jakarta Timur,DKI Jakarta,2022-06-27,premium,False,False,4.27,20,79.6,3.7,2026-06-19
+SEL-000725,Uda Melani,individual,Electronics & Gadgets,Badung,Bali,2020-11-08,free,True,True,3.55,4,27.9,1.9,2026-06-19
+SEL-000726,Yessi Hakim,individual,Electronics & Gadgets,Bekasi,Jawa Barat,2020-04-03,free,False,True,3.8,9,64.4,0.1,2026-07-19
+SEL-000727,Diah Mulyani,individual,Services,Medan,Sumatera Utara,2018-03-03,free,True,True,3.99,1,68.5,17.8,2026-06-15
+SEL-000728,Mutia Pratiwi,individual,Hobbies & Sports,Jakarta Barat,DKI Jakarta,2021-10-05,basic,True,False,4.64,2,84.0,2.6,2026-08-07
+SEL-000729,Kurnia Hariyah,individual,Property,Jakarta Timur,DKI Jakarta,2023-12-15,basic,False,True,4.29,6,73.1,3.4,2026-07-19
+SEL-000730,"Respati Samosir, S.Ked",individual,Home & Furniture,Serang,Banten,2022-07-16,free,True,True,3.92,6,64.1,5.2,2026-07-22
+SEL-000731,Hamima Adriansyah,individual,Fashion & Beauty,Cimahi,Jawa Barat,2020-05-10,basic,True,True,4.24,3,52.5,0.5,2026-07-11
+SEL-000732,"Gasti Prastuti, S.Pt",individual,Vehicles,Tangerang Selatan,Banten,2022-03-14,free,False,True,,0,79.9,5.1,2026-08-17
+SEL-000733,Indra Situmorang,individual,Electronics & Gadgets,Jakarta Timur,DKI Jakarta,2025-02-07,free,True,False,5.0,3,100.0,6.9,2026-08-13
+SEL-000734,"Bella Namaga, S.Gz",individual,Home & Furniture,Makassar,Sulawesi Selatan,2021-03-04,free,True,True,4.74,3,98.6,0.2,2026-07-25
+SEL-000735,Warji Halimah,individual,Electronics & Gadgets,Medan,Sumatera Utara,2022-10-27,free,True,True,3.94,9,80.7,4.0,2026-08-07
+SEL-000736,UD Wasita,small_business,Fashion & Beauty,Denpasar,Bali,2018-01-28,premium,True,True,4.47,3,73.8,3.3,2026-07-26
+SEL-000737,Pranawa Mansur,individual,Property,Jakarta Timur,DKI Jakarta,2025-10-12,free,True,True,4.01,5,55.7,4.1,2026-07-21
+SEL-000738,"Ir. Omar Yuliarti, S.Farm",individual,Services,Cimahi,Jawa Barat,2022-04-13,free,False,True,3.61,5,43.8,1.8,2026-06-09
+SEL-000739,Kezia Hassanah,individual,Baby & Kids,Cimahi,Jawa Barat,2023-11-13,basic,True,True,4.29,3,78.7,6.7,2026-07-18
+SEL-000740,"drg. Keisha Hutapea, M.Pd",individual,Vehicles,Magelang,Jawa Tengah,2022-07-15,free,True,True,4.37,4,63.2,8.6,2026-07-10
+SEL-000741,Martani Tampubolon,individual,Fashion & Beauty,Bogor,Jawa Barat,2020-07-06,free,False,True,4.17,12,58.6,0.4,2026-08-26
+SEL-000742,Cemani Nasyiah,individual,Home & Furniture,Jakarta Pusat,DKI Jakarta,2020-05-17,basic,True,True,3.5,5,67.7,13.4,2026-06-24
+SEL-000743,Perum Mahendra Prasetyo (Persero),dealer,Vehicles,Depok,Jawa Barat,2023-04-16,premium,True,True,4.5,11,95.1,27.1,2026-06-13
+SEL-000744,"Dt. Emin Hariyah, M.Pd",individual,Vehicles,Depok,Jawa Barat,2021-08-26,free,False,False,4.35,3,90.4,0.7,2026-06-24
+SEL-000745,Patricia Wibowo,individual,Vehicles,Kediri,Jawa Timur,2022-07-19,free,True,True,4.62,2,72.7,0.5,2026-06-13
+SEL-000746,"R.A. Hilda Haryanti, S.I.Kom",individual,Services,Jakarta Pusat,DKI Jakarta,2024-02-21,free,True,True,4.68,8,84.7,3.8,2026-08-24
+SEL-000747,Enteng Nainggolan,individual,Electronics & Gadgets,Bekasi,Jawa Barat,2022-06-09,free,True,True,4.88,7,95.6,0.5,2026-06-14
+SEL-000748,"Vanesa Kusumo, S.Gz",individual,Vehicles,Tangerang Selatan,Banten,2020-05-20,free,False,False,4.19,4,64.5,16.5,2026-08-01
+SEL-000749,Perum Budiyanto Permadi (Persero),small_business,Property,Surabaya,Jawa Timur,2019-10-28,basic,True,True,4.25,6,83.4,12.5,2026-09-01
+SEL-000750,PT Riyanti,small_business,Home & Furniture,Bandung,Jawa Barat,2024-05-16,premium,True,True,3.9,9,92.3,10.8,2026-06-23
+SEL-000751,Ivan Rahimah,individual,Property,Solo,Jawa Tengah,2026-01-26,free,False,True,4.4,2,72.4,0.3,2026-07-19
+SEL-000752,"Niyaga Hardiansyah, S.H.",individual,Hobbies & Sports,Palembang,Sumatera Selatan,2025-12-13,free,True,True,4.01,3,84.5,14.1,2026-06-12
+SEL-000753,"Aurora Wacana, M.M.",individual,Vehicles,Bekasi,Jawa Barat,2023-10-04,free,True,True,3.72,3,69.4,10.7,2026-07-15
+SEL-000754,Kayun Pratama,individual,Home & Furniture,Solo,Jawa Tengah,2021-11-14,free,True,True,5.0,4,78.9,4.3,2026-08-01
+SEL-000755,CV Mardhiyah,small_business,Hobbies & Sports,Makassar,Sulawesi Selatan,2018-09-12,basic,True,True,4.15,5,80.3,8.1,2026-06-30
+SEL-000756,Gina Permata,individual,Property,Magelang,Jawa Tengah,2020-01-16,free,False,True,4.71,3,42.9,3.1,2026-06-24
+SEL-000757,Ratih Rahimah,individual,Property,Badung,Bali,2022-02-17,basic,True,True,3.63,4,70.2,3.9,2026-08-30
+SEL-000758,CV Sihombing (Persero) Tbk,dealer,Fashion & Beauty,Palembang,Sumatera Selatan,2019-03-28,free,True,True,4.0,7,83.1,6.8,2026-06-21
+SEL-000759,"Karma Prasetya, S.Farm",individual,Electronics & Gadgets,Jakarta Timur,DKI Jakarta,2020-03-25,free,False,False,4.17,5,82.3,12.1,2026-08-24
+SEL-000760,Ika Halim,individual,Vehicles,Malang,Jawa Timur,2021-07-12,free,True,True,4.26,3,92.0,16.3,2026-06-04
+SEL-000761,PD Puspita Lailasari,small_business,Vehicles,Tangerang Selatan,Banten,2021-08-26,basic,True,True,3.94,12,52.3,50.8,2026-07-21
+SEL-000762,Gangsar Yuniar,individual,Vehicles,Batam,Kepulauan Riau,2025-02-22,free,True,True,4.94,3,95.4,3.4,2026-08-26
+SEL-000763,"Harjaya Novitasari, S.Psi",individual,Vehicles,Malang,Jawa Timur,2020-04-20,free,False,False,4.26,4,88.3,7.6,2026-07-29
+SEL-000764,"Lidya Wasita, S.E.I",individual,Fashion & Beauty,Jakarta Utara,DKI Jakarta,2026-01-18,free,False,False,3.98,1,46.2,2.7,2026-08-14
+SEL-000765,PD Nashiruddin Tbk,dealer,Hobbies & Sports,Solo,Jawa Tengah,2018-03-08,premium,True,True,4.12,5,67.2,16.6,2026-06-08
+SEL-000766,Samsul Prasetyo,individual,Electronics & Gadgets,Jakarta Timur,DKI Jakarta,2024-09-16,free,True,True,3.98,6,88.1,12.2,2026-06-03
+SEL-000767,Zamira Megantara,individual,Hobbies & Sports,Medan,Sumatera Utara,2023-07-14,free,True,True,4.32,10,92.2,10.6,2026-06-22
+SEL-000768,"drg. Vinsen Hakim, M.Pd",individual,Services,Malang,Jawa Timur,2022-05-14,free,True,True,4.47,5,82.6,0.6,2026-07-22
+SEL-000769,Lidya Puspita,individual,Property,Binjai,Sumatera Utara,2024-06-18,free,False,False,3.99,7,82.5,11.3,2026-06-09
+SEL-000770,R.M. Harsanto Prasasta,individual,Property,Badung,Bali,2023-05-19,free,False,True,5.0,12,76.6,0.9,2026-09-01
+SEL-000771,Farhunnisa Sitompul,individual,Electronics & Gadgets,Serang,Banten,2021-06-19,free,True,True,,0,84.0,1.5,2026-06-29
+SEL-000772,"Bahuwirya Hartati, S.I.Kom",individual,Electronics & Gadgets,Serang,Banten,2019-04-10,basic,True,True,3.95,7,81.4,40.9,2026-06-20
+SEL-000773,Kawaca Nainggolan,individual,Jobs,Medan,Sumatera Utara,2019-10-29,free,True,True,4.43,1,66.9,13.2,2026-06-04
+SEL-000774,UD Waluyo,small_business,Jobs,Yogyakarta,DI Yogyakarta,2018-06-27,premium,True,True,4.96,1,100.0,4.8,2026-07-26
+SEL-000775,"Lukita Suartini, S.Gz",individual,Hobbies & Sports,Denpasar,Bali,2019-12-26,free,False,True,4.44,5,56.9,6.0,2026-08-18
+SEL-000776,CV Rahmawati,dealer,Services,Jakarta Utara,DKI Jakarta,2024-07-06,premium,True,True,4.37,6,62.9,7.6,2026-06-05
+SEL-000777,"Salsabila Purwanti, S.Kom",individual,Property,Solo,Jawa Tengah,2024-12-04,free,True,True,4.2,8,60.8,0.7,2026-06-18
+SEL-000778,Fathonah Sitorus,individual,Vehicles,Jakarta Selatan,DKI Jakarta,2019-12-04,free,False,False,5.0,3,61.7,7.7,2026-08-27
+SEL-000779,PT Prabowo (Persero) Tbk,small_business,Jobs,Denpasar,Bali,2018-07-11,free,True,False,3.75,3,65.8,5.7,2026-07-10
+SEL-000780,PD Prasasta,dealer,Property,Tangerang,Banten,2019-12-06,premium,True,True,4.47,8,91.7,21.9,2026-06-23
+SEL-000781,"Rahmi Putra, S.Sos",individual,Vehicles,Sidoarjo,Jawa Timur,2026-03-17,free,True,True,4.79,9,94.1,5.3,2026-06-04
+SEL-000782,Perum Sinaga Suryono,dealer,Jobs,Jakarta Timur,DKI Jakarta,2020-02-26,premium,True,True,4.42,7,77.8,2.4,2026-06-04
+SEL-000783,Nadia Nasyidah,individual,Electronics & Gadgets,Bandung,Jawa Barat,2023-11-02,basic,False,False,4.47,4,95.3,7.1,2026-06-04
+SEL-000784,"Gatot Samosir, S.T.",individual,Services,Binjai,Sumatera Utara,2019-02-28,free,True,True,5.0,2,100.0,9.3,2026-06-12
+SEL-000785,Perum Mandasari Tbk,enterprise,Vehicles,Jakarta Barat,DKI Jakarta,2019-02-02,premium,True,True,4.47,1,100.0,2.4,2026-08-24
+SEL-000786,Rangga Halimah,individual,Electronics & Gadgets,Jakarta Timur,DKI Jakarta,2025-12-28,free,True,True,3.86,7,56.7,0.5,2026-08-07
+SEL-000787,CV Uwais Tbk,small_business,Fashion & Beauty,Denpasar,Bali,2019-06-18,free,True,False,3.78,13,69.6,4.3,2026-08-05
+SEL-000788,Aurora Pratiwi,individual,Vehicles,Medan,Sumatera Utara,2023-12-15,free,False,True,5.0,5,76.8,5.5,2026-08-26
+SEL-000789,CV Budiyanto Rajata,small_business,Home & Furniture,Jakarta Pusat,DKI Jakarta,2025-02-11,free,True,True,4.33,5,55.6,16.8,2026-06-13
+SEL-000790,Drs. Labuh Agustina,individual,Jobs,Cimahi,Jawa Barat,2024-12-11,free,True,True,4.21,3,77.6,0.1,2026-07-22
+SEL-000791,Eva Napitupulu,individual,Jobs,Batam,Kepulauan Riau,2026-05-06,free,True,True,3.74,5,87.7,7.2,2026-07-16
+SEL-000792,Ghaliyati Wibowo,individual,Jobs,Medan,Sumatera Utara,2022-10-18,basic,False,True,4.64,4,43.4,4.6,2026-07-27
+SEL-000793,R.A. Najwa Pudjiastuti,individual,Hobbies & Sports,Tangerang Selatan,Banten,2022-12-29,free,True,True,4.68,7,73.5,6.5,2026-07-19
+SEL-000794,"Warsa Sirait, S.T.",individual,Property,Depok,Jawa Barat,2022-12-13,free,False,True,4.79,5,72.9,1.3,2026-06-25
+SEL-000795,"drg. Nyoman Yuniar, M.Kom.",individual,Jobs,Depok,Jawa Barat,2025-01-22,free,True,False,4.74,5,70.7,7.2,2026-08-22
+SEL-000796,Ella Thamrin,individual,Property,Jakarta Timur,DKI Jakarta,2022-09-03,free,False,False,3.44,3,54.9,1.9,2026-08-03
+SEL-000797,Cahyono Palastri,individual,Home & Furniture,Medan,Sumatera Utara,2025-06-24,free,True,True,5.0,3,100.0,0.1,2026-07-21
+SEL-000798,Fitria Namaga,individual,Hobbies & Sports,Jakarta Utara,DKI Jakarta,2019-02-04,free,True,True,4.65,6,74.4,11.0,2026-07-06
+SEL-000799,Perum Firmansyah,small_business,Home & Furniture,Jakarta Pusat,DKI Jakarta,2023-02-16,free,True,True,4.92,7,84.5,5.8,2026-08-19
+SEL-000800,PT Ardianto,small_business,Fashion & Beauty,Medan,Sumatera Utara,2025-04-07,basic,True,True,4.6,17,33.6,3.6,2026-07-28
+SEL-000801,CV Usamah Pradipta (Persero) Tbk,small_business,Fashion & Beauty,Makassar,Sulawesi Selatan,2024-06-03,free,True,True,3.96,19,65.8,8.9,2026-08-05
+SEL-000802,"Eka Anggriawan, S.Kom",individual,Property,Binjai,Sumatera Utara,2023-10-05,free,True,True,4.26,5,71.0,6.3,2026-06-24
+SEL-000803,UD Halim Safitri Tbk,dealer,Home & Furniture,Sidoarjo,Jawa Timur,2023-05-09,premium,True,True,4.84,3,78.7,1.3,2026-07-14
+SEL-000804,"Jinawi Budiyanto, S.Ked",individual,Baby & Kids,Sidoarjo,Jawa Timur,2022-10-26,free,False,False,4.06,1,100.0,0.8,2026-06-23
+SEL-000805,Dr. Hendra Budiman,individual,Vehicles,Sidoarjo,Jawa Timur,2019-08-02,free,True,True,4.13,4,89.1,4.4,2026-06-25
+SEL-000806,Karta Saefullah,individual,Vehicles,Bandung,Jawa Barat,2025-04-14,free,True,True,4.29,2,83.9,0.3,2026-06-28
+SEL-000807,PT Mardhiyah Tbk,small_business,Jobs,Solo,Jawa Tengah,2025-01-18,basic,True,True,4.3,3,60.4,2.5,2026-06-10
+SEL-000808,"R.M. Balamantri Kuswoyo, M.TI.",individual,Home & Furniture,Kediri,Jawa Timur,2025-03-09,free,True,True,3.88,11,73.5,1.6,2026-07-31
+SEL-000809,Dimas Nababan,individual,Vehicles,Solo,Jawa Tengah,2024-09-27,free,False,True,3.75,5,53.5,20.4,2026-06-14
+SEL-000810,UD Santoso Tbk,enterprise,Baby & Kids,Denpasar,Bali,2025-02-02,premium,True,False,4.38,6,72.1,4.7,2026-08-21
+SEL-000811,Hardi Waskita,individual,Property,Batam,Kepulauan Riau,2018-09-20,free,True,True,5.0,12,85.1,0.3,2026-07-01
+SEL-000812,Padmi Prasasta,individual,Electronics & Gadgets,Jakarta Timur,DKI Jakarta,2023-11-01,free,True,True,3.78,12,52.3,0.8,2026-08-21
+SEL-000813,UD Hutapea Yolanda,enterprise,Fashion & Beauty,Malang,Jawa Timur,2022-03-16,premium,True,True,4.96,8,100.0,12.9,2026-06-14
+SEL-000814,"Hj. Vanya Firmansyah, S.Pt",individual,Services,Jakarta Timur,DKI Jakarta,2020-02-02,free,True,True,4.16,11,77.5,30.2,2026-08-30
+SEL-000815,Kezia Waluyo,individual,Property,Bekasi,Jawa Barat,2025-02-07,free,True,True,3.94,8,55.5,0.5,2026-08-29
+SEL-000816,PT Uyainah Anggriawan (Persero),dealer,Vehicles,Cimahi,Jawa Barat,2018-01-24,premium,True,True,4.07,11,66.4,14.1,2026-06-21
+SEL-000817,PD Fujiati,dealer,Fashion & Beauty,Jakarta Utara,DKI Jakarta,2019-01-27,premium,True,True,3.97,2,43.4,0.8,2026-06-18
+SEL-000818,"Purwanto Sitompul, M.Farm",individual,Jobs,Medan,Sumatera Utara,2018-06-28,free,True,True,4.09,4,71.6,3.3,2026-07-27
+SEL-000819,"Puti Paris Gunarto, S.H.",individual,Property,Malang,Jawa Timur,2020-12-15,free,True,True,3.57,5,70.9,2.4,2026-07-27
+SEL-000820,Umay Purnawati,individual,Fashion & Beauty,Samarinda,Kalimantan Timur,2018-08-02,basic,False,True,4.49,8,75.3,10.4,2026-07-27
+SEL-000821,Humaira Gunawan,individual,Property,Jakarta Pusat,DKI Jakarta,2022-03-18,free,False,True,3.91,5,62.1,3.2,2026-08-13
+SEL-000822,Mahdi Setiawan,individual,Vehicles,Jakarta Selatan,DKI Jakarta,2021-09-08,free,True,True,4.59,9,60.1,1.3,2026-09-01
+SEL-000823,Drs. Maryadi Firmansyah,individual,Home & Furniture,Surabaya,Jawa Timur,2023-04-10,free,False,False,4.0,1,73.1,1.7,2026-06-18
+SEL-000824,UD Budiyanto Pranowo,small_business,Baby & Kids,Jakarta Barat,DKI Jakarta,2023-06-29,basic,True,True,4.76,18,76.9,8.3,2026-08-28
+SEL-000825,PD Hutagalung Salahudin,small_business,Jobs,Bogor,Jawa Barat,2025-04-09,premium,True,True,3.25,5,83.0,0.4,2026-07-03
+SEL-000826,Kardi Permadi,individual,Vehicles,Batam,Kepulauan Riau,2020-07-13,free,True,True,4.1,3,59.1,7.4,2026-08-08
+SEL-000827,drg. Shania Namaga,individual,Electronics & Gadgets,Jakarta Timur,DKI Jakarta,2023-07-06,free,False,True,4.73,9,79.9,0.2,2026-07-03
+SEL-000828,Kiandra Mandala,individual,Vehicles,Jakarta Selatan,DKI Jakarta,2023-01-23,free,True,True,4.39,4,80.6,10.8,2026-07-19
+SEL-000829,Perum Situmorang,dealer,Home & Furniture,Semarang,Jawa Tengah,2019-02-27,premium,True,True,3.96,15,93.2,2.2,2026-07-30
+SEL-000830,Baktiadi Fujiati,individual,Home & Furniture,Surabaya,Jawa Timur,2023-05-10,free,True,False,4.87,4,74.5,7.4,2026-06-14
+SEL-000831,Salman Hutagalung,individual,Vehicles,Semarang,Jawa Tengah,2026-05-27,free,False,False,4.19,6,100.0,7.0,2026-06-22
+SEL-000832,Rahmi Susanti,individual,Home & Furniture,Bogor,Jawa Barat,2022-11-15,free,False,True,4.48,2,100.0,12.9,2026-08-07
+SEL-000833,drg. Vicky Simbolon,individual,Property,Yogyakarta,DI Yogyakarta,2019-01-16,free,True,True,4.47,2,86.6,1.0,2026-08-25
+SEL-000834,UD Hartati,small_business,Vehicles,Jakarta Selatan,DKI Jakarta,2020-10-04,free,True,True,4.34,5,55.5,6.1,2026-08-11
+SEL-000835,CV Tamba Puspasari Tbk,small_business,Services,Sidoarjo,Jawa Timur,2022-04-04,free,False,True,4.67,6,39.1,2.2,2026-07-29
+SEL-000836,Fitria Zulaika,individual,Services,Serang,Banten,2023-06-04,premium,True,True,4.41,5,50.7,1.1,2026-06-06
+SEL-000837,PT Safitri Sihombing (Persero) Tbk,small_business,Baby & Kids,Denpasar,Bali,2026-05-31,basic,True,False,4.26,5,42.0,6.6,2026-08-17
+SEL-000838,PT Santoso,enterprise,Baby & Kids,Cimahi,Jawa Barat,2025-03-14,premium,True,True,3.81,9,70.5,10.2,2026-07-17
+SEL-000839,Harjasa Usada,individual,Fashion & Beauty,Magelang,Jawa Tengah,2025-02-07,free,True,True,4.01,5,13.7,17.9,2026-08-19
+SEL-000840,Okta Wibisono,individual,Home & Furniture,Jakarta Timur,DKI Jakarta,2021-06-05,free,False,False,4.2,2,64.3,3.3,2026-08-04
+SEL-000841,Karen Kurniawan,individual,Electronics & Gadgets,Jakarta Utara,DKI Jakarta,2020-10-28,free,True,True,4.97,7,89.7,4.0,2026-07-09
+SEL-000842,PT Samosir,small_business,Home & Furniture,Jakarta Timur,DKI Jakarta,2026-05-18,premium,True,True,3.84,2,67.3,11.8,2026-06-30
+SEL-000843,Karen Saputra,individual,Home & Furniture,Medan,Sumatera Utara,2023-07-12,free,False,False,4.18,5,82.2,22.8,2026-06-06
+SEL-000844,Cahyadi Irawan,individual,Vehicles,Cimahi,Jawa Barat,2020-06-27,free,True,False,4.45,4,84.4,0.6,2026-06-21
+SEL-000845,Irfan Hassanah,individual,Vehicles,Medan,Sumatera Utara,2025-06-04,free,False,True,3.79,5,100.0,0.1,2026-07-10
+SEL-000846,PT Dongoran Irawan Tbk,dealer,Fashion & Beauty,Jakarta Utara,DKI Jakarta,2018-06-20,premium,True,True,5.0,10,61.0,0.6,2026-06-06
+SEL-000847,R. Lembah Rahimah,individual,Jobs,Denpasar,Bali,2021-08-23,free,True,True,4.82,9,90.6,1.4,2026-07-18
+SEL-000848,PD Budiman Tbk,small_business,Electronics & Gadgets,Yogyakarta,DI Yogyakarta,2025-01-09,basic,True,True,4.52,12,62.6,4.9,2026-08-04
+SEL-000849,Kayla Hutasoit,individual,Electronics & Gadgets,Jakarta Selatan,DKI Jakarta,2024-06-21,premium,False,False,5.0,11,80.3,1.9,2026-08-16
+SEL-000850,Perum Nurdiyanti Narpati,enterprise,Vehicles,Jakarta Pusat,DKI Jakarta,2022-09-11,premium,True,True,4.05,10,82.8,12.1,2026-06-12
+SEL-000851,"Harjasa Narpati, S.E.I",individual,Vehicles,Jakarta Timur,DKI Jakarta,2021-10-27,basic,False,True,3.88,4,59.3,2.5,2026-06-21
+SEL-000852,Ilsa Santoso,individual,Vehicles,Yogyakarta,DI Yogyakarta,2020-10-20,free,False,True,4.16,7,83.1,8.4,2026-07-08
+SEL-000853,CV Haryanto Marbun Tbk,dealer,Vehicles,Cimahi,Jawa Barat,2020-12-25,premium,True,False,4.74,6,53.6,0.5,2026-08-27
+SEL-000854,PD Salahudin Tbk,dealer,Hobbies & Sports,Magelang,Jawa Tengah,2020-04-29,premium,True,True,4.2,9,83.4,8.0,2026-08-27
+SEL-000855,"R. Gatra Ramadan, S.H.",individual,Vehicles,Sidoarjo,Jawa Timur,2026-05-11,free,True,True,4.06,5,54.2,4.0,2026-07-26
+SEL-000856,"Sari Lailasari, M.Ak",individual,Services,Palembang,Sumatera Selatan,2018-12-30,free,True,True,4.05,3,90.7,3.6,2026-06-28
+SEL-000857,PD Kurniawan Mansur,small_business,Hobbies & Sports,Kediri,Jawa Timur,2020-07-08,basic,True,True,4.34,11,84.9,1.6,2026-07-24
+SEL-000858,PT Widodo Tbk,dealer,Baby & Kids,Sidoarjo,Jawa Timur,2023-02-27,free,False,True,5.0,5,69.8,4.7,2026-09-01
+SEL-000859,"Ir. Kezia Sitompul, M.M.",individual,Property,Batam,Kepulauan Riau,2026-02-14,free,False,True,4.36,11,66.5,0.2,2026-08-05
+SEL-000860,Mala Yulianti,individual,Jobs,Jakarta Selatan,DKI Jakarta,2025-07-23,free,True,True,3.94,11,75.3,12.5,2026-08-19
+SEL-000861,UD Sinaga Suartini,small_business,Jobs,Yogyakarta,DI Yogyakarta,2025-10-29,basic,True,True,4.04,32,74.7,3.7,2026-08-27
+SEL-000862,PD Sihotang Nugroho,small_business,Home & Furniture,Jakarta Pusat,DKI Jakarta,2020-11-13,basic,True,True,4.27,6,73.8,1.2,2026-07-18
+SEL-000863,UD Siregar Usada Tbk,small_business,Property,Sidoarjo,Jawa Timur,2019-11-05,premium,True,True,3.85,10,68.9,22.3,2026-08-23
+SEL-000864,R.A. Jane Waluyo,individual,Property,Badung,Bali,2019-09-11,basic,False,False,4.14,1,72.2,23.0,2026-06-16
+SEL-000865,Yuliana Wijaya,individual,Electronics & Gadgets,Tangerang,Banten,2020-07-17,free,True,True,4.39,9,56.3,0.1,2026-07-13
+SEL-000866,PT Pratiwi (Persero) Tbk,dealer,Vehicles,Tangerang Selatan,Banten,2023-10-02,premium,True,False,3.64,8,67.0,2.1,2026-08-09
+SEL-000867,Perum Dongoran Hariyah,dealer,Vehicles,Bogor,Jawa Barat,2021-03-25,premium,True,True,4.24,11,100.0,2.7,2026-08-11
+SEL-000868,PD Siregar Hidayat,small_business,Baby & Kids,Sidoarjo,Jawa Timur,2023-01-17,basic,True,True,4.32,5,52.7,7.7,2026-07-16
+SEL-000869,"drg. Samiah Mandasari, S.E.I",individual,Baby & Kids,Bekasi,Jawa Barat,2022-04-11,basic,True,True,4.63,9,81.2,5.1,2026-06-18
+SEL-000870,"Gadang Permadi, S.T.",individual,Fashion & Beauty,Magelang,Jawa Tengah,2020-09-10,free,True,True,4.69,3,66.6,4.9,2026-07-21
+SEL-000871,PD Waluyo Hidayanto,small_business,Property,Surabaya,Jawa Timur,2021-11-26,premium,True,False,4.04,6,70.9,0.3,2026-08-20
+SEL-000872,Rahayu Kuswandari,individual,Services,Bekasi,Jawa Barat,2019-08-22,free,True,False,4.1,16,74.1,1.8,2026-07-02
+SEL-000873,Perum Mayasari Andriani (Persero),enterprise,Services,Cimahi,Jawa Barat,2024-08-11,free,True,True,4.79,14,52.0,5.4,2026-07-06
+SEL-000874,"Tgk. Nardi Nasyiah, M.Ak",individual,Home & Furniture,Bogor,Jawa Barat,2022-06-04,free,True,True,4.77,2,60.5,0.4,2026-07-13
+SEL-000875,PT Prayoga,small_business,Fashion & Beauty,Bekasi,Jawa Barat,2023-05-01,free,True,True,4.36,7,47.5,18.0,2026-06-10
+SEL-000876,CV Yuliarti (Persero) Tbk,dealer,Fashion & Beauty,Jakarta Pusat,DKI Jakarta,2023-02-23,basic,True,True,4.64,10,79.2,0.5,2026-08-12
+SEL-000877,Hj. Shania Yuliarti,individual,Baby & Kids,Badung,Bali,2026-07-25,free,True,False,3.98,4,79.5,9.6,2026-08-09
+SEL-000878,Umi Sitompul,individual,Vehicles,Tangerang Selatan,Banten,2020-01-03,free,True,True,3.43,7,54.3,4.5,2026-08-06
+SEL-000879,"dr. Balamantri Anggriawan, S.IP",individual,Home & Furniture,Jakarta Barat,DKI Jakarta,2023-11-19,free,True,True,4.37,1,44.7,4.4,2026-07-10
+SEL-000880,Gawati Melani,individual,Vehicles,Serang,Banten,2025-10-08,free,True,True,4.86,5,73.1,0.3,2026-06-13
+SEL-000881,"Padma Puspita, M.Farm",individual,Home & Furniture,Yogyakarta,DI Yogyakarta,2022-02-10,free,True,True,3.91,7,74.1,0.4,2026-07-02
+SEL-000882,"Ratih Prasetya, M.M.",individual,Hobbies & Sports,Bandung,Jawa Barat,2024-11-23,free,False,True,4.02,1,44.4,0.2,2026-08-29
+SEL-000883,PD Hariyah (Persero) Tbk,dealer,Electronics & Gadgets,Jakarta Timur,DKI Jakarta,2018-11-24,premium,True,True,3.5,15,48.9,21.3,2026-07-30
+SEL-000884,Aisyah Laksmiwati,individual,Property,Jakarta Selatan,DKI Jakarta,2018-07-15,basic,True,True,5.0,7,78.3,0.4,2026-06-17
+SEL-000885,Ega Agustina,individual,Electronics & Gadgets,Jakarta Utara,DKI Jakarta,2022-02-24,premium,False,False,3.58,10,90.9,8.1,2026-08-14
+SEL-000886,Bambang Megantara,individual,Jobs,Medan,Sumatera Utara,2024-10-13,free,True,False,3.64,4,46.8,6.7,2026-07-18
+SEL-000887,Ira Siregar,individual,Electronics & Gadgets,Batam,Kepulauan Riau,2022-07-11,free,False,False,4.4,9,70.8,2.0,2026-07-10
+SEL-000888,Violet Putra,individual,Property,Jakarta Timur,DKI Jakarta,2020-11-19,free,True,True,4.61,4,94.8,1.2,2026-08-15
+SEL-000889,drg. Gantar Kusmawati,individual,Vehicles,Medan,Sumatera Utara,2025-08-24,basic,False,True,4.91,6,74.9,1.7,2026-08-16
+SEL-000890,PD Hartati,small_business,Fashion & Beauty,Jakarta Pusat,DKI Jakarta,2024-10-18,basic,True,False,3.95,4,48.3,3.5,2026-08-08
+SEL-000891,Betania Salahudin,individual,Fashion & Beauty,Semarang,Jawa Tengah,2020-12-17,free,True,True,4.26,6,88.0,1.4,2026-07-17
+SEL-000892,PT Damanik,enterprise,Jobs,Binjai,Sumatera Utara,2025-01-08,basic,False,True,5.0,5,98.1,0.1,2026-07-20
+SEL-000893,"dr. Septi Kurniawan, S.E.",individual,Services,Bogor,Jawa Barat,2022-06-04,basic,True,True,4.06,2,73.6,1.8,2026-06-17
+SEL-000894,"Hesti Maryati, S.E.",individual,Jobs,Jakarta Pusat,DKI Jakarta,2019-11-24,free,False,True,4.22,2,55.0,2.5,2026-07-21
+SEL-000895,UD Purwanti Aryani,small_business,Jobs,Semarang,Jawa Tengah,2020-11-07,premium,True,True,4.44,4,74.0,0.9,2026-07-11
+SEL-000896,CV Waskita Usamah (Persero) Tbk,dealer,Fashion & Beauty,Batam,Kepulauan Riau,2025-12-31,basic,True,True,3.95,9,60.7,6.8,2026-08-06
+SEL-000897,Manah Wahyuni,individual,Property,Bandung,Jawa Barat,2021-04-11,free,True,True,4.16,3,50.5,73.1,2026-06-14
+SEL-000898,Lala Dabukke,individual,Jobs,Jakarta Pusat,DKI Jakarta,2020-03-16,free,True,True,4.86,1,51.9,7.0,2026-07-22
+SEL-000899,"Raisa Napitupulu, M.M.",individual,Jobs,Jakarta Timur,DKI Jakarta,2023-12-03,basic,True,True,4.97,4,96.1,3.4,2026-07-01
+SEL-000900,drg. Kayla Ardianto,individual,Home & Furniture,Solo,Jawa Tengah,2019-02-03,free,True,True,4.47,4,63.8,4.6,2026-07-27
+SEL-000901,"Gabriella Putra, S.T.",individual,Property,Solo,Jawa Tengah,2022-01-15,free,False,True,4.5,9,71.6,14.1,2026-08-17
+SEL-000902,"H. Rusman Haryanto, M.Farm",individual,Electronics & Gadgets,Palembang,Sumatera Selatan,2020-07-22,free,True,True,4.66,10,87.1,2.2,2026-07-31
+SEL-000903,Raharja Nasyiah,individual,Electronics & Gadgets,Medan,Sumatera Utara,2025-12-16,free,True,True,4.26,1,82.6,6.2,2026-06-21
+SEL-000904,Ghani Simbolon,individual,Home & Furniture,Badung,Bali,2021-01-26,free,True,True,4.17,3,85.1,13.7,2026-08-20
+SEL-000905,PD Latupono Saptono,enterprise,Property,Palembang,Sumatera Selatan,2024-12-31,premium,True,True,4.72,6,90.1,4.3,2026-06-20
+SEL-000906,Perum Uyainah Sihotang Tbk,small_business,Vehicles,Depok,Jawa Barat,2025-07-08,basic,True,True,4.54,13,92.6,4.4,2026-08-16
+SEL-000907,drg. Rini Latupono,individual,Jobs,Semarang,Jawa Tengah,2021-03-05,free,False,False,3.86,1,58.7,0.5,2026-08-29
+SEL-000908,Kamila Haryanti,individual,Home & Furniture,Bandung,Jawa Barat,2024-09-14,basic,True,True,4.13,17,80.5,13.3,2026-07-28
+SEL-000909,R. Yulia Wulandari,individual,Vehicles,Bandung,Jawa Barat,2022-05-18,free,False,True,4.02,3,63.2,25.0,2026-08-16
+SEL-000910,"Wirda Salahudin, M.Ak",individual,Property,Samarinda,Kalimantan Timur,2020-03-20,free,False,False,4.52,6,88.4,14.3,2026-07-14
+SEL-000911,CV Sihotang,small_business,Electronics & Gadgets,Serang,Banten,2018-12-08,free,True,True,4.49,18,64.4,2.2,2026-06-12
+SEL-000912,CV Samosir,dealer,Electronics & Gadgets,Batam,Kepulauan Riau,2020-06-27,free,True,True,3.8,15,70.6,1.4,2026-06-08
+SEL-000913,CV Wahyudin,dealer,Vehicles,Surabaya,Jawa Timur,2023-05-26,basic,True,True,4.2,19,88.2,3.4,2026-06-15
+SEL-000914,Perum Wibisono Andriani,enterprise,Jobs,Solo,Jawa Tengah,2023-11-05,premium,True,True,4.77,4,76.1,4.6,2026-06-26
+SEL-000915,Perum Winarno Anggraini,enterprise,Fashion & Beauty,Kediri,Jawa Timur,2018-03-30,premium,True,True,4.0,9,45.9,8.0,2026-08-07
+SEL-000916,PD Usada Nasyiah,enterprise,Electronics & Gadgets,Jakarta Selatan,DKI Jakarta,2019-06-07,premium,True,True,3.75,11,59.6,10.9,2026-07-31
+SEL-000917,"Septi Natsir, M.Pd",individual,Property,Bekasi,Jawa Barat,2023-03-03,free,True,True,,0,95.3,14.8,2026-07-24
+SEL-000918,Jindra Suwarno,individual,Electronics & Gadgets,Semarang,Jawa Tengah,2022-03-06,free,True,True,4.8,7,60.9,11.6,2026-08-21
+SEL-000919,Cengkir Sihotang,individual,Electronics & Gadgets,Jakarta Selatan,DKI Jakarta,2021-01-22,free,True,True,4.69,15,61.0,3.3,2026-07-10
+SEL-000920,"Dr. Raina Habibi, S.I.Kom",individual,Jobs,Balikpapan,Kalimantan Timur,2023-06-08,free,True,True,4.32,4,75.1,6.9,2026-07-21
+SEL-000921,Jayeng Mansur,individual,Electronics & Gadgets,Jakarta Timur,DKI Jakarta,2025-09-15,free,False,True,4.87,5,68.7,4.3,2026-06-13
+SEL-000922,PD Purwanti Mayasari,small_business,Home & Furniture,Jakarta Timur,DKI Jakarta,2025-12-11,basic,True,True,4.58,5,70.6,3.1,2026-06-03
+SEL-000923,"Jumari Wasita, M.Kom.",individual,Property,Medan,Sumatera Utara,2026-01-17,free,False,True,3.85,1,77.9,0.1,2026-07-23
+SEL-000924,Titin Handayani,individual,Jobs,Jakarta Timur,DKI Jakarta,2019-07-04,free,True,True,3.89,6,74.0,0.9,2026-07-12
+SEL-000925,Eli Hutasoit,individual,Fashion & Beauty,Denpasar,Bali,2020-10-11,free,False,True,4.24,8,89.6,8.4,2026-08-28
+SEL-000926,Cut Wulan Prasetya,individual,Vehicles,Medan,Sumatera Utara,2023-10-14,free,False,True,4.16,8,69.4,1.2,2026-06-08
+SEL-000927,Ami Saefullah,individual,Property,Jakarta Timur,DKI Jakarta,2019-12-16,basic,False,True,3.39,6,62.3,3.4,2026-07-03
+SEL-000928,Perum Suwarno Narpati,dealer,Jobs,Tangerang Selatan,Banten,2018-12-29,basic,True,True,4.7,11,54.5,1.2,2026-08-27
+SEL-000929,"drg. Karya Lailasari, M.Pd",individual,Fashion & Beauty,Tangerang Selatan,Banten,2025-08-16,free,False,True,5.0,7,76.5,4.0,2026-06-23
+SEL-000930,Perum Latupono,small_business,Vehicles,Binjai,Sumatera Utara,2018-04-24,basic,True,True,4.62,7,98.5,2.1,2026-07-31
+SEL-000931,Vicky Palastri,individual,Fashion & Beauty,Yogyakarta,DI Yogyakarta,2025-12-22,free,True,True,4.17,2,49.5,5.2,2026-08-11
+SEL-000932,"dr. Puput Gunarto, M.M.",individual,Jobs,Medan,Sumatera Utara,2021-03-19,free,True,False,4.49,1,100.0,0.3,2026-07-17
+SEL-000933,Sutan Irwan Jailani,individual,Property,Solo,Jawa Tengah,2026-06-28,free,True,True,4.49,1,56.7,2.7,2026-08-08
+SEL-000934,UD Firmansyah Hartati,small_business,Services,Bogor,Jawa Barat,2021-06-08,basic,True,True,4.66,18,70.2,2.8,2026-07-28
+SEL-000935,UD Irawan Tbk,small_business,Fashion & Beauty,Tangerang Selatan,Banten,2022-02-19,basic,True,True,4.69,6,80.6,1.2,2026-07-11
+SEL-000936,"Puti Vicky Prakasa, S.Kom",individual,Electronics & Gadgets,Makassar,Sulawesi Selatan,2026-02-26,free,False,False,3.67,10,50.1,0.4,2026-06-05
+SEL-000937,Perum Usamah Tbk,dealer,Vehicles,Solo,Jawa Tengah,2025-04-16,basic,True,True,4.55,16,87.3,0.6,2026-07-29
+SEL-000938,Latif Mandala,individual,Vehicles,Tangerang Selatan,Banten,2026-03-21,free,False,False,3.61,12,51.7,14.0,2026-08-09
+SEL-000939,CV Halim Purnawati,dealer,Baby & Kids,Surabaya,Jawa Timur,2023-08-08,premium,True,True,,0,72.2,3.9,2026-09-01
+SEL-000940,Patricia Setiawan,individual,Jobs,Medan,Sumatera Utara,2026-02-27,free,False,False,4.86,7,69.5,0.8,2026-07-19
+SEL-000941,Drs. Ella Sinaga,individual,Property,Batam,Kepulauan Riau,2021-12-23,free,False,True,4.44,3,79.4,18.4,2026-07-28
+SEL-000942,UD Pertiwi Tbk,small_business,Jobs,Jakarta Utara,DKI Jakarta,2020-03-01,free,True,True,4.71,6,68.8,1.8,2026-07-03
+SEL-000943,"Drs. Shania Kuswoyo, S.E.I",individual,Property,Jakarta Utara,DKI Jakarta,2019-08-28,free,False,False,4.57,2,100.0,2.9,2026-07-01
+SEL-000944,"KH. Hendra Halim, S.T.",individual,Baby & Kids,Semarang,Jawa Tengah,2019-08-12,free,True,True,,0,64.6,1.8,2026-07-02
+SEL-000945,"Hj. Dian Mustofa, S.H.",individual,Vehicles,Surabaya,Jawa Timur,2020-09-08,free,False,True,4.27,4,76.5,10.9,2026-08-16
+SEL-000946,Narji Sinaga,individual,Property,Semarang,Jawa Tengah,2021-04-26,free,True,True,4.2,7,64.3,1.4,2026-07-28
+SEL-000947,PD Lestari Megantara,small_business,Electronics & Gadgets,Jakarta Selatan,DKI Jakarta,2019-03-07,free,True,True,3.69,21,43.1,6.5,2026-07-29
+SEL-000948,PD Waluyo Tbk,dealer,Vehicles,Kediri,Jawa Timur,2018-05-09,premium,False,False,3.76,7,60.4,7.5,2026-06-11
+SEL-000949,PT Waskita,dealer,Baby & Kids,Magelang,Jawa Tengah,2022-07-17,premium,True,True,4.08,6,74.6,2.5,2026-07-20
+SEL-000950,H. Estiawan Uwais,individual,Electronics & Gadgets,Solo,Jawa Tengah,2019-01-02,free,True,True,3.48,3,51.3,1.7,2026-07-01
+SEL-000951,Nova Simbolon,individual,Vehicles,Serang,Banten,2021-01-30,premium,False,False,3.55,3,35.6,4.5,2026-07-29
+SEL-000952,Cut Vicky Iswahyudi,individual,Vehicles,Medan,Sumatera Utara,2025-09-28,free,True,True,4.32,8,50.4,29.6,2026-07-18
+SEL-000953,"Michelle Usada, S.I.Kom",individual,Property,Serang,Banten,2020-02-01,free,False,False,4.58,5,49.1,39.9,2026-07-11
+SEL-000954,"Puti Wulan Nasyidah, S.Sos",individual,Vehicles,Palembang,Sumatera Selatan,2021-08-14,free,True,True,4.58,4,72.1,6.7,2026-07-21
+SEL-000955,PD Prabowo Lailasari,dealer,Jobs,Tangerang,Banten,2021-06-09,premium,True,True,4.39,2,59.0,12.9,2026-06-06
+SEL-000956,UD Suryono Tbk,dealer,Vehicles,Solo,Jawa Tengah,2018-06-24,premium,True,True,4.74,17,100.0,1.3,2026-07-21
+SEL-000957,Perum Laksita Siregar,small_business,Electronics & Gadgets,Tangerang,Banten,2018-05-28,free,True,True,3.6,15,60.4,7.5,2026-08-29
+SEL-000958,"Prabowo Hardiansyah, S.Gz",individual,Hobbies & Sports,Jakarta Selatan,DKI Jakarta,2018-05-03,free,True,False,4.23,2,61.6,1.3,2026-06-11
+SEL-000959,Luis Haryanti,individual,Home & Furniture,Bekasi,Jawa Barat,2019-05-09,free,False,True,4.69,5,67.3,9.8,2026-07-20
+SEL-000960,Bancar Manullang,individual,Services,Solo,Jawa Tengah,2026-04-20,free,False,False,4.53,5,58.0,7.3,2026-08-11
+SEL-000961,Mutia Adriansyah,individual,Property,Badung,Bali,2022-03-16,free,True,True,4.44,8,78.8,2.1,2026-06-11
+SEL-000962,Farah Mustofa,individual,Jobs,Tangerang,Banten,2022-04-12,free,False,False,4.1,6,34.5,7.9,2026-08-31
+SEL-000963,"Gada Manullang, S.T.",individual,Jobs,Jakarta Selatan,DKI Jakarta,2026-05-17,free,True,True,3.79,2,60.0,16.2,2026-07-04
+SEL-000964,Marwata Tarihoran,individual,Hobbies & Sports,Solo,Jawa Tengah,2020-06-29,free,True,True,4.26,2,67.3,3.6,2026-06-03
+SEL-000965,PT Wahyudin (Persero) Tbk,enterprise,Vehicles,Bogor,Jawa Barat,2019-08-24,premium,True,True,4.77,10,71.6,4.4,2026-07-10
+SEL-000966,Harto Utami,individual,Vehicles,Binjai,Sumatera Utara,2024-01-05,free,True,True,5.0,3,70.5,0.4,2026-06-15
+SEL-000967,CV Aryani (Persero) Tbk,enterprise,Jobs,Yogyakarta,DI Yogyakarta,2019-12-16,premium,True,False,3.97,3,69.5,0.5,2026-08-19
+SEL-000968,"Cinta Adriansyah, S.Kom",individual,Fashion & Beauty,Solo,Jawa Tengah,2020-11-27,free,False,False,4.28,4,64.3,5.3,2026-08-13
+SEL-000969,Citra Mustofa,individual,Electronics & Gadgets,Solo,Jawa Tengah,2020-04-17,free,False,True,4.37,3,78.5,9.9,2026-07-25
+SEL-000970,R.A. Padma Zulaika,individual,Fashion & Beauty,Depok,Jawa Barat,2022-04-17,free,True,True,3.66,8,63.8,16.2,2026-08-04
+SEL-000971,Ajeng Anggriawan,individual,Electronics & Gadgets,Malang,Jawa Timur,2020-10-04,free,True,True,4.46,7,35.1,6.6,2026-07-07
+SEL-000972,"Jasmin Lazuardi, S.Farm",individual,Vehicles,Denpasar,Bali,2018-01-02,free,True,True,4.2,8,71.2,14.0,2026-06-27
+SEL-000973,"Diah Kuswandari, S.Pt",individual,Baby & Kids,Binjai,Sumatera Utara,2021-09-06,free,True,True,4.86,2,73.9,8.6,2026-08-16
+SEL-000974,PD Irawan Jailani,dealer,Home & Furniture,Semarang,Jawa Tengah,2019-06-11,basic,True,False,4.61,6,52.6,1.7,2026-08-03
+SEL-000975,Galar Uwais,individual,Property,Depok,Jawa Barat,2024-10-23,free,False,True,3.63,5,68.0,4.7,2026-08-04
+SEL-000976,Dina Wibowo,individual,Home & Furniture,Jakarta Selatan,DKI Jakarta,2020-09-09,free,False,True,3.96,6,55.7,8.7,2026-08-03
+SEL-000977,"KH. Taufan Mansur, S.E.I",individual,Home & Furniture,Jakarta Pusat,DKI Jakarta,2022-09-06,free,False,False,4.21,2,83.6,1.3,2026-08-04
+SEL-000978,Karta Pratiwi,individual,Baby & Kids,Jakarta Utara,DKI Jakarta,2020-11-24,basic,False,True,3.94,6,33.6,9.3,2026-06-06
+SEL-000979,Lurhur Yulianti,individual,Services,Depok,Jawa Barat,2026-04-10,free,True,True,4.52,7,100.0,1.8,2026-07-05
+SEL-000980,Irnanto Tampubolon,individual,Jobs,Makassar,Sulawesi Selatan,2018-11-22,free,False,True,4.62,4,83.1,0.3,2026-07-13
+SEL-000981,CV Zulkarnain Susanti,enterprise,Home & Furniture,Surabaya,Jawa Timur,2024-10-04,premium,True,True,4.38,6,67.0,3.7,2026-07-11
+SEL-000982,CV Irawan Januar (Persero) Tbk,small_business,Home & Furniture,Depok,Jawa Barat,2022-05-13,basic,True,True,4.25,4,66.8,5.2,2026-07-11
+SEL-000983,Perum Winarno,small_business,Fashion & Beauty,Jakarta Timur,DKI Jakarta,2022-09-06,basic,True,True,3.9,8,73.2,24.9,2026-07-31
+SEL-000984,Maria Sihotang,individual,Jobs,Bogor,Jawa Barat,2025-12-31,basic,False,True,4.63,1,86.5,12.0,2026-07-29
+SEL-000985,"R.M. Dirja Saefullah, S.Pt",individual,Electronics & Gadgets,Palembang,Sumatera Selatan,2018-10-16,basic,True,True,3.74,2,36.4,4.2,2026-08-07
+SEL-000986,Perum Rahimah Rahimah,dealer,Vehicles,Kediri,Jawa Timur,2022-03-16,premium,True,True,3.59,3,74.0,0.2,2026-08-25
+SEL-000987,"Rachel Suryono, S.Ked",individual,Fashion & Beauty,Palembang,Sumatera Selatan,2019-05-25,free,False,False,3.98,9,32.3,13.2,2026-07-15
+SEL-000988,"Hj. Ilsa Putra, M.TI.",individual,Hobbies & Sports,Palembang,Sumatera Selatan,2024-08-14,free,False,True,3.98,9,65.5,10.0,2026-06-25
+SEL-000989,Drs. Fitriani Wijaya,individual,Services,Jakarta Pusat,DKI Jakarta,2021-07-28,free,False,True,3.94,4,61.2,6.4,2026-07-18
+SEL-000990,PT Permadi Tbk,small_business,Property,Serang,Banten,2025-03-20,basic,True,True,4.69,4,54.8,2.6,2026-07-16
+SEL-000991,Carla Permadi,individual,Hobbies & Sports,Makassar,Sulawesi Selatan,2026-02-17,free,True,True,4.57,2,100.0,5.1,2026-08-02
+SEL-000992,Perum Hidayanto Nuraini (Persero),small_business,Home & Furniture,Sidoarjo,Jawa Timur,2022-12-08,free,True,True,4.14,11,51.1,0.4,2026-07-20
+SEL-000993,UD Mustofa Tbk,small_business,Electronics & Gadgets,Jakarta Utara,DKI Jakarta,2026-02-16,premium,True,True,4.99,6,90.3,3.0,2026-07-03
+SEL-000994,"Ir. Lili Utama, M.Pd",individual,Fashion & Beauty,Samarinda,Kalimantan Timur,2018-01-20,basic,True,True,5.0,9,100.0,7.1,2026-07-31
+SEL-000995,PD Hidayanto Budiyanto,dealer,Jobs,Denpasar,Bali,2019-11-18,basic,True,True,3.13,11,75.2,2.9,2026-07-11
+SEL-000996,Puti Amalia Saptono,individual,Vehicles,Magelang,Jawa Tengah,2018-01-27,free,True,True,4.69,4,78.4,3.9,2026-06-24
+SEL-000997,Arta Halim,individual,Property,Solo,Jawa Tengah,2024-03-25,basic,False,False,4.7,6,63.5,0.6,2026-07-11
+SEL-000998,"dr. Jono Suwarno, M.TI.",individual,Fashion & Beauty,Jakarta Timur,DKI Jakarta,2025-09-26,basic,True,True,4.66,7,72.9,2.0,2026-07-13
+SEL-000999,PD Wacana Hutasoit (Persero) Tbk,enterprise,Vehicles,Palembang,Sumatera Selatan,2024-11-15,premium,True,True,4.43,12,83.9,2.4,2026-07-05
+SEL-001000,Chelsea Saragih,individual,Services,Surabaya,Jawa Timur,2022-12-30,free,True,True,4.41,1,73.0,0.3,2026-06-18
+SEL-001001,Kajen Putra,individual,Electronics & Gadgets,Jakarta Timur,DKI Jakarta,2024-06-24,premium,True,True,4.42,2,83.2,4.9,2026-07-08
+SEL-001002,"R.M. Kawaca Simbolon, S.Sos",individual,Jobs,Tangerang Selatan,Banten,2018-06-20,free,True,True,4.76,1,62.0,6.7,2026-08-29
+SEL-001003,Hj. Vanesa Yulianti,individual,Fashion & Beauty,Makassar,Sulawesi Selatan,2023-01-01,free,True,False,3.94,9,37.1,8.1,2026-06-08
+SEL-001004,"Margana Haryanto, S.Pd",individual,Property,Yogyakarta,DI Yogyakarta,2025-02-15,free,False,True,4.39,3,71.9,1.4,2026-07-30
+SEL-001005,"Maya Permadi, S.Gz",individual,Electronics & Gadgets,Bekasi,Jawa Barat,2024-08-22,free,False,True,4.15,5,51.8,17.5,2026-08-22
+SEL-001006,Bakianto Fujiati,individual,Vehicles,Jakarta Selatan,DKI Jakarta,2018-11-14,free,True,False,,0,69.4,5.5,2026-07-24
+SEL-001007,PD Suryatmi,dealer,Vehicles,Makassar,Sulawesi Selatan,2023-12-24,free,True,True,4.38,7,49.9,3.2,2026-08-18
+SEL-001008,Cut Ira Widiastuti,individual,Home & Furniture,Balikpapan,Kalimantan Timur,2020-04-21,basic,True,False,4.76,8,76.8,7.7,2026-06-17
+SEL-001009,PT Budiman Mandala,small_business,Hobbies & Sports,Semarang,Jawa Tengah,2018-10-26,premium,True,True,4.82,3,95.6,2.2,2026-06-06
+SEL-001010,"Ajeng Marpaung, M.Kom.",individual,Home & Furniture,Tangerang Selatan,Banten,2026-05-22,free,True,True,4.3,10,83.0,2.1,2026-07-06
+SEL-001011,Perum Maryati Tbk,small_business,Electronics & Gadgets,Malang,Jawa Timur,2018-03-15,basic,True,True,4.43,7,73.6,6.5,2026-07-11
+SEL-001012,Hardana Mahendra,individual,Property,Kediri,Jawa Timur,2023-12-29,free,False,False,4.93,6,84.9,4.2,2026-08-13
+SEL-001013,"Victoria Santoso, S.IP",individual,Vehicles,Jakarta Pusat,DKI Jakarta,2021-03-26,basic,True,True,4.84,4,78.3,0.1,2026-07-30
+SEL-001014,UD Aryani,enterprise,Property,Jakarta Barat,DKI Jakarta,2022-01-11,free,True,True,4.08,11,73.5,3.7,2026-07-15
+SEL-001015,Paramita Haryanto,individual,Jobs,Bogor,Jawa Barat,2023-10-03,basic,True,True,4.47,3,90.0,7.7,2026-06-28
+SEL-001016,Tania Permata,individual,Vehicles,Yogyakarta,DI Yogyakarta,2018-02-10,free,True,True,3.83,4,75.3,7.1,2026-08-17
+SEL-001017,PD Hasanah,small_business,Property,Jakarta Selatan,DKI Jakarta,2024-04-18,basic,True,True,4.24,4,76.1,18.0,2026-06-03
+SEL-001018,PT Mandasari (Persero) Tbk,small_business,Property,Depok,Jawa Barat,2023-03-22,free,True,True,4.26,9,48.9,2.2,2026-07-21
+SEL-001019,Endah Rajasa,individual,Fashion & Beauty,Magelang,Jawa Tengah,2022-09-11,free,False,True,3.99,4,42.6,3.0,2026-07-10
+SEL-001020,"R. Tugiman Pertiwi, S.IP",individual,Home & Furniture,Jakarta Timur,DKI Jakarta,2025-04-16,free,True,True,4.03,7,59.6,2.1,2026-08-23
+SEL-001021,Perum Adriansyah Gunawan,dealer,Property,Jakarta Barat,DKI Jakarta,2019-02-24,premium,True,True,4.46,15,74.5,8.2,2026-08-14
+SEL-001022,CV Gunawan,small_business,Property,Semarang,Jawa Tengah,2018-09-16,basic,False,True,4.21,8,62.2,18.2,2026-08-15
+SEL-001023,UD Winarno Maryadi (Persero) Tbk,enterprise,Vehicles,Bandung,Jawa Barat,2025-10-27,basic,True,True,4.4,14,100.0,0.4,2026-07-05
+SEL-001024,"Cut Puspa Yolanda, S.Farm",individual,Jobs,Tangerang,Banten,2018-07-31,free,False,True,4.29,4,71.0,5.2,2026-06-29
+SEL-001025,UD Prayoga Agustina,small_business,Services,Balikpapan,Kalimantan Timur,2018-06-21,basic,True,True,4.3,12,82.8,11.0,2026-06-14
+SEL-001026,"Jamalia Saputra, S.Pt",individual,Fashion & Beauty,Jakarta Barat,DKI Jakarta,2023-01-31,free,True,True,4.08,3,47.7,4.6,2026-08-10
+SEL-001027,PT Mardhiyah (Persero) Tbk,dealer,Vehicles,Samarinda,Kalimantan Timur,2021-09-14,basic,True,True,4.83,5,72.6,7.2,2026-07-27
+SEL-001028,Darmana Maryati,individual,Home & Furniture,Badung,Bali,2026-06-12,free,True,True,4.48,6,67.7,6.1,2026-08-29
+SEL-001029,PD Hidayat,small_business,Fashion & Beauty,Yogyakarta,DI Yogyakarta,2021-11-21,free,True,True,4.95,11,78.4,0.9,2026-06-11
+SEL-001030,Zelaya Suryono,individual,Baby & Kids,Serang,Banten,2024-03-02,free,False,True,3.45,9,58.8,7.3,2026-06-23
+SEL-001031,"T. Gamanto Irawan, M.Pd",individual,Electronics & Gadgets,Serang,Banten,2025-03-24,free,True,True,5.0,3,78.4,0.5,2026-06-22
+SEL-001032,PT Uwais Pangestu Tbk,small_business,Jobs,Tangerang,Banten,2023-11-09,basic,True,True,4.84,12,50.3,6.1,2026-06-05
+SEL-001033,Tgk. Ulya Oktaviani,individual,Fashion & Beauty,Tangerang,Banten,2025-01-04,free,True,True,4.47,1,75.0,2.8,2026-07-06
+SEL-001034,PD Uwais Rahayu,dealer,Property,Jakarta Pusat,DKI Jakarta,2020-10-17,premium,False,False,4.35,11,73.2,4.0,2026-07-28
+SEL-001035,Vera Napitupulu,individual,Vehicles,Makassar,Sulawesi Selatan,2021-12-01,free,False,False,4.43,7,79.6,8.2,2026-08-17
+SEL-001036,"Puji Prasasta, S.E.I",individual,Electronics & Gadgets,Solo,Jawa Tengah,2021-08-27,free,True,True,5.0,6,63.4,0.8,2026-08-27
+SEL-001037,Wardi Wasita,individual,Property,Palembang,Sumatera Selatan,2020-02-26,premium,True,True,3.53,3,36.1,16.7,2026-08-11
+SEL-001038,Daruna Namaga,individual,Vehicles,Bekasi,Jawa Barat,2025-10-24,free,True,True,3.94,4,68.4,5.1,2026-08-09
+SEL-001039,Siska Anggriawan,individual,Vehicles,Jakarta Selatan,DKI Jakarta,2024-08-05,free,True,True,5.0,8,70.0,0.3,2026-06-03
+SEL-001040,Ade Wahyuni,individual,Vehicles,Malang,Jawa Timur,2024-07-30,free,True,True,4.63,4,100.0,2.0,2026-08-16
+SEL-001041,Zizi Samosir,individual,Vehicles,Kediri,Jawa Timur,2025-08-17,basic,True,True,4.23,7,46.6,1.4,2026-08-05
+SEL-001042,CV Nuraini,small_business,Hobbies & Sports,Kediri,Jawa Timur,2023-03-02,free,True,True,4.18,11,70.8,5.0,2026-06-30
+SEL-001043,PD Lestari Halim,small_business,Electronics & Gadgets,Cimahi,Jawa Barat,2022-07-23,free,True,True,3.6,4,53.0,16.7,2026-08-22
+SEL-001044,UD Iswahyudi Gunawan,small_business,Vehicles,Cimahi,Jawa Barat,2020-10-12,free,True,True,4.14,8,55.0,13.0,2026-08-11
+SEL-001045,Usman Nurdiyanti,individual,Property,Magelang,Jawa Tengah,2020-06-23,free,True,True,3.9,5,65.3,3.8,2026-07-25
+SEL-001046,Tira Wahyudin,individual,Home & Furniture,Depok,Jawa Barat,2023-04-11,free,False,False,4.39,7,65.8,1.9,2026-07-04
+SEL-001047,Ulva Hutasoit,individual,Fashion & Beauty,Makassar,Sulawesi Selatan,2022-12-30,basic,True,True,4.9,9,64.5,8.6,2026-07-01
+SEL-001048,Perum Mansur,small_business,Vehicles,Jakarta Selatan,DKI Jakarta,2020-01-15,basic,True,True,5.0,18,86.3,4.2,2026-07-14
+SEL-001049,PT Rahayu Purnawati (Persero) Tbk,dealer,Baby & Kids,Bogor,Jawa Barat,2020-08-16,premium,True,True,3.92,14,84.1,0.7,2026-06-15
+SEL-001050,Salimah Mustofa,individual,Property,Bandung,Jawa Barat,2018-10-10,free,False,False,3.98,3,48.4,14.1,2026-06-29
+SEL-001051,UD Rajata Sihotang,small_business,Property,Semarang,Jawa Tengah,2019-12-31,free,True,True,4.55,17,47.7,8.3,2026-08-07
+SEL-001052,"dr. Naradi Simbolon, S.Psi",individual,Vehicles,Sidoarjo,Jawa Timur,2025-12-06,basic,False,True,4.56,7,80.6,2.9,2026-06-26
+SEL-001053,Humaira Pradipta,individual,Electronics & Gadgets,Tangerang,Banten,2025-06-01,free,False,False,4.3,5,59.9,8.2,2026-06-13
+SEL-001054,Warsa Pangestu,individual,Property,Makassar,Sulawesi Selatan,2022-09-29,free,True,True,4.35,5,51.3,5.9,2026-07-05
+SEL-001055,Purwadi Padmasari,individual,Property,Bekasi,Jawa Barat,2018-07-19,free,False,False,4.24,8,88.5,19.6,2026-07-29
+SEL-001056,CV Kurniawan,small_business,Jobs,Serang,Banten,2023-06-11,free,True,True,4.83,15,73.9,8.1,2026-07-18
+SEL-001057,PD Hastuti Sihotang,dealer,Hobbies & Sports,Jakarta Pusat,DKI Jakarta,2022-03-08,premium,True,False,4.02,15,94.9,10.4,2026-06-21
+SEL-001058,Devi Nasyiah,individual,Electronics & Gadgets,Bandung,Jawa Barat,2026-04-11,free,True,True,4.82,11,51.6,5.8,2026-06-06
+SEL-001059,Vera Pranowo,individual,Vehicles,Sidoarjo,Jawa Timur,2026-04-23,free,True,True,3.73,2,32.3,1.1,2026-07-29
+SEL-001060,UD Hariyah Saptono (Persero) Tbk,small_business,Jobs,Jakarta Pusat,DKI Jakarta,2022-02-25,premium,True,True,4.26,9,58.8,20.9,2026-06-16
+SEL-001061,CV Sihombing,enterprise,Electronics & Gadgets,Tangerang Selatan,Banten,2022-11-14,premium,False,False,4.43,8,79.9,15.6,2026-09-01
+SEL-001062,"Ir. Azalea Pratama, S.Psi",individual,Services,Tangerang,Banten,2025-07-17,free,True,False,,0,92.9,2.8,2026-08-17
+SEL-001063,Bakijan Prayoga,individual,Jobs,Medan,Sumatera Utara,2019-09-23,free,True,False,2.76,5,52.9,6.6,2026-06-20
+SEL-001064,Lala Mulyani,individual,Vehicles,Solo,Jawa Tengah,2022-07-29,basic,False,False,4.36,5,59.1,4.6,2026-07-24
+SEL-001065,Murti Salahudin,individual,Vehicles,Tangerang,Banten,2024-06-29,free,False,True,4.08,2,43.6,9.8,2026-06-07
+SEL-001066,CV Dabukke Tbk,enterprise,Vehicles,Sidoarjo,Jawa Timur,2018-10-05,premium,True,True,3.81,6,64.8,8.1,2026-08-06
+SEL-001067,"Dr. Puti Pudjiastuti, S.H.",individual,Jobs,Jakarta Utara,DKI Jakarta,2026-07-15,free,True,True,4.05,4,81.2,13.3,2026-07-23
+SEL-001068,PD Jailani,small_business,Jobs,Jakarta Selatan,DKI Jakarta,2021-02-06,basic,False,True,5.0,9,42.0,0.4,2026-08-19
+SEL-001069,"KH. Cahyono Maheswara, S.Ked",individual,Vehicles,Tangerang Selatan,Banten,2023-07-23,premium,False,True,4.29,4,89.7,1.1,2026-07-28
+SEL-001070,Radika Prasetya,individual,Home & Furniture,Batam,Kepulauan Riau,2025-05-12,free,False,True,3.8,8,68.1,16.9,2026-06-21
+SEL-001071,CV Wacana Wahyudin,dealer,Vehicles,Jakarta Utara,DKI Jakarta,2019-10-23,basic,True,True,3.72,3,39.0,2.0,2026-07-19
+SEL-001072,"Lasmono Yuliarti, S.Pt",individual,Hobbies & Sports,Solo,Jawa Tengah,2018-12-09,free,True,True,4.26,6,84.9,1.6,2026-07-05
+SEL-001073,Ir. Hana Hutagalung,individual,Baby & Kids,Medan,Sumatera Utara,2020-11-24,free,False,True,3.99,8,69.8,6.6,2026-07-28
+SEL-001074,PT Napitupulu,dealer,Home & Furniture,Yogyakarta,DI Yogyakarta,2024-11-28,free,False,False,4.65,2,76.7,3.8,2026-07-06
+SEL-001075,CV Iswahyudi Sitompul (Persero),dealer,Home & Furniture,Magelang,Jawa Tengah,2026-07-09,basic,True,True,4.14,4,60.1,20.6,2026-08-25
+SEL-001076,Wardaya Hariyah,individual,Property,Tangerang Selatan,Banten,2025-06-16,free,True,True,4.38,3,92.7,5.3,2026-07-16
+SEL-001077,Cawisadi Pertiwi,individual,Fashion & Beauty,Tangerang Selatan,Banten,2021-04-06,free,False,True,4.48,11,64.7,3.1,2026-07-01
+SEL-001078,Yuni Widodo,individual,Hobbies & Sports,Yogyakarta,DI Yogyakarta,2025-02-23,free,False,False,4.01,2,79.2,11.3,2026-07-19
+SEL-001079,Ana Wibowo,individual,Vehicles,Jakarta Barat,DKI Jakarta,2024-10-09,free,True,True,4.31,7,63.9,1.5,2026-06-08
+SEL-001080,"Irsad Natsir, S.I.Kom",individual,Hobbies & Sports,Samarinda,Kalimantan Timur,2018-09-22,free,True,True,4.33,9,60.8,0.2,2026-08-14
+SEL-001081,Upik Nashiruddin,individual,Baby & Kids,Jakarta Timur,DKI Jakarta,2024-06-06,free,False,True,4.81,2,78.3,1.1,2026-06-12
+SEL-001082,UD Hassanah (Persero) Tbk,dealer,Home & Furniture,Yogyakarta,DI Yogyakarta,2024-10-10,premium,True,True,4.06,11,48.1,6.4,2026-06-05
+SEL-001083,Perum Safitri,dealer,Fashion & Beauty,Jakarta Pusat,DKI Jakarta,2022-07-11,premium,False,False,4.08,1,73.4,0.7,2026-06-24
+SEL-001084,UD Mandasari Zulkarnain,small_business,Vehicles,Jakarta Timur,DKI Jakarta,2020-08-30,premium,False,False,3.98,4,65.9,11.0,2026-07-31
+SEL-001085,PT Irawan Setiawan Tbk,enterprise,Property,Jakarta Selatan,DKI Jakarta,2019-01-11,premium,False,True,4.51,23,76.3,13.4,2026-06-27
+SEL-001086,PD Pangestu Yuniar,small_business,Vehicles,Malang,Jawa Timur,2022-07-15,basic,True,True,4.41,2,71.3,5.5,2026-08-04
+SEL-001087,Perum Budiyanto Wibowo,small_business,Fashion & Beauty,Bekasi,Jawa Barat,2026-05-02,free,True,False,4.57,15,78.4,9.4,2026-08-30
+SEL-001088,PD Palastri Tbk,small_business,Property,Jakarta Selatan,DKI Jakarta,2023-06-15,free,True,True,3.86,8,47.2,11.9,2026-07-02
+SEL-001089,Padmi Mardhiyah,individual,Fashion & Beauty,Malang,Jawa Timur,2024-07-04,free,True,True,4.78,8,100.0,2.8,2026-06-12
+SEL-001090,Kayla Saputra,individual,Property,Malang,Jawa Timur,2019-12-15,free,False,False,4.58,10,92.4,10.9,2026-06-16
+SEL-001091,Akarsana Simanjuntak,individual,Property,Binjai,Sumatera Utara,2021-07-15,free,False,True,4.49,1,100.0,2.3,2026-08-04
+SEL-001092,R.A. Ana Setiawan,individual,Hobbies & Sports,Badung,Bali,2023-06-03,basic,True,True,5.0,4,83.6,2.6,2026-06-10
+SEL-001093,Rusman Halimah,individual,Vehicles,Tangerang Selatan,Banten,2020-01-03,free,False,False,4.31,6,74.6,15.1,2026-08-16
+SEL-001094,Tgk. Pranata Padmasari,individual,Fashion & Beauty,Jakarta Utara,DKI Jakarta,2018-11-10,free,True,True,4.04,1,36.4,1.1,2026-08-08
+SEL-001095,Capa Januar,individual,Fashion & Beauty,Bandung,Jawa Barat,2019-05-23,free,True,True,3.77,4,58.7,5.5,2026-06-19
+SEL-001096,Maryadi Permadi,individual,Fashion & Beauty,Samarinda,Kalimantan Timur,2021-04-27,free,True,True,4.69,2,75.3,0.3,2026-06-21
+SEL-001097,Patricia Hakim,individual,Vehicles,Jakarta Selatan,DKI Jakarta,2018-06-19,free,False,True,4.39,11,74.5,9.1,2026-06-08
+SEL-001098,Perum Wibisono Thamrin,small_business,Jobs,Sidoarjo,Jawa Timur,2018-05-03,premium,True,False,4.38,7,60.4,17.8,2026-06-05
+SEL-001099,CV Prakasa Rahayu,dealer,Vehicles,Makassar,Sulawesi Selatan,2018-09-10,premium,True,True,4.76,7,62.7,3.6,2026-06-15
+SEL-001100,Yani Tamba,individual,Fashion & Beauty,Makassar,Sulawesi Selatan,2026-02-05,free,False,False,4.24,5,88.1,2.1,2026-06-15
+SEL-001101,Cut Tiara Thamrin,individual,Electronics & Gadgets,Malang,Jawa Timur,2026-02-28,free,True,True,4.83,2,85.9,12.9,2026-08-11
+SEL-001102,Ir. Dinda Pratiwi,individual,Home & Furniture,Tangerang Selatan,Banten,2021-01-20,free,True,False,4.42,4,65.2,0.3,2026-08-27
+SEL-001103,PD Namaga Saragih,small_business,Electronics & Gadgets,Surabaya,Jawa Timur,2023-10-19,basic,True,True,5.0,17,89.2,0.4,2026-08-27
+SEL-001104,PD Firgantoro Iswahyudi,small_business,Baby & Kids,Medan,Sumatera Utara,2021-08-07,basic,True,True,4.64,14,70.4,2.0,2026-07-06
+SEL-001105,Daruna Suartini,individual,Fashion & Beauty,Jakarta Pusat,DKI Jakarta,2024-05-08,free,True,True,4.38,4,78.5,22.1,2026-08-12
+SEL-001106,PT Novitasari Kuswandari,small_business,Property,Jakarta Selatan,DKI Jakarta,2021-10-06,free,True,True,4.57,13,90.2,13.5,2026-07-26
+SEL-001107,Gamblang Susanti,individual,Fashion & Beauty,Serang,Banten,2019-04-09,premium,True,True,4.38,4,92.1,3.6,2026-06-12
+SEL-001108,Reksa Mustofa,individual,Vehicles,Bekasi,Jawa Barat,2024-05-15,free,True,True,3.67,1,79.1,7.4,2026-06-12
+SEL-001109,CV Sinaga (Persero) Tbk,enterprise,Vehicles,Serang,Banten,2020-05-14,basic,True,False,5.0,9,90.6,16.0,2026-06-20
+SEL-001110,Cakrajiya Rahmawati,individual,Property,Cimahi,Jawa Barat,2019-09-23,free,False,False,4.01,1,65.4,16.5,2026-06-18
+SEL-001111,"Dinda Kusumo, M.TI.",individual,Electronics & Gadgets,Denpasar,Bali,2020-04-07,free,True,True,4.45,5,77.1,0.8,2026-08-10
+SEL-001112,"dr. Belinda Wahyudin, S.Sos",individual,Fashion & Beauty,Palembang,Sumatera Selatan,2021-03-28,free,False,True,4.09,1,66.4,1.7,2026-08-22
+SEL-001113,Puti Jessica Sihombing,individual,Property,Kediri,Jawa Timur,2019-08-08,basic,True,True,3.77,1,58.2,0.1,2026-06-16
+SEL-001114,CV Manullang Tbk,dealer,Hobbies & Sports,Palembang,Sumatera Selatan,2018-09-19,basic,True,True,3.72,13,55.8,3.9,2026-07-22
+SEL-001115,UD Natsir Purwanti Tbk,enterprise,Electronics & Gadgets,Cimahi,Jawa Barat,2024-08-18,premium,True,False,4.75,6,50.7,1.9,2026-07-12
+SEL-001116,Mulya Rahmawati,individual,Vehicles,Sidoarjo,Jawa Timur,2018-11-16,free,True,True,4.28,5,72.9,23.7,2026-07-10
+SEL-001117,"R. Keisha Samosir, S.Pd",individual,Home & Furniture,Jakarta Utara,DKI Jakarta,2023-02-12,free,True,True,,0,58.3,1.1,2026-07-02
+SEL-001118,CV Adriansyah Pertiwi,small_business,Vehicles,Badung,Bali,2023-04-12,basic,True,False,3.83,10,62.5,0.7,2026-08-12
+SEL-001119,Zizi Purnawati,individual,Electronics & Gadgets,Yogyakarta,DI Yogyakarta,2020-08-17,free,True,False,4.07,7,79.8,0.9,2026-08-27
+SEL-001120,CV Suartini,dealer,Property,Denpasar,Bali,2018-04-10,premium,False,True,4.59,2,60.6,4.1,2026-08-03
+SEL-001121,Perum Prasetya (Persero) Tbk,small_business,Vehicles,Badung,Bali,2020-12-19,basic,True,True,4.45,15,61.1,1.4,2026-06-26
+SEL-001122,Dinda Sitompul,individual,Vehicles,Makassar,Sulawesi Selatan,2018-07-25,free,True,True,4.42,4,64.2,1.9,2026-06-14
+SEL-001123,CV Situmorang,small_business,Property,Cimahi,Jawa Barat,2021-05-19,basic,True,True,4.71,8,88.0,10.5,2026-08-04
+SEL-001124,Eli Usada,individual,Vehicles,Samarinda,Kalimantan Timur,2024-08-24,free,False,False,3.81,12,94.9,6.7,2026-08-10
+SEL-001125,Rizki Winarsih,individual,Vehicles,Magelang,Jawa Tengah,2021-12-04,free,False,True,3.96,1,64.6,31.8,2026-06-05
+SEL-001126,"Omar Sitorus, M.M.",individual,Home & Furniture,Kediri,Jawa Timur,2020-10-16,free,False,False,4.32,8,77.5,23.6,2026-06-29
+SEL-001127,Eman Pranowo,individual,Vehicles,Magelang,Jawa Tengah,2022-05-01,free,True,True,4.55,6,73.9,4.0,2026-07-05
+SEL-001128,PT Tampubolon Rajasa,small_business,Services,Bekasi,Jawa Barat,2023-05-19,basic,True,True,4.4,1,58.2,14.5,2026-06-12
+SEL-001129,PT Hardiansyah,small_business,Jobs,Bandung,Jawa Barat,2025-12-07,basic,False,True,4.72,3,58.9,14.8,2026-06-29
+SEL-001130,PD Andriani Marbun Tbk,enterprise,Fashion & Beauty,Bogor,Jawa Barat,2021-08-28,premium,True,True,4.64,4,74.7,2.3,2026-08-02
+SEL-001131,PD Tampubolon Palastri Tbk,enterprise,Electronics & Gadgets,Jakarta Barat,DKI Jakarta,2019-02-08,premium,False,True,4.51,7,64.5,9.9,2026-08-01
+SEL-001132,Radit Kuswandari,individual,Property,Malang,Jawa Timur,2020-08-26,free,False,True,3.97,6,64.4,3.1,2026-08-31
+SEL-001133,"Drs. Martana Prasetyo, S.E.",individual,Baby & Kids,Denpasar,Bali,2022-11-25,free,False,False,4.26,9,87.4,17.6,2026-07-21
+SEL-001134,PT Firmansyah Sihombing (Persero),small_business,Property,Tangerang,Banten,2023-07-13,free,True,True,4.35,10,100.0,2.2,2026-08-31
+SEL-001135,UD Jailani (Persero) Tbk,enterprise,Electronics & Gadgets,Magelang,Jawa Tengah,2021-02-17,premium,True,True,4.09,8,81.9,1.1,2026-08-11
+SEL-001136,Ella Waluyo,individual,Fashion & Beauty,Sidoarjo,Jawa Timur,2024-05-31,free,True,True,4.52,9,75.5,19.3,2026-07-06
+SEL-001137,Opan Hutagalung,individual,Baby & Kids,Kediri,Jawa Timur,2019-10-24,free,True,True,3.98,5,52.2,4.3,2026-06-03
+SEL-001138,R. Gandi Riyanti,individual,Electronics & Gadgets,Jakarta Barat,DKI Jakarta,2024-02-13,free,False,True,4.42,10,100.0,3.3,2026-06-09
+SEL-001139,Dr. Tiara Dabukke,individual,Property,Yogyakarta,DI Yogyakarta,2022-01-28,free,True,True,3.98,6,84.7,0.7,2026-08-21
+SEL-001140,CV Sudiati Fujiati (Persero) Tbk,small_business,Fashion & Beauty,Jakarta Timur,DKI Jakarta,2019-09-05,free,True,True,4.4,4,73.6,3.2,2026-07-20
+SEL-001141,Baktianto Sitompul,individual,Electronics & Gadgets,Medan,Sumatera Utara,2019-09-21,free,False,False,4.24,3,45.1,11.9,2026-06-13
+SEL-001142,CV Wasita Puspasari,small_business,Baby & Kids,Binjai,Sumatera Utara,2026-01-02,basic,True,True,4.41,5,71.6,9.8,2026-07-10
+SEL-001143,UD Salahudin (Persero) Tbk,small_business,Electronics & Gadgets,Semarang,Jawa Tengah,2021-05-16,basic,True,True,4.57,8,71.0,20.4,2026-08-22
+SEL-001144,PT Wijaya,small_business,Jobs,Denpasar,Bali,2019-02-13,basic,True,True,4.56,5,51.5,1.3,2026-07-15
+SEL-001145,Drs. Zaenab Lestari,individual,Fashion & Beauty,Bandung,Jawa Barat,2020-07-05,free,True,True,4.5,3,96.0,0.2,2026-08-30
+SEL-001146,Asmadi Tarihoran,individual,Vehicles,Badung,Bali,2021-03-13,free,True,True,4.13,8,40.1,4.3,2026-07-15
+SEL-001147,PD Irawan,small_business,Hobbies & Sports,Binjai,Sumatera Utara,2019-04-19,basic,True,True,5.0,10,100.0,1.7,2026-08-24
+SEL-001148,Perum Kuswandari (Persero) Tbk,small_business,Electronics & Gadgets,Palembang,Sumatera Selatan,2018-05-27,free,True,True,4.93,1,69.5,9.2,2026-06-26
+SEL-001149,Akarsana Putra,individual,Home & Furniture,Serang,Banten,2022-12-04,free,False,True,4.3,7,97.7,4.0,2026-07-03
+SEL-001150,UD Hutapea Kusmawati,dealer,Vehicles,Yogyakarta,DI Yogyakarta,2021-09-08,premium,True,True,4.7,13,94.5,4.6,2026-07-19
+SEL-001151,"Puti Ina Widodo, M.Kom.",individual,Baby & Kids,Batam,Kepulauan Riau,2024-11-25,free,False,False,3.77,3,69.8,6.6,2026-07-27
+SEL-001152,UD Iswahyudi Yuniar Tbk,dealer,Hobbies & Sports,Sidoarjo,Jawa Timur,2024-11-19,premium,True,True,4.07,11,78.0,5.5,2026-07-05
+SEL-001153,Hairyanto Wibowo,individual,Property,Palembang,Sumatera Selatan,2020-06-22,free,False,False,4.46,14,74.3,1.8,2026-07-13
+SEL-001154,Fitria Hassanah,individual,Jobs,Medan,Sumatera Utara,2025-04-29,free,False,False,3.76,5,76.6,1.4,2026-06-12
+SEL-001155,Eluh Farida,individual,Fashion & Beauty,Malang,Jawa Timur,2021-10-20,free,True,True,4.86,3,69.4,15.9,2026-07-31
+SEL-001156,Hani Prasetyo,individual,Electronics & Gadgets,Samarinda,Kalimantan Timur,2018-09-29,free,False,False,4.15,4,60.8,3.2,2026-08-23
+SEL-001157,"Tgk. Padmi Halim, S.E.I",individual,Services,Surabaya,Jawa Timur,2025-01-15,basic,False,False,4.14,7,97.3,15.9,2026-08-01
+SEL-001158,"H. Mulyanto Kuswoyo, S.Pt",individual,Vehicles,Semarang,Jawa Tengah,2020-05-17,free,True,True,4.4,4,74.6,5.3,2026-08-26
+SEL-001159,"Gangsar Namaga, S.Farm",individual,Fashion & Beauty,Jakarta Timur,DKI Jakarta,2025-08-18,free,True,True,4.52,10,62.5,15.5,2026-08-15
+SEL-001160,Perum Halim Wibisono,small_business,Jobs,Bogor,Jawa Barat,2021-06-04,free,False,False,3.75,11,73.2,2.5,2026-07-03
+SEL-001161,"Drs. Lili Nasyiah, M.Kom.",individual,Services,Yogyakarta,DI Yogyakarta,2024-02-13,free,True,True,4.95,2,100.0,9.5,2026-06-16
+SEL-001162,PD Salahudin Hutapea,small_business,Home & Furniture,Malang,Jawa Timur,2022-08-10,basic,False,True,4.51,12,74.6,11.0,2026-08-08
+SEL-001163,PT Mardhiyah Pertiwi (Persero) Tbk,small_business,Home & Furniture,Surabaya,Jawa Timur,2021-12-29,free,False,False,4.53,8,89.4,6.1,2026-08-18
+SEL-001164,Wasis Hassanah,individual,Vehicles,Bogor,Jawa Barat,2022-09-28,free,True,True,4.05,1,70.8,2.4,2026-06-17
+SEL-001165,Warta Marbun,individual,Hobbies & Sports,Sidoarjo,Jawa Timur,2018-09-14,free,True,True,4.64,3,32.4,18.3,2026-06-18
+SEL-001166,CV Mahendra Gunarto,dealer,Jobs,Palembang,Sumatera Selatan,2019-04-28,premium,True,True,4.55,9,100.0,2.8,2026-06-17
+SEL-001167,PT Zulaika Fujiati (Persero) Tbk,small_business,Fashion & Beauty,Badung,Bali,2023-09-17,basic,True,True,4.69,21,76.7,14.0,2026-08-23
+SEL-001168,"Hj. Dalima Riyanti, S.T.",individual,Property,Jakarta Utara,DKI Jakarta,2026-06-26,free,True,True,4.63,1,98.8,4.1,2026-08-07
+SEL-001169,PT Irawan Tbk,small_business,Electronics & Gadgets,Magelang,Jawa Tengah,2023-09-15,premium,True,True,4.45,10,82.8,2.2,2026-07-21
+SEL-001170,dr. Kusuma Simbolon,individual,Home & Furniture,Sidoarjo,Jawa Timur,2021-08-06,free,False,False,3.91,3,75.1,2.9,2026-07-24
+SEL-001171,"Tgk. Putri Haryanti, S.Ked",individual,Jobs,Serang,Banten,2023-11-21,free,True,True,4.57,7,87.9,1.7,2026-07-26
+SEL-001172,PT Agustina Maryadi (Persero) Tbk,small_business,Electronics & Gadgets,Malang,Jawa Timur,2020-05-31,free,True,True,4.34,11,64.6,1.1,2026-06-21
+SEL-001173,Ir. Restu Januar,individual,Fashion & Beauty,Malang,Jawa Timur,2018-08-07,free,True,True,4.07,1,64.6,0.1,2026-08-14
+SEL-001174,Perum Januar,small_business,Electronics & Gadgets,Surabaya,Jawa Timur,2021-12-02,free,True,True,5.0,5,59.9,11.3,2026-08-02
+SEL-001175,"T. Taswir Nasyiah, S.I.Kom",individual,Jobs,Solo,Jawa Tengah,2025-09-24,free,False,False,4.7,2,73.5,3.5,2026-07-27
+SEL-001176,UD Winarno Yolanda Tbk,small_business,Electronics & Gadgets,Kediri,Jawa Timur,2020-04-18,basic,True,True,3.99,7,42.6,7.0,2026-07-16
+SEL-001177,Ir. Nabila Firgantoro,individual,Property,Surabaya,Jawa Timur,2021-12-30,free,False,False,4.32,2,66.0,0.9,2026-08-28
+SEL-001178,Enteng Waskita,individual,Jobs,Palembang,Sumatera Selatan,2022-04-30,free,True,True,4.24,4,56.4,7.3,2026-07-02
+SEL-001179,Lasmanto Sudiati,individual,Jobs,Medan,Sumatera Utara,2023-05-25,free,False,False,4.83,11,65.1,1.3,2026-07-20
+SEL-001180,"Marsito Wacana, S.Gz",individual,Property,Depok,Jawa Barat,2023-11-28,free,False,False,4.5,7,67.2,1.8,2026-08-18
+SEL-001181,UD Prakasa Hardiansyah Tbk,small_business,Jobs,Palembang,Sumatera Selatan,2024-03-26,basic,True,True,5.0,13,52.9,8.6,2026-08-17
+SEL-001182,Kasiyah Damanik,individual,Fashion & Beauty,Yogyakarta,DI Yogyakarta,2022-04-24,free,False,False,4.64,7,69.1,1.3,2026-07-04
+SEL-001183,Yuliana Sihombing,individual,Electronics & Gadgets,Jakarta Timur,DKI Jakarta,2019-05-10,basic,True,True,4.16,5,75.5,4.2,2026-06-25
+SEL-001184,Indah Lestari,individual,Property,Solo,Jawa Tengah,2026-07-13,free,True,True,4.38,15,43.5,13.4,2026-07-21
+SEL-001185,"Hj. Cinthia Pradana, S.E.I",individual,Electronics & Gadgets,Depok,Jawa Barat,2026-07-20,free,False,True,3.79,6,63.8,0.8,2026-08-07
+SEL-001186,PD Sinaga Tbk,small_business,Home & Furniture,Binjai,Sumatera Utara,2020-11-12,basic,True,False,4.23,11,61.8,13.1,2026-08-14
+SEL-001187,"Lidya Suartini, S.Pt",individual,Vehicles,Bogor,Jawa Barat,2025-09-29,free,False,False,4.1,1,69.1,11.1,2026-07-31
+SEL-001188,PD Prabowo Wasita,enterprise,Electronics & Gadgets,Tangerang,Banten,2018-10-25,basic,True,True,3.91,11,92.1,1.9,2026-07-26
+SEL-001189,"Nova Maryati, S.I.Kom",individual,Home & Furniture,Bandung,Jawa Barat,2024-03-14,free,True,True,4.51,6,69.9,0.9,2026-08-09
+SEL-001190,Perum Manullang,small_business,Electronics & Gadgets,Magelang,Jawa Tengah,2018-07-03,free,False,False,5.0,7,73.3,2.8,2026-08-27
+SEL-001191,Galang Mayasari,individual,Vehicles,Makassar,Sulawesi Selatan,2021-07-08,basic,False,True,4.59,2,79.4,4.1,2026-07-06
+SEL-001192,Diana Novitasari,individual,Baby & Kids,Sidoarjo,Jawa Timur,2024-01-27,free,False,False,4.2,1,49.2,6.8,2026-07-15
+SEL-001193,CV Nababan,dealer,Property,Badung,Bali,2019-03-12,premium,True,True,4.1,11,85.5,8.7,2026-07-30
+SEL-001194,PT Prayoga Firmansyah,enterprise,Property,Batam,Kepulauan Riau,2020-05-23,premium,True,True,5.0,5,85.6,10.1,2026-08-06
+SEL-001195,PT Tarihoran Napitupulu Tbk,dealer,Electronics & Gadgets,Denpasar,Bali,2024-03-09,free,True,True,5.0,7,74.9,2.5,2026-07-29
+SEL-001196,Yuni Hariyah,individual,Fashion & Beauty,Jakarta Pusat,DKI Jakarta,2022-11-11,free,False,True,4.65,4,91.9,2.1,2026-09-01
+SEL-001197,dr. Makara Maheswara,individual,Vehicles,Palembang,Sumatera Selatan,2026-06-08,free,False,True,4.25,2,70.7,1.2,2026-07-20
+SEL-001198,CV Wahyudin,small_business,Vehicles,Jakarta Utara,DKI Jakarta,2024-12-23,free,True,True,4.88,8,88.8,8.7,2026-08-01
+SEL-001199,Rina Hassanah,individual,Hobbies & Sports,Surabaya,Jawa Timur,2019-07-29,premium,True,True,5.0,3,75.2,1.9,2026-08-28
+SEL-001200,PD Rahmawati Puspasari,small_business,Fashion & Beauty,Denpasar,Bali,2021-08-16,basic,False,False,4.56,18,95.2,16.7,2026-08-23
+SEL-001201,Jelita Marpaung,individual,Electronics & Gadgets,Serang,Banten,2023-01-05,basic,False,True,4.92,3,34.5,6.7,2026-08-25
+SEL-001202,"Tgk. Ulva Iswahyudi, S.Pd",individual,Hobbies & Sports,Semarang,Jawa Tengah,2025-04-10,free,False,False,4.54,5,95.8,1.7,2026-08-17
+SEL-001203,PD Hardiansyah,small_business,Electronics & Gadgets,Kediri,Jawa Timur,2020-03-10,free,True,True,4.78,6,43.3,0.5,2026-08-31
+SEL-001204,Perum Prabowo Prasetya,small_business,Property,Palembang,Sumatera Selatan,2020-09-11,free,True,False,4.46,7,70.3,21.8,2026-08-24
+SEL-001205,"Darmanto Wastuti, S.Kom",individual,Fashion & Beauty,Medan,Sumatera Utara,2021-06-15,free,False,True,5.0,13,47.4,18.5,2026-08-22
+SEL-001206,Sadina Wasita,individual,Property,Malang,Jawa Timur,2021-06-09,free,False,False,3.71,4,92.1,6.2,2026-06-13
+SEL-001207,Dt. Saka Zulaika,individual,Vehicles,Badung,Bali,2018-06-19,free,False,True,5.0,13,68.9,10.3,2026-08-17
+SEL-001208,Jasmani Mustofa,individual,Vehicles,Bandung,Jawa Barat,2018-04-10,basic,False,False,4.63,6,98.3,8.4,2026-06-29
+SEL-001209,"Cawuk Rahimah, S.Ked",individual,Baby & Kids,Jakarta Selatan,DKI Jakarta,2023-01-29,free,False,True,4.02,7,38.5,17.8,2026-06-30
+SEL-001210,Dono Sudiati,individual,Hobbies & Sports,Tangerang Selatan,Banten,2018-05-05,basic,False,True,4.03,5,37.1,2.8,2026-06-05
+SEL-001211,UD Anggraini Tbk,small_business,Property,Batam,Kepulauan Riau,2021-04-12,basic,True,True,4.33,19,77.0,4.1,2026-07-12
+SEL-001212,PD Ramadan (Persero) Tbk,small_business,Electronics & Gadgets,Bandung,Jawa Barat,2022-10-25,basic,True,True,4.25,14,55.7,25.0,2026-07-26
+SEL-001213,Ilsa Wastuti,individual,Services,Bogor,Jawa Barat,2023-03-23,free,True,False,4.58,12,66.6,4.1,2026-07-29
+SEL-001214,Drs. Hasta Padmasari,individual,Vehicles,Jakarta Utara,DKI Jakarta,2020-03-30,free,True,True,4.22,5,64.2,0.4,2026-07-26
+SEL-001215,Adiarja Melani,individual,Fashion & Beauty,Badung,Bali,2023-08-23,free,True,True,3.73,3,39.9,27.5,2026-06-29
+SEL-001216,"Saiful Wahyudin, M.Pd",individual,Fashion & Beauty,Bandung,Jawa Barat,2023-04-14,basic,False,True,3.96,13,100.0,0.4,2026-08-10
+SEL-001217,"Legawa Sudiati, S.Pd",individual,Hobbies & Sports,Malang,Jawa Timur,2024-01-06,free,True,True,3.86,7,66.8,3.7,2026-08-27
+SEL-001218,Silvia Kurniawan,individual,Hobbies & Sports,Batam,Kepulauan Riau,2024-11-30,basic,True,True,4.29,9,69.9,10.7,2026-08-18
+SEL-001219,PT Sirait Saefullah Tbk,small_business,Vehicles,Jakarta Timur,DKI Jakarta,2018-04-01,premium,True,False,4.7,14,95.9,6.6,2026-08-28
+SEL-001220,"Tgk. Hana Yolanda, S.Pd",individual,Jobs,Magelang,Jawa Tengah,2020-08-20,free,True,True,4.48,5,36.1,12.5,2026-07-10
+SEL-001221,Cakrawala Maryati,individual,Vehicles,Solo,Jawa Tengah,2024-12-09,free,False,False,5.0,1,75.0,1.6,2026-08-07
+SEL-001222,"Sutan Uda Hakim, M.Ak",individual,Baby & Kids,Palembang,Sumatera Selatan,2025-05-15,free,True,True,4.17,5,74.1,4.7,2026-07-12
+SEL-001223,UD Zulaika Mandala (Persero) Tbk,dealer,Hobbies & Sports,Cimahi,Jawa Barat,2023-10-23,premium,True,True,4.49,8,78.0,4.6,2026-06-14
+SEL-001224,"Jamal Sihombing, S.T.",individual,Fashion & Beauty,Surabaya,Jawa Timur,2021-03-08,premium,False,False,4.22,9,85.6,3.8,2026-07-14
+SEL-001225,Latika Wibisono,individual,Electronics & Gadgets,Jakarta Pusat,DKI Jakarta,2022-02-04,free,False,False,4.78,4,73.8,9.6,2026-08-27
+SEL-001226,Perum Pertiwi,dealer,Property,Medan,Sumatera Utara,2022-08-27,basic,True,True,4.27,8,53.6,6.5,2026-08-09
+SEL-001227,"R.A. Jasmin Prasetya, M.Pd",individual,Vehicles,Palembang,Sumatera Selatan,2022-08-04,free,True,True,4.43,7,51.6,3.2,2026-07-23
+SEL-001228,"Purwanto Kusmawati, S.I.Kom",individual,Hobbies & Sports,Jakarta Timur,DKI Jakarta,2019-05-12,free,False,True,4.42,6,63.3,5.3,2026-07-06
+SEL-001229,CV Wahyuni (Persero) Tbk,dealer,Vehicles,Kediri,Jawa Timur,2022-04-12,basic,True,True,3.89,10,34.4,5.2,2026-08-10
+SEL-001230,Cinta Halimah,individual,Property,Badung,Bali,2021-11-17,free,True,True,3.6,4,57.4,4.2,2026-06-18
+SEL-001231,Opung Rajata,individual,Property,Jakarta Barat,DKI Jakarta,2025-09-25,free,True,True,4.29,5,58.9,3.7,2026-08-23
+SEL-001232,"Yani Purwanti, S.E.",individual,Home & Furniture,Depok,Jawa Barat,2019-01-04,free,False,False,4.28,4,65.4,2.7,2026-08-24
+SEL-001233,"Uda Sitorus, S.Pt",individual,Home & Furniture,Solo,Jawa Tengah,2025-07-10,free,False,False,4.07,6,51.9,12.8,2026-07-03
+SEL-001234,UD Prasetyo Samosir,small_business,Vehicles,Bandung,Jawa Barat,2018-05-24,basic,True,True,4.77,2,81.6,7.5,2026-06-22
+SEL-001235,Winda Sitompul,individual,Hobbies & Sports,Bandung,Jawa Barat,2019-04-07,free,True,True,,0,79.4,5.2,2026-07-03
+SEL-001236,Hana Padmasari,individual,Vehicles,Sidoarjo,Jawa Timur,2018-01-31,free,False,True,4.46,8,76.4,1.7,2026-06-22
+SEL-001237,Malika Lazuardi,individual,Services,Jakarta Timur,DKI Jakarta,2025-03-03,free,False,False,4.4,14,91.5,6.6,2026-06-27
+SEL-001238,Anastasia Usada,individual,Fashion & Beauty,Semarang,Jawa Tengah,2025-06-03,free,True,True,4.33,5,68.3,4.2,2026-07-14
+SEL-001239,Ir. Raina Hidayanto,individual,Home & Furniture,Medan,Sumatera Utara,2020-04-23,free,True,True,4.43,4,82.8,1.4,2026-06-13
+SEL-001240,Febi Mardhiyah,individual,Property,Solo,Jawa Tengah,2020-06-02,free,True,False,3.84,6,89.9,4.0,2026-07-21
+SEL-001241,PD Nuraini,dealer,Electronics & Gadgets,Jakarta Timur,DKI Jakarta,2018-08-27,basic,True,True,4.58,13,86.7,1.5,2026-07-16
+SEL-001242,Laras Habibi,individual,Services,Yogyakarta,DI Yogyakarta,2026-07-11,free,True,True,4.01,4,75.7,2.9,2026-08-12
+SEL-001243,"R. Dina Pangestu, S.Psi",individual,Electronics & Gadgets,Jakarta Pusat,DKI Jakarta,2018-11-15,free,False,True,4.49,5,55.4,18.5,2026-07-07
+SEL-001244,Qori Haryanti,individual,Vehicles,Medan,Sumatera Utara,2023-03-15,free,True,True,3.82,3,67.4,13.1,2026-08-27
+SEL-001245,Galih Najmudin,individual,Property,Bandung,Jawa Barat,2018-09-23,free,False,True,3.4,12,83.7,0.7,2026-06-24
+SEL-001246,"R. Jinawi Sitorus, S.E.",individual,Electronics & Gadgets,Palembang,Sumatera Selatan,2024-06-17,free,False,False,4.24,1,44.3,14.0,2026-08-02
+SEL-001247,Siska Hakim,individual,Electronics & Gadgets,Jakarta Selatan,DKI Jakarta,2018-08-08,free,False,False,3.99,6,81.9,2.8,2026-08-08
+SEL-001248,Jabal Saefullah,individual,Jobs,Jakarta Selatan,DKI Jakarta,2020-09-27,free,False,False,4.0,4,50.6,12.2,2026-07-29
+SEL-001249,CV Permata Manullang,dealer,Jobs,Surabaya,Jawa Timur,2021-11-15,free,True,True,4.81,3,100.0,8.6,2026-08-29
+SEL-001250,PT Mustofa Susanti Tbk,dealer,Electronics & Gadgets,Jakarta Barat,DKI Jakarta,2020-05-08,basic,True,True,4.21,7,100.0,8.9,2026-06-22
+SEL-001251,"Ikhsan Waskita, S.Farm",individual,Property,Depok,Jawa Barat,2024-03-26,free,True,True,4.2,7,54.9,23.2,2026-08-07
+SEL-001252,Kiandra Ardianto,individual,Jobs,Medan,Sumatera Utara,2022-11-22,premium,False,False,4.45,5,84.6,1.6,2026-08-24
+SEL-001253,Kasusra Pangestu,individual,Fashion & Beauty,Yogyakarta,DI Yogyakarta,2018-06-19,free,True,True,4.83,4,92.8,0.6,2026-08-24
+SEL-001254,"Kasiyah Budiman, S.Psi",individual,Vehicles,Jakarta Selatan,DKI Jakarta,2024-06-01,free,False,False,4.19,5,58.1,12.2,2026-08-30
+SEL-001255,"Dr. Dadap Budiyanto, S.Ked",individual,Electronics & Gadgets,Denpasar,Bali,2021-10-13,free,True,True,,0,85.3,8.5,2026-08-12
+SEL-001256,CV Situmorang Saragih,dealer,Property,Palembang,Sumatera Selatan,2023-03-10,premium,True,True,4.21,15,54.1,4.9,2026-08-12
+SEL-001257,PT Winarno Mardhiyah,small_business,Jobs,Denpasar,Bali,2023-09-29,free,True,True,4.89,5,100.0,4.6,2026-07-18
+SEL-001258,CV Haryanto (Persero) Tbk,small_business,Jobs,Serang,Banten,2023-07-03,free,False,True,4.75,16,54.0,10.2,2026-08-29
+SEL-001259,Icha Hasanah,individual,Vehicles,Tangerang,Banten,2021-10-18,premium,True,True,4.69,5,68.2,0.8,2026-06-06
+SEL-001260,PD Mansur Tbk,enterprise,Home & Furniture,Semarang,Jawa Tengah,2021-06-30,premium,True,True,4.37,4,68.9,6.7,2026-07-17
+SEL-001261,Kani Nainggolan,individual,Fashion & Beauty,Tangerang Selatan,Banten,2023-10-23,free,True,True,3.88,9,62.0,1.6,2026-06-16
+SEL-001262,Warta Waskita,individual,Vehicles,Balikpapan,Kalimantan Timur,2023-09-12,free,True,True,3.22,6,58.7,47.0,2026-08-09
+SEL-001263,Darsirah Prasetyo,individual,Electronics & Gadgets,Jakarta Utara,DKI Jakarta,2020-05-19,free,True,True,4.26,5,78.3,6.2,2026-06-13
+SEL-001264,CV Damanik Rahmawati,dealer,Jobs,Bandung,Jawa Barat,2024-12-17,basic,True,True,4.43,2,70.1,2.6,2026-08-29
+SEL-001265,R.M. Bancar Utama,individual,Baby & Kids,Jakarta Timur,DKI Jakarta,2024-08-17,free,False,True,3.8,9,100.0,0.7,2026-08-04
+SEL-001266,PD Uyainah,small_business,Home & Furniture,Makassar,Sulawesi Selatan,2019-11-06,free,True,True,4.08,5,65.7,11.6,2026-07-07
+SEL-001267,Vera Nasyidah,individual,Property,Sidoarjo,Jawa Timur,2022-02-15,free,True,True,3.7,5,95.8,12.3,2026-08-12
+SEL-001268,Perum Hardiansyah,enterprise,Fashion & Beauty,Tangerang,Banten,2018-12-23,free,True,True,4.51,11,100.0,2.9,2026-08-08
+SEL-001269,"Balangga Yolanda, S.Ked",individual,Vehicles,Yogyakarta,DI Yogyakarta,2022-09-23,free,True,True,4.13,5,56.5,1.5,2026-06-12
+SEL-001270,Muhammad Latupono,individual,Fashion & Beauty,Batam,Kepulauan Riau,2023-03-19,free,False,True,4.6,6,78.8,6.0,2026-08-10
+SEL-001271,PD Wibowo Maheswara Tbk,enterprise,Home & Furniture,Jakarta Barat,DKI Jakarta,2020-11-08,premium,True,True,4.44,16,81.8,7.6,2026-07-13
+SEL-001272,Tira Mangunsong,individual,Electronics & Gadgets,Palembang,Sumatera Selatan,2025-07-18,free,True,True,3.93,2,79.1,8.2,2026-08-30
+SEL-001273,Marsito Usamah,individual,Property,Badung,Bali,2022-11-22,free,False,False,4.09,7,69.9,7.2,2026-07-02
+SEL-001274,Gada Andriani,individual,Vehicles,Jakarta Selatan,DKI Jakarta,2025-04-15,premium,True,True,3.84,1,55.3,20.8,2026-08-10
+SEL-001275,"Baktianto Wijayanti, M.TI.",individual,Property,Medan,Sumatera Utara,2021-07-19,free,True,True,4.44,3,54.0,2.7,2026-08-03
+SEL-001276,Sarah Sudiati,individual,Electronics & Gadgets,Cimahi,Jawa Barat,2020-10-09,free,False,True,4.6,3,85.2,11.6,2026-06-04
+SEL-001277,"Dina Andriani, S.IP",individual,Vehicles,Serang,Banten,2022-08-21,free,False,True,4.86,6,90.7,1.1,2026-07-23
+SEL-001278,H. Lasmanto Lazuardi,individual,Vehicles,Semarang,Jawa Tengah,2025-10-25,free,True,True,4.27,6,52.9,9.7,2026-06-10
+SEL-001279,PT Kurniawan Tbk,dealer,Fashion & Beauty,Bandung,Jawa Barat,2025-11-03,free,True,True,4.58,9,48.8,3.9,2026-08-19
+SEL-001280,Lulut Pangestu,individual,Fashion & Beauty,Jakarta Selatan,DKI Jakarta,2020-12-12,free,False,False,4.56,7,54.2,4.9,2026-06-26
+SEL-001281,"T. Radika Nurdiyanti, S.Kom",individual,Fashion & Beauty,Jakarta Utara,DKI Jakarta,2024-08-06,free,False,False,4.52,11,27.0,4.0,2026-07-23
+SEL-001282,Tiara Wasita,individual,Home & Furniture,Jakarta Pusat,DKI Jakarta,2020-08-28,free,True,True,4.53,5,94.2,4.0,2026-08-16
+SEL-001283,Elisa Gunarto,individual,Hobbies & Sports,Tangerang,Banten,2023-10-07,free,False,True,4.88,12,100.0,3.9,2026-06-05
+SEL-001284,drg. Viktor Pranowo,individual,Jobs,Bogor,Jawa Barat,2019-02-16,free,True,True,4.87,2,93.7,1.5,2026-08-01
+SEL-001285,UD Prakasa Adriansyah (Persero),dealer,Property,Jakarta Barat,DKI Jakarta,2022-04-06,premium,False,True,4.56,5,78.0,2.8,2026-08-24
+SEL-001286,PT Pertiwi,dealer,Home & Furniture,Serang,Banten,2020-11-03,premium,False,False,4.17,11,47.5,13.9,2026-06-09
+SEL-001287,"Jumadi Maryadi, S.Pt",individual,Home & Furniture,Tangerang,Banten,2025-10-06,free,True,True,4.42,6,55.1,3.4,2026-07-18
+SEL-001288,"Dr. Bahuraksa Januar, S.T.",individual,Hobbies & Sports,Magelang,Jawa Tengah,2019-10-25,free,True,True,4.85,8,69.6,10.2,2026-06-18
+SEL-001289,"Daru Hasanah, S.Pd",individual,Vehicles,Balikpapan,Kalimantan Timur,2024-03-31,free,True,True,3.96,3,79.4,3.8,2026-06-13
+SEL-001290,Malika Hardiansyah,individual,Fashion & Beauty,Kediri,Jawa Timur,2024-11-27,free,True,True,4.67,3,56.6,0.1,2026-06-10
+SEL-001291,Rahmat Natsir,individual,Property,Yogyakarta,DI Yogyakarta,2026-01-19,free,True,True,4.48,4,52.1,9.6,2026-07-29
+SEL-001292,UD Tarihoran,small_business,Vehicles,Jakarta Timur,DKI Jakarta,2023-05-15,basic,True,True,3.89,10,58.4,2.8,2026-07-11
+SEL-001293,"Ir. Galar Aryani, S.IP",individual,Home & Furniture,Binjai,Sumatera Utara,2018-09-13,free,True,True,3.89,9,70.4,2.2,2026-06-07
+SEL-001294,Soleh Gunawan,individual,Fashion & Beauty,Batam,Kepulauan Riau,2020-10-05,free,False,True,4.34,9,93.3,10.8,2026-08-18
+SEL-001295,Simon Mandala,individual,Electronics & Gadgets,Yogyakarta,DI Yogyakarta,2019-11-14,free,True,True,4.63,6,82.8,12.3,2026-06-24
+SEL-001296,"Marsudi Narpati, S.Psi",individual,Baby & Kids,Solo,Jawa Tengah,2020-06-20,free,True,True,4.06,3,83.1,5.2,2026-06-27
+SEL-001297,Maida Oktaviani,individual,Jobs,Tangerang Selatan,Banten,2021-03-15,basic,False,True,3.77,3,77.3,17.6,2026-06-22
+SEL-001298,Uchita Iswahyudi,individual,Electronics & Gadgets,Cimahi,Jawa Barat,2018-11-22,free,True,True,4.8,2,56.8,4.4,2026-08-12
+SEL-001299,UD Najmudin (Persero) Tbk,small_business,Property,Serang,Banten,2020-10-28,premium,True,True,4.03,2,78.4,4.5,2026-06-25
+SEL-001300,Lalita Hasanah,individual,Electronics & Gadgets,Palembang,Sumatera Selatan,2026-03-05,free,True,True,4.49,4,76.0,1.7,2026-07-23
+SEL-001301,Zahra Winarno,individual,Fashion & Beauty,Batam,Kepulauan Riau,2024-11-16,basic,False,False,,0,56.1,12.4,2026-09-01
+SEL-001302,"Zizi Kuswandari, S.Farm",individual,Hobbies & Sports,Kediri,Jawa Timur,2026-07-14,free,True,True,4.09,5,78.5,4.6,2026-08-06
+SEL-001303,PT Mustofa Halim,small_business,Home & Furniture,Jakarta Selatan,DKI Jakarta,2021-01-19,premium,True,True,4.16,6,42.9,12.7,2026-08-21
+SEL-001304,"R. Ciaobella Agustina, M.Farm",individual,Services,Solo,Jawa Tengah,2024-09-20,free,False,True,4.04,11,58.9,5.2,2026-06-18
+SEL-001305,Perum Wastuti Farida (Persero) Tbk,small_business,Property,Jakarta Timur,DKI Jakarta,2021-03-30,free,True,True,4.73,4,46.0,24.2,2026-06-07
+SEL-001306,UD Suryatmi Dabukke (Persero) Tbk,dealer,Vehicles,Depok,Jawa Barat,2019-10-23,basic,True,True,4.14,10,67.5,0.8,2026-08-15
+SEL-001307,Nova Kusumo,individual,Property,Depok,Jawa Barat,2018-10-02,free,False,True,4.8,8,87.1,6.4,2026-08-08
+SEL-001308,PD Gunawan Haryanto Tbk,small_business,Home & Furniture,Binjai,Sumatera Utara,2020-01-07,free,True,True,4.5,2,93.3,0.4,2026-06-13
+SEL-001309,"Galar Budiman, M.TI.",individual,Fashion & Beauty,Jakarta Selatan,DKI Jakarta,2020-01-28,free,False,True,4.26,14,54.9,12.1,2026-08-19
+SEL-001310,UD Maryati Nurdiyanti,dealer,Hobbies & Sports,Jakarta Selatan,DKI Jakarta,2026-02-14,premium,True,True,4.86,5,63.2,2.5,2026-06-14
+SEL-001311,"Tira Safitri, S.IP",individual,Fashion & Beauty,Jakarta Selatan,DKI Jakarta,2022-05-29,free,True,True,4.32,6,60.8,16.9,2026-07-03
+SEL-001312,CV Laksmiwati Situmorang Tbk,dealer,Vehicles,Badung,Bali,2020-12-26,premium,True,True,3.34,12,42.7,0.6,2026-07-05
+SEL-001313,Salman Puspita,individual,Electronics & Gadgets,Tangerang,Banten,2020-02-29,free,False,False,4.5,8,59.9,0.1,2026-07-07
+SEL-001314,Cut Ajeng Yuniar,individual,Hobbies & Sports,Jakarta Timur,DKI Jakarta,2024-06-24,free,False,False,4.21,6,68.5,1.3,2026-08-25
+SEL-001315,Johan Halimah,individual,Hobbies & Sports,Jakarta Selatan,DKI Jakarta,2025-10-06,free,True,True,4.75,1,75.9,2.9,2026-07-22
+SEL-001316,CV Hutagalung Lestari Tbk,small_business,Home & Furniture,Magelang,Jawa Tengah,2022-11-17,basic,False,True,4.23,5,62.7,0.6,2026-08-15
+SEL-001317,Gamblang Setiawan,individual,Electronics & Gadgets,Depok,Jawa Barat,2023-01-03,free,True,True,4.12,6,79.0,2.4,2026-07-20
+SEL-001318,Jono Prasetyo,individual,Services,Solo,Jawa Tengah,2022-03-17,free,False,False,4.41,5,43.0,3.1,2026-07-06
+SEL-001319,PD Prakasa Hutapea Tbk,small_business,Electronics & Gadgets,Sidoarjo,Jawa Timur,2018-08-03,free,True,True,4.27,13,51.0,3.3,2026-08-10
+SEL-001320,Perum Hassanah Irawan Tbk,dealer,Vehicles,Balikpapan,Kalimantan Timur,2025-05-21,premium,True,True,3.99,14,94.0,2.1,2026-07-13
+SEL-001321,Iriana Lazuardi,individual,Fashion & Beauty,Depok,Jawa Barat,2022-01-17,free,True,True,4.67,10,100.0,6.9,2026-07-12
+SEL-001322,Uli Yolanda,individual,Vehicles,Tangerang Selatan,Banten,2023-05-30,free,False,False,4.18,4,68.5,9.0,2026-07-03
+SEL-001323,Baktiono Waskita,individual,Electronics & Gadgets,Jakarta Pusat,DKI Jakarta,2020-12-17,free,True,True,4.41,4,53.6,6.4,2026-08-08
+SEL-001324,PT Puspita Pudjiastuti (Persero),small_business,Electronics & Gadgets,Makassar,Sulawesi Selatan,2021-01-28,basic,True,True,4.77,7,72.8,4.7,2026-08-23
+SEL-001325,"Puti Widya Suartini, M.Ak",individual,Baby & Kids,Batam,Kepulauan Riau,2025-05-15,free,False,False,4.12,5,63.3,3.2,2026-06-10
+SEL-001326,Perum Purwanti (Persero) Tbk,dealer,Home & Furniture,Medan,Sumatera Utara,2018-10-05,basic,True,True,3.96,3,80.3,5.9,2026-06-03
+SEL-001327,"Mumpuni Hasanah, S.Psi",individual,Jobs,Surabaya,Jawa Timur,2019-02-12,free,False,True,4.38,2,54.6,3.3,2026-07-22
+SEL-001328,Yunita Habibi,individual,Jobs,Jakarta Timur,DKI Jakarta,2023-10-17,free,True,True,4.23,5,32.2,1.1,2026-08-22
+SEL-001329,"R.A. Zulfa Hasanah, S.Psi",individual,Home & Furniture,Palembang,Sumatera Selatan,2021-05-06,free,False,True,4.16,1,60.4,0.3,2026-08-26
+SEL-001330,KH. Lukman Rahimah,individual,Electronics & Gadgets,Medan,Sumatera Utara,2020-08-31,free,False,True,4.14,11,63.8,5.0,2026-06-17
+SEL-001331,UD Hartati Latupono (Persero) Tbk,small_business,Hobbies & Sports,Bogor,Jawa Barat,2021-02-05,basic,True,True,4.55,14,56.2,0.1,2026-08-22
+SEL-001332,"Ir. Darman Adriansyah, S.Psi",individual,Electronics & Gadgets,Malang,Jawa Timur,2026-02-01,free,False,True,3.89,6,60.5,5.8,2026-08-12
+SEL-001333,Yance Usada,individual,Fashion & Beauty,Malang,Jawa Timur,2020-08-17,basic,False,True,,0,63.0,1.3,2026-06-19
+SEL-001334,Perum Nurdiyanti Tbk,enterprise,Electronics & Gadgets,Yogyakarta,DI Yogyakarta,2018-11-16,premium,True,True,4.1,9,62.3,1.2,2026-07-23
+SEL-001335,PT Marbun,enterprise,Fashion & Beauty,Tangerang Selatan,Banten,2018-08-25,basic,True,True,4.49,11,36.7,0.1,2026-08-04
+SEL-001336,CV Wasita Kurniawan Tbk,dealer,Vehicles,Serang,Banten,2019-08-28,free,False,False,4.77,14,62.3,2.2,2026-06-05
+SEL-001337,R.A. Fitriani Lazuardi,individual,Jobs,Tangerang,Banten,2025-01-22,free,False,True,5.0,6,92.1,7.1,2026-07-21
+SEL-001338,"drg. Gasti Haryanti, S.Kom",individual,Fashion & Beauty,Depok,Jawa Barat,2019-01-27,free,True,True,4.87,1,73.2,1.9,2026-06-03
+SEL-001339,PT Agustina (Persero) Tbk,dealer,Home & Furniture,Cimahi,Jawa Barat,2020-06-28,basic,True,True,4.43,20,51.0,1.1,2026-07-03
+SEL-001340,"Raihan Wulandari, M.Farm",individual,Services,Jakarta Utara,DKI Jakarta,2023-10-19,free,True,True,4.84,4,42.1,8.5,2026-08-23
+SEL-001341,Prasetyo Hartati,individual,Home & Furniture,Palembang,Sumatera Selatan,2021-09-20,free,False,True,4.18,1,67.1,15.2,2026-08-19
+SEL-001342,Perum Mayasari Mansur Tbk,small_business,Home & Furniture,Sidoarjo,Jawa Timur,2024-01-18,basic,True,True,4.31,6,78.3,10.2,2026-07-29
+SEL-001343,Karta Hardiansyah,individual,Electronics & Gadgets,Sidoarjo,Jawa Timur,2019-05-01,free,True,True,4.94,4,61.2,0.3,2026-08-20
+SEL-001344,dr. Salman Padmasari,individual,Vehicles,Depok,Jawa Barat,2021-10-27,basic,False,False,3.94,1,47.6,23.2,2026-06-30
+SEL-001345,Perum Nugroho Prastuti (Persero),enterprise,Hobbies & Sports,Jakarta Timur,DKI Jakarta,2022-09-02,basic,True,True,3.72,9,54.6,16.7,2026-08-12
+SEL-001346,"Yulia Mahendra, S.IP",individual,Baby & Kids,Semarang,Jawa Tengah,2020-02-03,free,True,True,4.52,5,74.0,1.2,2026-08-14
+SEL-001347,Sakura Rahimah,individual,Fashion & Beauty,Bogor,Jawa Barat,2024-02-02,free,False,True,4.06,12,43.1,2.2,2026-08-22
+SEL-001348,dr. Ophelia Winarno,individual,Electronics & Gadgets,Jakarta Pusat,DKI Jakarta,2018-01-18,premium,True,True,5.0,8,69.2,3.5,2026-08-13
+SEL-001349,Rachel Prayoga,individual,Electronics & Gadgets,Medan,Sumatera Utara,2018-02-13,free,False,True,4.39,3,64.0,0.5,2026-06-15
+SEL-001350,Lala Siregar,individual,Property,Cimahi,Jawa Barat,2021-04-30,basic,False,False,4.84,2,66.7,0.6,2026-08-20
+SEL-001351,PD Mansur (Persero) Tbk,small_business,Vehicles,Malang,Jawa Timur,2018-06-03,basic,True,True,3.7,4,59.6,4.5,2026-08-09
+SEL-001352,Perum Mulyani Salahudin Tbk,small_business,Vehicles,Sidoarjo,Jawa Timur,2022-11-25,free,True,True,4.6,17,88.5,6.3,2026-06-11
+SEL-001353,"Unjani Puspasari, S.Kom",individual,Electronics & Gadgets,Palembang,Sumatera Selatan,2020-02-09,free,False,True,4.05,4,83.7,1.0,2026-06-24
+SEL-001354,Danu Oktaviani,individual,Electronics & Gadgets,Bandung,Jawa Barat,2025-07-16,free,True,True,3.9,2,64.2,29.4,2026-07-25
+SEL-001355,UD Wulandari (Persero) Tbk,dealer,Jobs,Medan,Sumatera Utara,2024-02-10,basic,True,True,4.93,9,63.2,3.4,2026-07-26
+SEL-001356,"Sadina Nugroho, M.TI.",individual,Electronics & Gadgets,Balikpapan,Kalimantan Timur,2023-08-18,free,True,True,4.83,7,91.3,1.6,2026-06-14
+SEL-001357,H. Makuta Sinaga,individual,Jobs,Tangerang,Banten,2023-08-14,premium,True,True,4.0,1,66.9,13.2,2026-08-01
+SEL-001358,"Calista Thamrin, M.Pd",individual,Jobs,Kediri,Jawa Timur,2021-12-17,free,True,True,4.73,4,75.1,0.7,2026-08-05
+SEL-001359,Perum Pertiwi Widiastuti Tbk,small_business,Home & Furniture,Medan,Sumatera Utara,2022-06-13,basic,True,True,4.47,9,43.0,12.0,2026-07-30
+SEL-001360,"Pangeran Nasyidah, S.Pd",individual,Property,Kediri,Jawa Timur,2021-03-24,basic,False,True,3.7,9,54.9,3.8,2026-07-19
+SEL-001361,PT Nurdiyanti Kurniawan (Persero),small_business,Baby & Kids,Sidoarjo,Jawa Timur,2019-07-18,free,True,False,4.47,3,70.6,11.2,2026-07-12
+SEL-001362,Dalima Habibi,individual,Electronics & Gadgets,Magelang,Jawa Tengah,2022-12-14,free,True,True,3.85,4,87.5,6.7,2026-08-27
+SEL-001363,"Asman Pangestu, S.T.",individual,Fashion & Beauty,Bogor,Jawa Barat,2021-08-02,free,False,False,4.81,13,79.4,0.8,2026-06-30
+SEL-001364,"KH. Caraka Suwarno, S.T.",individual,Fashion & Beauty,Jakarta Pusat,DKI Jakarta,2018-10-02,basic,True,True,4.23,1,63.6,1.0,2026-07-09
+SEL-001365,Salman Halim,individual,Property,Malang,Jawa Timur,2025-07-19,free,True,False,5.0,6,77.5,17.3,2026-06-13
+SEL-001366,"Violet Sihombing, S.Kom",individual,Home & Furniture,Jakarta Timur,DKI Jakarta,2021-06-19,basic,True,True,4.9,5,100.0,3.9,2026-07-25
+SEL-001367,"Dr. Anggabaya Tamba, M.M.",individual,Electronics & Gadgets,Malang,Jawa Timur,2026-01-12,free,True,True,4.75,2,82.8,1.1,2026-07-08
+SEL-001368,Latif Wulandari,individual,Property,Magelang,Jawa Tengah,2021-02-24,basic,False,True,4.15,4,78.6,0.4,2026-07-26
+SEL-001369,"Putri Prasetyo, M.Pd",individual,Property,Samarinda,Kalimantan Timur,2021-08-27,basic,True,True,4.06,3,100.0,1.9,2026-08-25
+SEL-001370,Gilda Melani,individual,Electronics & Gadgets,Jakarta Selatan,DKI Jakarta,2025-02-07,basic,True,True,4.51,7,77.7,3.0,2026-07-13
+SEL-001371,"KH. Raditya Suwarno, S.Gz",individual,Fashion & Beauty,Serang,Banten,2025-11-05,basic,False,False,3.67,7,61.6,1.8,2026-08-16
+SEL-001372,PD Agustina Sihotang (Persero) Tbk,dealer,Home & Furniture,Sidoarjo,Jawa Timur,2023-02-28,premium,True,True,4.41,8,71.8,1.6,2026-06-18
+SEL-001373,Paiman Ramadan,individual,Electronics & Gadgets,Jakarta Timur,DKI Jakarta,2021-10-16,free,True,True,3.47,2,50.8,3.6,2026-08-06
+SEL-001374,Perum Handayani Prasetyo,small_business,Jobs,Bogor,Jawa Barat,2023-08-20,basic,True,True,4.7,18,93.3,3.9,2026-07-19
+SEL-001375,Perum Palastri (Persero) Tbk,enterprise,Property,Jakarta Barat,DKI Jakarta,2024-06-11,premium,True,True,4.39,22,77.8,3.7,2026-06-04
+SEL-001376,"H. Yoga Nababan, S.Pd",individual,Electronics & Gadgets,Jakarta Utara,DKI Jakarta,2021-07-21,free,True,True,4.49,4,61.3,11.2,2026-06-09
+SEL-001377,CV Zulaika Hutagalung (Persero),small_business,Electronics & Gadgets,Depok,Jawa Barat,2025-01-02,free,True,True,4.15,6,82.8,17.6,2026-08-09
+SEL-001378,Perum Lazuardi Waluyo,dealer,Jobs,Surabaya,Jawa Timur,2022-07-09,premium,True,True,3.94,7,72.6,14.3,2026-08-14
+SEL-001379,Ikhsan Setiawan,individual,Hobbies & Sports,Magelang,Jawa Tengah,2020-03-29,free,True,True,4.52,6,98.6,1.8,2026-07-18
+SEL-001380,T. Cager Marpaung,individual,Vehicles,Jakarta Barat,DKI Jakarta,2020-12-09,free,True,True,4.43,8,76.5,0.2,2026-07-25
+SEL-001381,Tgk. Agnes Sitompul,individual,Electronics & Gadgets,Jakarta Selatan,DKI Jakarta,2022-03-18,free,False,False,4.51,2,71.1,3.0,2026-07-29
+SEL-001382,Titin Mangunsong,individual,Vehicles,Jakarta Selatan,DKI Jakarta,2024-02-15,free,True,True,5.0,1,74.4,20.3,2026-08-21
+SEL-001383,Candra Sinaga,individual,Home & Furniture,Semarang,Jawa Tengah,2026-07-23,free,False,True,3.88,1,72.3,31.8,2026-08-25
+SEL-001384,Perum Wijayanti,enterprise,Property,Bogor,Jawa Barat,2025-11-10,premium,False,False,4.74,12,62.9,16.6,2026-07-15
+SEL-001385,PD Pertiwi Tbk,enterprise,Home & Furniture,Magelang,Jawa Tengah,2019-10-11,premium,True,True,3.65,3,79.4,7.8,2026-06-19
+SEL-001386,Purwanto Simanjuntak,individual,Baby & Kids,Cimahi,Jawa Barat,2023-09-13,free,True,True,4.64,5,92.1,9.3,2026-08-04
+SEL-001387,CV Nurdiyanti Hidayat,small_business,Vehicles,Jakarta Barat,DKI Jakarta,2026-01-22,free,True,True,4.87,6,89.5,2.0,2026-08-27
+SEL-001388,"Dr. Capa Agustina, M.Pd",individual,Vehicles,Makassar,Sulawesi Selatan,2022-05-13,free,True,True,3.92,1,70.1,2.0,2026-06-04
+SEL-001389,PT Tampubolon Prasetya (Persero),dealer,Fashion & Beauty,Jakarta Utara,DKI Jakarta,2025-07-05,premium,True,True,4.02,9,64.3,11.7,2026-07-06
+SEL-001390,"Gamblang Sitompul, S.I.Kom",individual,Home & Furniture,Jakarta Utara,DKI Jakarta,2018-06-23,free,False,False,4.49,5,86.2,2.6,2026-06-07
+SEL-001391,CV Safitri Tbk,dealer,Vehicles,Jakarta Selatan,DKI Jakarta,2018-02-01,basic,True,True,4.55,7,87.5,2.7,2026-07-17
+SEL-001392,PT Winarsih,small_business,Vehicles,Batam,Kepulauan Riau,2018-04-05,premium,True,True,4.73,14,44.0,1.8,2026-08-11
+SEL-001393,Melinda Permadi,individual,Property,Tangerang Selatan,Banten,2024-01-13,free,True,True,4.23,6,59.9,1.7,2026-09-01
+SEL-001394,"Luwes Oktaviani, S.H.",individual,Electronics & Gadgets,Tangerang,Banten,2024-06-17,basic,True,True,4.08,3,77.0,6.7,2026-08-01
+SEL-001395,UD Wibowo,small_business,Baby & Kids,Batam,Kepulauan Riau,2020-09-21,basic,True,True,4.19,5,15.0,4.6,2026-06-19
+SEL-001396,"R. Harsana Rajasa, M.Pd",individual,Baby & Kids,Jakarta Barat,DKI Jakarta,2024-10-01,free,True,True,4.57,2,64.9,3.6,2026-07-31
+SEL-001397,"Intan Dongoran, M.TI.",individual,Jobs,Batam,Kepulauan Riau,2024-10-21,premium,True,True,4.37,3,65.5,5.1,2026-07-10
+SEL-001398,Perum Melani Tbk,dealer,Fashion & Beauty,Jakarta Utara,DKI Jakarta,2023-09-18,basic,True,True,3.96,6,70.1,0.1,2026-06-06
+SEL-001399,Aurora Sihombing,individual,Vehicles,Serang,Banten,2020-03-11,basic,False,True,4.9,9,75.6,5.6,2026-08-03
+SEL-001400,"Dadi Sinaga, M.TI.",individual,Fashion & Beauty,Sidoarjo,Jawa Timur,2021-09-06,free,False,True,3.55,4,75.6,9.3,2026-06-28
+SEL-001401,Warta Kuswoyo,individual,Jobs,Surabaya,Jawa Timur,2019-02-17,free,True,True,3.84,5,46.5,1.7,2026-06-28
+SEL-001402,Yahya Nasyiah,individual,Home & Furniture,Samarinda,Kalimantan Timur,2025-06-17,free,False,False,4.31,3,46.9,6.4,2026-07-08
+SEL-001403,PT Pranowo,enterprise,Property,Jakarta Utara,DKI Jakarta,2024-11-14,premium,True,True,3.97,6,30.5,8.9,2026-07-13
+SEL-001404,"Lasmono Prabowo, S.Farm",individual,Property,Batam,Kepulauan Riau,2023-04-16,free,True,False,4.94,2,68.0,5.0,2026-07-25
+SEL-001405,"Puti Farhunnisa Nasyiah, S.Farm",individual,Property,Bogor,Jawa Barat,2024-04-01,premium,True,True,4.22,5,55.4,3.3,2026-07-09
+SEL-001406,"Rendy Hidayanto, S.E.I",individual,Hobbies & Sports,Tangerang Selatan,Banten,2023-06-03,free,True,True,4.02,3,93.1,5.7,2026-07-19
+SEL-001407,PD Sitompul,enterprise,Fashion & Beauty,Makassar,Sulawesi Selatan,2018-02-17,premium,False,False,4.28,14,66.3,0.4,2026-07-26
+SEL-001408,Bakianto Hidayanto,individual,Baby & Kids,Jakarta Barat,DKI Jakarta,2020-03-30,free,True,True,4.17,5,52.5,2.9,2026-07-01
+SEL-001409,CV Ramadan,dealer,Home & Furniture,Samarinda,Kalimantan Timur,2019-10-21,premium,True,True,4.49,5,85.5,7.4,2026-07-05
+SEL-001410,Perum Pradana,small_business,Vehicles,Solo,Jawa Tengah,2024-02-03,premium,True,True,4.43,13,100.0,1.3,2026-07-31
+SEL-001411,PD Wibisono Tbk,small_business,Hobbies & Sports,Medan,Sumatera Utara,2021-07-18,premium,True,True,4.86,7,81.0,5.3,2026-06-19
+SEL-001412,PD Sihotang Budiyanto Tbk,enterprise,Vehicles,Jakarta Pusat,DKI Jakarta,2020-12-01,premium,True,True,4.15,15,100.0,6.1,2026-08-10
+SEL-001413,Perum Ardianto,small_business,Property,Solo,Jawa Tengah,2026-07-14,basic,True,True,5.0,16,60.3,0.7,2026-08-30
+SEL-001414,Perum Gunawan,dealer,Vehicles,Tangerang Selatan,Banten,2025-05-29,free,True,True,4.16,11,58.6,10.7,2026-07-04
+SEL-001415,"Zizi Hidayanto, S.I.Kom",individual,Property,Sidoarjo,Jawa Timur,2023-04-15,free,True,True,,0,75.8,4.1,2026-06-19
+SEL-001416,UD Sihombing,small_business,Services,Jakarta Barat,DKI Jakarta,2022-08-09,premium,True,True,4.42,3,91.2,4.3,2026-06-06
+SEL-001417,Puti Intan Farida,individual,Electronics & Gadgets,Bandung,Jawa Barat,2025-07-28,free,True,True,4.91,3,60.9,5.5,2026-06-24
+SEL-001418,Lala Wijayanti,individual,Services,Yogyakarta,DI Yogyakarta,2019-05-15,free,True,True,3.83,3,64.9,1.4,2026-06-28
+SEL-001419,PD Manullang,dealer,Services,Jakarta Pusat,DKI Jakarta,2019-09-08,basic,True,True,4.16,3,91.8,5.7,2026-08-23
+SEL-001420,CV Wijaya Palastri,enterprise,Hobbies & Sports,Binjai,Sumatera Utara,2021-10-15,basic,True,True,4.81,6,67.3,4.9,2026-08-04
+SEL-001421,CV Salahudin Tbk,small_business,Baby & Kids,Batam,Kepulauan Riau,2019-05-18,basic,True,True,3.75,3,54.3,3.4,2026-06-21
+SEL-001422,Kadir Puspita,individual,Home & Furniture,Jakarta Barat,DKI Jakarta,2021-02-05,basic,True,True,3.57,3,48.9,12.7,2026-07-25
+SEL-001423,Bancar Gunarto,individual,Hobbies & Sports,Jakarta Utara,DKI Jakarta,2022-04-23,free,True,True,4.38,2,94.3,3.2,2026-08-04
+SEL-001424,Kemal Riyanti,individual,Baby & Kids,Tangerang Selatan,Banten,2023-07-11,free,False,False,4.23,2,84.3,10.1,2026-07-04
+SEL-001425,Paulin Pudjiastuti,individual,Hobbies & Sports,Jakarta Utara,DKI Jakarta,2019-02-28,free,True,True,4.38,5,67.6,3.7,2026-08-16
+SEL-001426,Gaduh Pranowo,individual,Fashion & Beauty,Solo,Jawa Tengah,2023-07-06,free,True,True,3.67,4,77.8,0.8,2026-07-01
+SEL-001427,"Ulya Situmorang, S.Kom",individual,Jobs,Tangerang Selatan,Banten,2018-09-22,free,True,True,4.73,3,63.2,1.5,2026-08-24
+SEL-001428,Septi Mulyani,individual,Baby & Kids,Magelang,Jawa Tengah,2018-01-24,free,True,True,4.17,6,61.0,6.4,2026-06-28
+SEL-001429,CV Nashiruddin Prasetya,small_business,Property,Depok,Jawa Barat,2022-11-28,free,True,True,4.63,6,62.9,9.6,2026-08-31
+SEL-001430,Tgk. Febi Latupono,individual,Vehicles,Tangerang,Banten,2026-03-12,free,True,True,3.27,9,41.6,2.3,2026-08-03
+SEL-001431,Perum Habibi Pudjiastuti,dealer,Vehicles,Semarang,Jawa Tengah,2024-06-10,premium,False,True,3.89,18,63.6,3.3,2026-08-09
+SEL-001432,Septi Pudjiastuti,individual,Property,Jakarta Pusat,DKI Jakarta,2025-08-02,free,True,True,3.87,7,72.6,2.8,2026-08-13
+SEL-001433,Elvin Winarsih,individual,Property,Semarang,Jawa Tengah,2019-08-18,free,True,True,4.65,2,51.0,9.5,2026-06-18
+SEL-001434,Dwi Januar,individual,Property,Denpasar,Bali,2021-01-07,free,True,True,4.75,8,100.0,0.1,2026-07-16
+SEL-001435,Olga Prastuti,individual,Property,Tangerang,Banten,2020-04-14,free,True,True,4.6,7,48.9,6.5,2026-06-23
+SEL-001436,UD Tamba Mahendra (Persero) Tbk,enterprise,Electronics & Gadgets,Malang,Jawa Timur,2025-05-11,premium,True,True,3.83,8,57.5,2.2,2026-08-15
+SEL-001437,Edi Safitri,individual,Home & Furniture,Depok,Jawa Barat,2018-09-23,free,True,True,4.29,5,86.3,5.2,2026-08-12
+SEL-001438,Uda Nababan,individual,Hobbies & Sports,Jakarta Timur,DKI Jakarta,2026-06-12,basic,False,True,3.71,8,80.1,19.8,2026-07-20
+SEL-001439,PD Hartati Tbk,dealer,Electronics & Gadgets,Depok,Jawa Barat,2020-01-08,free,True,True,3.96,4,64.4,5.5,2026-07-20
+SEL-001440,Perum Mangunsong Tbk,enterprise,Fashion & Beauty,Jakarta Barat,DKI Jakarta,2021-05-27,premium,True,True,4.24,19,76.5,5.2,2026-08-26
+SEL-001441,"Tgk. Yusuf Aryani, S.E.",individual,Baby & Kids,Batam,Kepulauan Riau,2022-03-26,free,False,True,4.36,6,59.1,0.8,2026-08-17
+SEL-001442,Galar Prayoga,individual,Vehicles,Bekasi,Jawa Barat,2023-03-29,basic,False,False,4.48,6,93.7,0.5,2026-07-16
+SEL-001443,"Sutan Narji Yuniar, S.Farm",individual,Vehicles,Palembang,Sumatera Selatan,2023-08-03,free,True,True,4.27,3,87.5,0.8,2026-06-14
+SEL-001444,Zaenab Tarihoran,individual,Jobs,Jakarta Utara,DKI Jakarta,2018-01-28,free,True,True,4.27,7,77.5,0.3,2026-07-28
+SEL-001445,Mustika Sitompul,individual,Home & Furniture,Cimahi,Jawa Barat,2019-05-07,basic,False,False,3.88,11,66.8,3.4,2026-08-18
+SEL-001446,Malika Hassanah,individual,Vehicles,Surabaya,Jawa Timur,2024-04-08,basic,True,True,4.17,2,55.1,3.3,2026-07-12
+SEL-001447,UD Laksita (Persero) Tbk,dealer,Fashion & Beauty,Depok,Jawa Barat,2021-07-20,basic,True,True,4.62,11,83.9,2.0,2026-08-21
+SEL-001448,Mariadi Sudiati,individual,Vehicles,Palembang,Sumatera Selatan,2024-04-10,free,True,False,4.37,7,75.7,29.3,2026-07-27
+SEL-001449,Saadat Setiawan,individual,Vehicles,Makassar,Sulawesi Selatan,2020-11-23,free,False,False,4.68,2,78.1,8.5,2026-06-30
+SEL-001450,"R. Paulin Napitupulu, S.T.",individual,Fashion & Beauty,Denpasar,Bali,2024-07-27,basic,True,True,4.09,3,49.5,2.4,2026-06-13
+SEL-001451,PT Budiyanto,small_business,Property,Jakarta Selatan,DKI Jakarta,2023-09-08,basic,True,False,2.75,14,54.9,0.4,2026-07-05
+SEL-001452,"Drs. Siti Dabukke, M.Farm",individual,Baby & Kids,Palembang,Sumatera Selatan,2025-05-14,free,True,False,3.34,4,67.0,3.4,2026-06-22
+SEL-001453,Perum Prabowo Firgantoro Tbk,dealer,Services,Jakarta Utara,DKI Jakarta,2024-09-11,premium,True,True,4.28,12,58.3,10.1,2026-08-27
+SEL-001454,CV Utama Wijaya (Persero) Tbk,dealer,Jobs,Balikpapan,Kalimantan Timur,2019-08-03,free,False,True,4.35,9,47.6,1.5,2026-08-22
+SEL-001455,"Drs. Oskar Siregar, S.E.I",individual,Home & Furniture,Magelang,Jawa Tengah,2021-08-25,free,False,False,3.66,6,53.6,17.7,2026-08-19
+SEL-001456,Olivia Melani,individual,Services,Bekasi,Jawa Barat,2018-06-12,free,False,True,3.66,6,78.0,6.0,2026-08-11
+SEL-001457,Hasta Utama,individual,Electronics & Gadgets,Jakarta Selatan,DKI Jakarta,2019-02-23,free,False,True,3.86,11,44.8,4.2,2026-07-25
+SEL-001458,Dt. Mujur Permadi,individual,Hobbies & Sports,Jakarta Pusat,DKI Jakarta,2025-11-12,basic,True,True,4.9,2,72.9,8.1,2026-08-20
+SEL-001459,Perum Mandala Hassanah,dealer,Home & Furniture,Depok,Jawa Barat,2026-06-10,free,True,True,4.07,7,45.8,4.3,2026-06-23
+SEL-001460,Cemani Pratiwi,individual,Hobbies & Sports,Balikpapan,Kalimantan Timur,2020-08-16,basic,True,True,4.24,4,67.5,7.0,2026-06-24
+SEL-001461,PD Tamba Gunarto,small_business,Fashion & Beauty,Palembang,Sumatera Selatan,2019-06-08,basic,True,True,4.49,12,100.0,1.2,2026-08-28
+SEL-001462,Prabawa Laksita,individual,Fashion & Beauty,Makassar,Sulawesi Selatan,2019-12-22,basic,True,True,5.0,5,70.1,0.4,2026-06-22
+SEL-001463,Atma Saptono,individual,Home & Furniture,Jakarta Selatan,DKI Jakarta,2020-11-15,free,True,True,3.92,4,60.3,9.1,2026-08-16
+SEL-001464,Gina Gunarto,individual,Fashion & Beauty,Magelang,Jawa Tengah,2024-03-14,basic,True,True,4.75,10,93.3,0.8,2026-06-26
+SEL-001465,Perum Tarihoran Wibisono,small_business,Electronics & Gadgets,Bandung,Jawa Barat,2026-01-10,premium,True,True,4.66,4,51.8,6.7,2026-08-28
+SEL-001466,PD Gunawan Gunarto Tbk,small_business,Property,Magelang,Jawa Tengah,2018-12-19,free,True,True,5.0,8,63.7,4.3,2026-08-07
+SEL-001467,Niyaga Nurdiyanti,individual,Vehicles,Bogor,Jawa Barat,2024-02-06,free,False,True,5.0,9,42.8,3.5,2026-07-12
+SEL-001468,"Radit Saefullah, S.T.",individual,Hobbies & Sports,Cimahi,Jawa Barat,2018-04-14,free,True,True,4.31,7,44.4,11.7,2026-07-19
+SEL-001469,PD Yolanda Waluyo,small_business,Hobbies & Sports,Magelang,Jawa Tengah,2020-02-02,basic,True,True,4.5,22,47.3,9.8,2026-06-27
+SEL-001470,Rini Yolanda,individual,Vehicles,Jakarta Timur,DKI Jakarta,2024-10-22,free,False,False,4.55,8,100.0,2.8,2026-08-04
+SEL-001471,Perum Ramadan,dealer,Vehicles,Malang,Jawa Timur,2024-08-22,premium,True,True,3.98,8,77.4,8.1,2026-08-27
+SEL-001472,Genta Maryati,individual,Property,Tangerang,Banten,2025-12-12,free,True,True,4.21,3,57.6,3.3,2026-06-25
+SEL-001473,Kamila Situmorang,individual,Electronics & Gadgets,Jakarta Pusat,DKI Jakarta,2020-04-10,free,False,False,4.23,1,96.8,8.2,2026-08-23
+SEL-001474,Widya Laksmiwati,individual,Vehicles,Samarinda,Kalimantan Timur,2020-05-11,basic,False,False,4.24,3,39.9,9.7,2026-06-30
+SEL-001475,Cut Olivia Mandala,individual,Services,Kediri,Jawa Timur,2022-03-06,free,True,True,3.49,6,56.9,15.9,2026-08-06
+SEL-001476,Eli Pradana,individual,Hobbies & Sports,Palembang,Sumatera Selatan,2018-09-09,free,True,True,4.17,1,96.5,15.2,2026-08-01
+SEL-001477,Kamidin Yuniar,individual,Services,Tangerang,Banten,2024-01-20,free,False,False,3.97,8,56.6,0.8,2026-07-26
+SEL-001478,CV Maryadi (Persero) Tbk,enterprise,Jobs,Binjai,Sumatera Utara,2025-11-04,premium,True,True,4.82,35,46.6,10.8,2026-07-13
+SEL-001479,Gilang Suartini,individual,Vehicles,Binjai,Sumatera Utara,2025-09-30,free,False,False,4.69,6,91.6,14.1,2026-07-11
+SEL-001480,"Yuliana Lazuardi, S.H.",individual,Vehicles,Badung,Bali,2022-06-27,free,True,True,4.51,2,90.5,6.4,2026-07-03
+SEL-001481,Yessi Sitompul,individual,Electronics & Gadgets,Serang,Banten,2021-01-02,free,False,False,4.93,5,81.3,31.3,2026-06-11
+SEL-001482,"Calista Laksmiwati, M.Kom.",individual,Property,Bogor,Jawa Barat,2021-07-22,free,True,True,3.81,8,66.7,31.1,2026-08-29
+SEL-001483,Fathonah Rahayu,individual,Fashion & Beauty,Jakarta Selatan,DKI Jakarta,2025-06-06,free,True,True,,0,83.0,4.9,2026-08-23
+SEL-001484,Marsudi Zulkarnain,individual,Vehicles,Tangerang,Banten,2023-08-19,free,True,True,4.09,5,71.6,5.9,2026-08-11
+SEL-001485,Dimaz Gunawan,individual,Vehicles,Jakarta Selatan,DKI Jakarta,2019-11-29,free,False,False,5.0,3,59.9,6.0,2026-06-17
+SEL-001486,Kemal Rahayu,individual,Fashion & Beauty,Cimahi,Jawa Barat,2026-02-28,free,True,True,4.6,4,72.5,0.1,2026-08-30
+SEL-001487,CV Usamah Mulyani,enterprise,Fashion & Beauty,Jakarta Barat,DKI Jakarta,2024-07-29,premium,True,True,4.36,12,75.9,2.9,2026-06-03
+SEL-001488,Tri Pertiwi,individual,Electronics & Gadgets,Semarang,Jawa Tengah,2021-11-12,premium,True,True,3.87,1,74.5,2.3,2026-08-06
+SEL-001489,PT Marbun Rajata,dealer,Home & Furniture,Jakarta Timur,DKI Jakarta,2019-01-01,premium,True,True,4.52,7,68.9,7.0,2026-07-19
+SEL-001490,Kariman Waskita,individual,Electronics & Gadgets,Tangerang,Banten,2020-08-23,free,True,True,4.68,4,74.4,2.1,2026-06-25
+SEL-001491,Ir. Suci Budiyanto,individual,Fashion & Beauty,Palembang,Sumatera Selatan,2019-04-08,free,True,True,4.56,9,65.6,1.9,2026-07-16
+SEL-001492,PT Pratama Tbk,small_business,Vehicles,Yogyakarta,DI Yogyakarta,2021-03-13,premium,True,True,4.7,15,76.1,19.0,2026-06-12
+SEL-001493,Dr. Novi Narpati,individual,Jobs,Bandung,Jawa Barat,2022-05-09,free,False,False,4.48,9,52.6,5.1,2026-08-03
+SEL-001494,PD Rahimah Megantara,small_business,Jobs,Magelang,Jawa Tengah,2020-07-20,basic,True,True,4.81,5,96.4,16.2,2026-08-20
+SEL-001495,"Drs. Rizki Najmudin, M.Ak",individual,Property,Magelang,Jawa Tengah,2018-04-22,free,True,True,3.96,5,57.1,2.0,2026-06-07
+SEL-001496,"Kajen Saptono, S.E.",individual,Electronics & Gadgets,Kediri,Jawa Timur,2025-03-11,free,False,False,4.37,2,22.4,2.1,2026-07-17
+SEL-001497,PD Riyanti (Persero) Tbk,dealer,Services,Serang,Banten,2022-01-02,premium,True,True,4.64,7,98.0,0.4,2026-07-04
+SEL-001498,Harja Winarno,individual,Jobs,Jakarta Utara,DKI Jakarta,2026-06-11,free,True,True,4.39,3,99.1,16.1,2026-06-19
+SEL-001499,Balangga Budiyanto,individual,Electronics & Gadgets,Batam,Kepulauan Riau,2020-02-19,free,True,True,3.73,4,52.1,0.5,2026-07-17
+SEL-001500,Perum Mayasari Andriani,small_business,Electronics & Gadgets,Jakarta Barat,DKI Jakarta,2021-10-03,premium,True,True,4.52,13,74.7,0.4,2026-07-25
