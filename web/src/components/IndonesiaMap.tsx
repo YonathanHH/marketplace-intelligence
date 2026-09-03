@@ -14,7 +14,8 @@
  * hidden, so the map reads as Indonesia and shows where the business isn't.
  */
 
-import { useMemo, useState } from "react";
+import { useCallback, useMemo, useRef, useState } from "react";
+import { useThemeColors } from "../lib/theme";
 import geo from "../data/indonesia.json";
 
 export interface MapRow {
@@ -34,8 +35,12 @@ interface Props {
 const BIN_COUNT = 5;
 // Explicit ramp tokens (see tokens.css) rather than a computed colour mix:
 // at map scale the bins have to be distinguishable at a glance, in both themes.
-const binFill = (bin: number) => `var(--map-${bin + 1})`;
-const NO_DATA_FILL = "var(--map-none)";
+//
+// These are resolved to concrete colours before use. `var()` is only valid in a
+// CSS property, and Recharts and this map both write colour into SVG `fill` and
+// `stroke` *attributes*, where support for it is not something to rely on.
+const binToken = (bin: number) => `var(--map-${bin + 1})`;
+const NO_DATA_TOKEN = "var(--map-none)";
 
 interface Hovered {
   name: string;
@@ -44,10 +49,28 @@ interface Hovered {
   row?: MapRow;
 }
 
+/** A province's tooltip summary, flattened for a screen reader. */
+function describe(name: string, row?: MapRow): string {
+  if (!row) return `${name}: no sellers in this province`;
+  return `${name}. ${row.detail.map((d) => `${d.label}: ${d.value}`).join(". ")}`;
+}
+
 export function IndonesiaMap({
   rows, legendLabel, formatValue, onSelect, height = 380,
 }: Props) {
   const [hovered, setHovered] = useState<Hovered | null>(null);
+  const svgRef = useRef<SVGSVGElement>(null);
+  const theme = useThemeColors();
+
+  const binFill = (bin: number) => theme.resolve(binToken(bin), "#888");
+  const noDataFill = theme.resolve(NO_DATA_TOKEN, "#888");
+
+  // Keyboard focus has no pointer coordinates, so the tooltip is anchored to
+  // the focused marker's own box instead.
+  const showAtElement = useCallback((el: Element, name: string, row?: MapRow) => {
+    const box = el.getBoundingClientRect();
+    setHovered({ name, x: box.right, y: box.bottom, row });
+  }, []);
 
   const { byProvince, thresholds, maxValue } = useMemo(() => {
     const map = new Map(rows.map((r) => [r.province, r]));
@@ -80,13 +103,16 @@ export function IndonesiaMap({
 
   return (
     <div style={{ position: "relative" }}>
+      {/* `group`, not `img`: the markers inside are real controls, and an `img`
+          role would hide them from assistive technology entirely. */}
       <svg
+        ref={svgRef}
         viewBox={geo.viewBox}
         width="100%"
         height={height}
         preserveAspectRatio="xMidYMid meet"
-        role="img"
-        aria-label={`Map of Indonesia shaded by ${legendLabel}`}
+        role="group"
+        aria-label={`Map of Indonesia shaded by ${legendLabel}. ${rows.length} provinces with sellers.`}
         style={{ display: "block", overflow: "visible" }}
         onMouseLeave={() => setHovered(null)}
       >
@@ -96,13 +122,16 @@ export function IndonesiaMap({
             const row = byProvince.get(province.name);
             const active = hovered?.name === province.name;
             return (
+              /* Decorative: the fill carries the metric, but the focusable
+                 control for each province is its centroid marker below. */
               <path
                 key={province.name}
                 d={province.d}
-                fill={row ? binFill(binOf(row.value)) : NO_DATA_FILL}
-                stroke={active ? "var(--text)" : "var(--border-strong)"}
+                fill={row ? binFill(binOf(row.value)) : noDataFill}
+                stroke={theme.resolve(active ? "var(--text)" : "var(--border-strong)")}
                 strokeWidth={active ? 1.5 : 0.5}
                 strokeLinejoin="round"
+                aria-hidden="true"
                 style={{ cursor: row && onSelect ? "pointer" : "default", transition: "stroke 120ms" }}
                 onMouseMove={(e) =>
                   setHovered({ name: province.name, x: e.clientX, y: e.clientY, row })
@@ -127,15 +156,30 @@ export function IndonesiaMap({
                 cx={province.cx}
                 cy={province.cy}
                 r={markerRadius(row.value)}
-                fill="var(--accent)"
+                fill={theme.resolve("var(--accent)")}
                 fillOpacity={active ? 0.95 : 0.62}
-                stroke="var(--bg)"
-                strokeWidth={1.2}
+                stroke={theme.resolve(active ? "var(--text)" : "var(--bg)")}
+                strokeWidth={active ? 2 : 1.2}
+                role={onSelect ? "button" : "img"}
+                tabIndex={0}
+                aria-label={
+                  onSelect
+                    ? `${describe(province.name, row)}. Open this territory's queue.`
+                    : describe(province.name, row)
+                }
                 style={{ cursor: onSelect ? "pointer" : "default" }}
                 onMouseMove={(e) =>
                   setHovered({ name: province.name, x: e.clientX, y: e.clientY, row })
                 }
+                onFocus={(e) => showAtElement(e.currentTarget, province.name, row)}
+                onBlur={() => setHovered(null)}
                 onClick={() => onSelect?.(province.name)}
+                onKeyDown={(e) => {
+                  if (e.key === "Enter" || e.key === " ") {
+                    e.preventDefault();
+                    onSelect?.(province.name);
+                  }
+                }}
               >
                 <title>{province.name}</title>
               </circle>
@@ -151,17 +195,10 @@ export function IndonesiaMap({
       >
         <div className="row gap-2">
           <span>{legendLabel}</span>
-          <span className="row" style={{ gap: 2 }}>
+          <span className="row" style={{ gap: 2 }} aria-hidden="true">
             {Array.from({ length: BIN_COUNT }, (_, i) => (
               <span
                 key={i}
-                title={
-                  i === 0
-                    ? `up to ${formatValue(thresholds[0] ?? 0)}`
-                    : i === BIN_COUNT - 1
-                      ? `above ${formatValue(thresholds[BIN_COUNT - 2] ?? 0)}`
-                      : `${formatValue(thresholds[i - 1] ?? 0)} - ${formatValue(thresholds[i] ?? 0)}`
-                }
                 style={{
                   width: 26, height: 10, background: binFill(i),
                   border: "1px solid var(--border)",
@@ -170,13 +207,18 @@ export function IndonesiaMap({
               />
             ))}
           </span>
-          <span className="faint">low → high</span>
+          {/* The bin boundaries as text, not as a `title` tooltip - the ramp is
+              meaningless without them and a tooltip never reaches keyboard or
+              touch. */}
+          <span className="faint">
+            {formatValue(0)} → {formatValue(maxValue)}
+          </span>
         </div>
         <div className="row gap-2 faint">
           <span
             style={{
               width: 10, height: 10, borderRadius: 2,
-              background: NO_DATA_FILL, border: "1px solid var(--border-strong)",
+              background: noDataFill, border: "1px solid var(--border-strong)",
             }}
           />
           <span>no sellers in dataset</span>

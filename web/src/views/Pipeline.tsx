@@ -79,10 +79,11 @@ export default function Pipeline() {
           data={data.activity_trend}
           xKey="month"
           height={240}
+          label="Monthly outreach activities, accounts touched and wins"
           series={[
-            { key: "activities", name: "Activities", color: "#7c6bff" },
-            { key: "accounts_touched", name: "Accounts touched", color: "#4c9aff" },
-            { key: "wins", name: "Wins", color: "#35c07f" },
+            { key: "activities", name: "Activities", color: "var(--series-1)" },
+            { key: "accounts_touched", name: "Accounts touched", color: "var(--series-2)" },
+            { key: "wins", name: "Wins", color: "var(--series-6)" },
           ]}
           xFormatter={formatMonth}
           valueFormatter={(v) => formatNumber(v)}
@@ -129,6 +130,7 @@ export default function Pipeline() {
             xKey="activity_type"
             horizontal
             height={240}
+            label="Number of logged activities by outreach type"
             series={[{ key: "activities", name: "Activities" }]}
             colorByIndex
             xFormatter={titleCase}

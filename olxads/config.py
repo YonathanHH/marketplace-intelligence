@@ -13,6 +13,10 @@ PROCESSED_DIR = PROJECT_ROOT / "data" / "processed"
 DB_PATH = PROCESSED_DIR / "olxads.db"
 # Slim artefact committed for deployment (~13 MB, aggregates only, same results).
 DEPLOY_DB_PATH = PROCESSED_DIR / "olxads-deploy.db"
+# Columnar OLAP warehouse. Build-time only: `olxads.olap` computes the deep-dive
+# analytics here and materialises the (tiny) results back into SQLite, so the
+# serving path never opens it. Kept on disk for ad-hoc analysis.
+OLAP_DB_PATH = PROCESSED_DIR / "olxads.duckdb"
 SCHEMA_PATH = PROJECT_ROOT / "schema" / "schema.sql"
 WEB_DIR = PROJECT_ROOT / "web"
 

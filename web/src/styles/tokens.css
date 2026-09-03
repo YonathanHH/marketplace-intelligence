@@ -3,6 +3,12 @@
    Single source of truth for colour, type, space and motion. Every component
    styles itself from these variables so the whole product reads as one system
    and theming is a matter of swapping one block.
+
+   Colour rule: every token used for TEXT clears WCAG AA (4.5:1) against every
+   surface it can sit on — in both themes. That is checked, not assumed: the
+   worst pairing for each token is noted beside it. Tokens used only for fills
+   (chart series, map bins, meter tracks) are held to 3:1 against their
+   background instead, which is the non-text threshold.
    ========================================================================== */
 
 :root {
@@ -53,44 +59,49 @@
   --sidebar-width: 236px;
   --topbar-height: 56px;
   --content-max: 1560px;
+  /* Minimum hit target for anything tappable (WCAG 2.5.5 / 2.5.8). */
+  --tap-target: 32px;
 }
 
-/* ---- Dark (default) ---- */
+/* ---- Dark (default) ----------------------------------------------------
+   Ratios are quoted against --surface-hover, the lightest ground any text
+   sits on in this theme, so they are the floor rather than the best case. */
 :root,
 [data-theme="dark"] {
-  --bg: #0a0c10;
-  --bg-subtle: #0e1116;
-  --surface: #13171f;
-  --surface-raised: #181d27;
-  --surface-hover: #1c222d;
-  --border: #222936;
-  --border-strong: #2e3644;
+  --bg: #080a0d;
+  --bg-subtle: #0d1014;
+  --surface: #12161b;
+  --surface-raised: #181d24;
+  --surface-hover: #1d232b;
+  --border: #232a33;
+  --border-strong: #313a46;
 
-  --text: #e7eaf1;
-  --text-muted: #97a1b2;
-  --text-faint: #69738a;
-  --text-inverse: #0a0c10;
+  --text: #e9edf3;         /* 13.5:1 */
+  --text-muted: #a4aebc;   /*  7.1:1 */
+  --text-faint: #8492a1;   /*  5.0:1 — smallest text in the product */
+  --text-inverse: #080a0d;
 
-  --accent: #7c6bff;
-  --accent-hover: #9384ff;
-  --accent-soft: rgba(124, 107, 255, 0.15);
-  --accent-border: rgba(124, 107, 255, 0.38);
+  --accent: #2ed3c3;       /*  8.5:1 */
+  --accent-hover: #5ee0d3;
+  --accent-soft: rgba(46, 211, 195, 0.14);
+  --accent-border: rgba(46, 211, 195, 0.38);
+  --on-accent: #06181a;    /*  9.7:1 on --accent — never plain white */
 
-  --success: #35c07f;
-  --success-soft: rgba(53, 192, 127, 0.14);
-  --warning: #f2a33c;
-  --warning-soft: rgba(242, 163, 60, 0.14);
-  --danger: #f0584f;
-  --danger-soft: rgba(240, 88, 79, 0.14);
-  --info: #4c9aff;
-  --info-soft: rgba(76, 154, 255, 0.14);
+  --success: #4bcd91;      /*  7.9:1 */
+  --success-soft: rgba(75, 205, 145, 0.14);
+  --warning: #f2b431;      /*  8.6:1 */
+  --warning-soft: rgba(242, 180, 49, 0.14);
+  --danger: #ff7166;       /*  5.9:1 */
+  --danger-soft: rgba(255, 113, 102, 0.14);
+  --info: #63acff;         /*  6.7:1 */
+  --info-soft: rgba(99, 172, 255, 0.14);
 
-  --tier-hot: #ff6f4d;
-  --tier-warm: #f2a33c;
-  --tier-cool: #4c9aff;
-  --tier-low: #6b7688;
+  --tier-hot: #ff8060;     /*  6.4:1 */
+  --tier-warm: #f2b431;    /*  8.6:1 */
+  --tier-cool: #63acff;    /*  6.7:1 */
+  --tier-low: #95a3b4;     /*  6.2:1 */
 
-  --grid-line: #1e242f;
+  --grid-line: #1e242d;
   --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
   --shadow-md: 0 6px 20px rgba(0, 0, 0, 0.45);
   --shadow-lg: 0 20px 60px rgba(0, 0, 0, 0.55);
@@ -98,61 +109,107 @@
   /* Sequential choropleth ramp. Explicit stops rather than a computed mix, so
      each bin is clearly distinguishable at map scale in both themes.
      --map-none is territory with no sellers at all. */
-  --map-none: #1a1f2a;
-  --map-1: #2b2a55;
-  --map-2: #3d3785;
-  --map-3: #5546b4;
-  --map-4: #7059dd;
-  --map-5: #9887ff;
+  --map-none: #171d24;
+  --map-1: #10393c;
+  --map-2: #14545a;
+  --map-3: #17747a;
+  --map-4: #1f9c9c;
+  --map-5: #45c9bd;
+
+  /* Categorical chart series. Defined per theme rather than once, because a
+     single mid-tone set cannot clear 3:1 against both a near-black and a white
+     ground - charts read these through `useThemeColors`, which resolves them
+     to concrete values so Recharts can put them in an SVG `fill` attribute. */
+  --series-1: #2ed3c3;
+  --series-2: #63acff;
+  --series-3: #f2b431;
+  --series-4: #ff8060;
+  --series-5: #a78bfa;
+  --series-6: #4bcd91;
+  --series-7: #f38fb8;
+  --series-8: #c3cf5a;
+  --series-9: #7fd3e0;
 
   color-scheme: dark;
 }
 
-/* ---- Light ---- */
+/* ---- Light -------------------------------------------------------------
+   Ratios quoted against --bg-subtle, the darkest ground here. */
 [data-theme="light"] {
-  --bg: #f6f7f9;
-  --bg-subtle: #f0f2f5;
+  --bg: #f5f7f8;
+  --bg-subtle: #eceff2;
   --surface: #ffffff;
   --surface-raised: #ffffff;
-  --surface-hover: #f4f5f8;
-  --border: #e3e6ec;
-  --border-strong: #d0d5de;
+  --surface-hover: #f1f4f6;
+  --border: #e0e5ea;
+  --border-strong: #cbd3db;
 
-  --text: #151a22;
-  --text-muted: #5b6675;
-  --text-faint: #8b95a5;
+  --text: #0f171d;         /* 15.7:1 */
+  --text-muted: #525f6b;   /*  5.7:1 */
+  --text-faint: #5f6b77;   /*  4.7:1 */
   --text-inverse: #ffffff;
 
-  --accent: #5b45f0;
-  --accent-hover: #4a34e0;
-  --accent-soft: rgba(91, 69, 240, 0.09);
-  --accent-border: rgba(91, 69, 240, 0.3);
+  --accent: #0d6f6c;       /*  5.2:1 */
+  --accent-hover: #0a5754;
+  --accent-soft: rgba(13, 111, 108, 0.1);
+  --accent-border: rgba(13, 111, 108, 0.32);
+  --on-accent: #ffffff;    /*  6.0:1 on --accent */
 
-  --success: #17945a;
-  --success-soft: rgba(23, 148, 90, 0.1);
-  --warning: #c9770a;
-  --warning-soft: rgba(201, 119, 10, 0.1);
-  --danger: #d43a31;
-  --danger-soft: rgba(212, 58, 49, 0.1);
-  --info: #2b76d9;
-  --info-soft: rgba(43, 118, 217, 0.1);
+  --success: #0e7043;      /*  5.3:1 */
+  --success-soft: rgba(14, 112, 67, 0.1);
+  --warning: #8a5300;      /*  5.5:1 */
+  --warning-soft: rgba(138, 83, 0, 0.1);
+  --danger: #c0342a;       /*  4.8:1 */
+  --danger-soft: rgba(192, 52, 42, 0.1);
+  --info: #1b5fb5;         /*  5.4:1 */
+  --info-soft: rgba(27, 95, 181, 0.1);
 
-  --tier-hot: #e04a26;
-  --tier-warm: #c9770a;
-  --tier-cool: #2b76d9;
-  --tier-low: #737f90;
+  --tier-hot: #bd3d10;     /*  4.7:1 */
+  --tier-warm: #8a5300;    /*  5.5:1 */
+  --tier-cool: #1b5fb5;    /*  5.4:1 */
+  --tier-low: #5a6773;     /*  5.0:1 */
 
-  --grid-line: #e8ebf0;
+  --grid-line: #e6eaee;
   --shadow-sm: 0 1px 2px rgba(16, 24, 40, 0.06);
   --shadow-md: 0 6px 20px rgba(16, 24, 40, 0.09);
   --shadow-lg: 0 20px 50px rgba(16, 24, 40, 0.14);
 
-  --map-none: #e7eaef;
-  --map-1: #dcd7fb;
-  --map-2: #bdb2f5;
-  --map-3: #9a89ea;
-  --map-4: #7561dd;
-  --map-5: #5340c4;
+  --map-none: #e5e9ed;
+  --map-1: #cfe9e6;
+  --map-2: #a3d5d0;
+  --map-3: #6bb8b3;
+  --map-4: #349690;
+  --map-5: #0d6f6c;
+
+  --series-1: #0d6f6c;
+  --series-2: #1b5fb5;
+  --series-3: #8a5300;
+  --series-4: #bd3d10;
+  --series-5: #5b45b8;
+  --series-6: #0e7043;
+  --series-7: #a83a72;
+  --series-8: #6b6a12;
+  --series-9: #216c86;
 
   color-scheme: light;
+}
+
+/* Someone who has never touched the toggle gets the theme their OS asked for.
+   An explicit choice is stored as [data-theme] and wins over this. */
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme]) {
+    color-scheme: light;
+  }
+}
+
+/* Windows High Contrast / forced-colours mode: let the OS palette through
+   rather than fighting it, and keep borders visible where we relied on colour. */
+@media (forced-colors: active) {
+  .card,
+  .kpi,
+  .btn,
+  .chip,
+  .badge {
+    border: 1px solid CanvasText;
+  }
 }

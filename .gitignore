@@ -9,6 +9,10 @@ __pycache__/
 # because Vercel deploys from git and the function needs it at runtime.
 data/processed/olxads.db
 
+# DuckDB OLAP warehouse (~10 MB). Build-time only — its results are materialised
+# into SQLite as olap_* tables, which ship inside the deploy artefact.
+data/processed/olxads.duckdb
+
 # Frontend
 web/node_modules/
 web/dist/

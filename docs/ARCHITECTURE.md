@@ -6,7 +6,7 @@ The system splits cleanly in two. Everything above the line runs once, offline,
 and may use heavy libraries. Everything below runs per request and may not.
 
 ```
-BUILD TIME  (pandas, numpy — never deployed)
+BUILD TIME  (pandas, numpy, duckdb — never deployed)
   scripts/generate_data.py ──► data/raw/*.csv
                                     │
                     olxads/scoring.py│  (applies olxads/rules.py across the population)
@@ -16,9 +16,14 @@ BUILD TIME  (pandas, numpy — never deployed)
                                     ├── 5 source tables      (schema/schema.sql)
                                     ├── seller_scores        (one row per seller)
                                     ├── seller_scores_ranked (view: live rank)
-                                    └── aggregates: listing_totals
-                                                    marketplace_daily
-                                                    seller_daily_traction
+                                    ├── aggregates: listing_totals
+                                    │               marketplace_daily
+                                    │               seller_daily_traction
+                                    └── olxads/olap.py ──► DuckDB star schema
+                                                            (olxads.duckdb)
+                                                              │  6 analyses
+                                                              ▼
+                                                        olap_* tables
                                     │
                      ┌──────────────┴───────────────┐
               olxads.db (67 MB, local)      olxads-deploy.db (13 MB, committed)
@@ -44,7 +49,8 @@ SERVE TIME  (stdlib sqlite3 + FastAPI only)
 | `olxads/db.py` | SQLite connection handling, query helpers returning plain dicts |
 | `olxads/rules.py` | **The scoring rules themselves — zero third-party imports** |
 | `olxads/scoring.py` | Build-time pipeline: applies the rules across the population with pandas |
-| `olxads/etl.py` | CSV → validated tables → `seller_scores` → aggregates → indexes → metadata |
+| `olxads/etl.py` | CSV → validated tables → `seller_scores` → aggregates → OLAP pass → indexes → metadata |
+| `olxads/olap.py` | **DuckDB warehouse and the analytical query catalog** — build-time only |
 | `olxads/analytics.py` | Every aggregation the product surfaces, as reusable functions |
 | `olxads/actions.py` | Write path: log an activity, rescore that seller in place |
 | `olxads/runtime.py` | Which database to open, including read-only serverless hosts |
@@ -56,6 +62,18 @@ same aggregation can be called from the API, a notebook, or a test without
 going through HTTP.
 
 ## Decisions worth explaining
+
+**Two engines, one of them build-time.** SQLite serves; DuckDB pre-computes.
+The Deep Dive analyses are full scans of the 286k-row metric fact with window
+frames, quantiles and an as-of join — the shape a columnar engine exists for,
+and 14.6x faster on the one of them SQLite can also express (measured by
+`scripts/build_olap.py --benchmark`, which also asserts the two agree
+row-for-row). DuckDB never runs at request time: its six result sets are a few
+hundred rows in total, so they are materialised into SQLite and served like any
+other query. That keeps the serving path stdlib-only and keeps the function
+small. It also makes the decay analysis possible *at all* in production, since
+the deploy artefact drops the raw metrics table it needs. See
+[OLAP.md](OLAP.md).
 
 **SQLite, not Postgres.** The whole dataset is ~300k rows and read-mostly.
 SQLite makes the project clone-and-run with no service to provision, while
@@ -143,12 +161,24 @@ the filtered set), a SQL-injection attempt, and the full log-activity →
 rescore → persist cycle.
 
 `tests/test_deployment.py` guards the two properties the serverless deployment
-depends on: no pandas/numpy in the serving path, and identical analytics from
-the slim database. It also covers the four path shapes a host might hand to the
-function.
+depends on: no pandas/numpy/duckdb in the serving path, and identical analytics
+from the slim database. It also covers the four path shapes a host might hand to
+the function.
+
+`tests/test_olap.py` asserts that the second engine stays out of the serving
+path, and — more importantly — that it agrees with SQLite where both can express
+the question. A faster engine returning different numbers is not an
+optimisation, it is a second source of truth. The identical-analytics test
+earned its keep here: it caught `NTILE` splitting ties non-deterministically, so
+two builds of the same data disagreed on quintile boundaries.
+
+`tests/test_design_tokens.py` parses `tokens.css` and asserts every text colour
+clears WCAG AA against every surface it can sit on, in both themes, and that no
+component hardcodes a hex value. Contrast is the kind of thing that is checked
+once by eye and quietly regresses; this makes it a build failure.
 
 ```bash
-python -m pytest -q     # 76 tests
+python -m pytest -q     # 101 tests
 ```
 
 See [DEPLOYMENT.md](DEPLOYMENT.md) for the hosting setup.

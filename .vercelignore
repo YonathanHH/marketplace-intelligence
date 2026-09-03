@@ -11,6 +11,9 @@ notebooks/
 data/raw/
 # The full local database; the slim deploy artefact is included via vercel.json.
 data/processed/olxads.db
+# The DuckDB warehouse is build-time only — its results already live in the
+# deploy artefact as olap_* tables.
+data/processed/olxads.duckdb
 data/processed/opportunity_scores.csv
 
 web/node_modules/

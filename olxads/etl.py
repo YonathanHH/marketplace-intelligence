@@ -4,6 +4,8 @@ Pipeline:
     CSV (data/raw)
       -> schema/schema.sql tables, validated column-by-column
       -> derived `seller_scores` table (opportunity + revenue + playbook)
+      -> pre-aggregated roll-ups of the 286k-row metrics table
+      -> DuckDB OLAP pass (see olxads.olap) materialised back as `olap_*` tables
       -> indexes + a `build_metadata` row
 
 Run via `python -m olxads.etl` or `python run.py --rebuild`.
@@ -19,7 +21,8 @@ from pathlib import Path
 
 import pandas as pd
 
-from .config import DB_PATH, PROCESSED_DIR, RAW_DIR, RAW_TABLES, SCHEMA_PATH
+from . import olap
+from .config import DB_PATH, OLAP_DB_PATH, PROCESSED_DIR, RAW_DIR, RAW_TABLES, SCHEMA_PATH
 from .scoring import load_tables, resolve_as_of, score_sellers
 
 BOOL_COLUMNS = {
@@ -202,7 +205,29 @@ def create_indexes(conn: sqlite3.Connection) -> None:
         conn.execute(stmt)
 
 
-def write_metadata(conn: sqlite3.Connection, counts: dict[str, int], as_of: dt.date) -> None:
+def build_olap_cubes(conn: sqlite3.Connection, raw_dir: Path) -> dict | None:
+    """Run the DuckDB analytical pass and materialise its results into SQLite.
+
+    Optional by design. DuckDB is a build-time dependency (requirements-dev),
+    so a runtime-only environment can still rebuild a working database — it
+    just won't have the Deep Dive tables, and the API says so explicitly
+    rather than failing at query time.
+    """
+    if not olap.is_available():
+        print("  duckdb not installed - skipping (pip install -r requirements-dev.txt)")
+        return None
+    report = olap.materialize(conn, raw_dir, OLAP_DB_PATH)
+    for table, rows in report["tables"].items():
+        print(f"  {table:<30} {rows:>8,} rows  ({report['query_ms'][table]:>6.1f} ms)")
+    return report
+
+
+def write_metadata(
+    conn: sqlite3.Connection,
+    counts: dict[str, int],
+    as_of: dt.date,
+    olap_report: dict | None = None,
+) -> None:
     conn.execute("DROP TABLE IF EXISTS build_metadata")
     conn.execute(
         "CREATE TABLE build_metadata (key TEXT PRIMARY KEY, value TEXT NOT NULL)"
@@ -211,6 +236,10 @@ def write_metadata(conn: sqlite3.Connection, counts: dict[str, int], as_of: dt.d
         "as_of_date": as_of.isoformat(),
         "built_at": dt.datetime.now().isoformat(timespec="seconds"),
         "row_counts": json.dumps(counts),
+        "olap_engine": "duckdb" if olap_report else "none",
+        "olap_version": (olap_report or {}).get("duckdb_version") or "",
+        "olap_fact_rows": str((olap_report or {}).get("fact_rows_scanned") or ""),
+        "olap_build_ms": str((olap_report or {}).get("total_ms") or ""),
     }
     conn.executemany(
         "INSERT INTO build_metadata (key, value) VALUES (?, ?)", list(meta.items())
@@ -245,9 +274,12 @@ def build_database(
         for table, n in build_aggregates(conn).items():
             print(f"  {table:<22} {n:>8,} rows")
 
+        print("Running DuckDB OLAP pass...")
+        olap_report = build_olap_cubes(conn, raw_dir)
+
         print("Creating indexes...")
         create_indexes(conn)
-        write_metadata(conn, counts, as_of)
+        write_metadata(conn, counts, as_of, olap_report)
         conn.commit()
 
         if deploy:

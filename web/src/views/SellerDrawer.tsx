@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useId, useRef, useState } from "react";
 import { api, useAsync } from "../api/client";
 import { AreaTrend } from "../components/charts";
 import { IconCheck, IconSparkle, IconX } from "../components/icons";
@@ -8,6 +8,7 @@ import {
 import {
   daysAgo, formatCompact, formatDate, formatIDR, formatNumber, formatPercent, titleCase,
 } from "../lib/format";
+import { useModalFocus } from "../lib/modal";
 import type { SellerDetail } from "../api/types";
 
 const TABS = ["Opportunity", "Traction", "Advertising", "Activity"] as const;
@@ -53,32 +54,51 @@ export default function SellerDrawer({
 }) {
   const [tab, setTab] = useState<Tab>("Opportunity");
   const { data, loading, error, reload } = useAsync(() => api.seller(sellerId), [sellerId]);
+  const drawerRef = useModalFocus<HTMLElement>(true, onClose);
+  const closeRef = useRef<HTMLButtonElement>(null);
+  const titleId = useId();
 
-  // Escape closes the drawer; body scroll is locked while it's open.
+  // Focus lands on the close button rather than the panel, so the first Tab
+  // goes forward into the content instead of out of the dialog.
   useEffect(() => {
-    const onKey = (e: KeyboardEvent) => e.key === "Escape" && onClose();
-    document.addEventListener("keydown", onKey);
-    const previous = document.body.style.overflow;
-    document.body.style.overflow = "hidden";
-    return () => {
-      document.removeEventListener("keydown", onKey);
-      document.body.style.overflow = previous;
-    };
-  }, [onClose]);
+    if (!loading && data) closeRef.current?.focus();
+  }, [loading, data]);
+
+  // Arrow keys move between tabs, which is what the tab pattern promises.
+  const onTabKey = useCallback((e: React.KeyboardEvent, index: number) => {
+    const delta = e.key === "ArrowRight" ? 1 : e.key === "ArrowLeft" ? -1 : 0;
+    if (!delta) return;
+    e.preventDefault();
+    const next = TABS[(index + delta + TABS.length) % TABS.length];
+    setTab(next);
+    document.getElementById(`tab-${next}`)?.focus();
+  }, []);
 
   const s = data?.seller;
 
   return (
     <>
-      <div className="drawer-backdrop" onClick={onClose} />
-      <aside className="drawer" role="dialog" aria-label="Seller detail">
+      <div className="drawer-backdrop" onClick={onClose} aria-hidden="true" />
+      <aside
+        className="drawer"
+        ref={drawerRef}
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby={titleId}
+      >
         {error ? (
           <div style={{ padding: "var(--space-6)" }}>
+            <h2 id={titleId} className="sr-only">Seller detail</h2>
             <ErrorState message={error} onRetry={reload} />
+            <button className="btn btn-sm" style={{ marginTop: 12 }} onClick={onClose}>
+              Close
+            </button>
           </div>
         ) : loading || !data || !s ? (
-          <div style={{ padding: "var(--space-6)" }}>
-            <LoadingCard height={120} />
+          <div style={{ padding: "var(--space-6)" }} className="stack gap-4">
+            <h2 id={titleId} className="sr-only">Loading seller detail</h2>
+            <LoadingCard height={96} label="Loading seller detail" />
+            <LoadingCard height={220} label="Loading score breakdown" />
           </div>
         ) : (
           <>
@@ -91,24 +111,41 @@ export default function SellerDrawer({
                   {!s.has_ads && <Badge variant="info">Never advertised</Badge>}
                   {s.touch_count === 0 && <Badge variant="warning">Never contacted</Badge>}
                 </div>
-                <h2 style={{ fontSize: "var(--text-lg)", fontWeight: 680, letterSpacing: "-0.02em" }}>
+                <h2
+                  id={titleId}
+                  style={{ fontSize: "var(--text-lg)", fontWeight: 680, letterSpacing: "-0.02em" }}
+                >
                   {s.seller_name}
                 </h2>
                 <div className="small faint" style={{ marginTop: 2 }}>
                   {s.seller_id} · {titleCase(s.seller_type)} · {s.primary_category} · {s.city}, {s.province}
                 </div>
               </div>
-              <button className="drawer-close" onClick={onClose} aria-label="Close">
+              <button
+                ref={closeRef}
+                className="drawer-close"
+                onClick={onClose}
+                aria-label={`Close ${s.seller_name} detail`}
+              >
                 <IconX size={18} />
               </button>
             </header>
 
-            <div className="tabs">
-              {TABS.map((t) => (
+            {/* Real ARIA tabs: only the selected tab is in the tab order, and
+                arrow keys move between them (WAI-ARIA tabs pattern). */}
+            <div className="tabs" role="tablist" aria-label="Seller detail sections">
+              {TABS.map((t, i) => (
                 <button
                   key={t}
+                  id={`tab-${t}`}
+                  role="tab"
+                  type="button"
+                  aria-selected={tab === t}
+                  aria-controls={`panel-${t}`}
+                  tabIndex={tab === t ? 0 : -1}
                   className={`tab ${tab === t ? "active" : ""}`}
                   onClick={() => setTab(t)}
+                  onKeyDown={(e) => onTabKey(e, i)}
                 >
                   {t}
                   {t === "Activity" && s.touch_count > 0 && ` (${s.touch_count})`}
@@ -117,7 +154,13 @@ export default function SellerDrawer({
               ))}
             </div>
 
-            <div className="drawer-body">
+            <div
+              className="drawer-body"
+              role="tabpanel"
+              id={`panel-${tab}`}
+              aria-labelledby={`tab-${tab}`}
+              tabIndex={0}
+            >
               {tab === "Opportunity" && <OpportunityTab data={data} />}
               {tab === "Traction" && <TractionTab data={data} />}
               {tab === "Advertising" && <AdvertisingTab data={data} />}
@@ -290,9 +333,10 @@ function TractionTab({ data }: { data: SellerDetail }) {
             data={data.traction_trend}
             xKey="date"
             height={220}
+            label={`Daily views and buyer contacts for ${s.seller_name}`}
             series={[
-              { key: "views", name: "Views", color: "#7c6bff" },
-              { key: "leads", name: "Buyer contacts", color: "#35c07f" },
+              { key: "views", name: "Views", color: "var(--series-1)" },
+              { key: "leads", name: "Buyer contacts", color: "var(--series-6)" },
             ]}
             xFormatter={(v) => new Date(v).toLocaleDateString("en-GB", { day: "2-digit", month: "short" })}
             valueFormatter={(v) => formatNumber(v)}
@@ -498,7 +542,9 @@ function ActivityTab({
               </button>
             </div>
           </div>
-          {err && <div className="small" style={{ color: "var(--danger)" }}>{err}</div>}
+          <p aria-live="polite" className="small" style={{ margin: 0, color: err ? "var(--danger)" : "var(--success)" }}>
+            {err ?? (saved ? "Activity logged. This account has been rescored." : "")}
+          </p>
         </form>
       </Card>
 

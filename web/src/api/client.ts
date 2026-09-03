@@ -3,7 +3,7 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import type {
   ActivityInput, AdvertisingAnalytics, CoverageAnalytics, FilterOptions,
-  LeadsResponse, MarketplaceAnalytics, Overview, PipelineAnalytics, SellerDetail,
+  LeadsResponse, MarketplaceAnalytics, OlapAnalytics, Overview, PipelineAnalytics, SellerDetail,
 } from "./types";
 
 const BASE = "/api";
@@ -57,6 +57,7 @@ export const api = {
   advertising: () => request<AdvertisingAnalytics>("/analytics/advertising"),
   pipeline: () => request<PipelineAnalytics>("/analytics/pipeline"),
   coverage: () => request<CoverageAnalytics>("/analytics/coverage"),
+  olap: () => request<OlapAnalytics>("/analytics/olap"),
   logActivity: (id: string, payload: ActivityInput) =>
     request<{ activity_id: string; seller: unknown }>(`/sellers/${id}/activities`, {
       method: "POST",

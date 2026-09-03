@@ -78,8 +78,13 @@ export function tierClass(tier: string): string {
   return `badge badge-${tier.toLowerCase()}`;
 }
 
-/** Categorical series colours — used consistently across every chart. */
+/**
+ * Fallback categorical series colours, in the same order as the `--series-N`
+ * tokens. The live values come from the active theme via `useChartPalette`;
+ * this array is what a chart falls back to if the tokens cannot be read (a
+ * test renderer with no layout, say).
+ */
 export const SERIES = [
-  "#7c6bff", "#4c9aff", "#35c07f", "#f2a33c", "#ff6f4d",
-  "#c07fe8", "#3fc5c9", "#e8688f", "#9aa63a",
+  "#2ed3c3", "#63acff", "#f2b431", "#ff8060", "#a78bfa",
+  "#4bcd91", "#f38fb8", "#c3cf5a", "#7fd3e0",
 ];

@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" data-theme="dark">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,6 +8,22 @@
   </head>
   <body>
     <div id="root"></div>
+    <!-- Stamp the theme before first paint. React sets the same attribute on
+         mount, but that is one frame too late: without this the page flashes
+         the default theme at anyone whose choice is the other one. -->
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem("olxads-theme");
+          var theme = stored === "light" || stored === "dark"
+            ? stored
+            : (window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark");
+          document.documentElement.setAttribute("data-theme", theme);
+        } catch (e) {
+          document.documentElement.setAttribute("data-theme", "dark");
+        }
+      })();
+    </script>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

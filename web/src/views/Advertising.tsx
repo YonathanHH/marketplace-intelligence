@@ -43,9 +43,10 @@ export default function Advertising() {
           data={data.revenue_trend}
           xKey="month"
           height={260}
+          label="Monthly ad spend across all campaigns"
           series={[
-            { key: "spend", name: "Spend (IDR)", color: "#7c6bff" },
-            { key: "advertisers", name: "Advertisers", color: "#35c07f" },
+            { key: "spend", name: "Spend (IDR)", color: "var(--series-1)" },
+            { key: "advertisers", name: "Advertisers", color: "var(--series-6)" },
           ]}
           xFormatter={formatMonth}
           valueFormatter={(v, name) => (name.includes("Spend") ? formatIDR(v) : formatNumber(v))}
@@ -56,6 +57,7 @@ export default function Advertising() {
         <Card title="Spend by product" subtitle="Which placements generate the revenue">
           <Bars
             data={data.by_type}
+            label="Spend by campaign type"
             xKey="campaign_type"
             horizontal
             height={240}
@@ -69,6 +71,7 @@ export default function Advertising() {
         <Card title="Spend by category" subtitle="Where advertiser demand concentrates">
           <Donut
             data={data.by_category}
+            label="Share of ad spend by seller category"
             nameKey="category"
             valueKey="spend"
             height={240}
@@ -156,6 +159,7 @@ export default function Advertising() {
         <Card title="Spend distribution" subtitle="How many sellers sit in each monthly spend band">
           <Bars
             data={data.spend_distribution}
+            label="Number of sellers in each monthly spend band"
             xKey="band"
             horizontal
             height={260}

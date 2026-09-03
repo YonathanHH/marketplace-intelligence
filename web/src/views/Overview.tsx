@@ -50,13 +50,13 @@ export default function Overview() {
           label="Untapped monthly revenue"
           value={formatIDR(k.monthly_headroom)}
           meta={<><span>{formatIDR(k.annual_headroom)} annualised</span></>}
-          tooltip="Sum of per-seller monthly spend headroom vs. comparable advertisers"
+          hint="Per-seller spend headroom against comparable advertisers, summed."
         />
         <Kpi
           label="Risk-adjusted pipeline"
           value={formatIDR(k.expected_monthly_value)}
           meta={`Headroom x modelled win rate (avg ${formatPercent(k.avg_win_probability * 100, 1)})`}
-          tooltip="Expected monthly value after applying each segment's historical conversion rate"
+          hint="Headroom after each segment's historical conversion rate is applied."
         />
         <Kpi
           label="Current ad revenue"
@@ -89,9 +89,10 @@ export default function Overview() {
               data={marketplace.data.trend}
               xKey="date"
               height={250}
+              label="Daily marketplace views and buyer contacts over the observed period"
               series={[
-                { key: "views", name: "Views", color: "#7c6bff" },
-                { key: "leads", name: "Buyer contacts", color: "#35c07f" },
+                { key: "views", name: "Views", color: "var(--series-1)" },
+                { key: "leads", name: "Buyer contacts", color: "var(--series-6)" },
               ]}
               xFormatter={(v) => new Date(v).toLocaleDateString("en-GB", { day: "2-digit", month: "short" })}
               valueFormatter={(v) => formatNumber(v)}
@@ -107,6 +108,7 @@ export default function Overview() {
             nameKey="tier"
             valueKey="monthly_headroom"
             height={186}
+            label="Share of monthly headroom by priority tier"
             colors={data.tier_mix.map((t) => TIER_COLOR[t.tier])}
             centerValue={formatIDR(k.monthly_headroom)}
             centerLabel="monthly headroom"
@@ -140,7 +142,7 @@ export default function Overview() {
               meta: `${c.advertisers}/${c.sellers} advertising`,
             }))}
             valueFormat={(v) => formatIDR(v)}
-            color={(_, i) => ["#7c6bff", "#4c9aff", "#35c07f", "#f2a33c", "#ff6f4d", "#c07fe8", "#3fc5c9", "#e8688f", "#9aa63a"][i % 9]}
+            color={(_, i) => `var(--series-${(i % 9) + 1})`}
           />
         </Card>
 
@@ -155,6 +157,7 @@ export default function Overview() {
             ]}
             xKey="segment"
             height={200}
+            label="Monthly headroom split between sellers who have never advertised and existing advertisers"
             series={[{ key: "value", name: "Monthly headroom" }]}
             colorByIndex
             valueFormatter={(v) => formatIDR(v)}

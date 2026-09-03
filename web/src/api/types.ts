@@ -230,3 +230,61 @@ export interface ActivityInput {
   next_follow_up_date?: string | null;
   potential_deal_value_idr?: number | null;
 }
+
+/* --------------------------------------------------------------- Deep dive --
+   Results of the build-time DuckDB pass (see olxads/olap.py). The API serves
+   them out of SQLite, so the shapes here mirror the materialised tables. */
+
+export interface OlapAnalytics {
+  engine: {
+    name: string;
+    version: string | null;
+    fact_rows: number | null;
+    build_ms: number | null;
+  };
+  listing_decay: {
+    category: string; week_since_post: number; listings: number;
+    avg_daily_views: number; avg_daily_leads: number; retention_index: number;
+  }[];
+  listing_decay_overall: {
+    week_since_post: number; listings: number;
+    avg_daily_views: number; avg_daily_leads: number; retention_index: number;
+  }[];
+  demand_weekly: {
+    category: string; week: string; views: number; leads: number;
+    views_4w_avg: number; wow_pct: number | null;
+  }[];
+  category_momentum: {
+    category: string; recent_views: number; prior_views: number;
+    recent_leads: number; momentum_pct: number | null;
+  }[];
+  revenue_concentration: {
+    advertiser_pct: number; advertisers: number; spend: number; cum_revenue_pct: number;
+  }[];
+  traction_percentiles: {
+    category: string; sellers: number;
+    p10: number; p25: number; p50: number; p75: number; p90: number;
+    median_advertiser: number; median_non_advertiser: number;
+    non_advertisers: number; non_advertisers_above_median: number;
+    headroom_above_median: number;
+  }[];
+  conversion_by_traction: {
+    quintile: number; activities: number; views_floor: number; views_ceiling: number;
+    avg_views_at_call: number; conversions: number;
+    conversion_rate_pct: number; no_response_pct: number;
+  }[];
+  headlines: {
+    retention_week1: number | null;
+    retention_week3: number | null;
+    top_5pct_revenue_share: number | null;
+    top_20pct_revenue_share: number | null;
+    underdog_sellers: number;
+    underdog_headroom: number;
+    conversion_bottom_quintile: number | null;
+    conversion_top_quintile: number | null;
+    conversion_best_quintile: number | null;
+    conversion_lift: number | null;
+    fastest_growing: string | null;
+    fastest_growing_pct: number | null;
+  };
+}

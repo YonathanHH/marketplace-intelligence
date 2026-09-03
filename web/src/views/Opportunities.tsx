@@ -1,8 +1,11 @@
 import { useCallback, useEffect, useMemo, useRef } from "react";
-import { useNavigate, useParams, useSearchParams } from "react-router-dom";
+import { Link, useNavigate, useParams, useSearchParams } from "react-router-dom";
 import { api, useAsync } from "../api/client";
 import { IconChevronLeft, IconChevronRight, IconDownload, IconSearch, IconX } from "../components/icons";
-import { Card, Empty, ErrorState, LoadingCard, ScoreMeter, Spinner } from "../components/ui";
+import {
+  Card, Empty, ErrorState, LoadingTable, ScoreMeter, SortHeader, Spinner, TableScroll,
+  type SortDirection,
+} from "../components/ui";
 import { daysAgo, formatCompact, formatIDR, formatNumber } from "../lib/format";
 import SellerDrawer from "./SellerDrawer";
 
@@ -104,17 +107,23 @@ export default function Opportunities() {
               <IconSearch />
               <input
                 className="input"
+                type="search"
+                aria-label="Search sellers by name, ID or city"
                 placeholder="Search seller, ID or city..."
                 defaultValue={query.q}
                 onChange={(e) => debouncedSearch(e.target.value)}
               />
             </div>
 
-            <div className="row gap-2">
+            {/* Toggle buttons, not links: aria-pressed is what tells a screen
+                reader which tiers are currently filtered in. */}
+            <div className="row gap-2 wrap" role="group" aria-label="Filter by priority tier">
               {TIERS.map((tier) => (
                 <button
                   key={tier}
+                  type="button"
                   className={`chip ${query.tier.includes(tier) ? "active" : ""}`}
+                  aria-pressed={query.tier.includes(tier)}
                   onClick={() => toggleTier(tier)}
                 >
                   {tier}
@@ -206,7 +215,9 @@ export default function Opportunities() {
       {error ? (
         <ErrorState message={error} onRetry={reload} />
       ) : !data && loading ? (
-        <LoadingCard height={480} />
+        <Card flush title="Loading opportunities">
+          <LoadingTable rows={10} label="Loading the opportunity queue" />
+        </Card>
       ) : (
         <Card
           flush
@@ -217,25 +228,44 @@ export default function Opportunities() {
                 `${formatIDR(data.aggregate.expected_monthly_value)} risk-adjusted`
               : undefined
           }
-          actions={loading ? <Spinner /> : undefined}
+          actions={loading ? <Spinner label="Updating results" /> : undefined}
         >
-          <div className="table-wrap">
+          {/* Filtering swaps the table out from under a screen reader with no
+              announcement, so the new count is stated politely instead. */}
+          <p aria-live="polite" className="sr-only">
+            {loading
+              ? "Updating results"
+              : `${formatNumber(data?.total ?? 0)} sellers match the current filters`}
+          </p>
+          <TableScroll label="Opportunity queue">
             <table className="data">
+              <caption className="sr-only">
+                Ranked seller opportunities. {formatNumber(data?.total ?? 0)} rows match the current
+                filters; column headers can be activated to sort.
+              </caption>
               <thead>
                 <tr>
-                  <th style={{ width: 44 }}>#</th>
-                  {COLUMNS.map((col) => (
-                    <th
-                      key={col.key}
-                      className={`${col.numeric ? "num" : ""} ${col.sortable ? "sortable" : ""}`}
-                      onClick={col.sortable ? () => setSort(col.key) : undefined}
-                    >
-                      {col.label}
-                      {query.sort === col.key && (
-                        <span className="sort-arrow">{query.order === "desc" ? "↓" : "↑"}</span>
-                      )}
-                    </th>
-                  ))}
+                  <th scope="col" style={{ width: 44 }}>
+                    <span aria-hidden="true">#</span>
+                    <span className="sr-only">Rank</span>
+                  </th>
+                  {COLUMNS.map((col) =>
+                    col.sortable ? (
+                      <SortHeader
+                        key={col.key}
+                        label={col.label}
+                        columnKey={col.key}
+                        sort={query.sort}
+                        order={query.order as SortDirection}
+                        onSort={setSort}
+                        numeric={col.numeric}
+                      />
+                    ) : (
+                      <th key={col.key} scope="col" className={col.numeric ? "num" : undefined}>
+                        {col.label}
+                      </th>
+                    )
+                  )}
                 </tr>
               </thead>
               <tbody>
@@ -246,12 +276,20 @@ export default function Opportunities() {
                     onClick={() => navigate(withFilters(`/opportunities/${lead.seller_id}`))}
                   >
                     <td className="num faint">{lead.rank}</td>
-                    <td>
-                      <span className="cell-primary">{lead.seller_name}</span>
-                      <span className="cell-secondary">
-                        {lead.city} · {lead.seller_type.replace(/_/g, " ")} · {lead.account_tier}
-                      </span>
-                    </td>
+                    <th scope="row">
+                      {/* The whole row is clickable for a pointer; this link is
+                          what a keyboard lands on, and it names the row. */}
+                      <Link
+                        className="row-link"
+                        to={withFilters(`/opportunities/${lead.seller_id}`)}
+                        onClick={(e) => e.stopPropagation()}
+                      >
+                        <span className="cell-primary">{lead.seller_name}</span>
+                        <span className="cell-secondary">
+                          {lead.city} · {lead.seller_type.replace(/_/g, " ")} · {lead.account_tier}
+                        </span>
+                      </Link>
+                    </th>
                     <td className="cell-muted">{lead.primary_category}</td>
                     <td className="num">
                       <ScoreMeter score={lead.opportunity_score} tier={lead.priority_tier} />
@@ -268,11 +306,24 @@ export default function Opportunities() {
                 ))}
               </tbody>
             </table>
-            {data && data.rows.length === 0 && <Empty>No sellers match these filters.</Empty>}
-          </div>
+            {data && data.rows.length === 0 && (
+              <Empty
+                action={
+                  activeFilters > 0 ? (
+                    <button className="btn btn-sm" onClick={() => setParams({}, { replace: true })}>
+                      Clear all filters
+                    </button>
+                  ) : undefined
+                }
+              >
+                No sellers match these filters. Try widening the tier selection or clearing the
+                search term.
+              </Empty>
+            )}
+          </TableScroll>
 
           {data && data.total_pages > 1 && (
-            <div className="pagination">
+            <nav className="pagination" aria-label="Queue pagination">
               <span>
                 Page {data.page} of {formatNumber(data.total_pages)}
               </span>
@@ -291,7 +342,7 @@ export default function Opportunities() {
               >
                 Next <IconChevronRight size={13} />
               </button>
-            </div>
+            </nav>
           )}
         </Card>
       )}

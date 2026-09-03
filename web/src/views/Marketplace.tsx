@@ -42,10 +42,11 @@ export default function Marketplace() {
           data={data.trend}
           xKey="date"
           height={280}
+          label="Daily impressions, listing views and buyer contacts across the marketplace"
           series={[
-            { key: "impressions", name: "Impressions", color: "#4c9aff" },
-            { key: "views", name: "Views", color: "#7c6bff" },
-            { key: "leads", name: "Buyer contacts", color: "#35c07f" },
+            { key: "impressions", name: "Impressions", color: "var(--series-2)" },
+            { key: "views", name: "Views", color: "var(--series-1)" },
+            { key: "leads", name: "Buyer contacts", color: "var(--series-6)" },
           ]}
           xFormatter={(v) => new Date(v).toLocaleDateString("en-GB", { day: "2-digit", month: "short" })}
           valueFormatter={(v) => formatNumber(v)}
@@ -80,9 +81,10 @@ export default function Marketplace() {
             data={data.featured_lift}
             xKey="segment"
             height={200}
+            label="Views and buyer contacts per listing, featured against standard"
             series={[
-              { key: "views_per_listing", name: "Views per listing", color: "#7c6bff" },
-              { key: "leads_per_listing", name: "Contacts per listing", color: "#35c07f" },
+              { key: "views_per_listing", name: "Views per listing", color: "var(--series-1)" },
+              { key: "leads_per_listing", name: "Contacts per listing", color: "var(--series-6)" },
             ]}
             valueFormatter={(v) => formatNumber(v, 1)}
           />
@@ -115,7 +117,8 @@ export default function Marketplace() {
             xKey="province"
             horizontal
             height={300}
-            series={[{ key: "views", name: "Views", color: "#4c9aff" }]}
+            label="Listing views by province, highest first"
+            series={[{ key: "views", name: "Views", color: "var(--series-2)" }]}
             valueFormatter={(v) => formatNumber(v)}
           />
         </Card>
@@ -128,6 +131,7 @@ export default function Marketplace() {
             nameKey="status"
             valueKey="listings"
             height={200}
+            label="Listings split by status"
             centerValue={formatCompact(data.status_mix.reduce((a, s) => a + s.listings, 0))}
             centerLabel="listings"
             valueFormatter={(v) => formatNumber(v)}

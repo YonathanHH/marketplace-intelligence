@@ -9,6 +9,11 @@ pandas>=2.2
 numpy>=1.26
 faker>=24.0
 
+# Columnar OLAP engine for the deep-dive analytics (olxads/olap.py). Build-time
+# only: it computes the cubes, the results are materialised into SQLite, and the
+# serving path never imports it.
+duckdb>=1.1
+
 # Tests
 pytest>=8.0
 httpx>=0.27

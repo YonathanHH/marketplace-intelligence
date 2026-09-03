@@ -701,3 +701,109 @@ def seller_detail(conn: sqlite3.Connection, seller_id: str) -> dict[str, Any] | 
         "activities": activities,
         "comparables": comparables,
     }
+
+
+# ---------------------------------------------------------------------------
+# Deep dive — results of the DuckDB OLAP pass
+#
+# These tables are computed at build time by `olxads.olap` against a columnar
+# warehouse and materialised here, so serving them stays stdlib sqlite3. The
+# headline figures are derived in this module rather than in the frontend: they
+# are business logic, and the CSV export and any future alerting need the same
+# numbers.
+# ---------------------------------------------------------------------------
+
+OLAP_TABLES = (
+    "olap_listing_decay",
+    "olap_demand_weekly",
+    "olap_category_momentum",
+    "olap_revenue_concentration",
+    "olap_traction_percentiles",
+    "olap_conversion_by_traction",
+)
+
+
+def olap_available(conn: sqlite3.Connection) -> bool:
+    present = {
+        r["name"] for r in query(
+            conn, "SELECT name FROM sqlite_master WHERE type = 'table' AND name LIKE 'olap_%'"
+        )
+    }
+    return all(t in present for t in OLAP_TABLES)
+
+
+def _weighted(rows: list[dict[str, Any]], value: str, weight: str) -> float | None:
+    total = sum((r[weight] or 0) for r in rows)
+    if not total:
+        return None
+    return sum((r[value] or 0) * (r[weight] or 0) for r in rows) / total
+
+
+def olap_analytics(conn: sqlite3.Connection) -> dict[str, Any]:
+    decay = query(conn, "SELECT * FROM olap_listing_decay ORDER BY category, week_since_post")
+    weekly = query(conn, "SELECT * FROM olap_demand_weekly ORDER BY category, week")
+    momentum = query(conn, "SELECT * FROM olap_category_momentum ORDER BY momentum_pct DESC")
+    concentration = query(conn, "SELECT * FROM olap_revenue_concentration ORDER BY advertiser_pct")
+    percentiles = query(conn, "SELECT * FROM olap_traction_percentiles ORDER BY p50 DESC")
+    conversion = query(conn, "SELECT * FROM olap_conversion_by_traction ORDER BY quintile")
+
+    # Decay curve for the marketplace as a whole: the per-category curves are
+    # averaged by listing count so a large category is not out-voted by a small one.
+    weeks = sorted({r["week_since_post"] for r in decay})
+    overall_decay = []
+    for week in weeks:
+        rows = [r for r in decay if r["week_since_post"] == week]
+        overall_decay.append({
+            "week_since_post": week,
+            "listings": sum(r["listings"] for r in rows),
+            "avg_daily_views": round(_weighted(rows, "avg_daily_views", "listings") or 0, 2),
+            "avg_daily_leads": round(_weighted(rows, "avg_daily_leads", "listings") or 0, 3),
+            "retention_index": round(_weighted(rows, "retention_index", "listings") or 0, 1),
+        })
+
+    def retention_at(week: int) -> float | None:
+        row = next((r for r in overall_decay if r["week_since_post"] == week), None)
+        return row["retention_index"] if row else None
+
+    def cumulative_at(pct: int) -> float | None:
+        row = next((r for r in concentration if r["advertiser_pct"] == pct), None)
+        return row["cum_revenue_pct"] if row else None
+
+    bottom = conversion[0] if conversion else None
+    top = conversion[-1] if conversion else None
+    best = max(conversion, key=lambda r: r["conversion_rate_pct"]) if conversion else None
+
+    meta = {r["key"]: r["value"] for r in query(conn, "SELECT key, value FROM build_metadata")}
+
+    return {
+        "engine": {
+            "name": meta.get("olap_engine") or "unknown",
+            "version": meta.get("olap_version") or None,
+            "fact_rows": int(meta.get("olap_fact_rows") or 0) or None,
+            "build_ms": float(meta.get("olap_build_ms") or 0) or None,
+        },
+        "listing_decay": decay,
+        "listing_decay_overall": overall_decay,
+        "demand_weekly": weekly,
+        "category_momentum": momentum,
+        "revenue_concentration": concentration,
+        "traction_percentiles": percentiles,
+        "conversion_by_traction": conversion,
+        "headlines": {
+            "retention_week1": retention_at(1),
+            "retention_week3": retention_at(3),
+            "top_5pct_revenue_share": cumulative_at(5),
+            "top_20pct_revenue_share": cumulative_at(20),
+            "underdog_sellers": sum(r["non_advertisers_above_median"] for r in percentiles),
+            "underdog_headroom": sum((r["headroom_above_median"] or 0) for r in percentiles),
+            "conversion_bottom_quintile": bottom["conversion_rate_pct"] if bottom else None,
+            "conversion_top_quintile": top["conversion_rate_pct"] if top else None,
+            "conversion_best_quintile": best["quintile"] if best else None,
+            "conversion_lift": (
+                round(best["conversion_rate_pct"] / bottom["conversion_rate_pct"], 1)
+                if best and bottom and bottom["conversion_rate_pct"] else None
+            ),
+            "fastest_growing": momentum[0]["category"] if momentum else None,
+            "fastest_growing_pct": momentum[0]["momentum_pct"] if momentum else None,
+        },
+    }

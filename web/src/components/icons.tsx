@@ -1,4 +1,10 @@
-/** Inline stroke icons — no icon dependency, consistent 16px grid. */
+/** Inline stroke icons — no icon dependency, consistent 16px grid.
+
+Every icon here is decorative: it always sits beside a text label, or inside a
+control that carries its own `aria-label`. So they are hidden from assistive
+technology by default rather than announced as an unnamed graphic, and taken
+out of the tab order (IE/Edge used to make SVGs focusable).
+*/
 
 type IconProps = { size?: number; className?: string };
 
@@ -11,6 +17,8 @@ const base = (size: number) => ({
   strokeWidth: 1.8,
   strokeLinecap: "round" as const,
   strokeLinejoin: "round" as const,
+  "aria-hidden": true,
+  focusable: false,
 });
 
 export const IconOverview = ({ size = 16, className }: IconProps) => (
@@ -171,5 +179,29 @@ export const IconTrend = ({ size = 16, className }: IconProps) => (
   <svg {...base(size)} className={className}>
     <path d="M3 16.5 9 10l4 4 7.5-8" />
     <path d="M14 6h6.5v6.5" />
+  </svg>
+);
+
+export const IconMenu = ({ size = 16, className }: IconProps) => (
+  <svg {...base(size)} className={className}>
+    <path d="M4 7h16M4 12h16M4 17h16" />
+  </svg>
+);
+
+/** Semantic alias — a close affordance, which happens to be drawn as an X. */
+export const IconClose = IconX;
+
+export const IconLayers = ({ size = 16, className }: IconProps) => (
+  <svg {...base(size)} className={className}>
+    <path d="m12 3 8.5 4.5L12 12 3.5 7.5 12 3Z" />
+    <path d="m3.5 12 8.5 4.5 8.5-4.5" />
+    <path d="m3.5 16.5 8.5 4.5 8.5-4.5" />
+  </svg>
+);
+
+export const IconClock = ({ size = 16, className }: IconProps) => (
+  <svg {...base(size)} className={className}>
+    <circle cx="12" cy="12" r="8.5" />
+    <path d="M12 7.5V12l3 1.8" />
   </svg>
 );

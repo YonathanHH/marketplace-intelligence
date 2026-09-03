@@ -4,7 +4,7 @@ The platform deploys as a small serverless function. Two properties make that
 possible, and both are easy to break with an innocent-looking import, so they
 are asserted here rather than trusted:
 
-1. The serving path never imports pandas or numpy (~90 MB).
+1. The serving path never imports pandas, numpy or duckdb (~120 MB together).
 2. The slim deployment database returns the same results as the full one.
 """
 
@@ -28,7 +28,7 @@ PROBE = textwrap.dedent(
     import sys
 
     class BlockHeavyImports:
-        BLOCKED = {"pandas", "numpy"}
+        BLOCKED = {"pandas", "numpy", "duckdb"}
 
         def find_spec(self, name, path=None, target=None):
             if name.split(".")[0] in self.BLOCKED:
@@ -46,13 +46,14 @@ PROBE = textwrap.dedent(
 
     assert "pandas" not in sys.modules, "pandas leaked into the serving path"
     assert "numpy" not in sys.modules, "numpy leaked into the serving path"
+    assert "duckdb" not in sys.modules, "duckdb leaked into the serving path"
     print("OK")
     """
 )
 
 
 def test_serving_path_has_no_pandas_or_numpy():
-    """A serverless bundle with pandas+numpy is ~90 MB heavier and slower to cold start.
+    """A serverless bundle with pandas+numpy+duckdb is ~120 MB heavier and slower to cold start.
 
     Run in a subprocess because the rest of the suite legitimately imports pandas.
     """
@@ -116,6 +117,11 @@ def test_deploy_database_is_present_and_small():
     assert size_mb < 60, f"deploy database is {size_mb:.1f} MB - too large to ship comfortably"
 
 
+def _without_build_timing(olap: dict) -> dict:
+    """`build_ms` is wall-clock, so it differs between the two builds by design."""
+    return {**olap, "engine": {k: v for k, v in olap["engine"].items() if k != "build_ms"}}
+
+
 def test_deploy_database_serves_identical_analytics():
     """The slim artefact must not change a single reported number."""
     from olxads.config import DB_PATH
@@ -134,6 +140,7 @@ def test_deploy_database_serves_identical_analytics():
                 "advertising": A.advertising_analytics(conn),
                 "pipeline": A.pipeline_analytics(conn),
                 "coverage": A.coverage_analytics(conn),
+                "olap": _without_build_timing(A.olap_analytics(conn)) if A.olap_available(conn) else None,
                 "leads": A.list_leads(conn, {"page_size": 50}),
             }
         finally:
@@ -156,6 +163,25 @@ def test_deploy_database_has_no_raw_metrics_table():
         conn.close()
     assert "listing_metrics" not in tables
     assert {"listing_totals", "marketplace_daily", "seller_daily_traction"} <= tables
+
+
+def test_deploy_database_carries_the_olap_results():
+    """DuckDB is a build-time dependency, so the deployed function can only serve
+    the Deep Dive page if the cubes were materialised into the artefact."""
+    if not DEPLOY_DB_PATH.exists():
+        pytest.skip("Deploy DB not built")
+    from olxads import analytics as A
+    from olxads.olap import OLAP_TABLES
+
+    conn = connect(DEPLOY_DB_PATH)
+    try:
+        tables = {r["name"] for r in conn.execute(
+            "SELECT name FROM sqlite_master WHERE type='table'"
+        ).fetchall()}
+        assert set(OLAP_TABLES) <= tables, "rebuild with duckdb installed"
+        assert A.olap_analytics(conn)["engine"]["name"] == "duckdb"
+    finally:
+        conn.close()
 
 
 def test_serverless_copies_database_to_a_writable_location(tmp_path, monkeypatch):

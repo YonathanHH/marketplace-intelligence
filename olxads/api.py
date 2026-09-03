@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import csv
 import io
+import sqlite3
 from typing import Annotated, Any, Literal
 
 from fastapi import Depends, FastAPI, HTTPException, Query, Request
@@ -85,6 +86,21 @@ class ActivityIn(BaseModel):
 def health() -> dict:
     db = database_path()
     return {"status": "ok", "database": db.exists(), "source": db.name}
+
+
+@app.get("/api/engines", tags=["meta"])
+def engines(conn: Conn) -> dict:
+    """Which engine produced what. SQLite serves; DuckDB pre-computes."""
+    meta = {r["key"]: r["value"] for r in query(conn, "SELECT key, value FROM build_metadata")}
+    return {
+        "serving": {"engine": "sqlite", "version": sqlite3.sqlite_version},
+        "analytical": {
+            "engine": meta.get("olap_engine") or "none",
+            "version": meta.get("olap_version") or None,
+            "fact_rows": int(meta.get("olap_fact_rows") or 0) or None,
+            "available": A.olap_available(conn),
+        },
+    }
 
 
 @app.get("/api/meta", tags=["meta"])
@@ -215,6 +231,25 @@ def pipeline(conn: Conn) -> dict:
 @app.get("/api/analytics/coverage", tags=["analytics"])
 def coverage(conn: Conn) -> dict:
     return A.coverage_analytics(conn)
+
+
+@app.get("/api/analytics/olap", tags=["analytics"])
+def olap(conn: Conn) -> dict:
+    """Deep-dive analytics computed by the DuckDB OLAP pass at build time.
+
+    Missing tables mean the database was built without DuckDB installed, which
+    is a legitimate state (runtime-only install) — say so plainly instead of
+    surfacing `no such table: olap_listing_decay`.
+    """
+    if not A.olap_available(conn):
+        raise HTTPException(
+            status_code=503,
+            detail=(
+                "Deep-dive analytics are not in this database. Install DuckDB "
+                "(pip install -r requirements-dev.txt) and rebuild: python run.py --rebuild"
+            ),
+        )
+    return A.olap_analytics(conn)
 
 
 # ---------------------------------------------------------------------------

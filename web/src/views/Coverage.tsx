@@ -138,6 +138,7 @@ export default function Coverage() {
             xKey="province"
             horizontal
             height={300}
+            label="Uncovered monthly headroom by province, largest first"
             series={[{ key: "uncovered_headroom", name: "Uncovered headroom" }]}
             colorByIndex
             valueFormatter={(v) => formatIDR(v)}
@@ -150,7 +151,8 @@ export default function Coverage() {
             xKey="category"
             horizontal
             height={300}
-            series={[{ key: "coverage_pct", name: "Coverage %", color: "#4c9aff" }]}
+            label="Share of sellers contacted at least once, by category"
+            series={[{ key: "coverage_pct", name: "Coverage %", color: "var(--series-2)" }]}
             valueFormatter={(v) => formatPercent(v)}
           />
         </Card>
