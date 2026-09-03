@@ -900,7 +900,11 @@ table.data td.num, table.data th.num { text-align: right; }
   overflow: hidden;
 }
 .bar-fill {
+  /* A span is inline by default, and width/height do nothing on an inline box —
+     the fill has to be blockified for the bar to render its value at all. */
+  display: block;
   height: 100%;
+  min-width: 3px;
   border-radius: var(--radius-full);
   transition: width var(--duration) var(--ease);
 }
