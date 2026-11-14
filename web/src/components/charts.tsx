@@ -107,14 +107,6 @@ export function AreaTrend({
   return (
     <ChartFrame height={height} label={label}>
       <AreaChart data={data} margin={{ top: 6, right: 8, bottom: 0, left: 0 }}>
-        <defs>
-          {series.map((s, i) => (
-            <linearGradient key={s.key} id={`grad-${s.key}`} x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0%" stopColor={colors[i]} stopOpacity={0.32} />
-              <stop offset="100%" stopColor={colors[i]} stopOpacity={0.02} />
-            </linearGradient>
-          ))}
-        </defs>
         <CartesianGrid vertical={false} />
         <XAxis dataKey={xKey} {...AXIS} tickFormatter={xFormatter} minTickGap={28} />
         <YAxis {...AXIS} width={48} tickFormatter={(v: number) => formatCompact(v)} />
@@ -125,13 +117,14 @@ export function AreaTrend({
         {series.map((s, i) => (
           <Area
             key={s.key}
-            type="monotone"
+            type="linear"
             dataKey={s.key}
             name={s.name}
             stackId={stacked ? "1" : undefined}
             stroke={colors[i]}
-            strokeWidth={1.8}
-            fill={`url(#grad-${s.key})`}
+            strokeWidth={2}
+            fill={colors[i]}
+            fillOpacity={0.12}
             dot={false}
             activeDot={{ r: 3.5, strokeWidth: 0 }}
           />
@@ -190,11 +183,11 @@ export function LineTrend({
         {series.map((s, i) => (
           <Line
             key={s.key}
-            type="monotone"
+            type="linear"
             dataKey={s.key}
             name={s.name}
             stroke={palette.resolve(s.color, palette.series[i % palette.series.length])}
-            strokeWidth={1.9}
+            strokeWidth={2}
             strokeDasharray={s.dashed ? "5 4" : undefined}
             dot={false}
             activeDot={{ r: 3.5, strokeWidth: 0 }}
@@ -207,7 +200,7 @@ export function LineTrend({
 
 /* ------------------------------------------------------------- Bar chart -- */
 export function Bars({
-  data, xKey, series, height = 260, horizontal, xFormatter, valueFormatter, colorByIndex, label,
+  data, xKey, series, height = 260, horizontal, xFormatter, valueFormatter, label,
 }: {
   data: Record<string, unknown>[];
   xKey: string;
@@ -216,7 +209,6 @@ export function Bars({
   horizontal?: boolean;
   xFormatter?: (v: string) => string;
   valueFormatter?: (v: number, name: string) => string;
-  colorByIndex?: boolean;
   label: string;
 }) {
   const palette = useThemeColors();
@@ -258,14 +250,9 @@ export function Bars({
             dataKey={s.key}
             name={s.name}
             fill={palette.resolve(s.color, palette.series[i % palette.series.length])}
-            radius={horizontal ? [0, 4, 4, 0] : [4, 4, 0, 0]}
+            radius={0}
             maxBarSize={horizontal ? 20 : 46}
-          >
-            {colorByIndex &&
-              data.map((_, idx) => (
-                <Cell key={idx} fill={palette.series[idx % palette.series.length]} />
-              ))}
-          </Bar>
+          />
         ))}
       </BarChart>
     </ChartFrame>
@@ -299,9 +286,9 @@ export function Donut({
             data={data}
             dataKey={valueKey}
             nameKey={nameKey}
-            innerRadius="62%"
-            outerRadius="88%"
-            paddingAngle={2}
+            innerRadius="78%"
+            outerRadius="90%"
+            paddingAngle={0}
             stroke="none"
           >
             {data.map((_, i) => (
@@ -318,40 +305,5 @@ export function Donut({
         </div>
       )}
     </div>
-  );
-}
-
-/* -------------------------------------------------------------- Sparkline -- */
-export function Sparkline({
-  data, dataKey, height = 40, color = "var(--accent)", label,
-}: {
-  data: Record<string, unknown>[];
-  dataKey: string;
-  height?: number;
-  color?: string;
-  label: string;
-}) {
-  const palette = useThemeColors();
-  const stroke = palette.resolve(color);
-
-  return (
-    <ChartFrame height={height} label={label}>
-      <AreaChart data={data} margin={{ top: 2, right: 0, bottom: 0, left: 0 }}>
-        <defs>
-          <linearGradient id={`spark-${dataKey}`} x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0%" stopColor={stroke} stopOpacity={0.3} />
-            <stop offset="100%" stopColor={stroke} stopOpacity={0} />
-          </linearGradient>
-        </defs>
-        <Area
-          type="monotone"
-          dataKey={dataKey}
-          stroke={stroke}
-          strokeWidth={1.5}
-          fill={`url(#spark-${dataKey})`}
-          dot={false}
-        />
-      </AreaChart>
-    </ChartFrame>
   );
 }

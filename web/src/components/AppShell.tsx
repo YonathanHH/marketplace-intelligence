@@ -20,14 +20,10 @@ type Theme = "dark" | "light";
 
 const THEME_KEY = "olxads-theme";
 
-function systemTheme(): Theme {
-  return window.matchMedia?.("(prefers-color-scheme: light)").matches ? "light" : "dark";
-}
-
 /**
- * Theme, with the OS preference as the default. A stored value means the user
- * chose explicitly, so it always wins; without one we follow the system and
- * keep following it if it changes mid-session.
+ * Theme. Light — the framed-sheet direction — is the default; a stored value
+ * means the user chose explicitly and always wins. The toggle is the only way
+ * to change it, so the product never flips under someone mid-session.
  */
 function useTheme(): [Theme, () => void] {
   const [theme, setTheme] = useState<Theme>(() => {
@@ -35,30 +31,14 @@ function useTheme(): [Theme, () => void] {
       const stored = localStorage.getItem(THEME_KEY);
       if (stored === "light" || stored === "dark") return stored;
     } catch {
-      /* storage unavailable (private mode) — fall through to the system value */
+      /* storage unavailable (private mode) — fall through to the default */
     }
-    return systemTheme();
-  });
-  const [explicit, setExplicit] = useState<boolean>(() => {
-    try {
-      return localStorage.getItem(THEME_KEY) !== null;
-    } catch {
-      return false;
-    }
+    return "light";
   });
 
   useEffect(() => {
     document.documentElement.setAttribute("data-theme", theme);
   }, [theme]);
-
-  useEffect(() => {
-    if (explicit) return;
-    const media = window.matchMedia?.("(prefers-color-scheme: light)");
-    if (!media) return;
-    const onChange = () => setTheme(systemTheme());
-    media.addEventListener("change", onChange);
-    return () => media.removeEventListener("change", onChange);
-  }, [explicit]);
 
   const toggle = useCallback(() => {
     setTheme((current) => {
@@ -70,10 +50,24 @@ function useTheme(): [Theme, () => void] {
       }
       return next;
     });
-    setExplicit(true);
   }, []);
 
   return [theme, toggle];
+}
+
+/** The mark: four ascending bars — the opportunity ladder, shortest to tallest.
+ *  Drawn rather than a letterform so it reads at 26px and themes with accent. */
+function BrandMark() {
+  return (
+    <div className="brand-mark" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="currentColor">
+        <rect x="1" y="16" width="4" height="6" />
+        <rect x="7" y="12" width="4" height="10" />
+        <rect x="13" y="8" width="4" height="14" />
+        <rect x="19" y="4" width="4" height="18" />
+      </svg>
+    </div>
+  );
 }
 
 /** Below the sidebar breakpoint the nav becomes a modal overlay, so it gets
@@ -141,7 +135,7 @@ export function AppShell({
 
       <aside className="sidebar">
         <div className="brand">
-          <div className="brand-mark" aria-hidden="true">OA</div>
+          <BrandMark />
           <div className="brand-text">
             <span className="brand-name">Ads Intelligence</span>
             <span className="brand-sub">OLX Marketplace</span>
@@ -173,7 +167,7 @@ export function AppShell({
           >
             <div className="nav-panel-head">
               <div className="brand">
-                <div className="brand-mark" aria-hidden="true">OA</div>
+                <BrandMark />
                 <div className="brand-text">
                   <span className="brand-name">Ads Intelligence</span>
                   <span className="brand-sub">OLX Marketplace</span>

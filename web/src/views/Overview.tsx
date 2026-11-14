@@ -27,6 +27,19 @@ export default function Overview() {
     ? (k.uncovered_priority_headroom / k.monthly_headroom) * 100
     : 0;
 
+  // Effort-vs-value signature: each tier's share of headroom against its share
+  // of the seller base. The gap between the two is where outreach is mispointed.
+  const totalSellers = data.tier_mix.reduce((s, t) => s + t.sellers, 0) || 1;
+  const totalHeadroom = data.tier_mix.reduce((s, t) => s + t.monthly_headroom, 0) || 1;
+  const tierShares = data.tier_mix.map((t) => ({
+    tier: t.tier,
+    value: (t.monthly_headroom / totalHeadroom) * 100,
+    accounts: (t.sellers / totalSellers) * 100,
+  }));
+  const priority = data.tier_mix.filter((t) => t.tier === "Hot" || t.tier === "Warm");
+  const priorityAccounts = (priority.reduce((s, t) => s + t.sellers, 0) / totalSellers) * 100;
+  const priorityValue = (priority.reduce((s, t) => s + t.monthly_headroom, 0) / totalHeadroom) * 100;
+
   return (
     <>
       <PageHeader
@@ -44,7 +57,7 @@ export default function Overview() {
       />
 
       {/* Headline commercial numbers */}
-      <div className="grid grid-4">
+      <div className="kpi-strip">
         <Kpi
           accent
           label="Untapped monthly revenue"
@@ -78,6 +91,44 @@ export default function Overview() {
         on the highest-potential accounts.
       </Insight>
 
+      {/* Signature: where the value sits against where the accounts are */}
+      <Card
+        title="Where the value sits vs where the accounts are"
+        subtitle="Each tier's share of monthly headroom against its share of sellers"
+      >
+        <ul className="gap-list">
+          {tierShares.map((t) => (
+            <li className="gap-row" key={t.tier}>
+              <span className="gap-tier"><TierBadge tier={t.tier} /></span>
+              <span className="gap-bars">
+                <span className="gap-line">
+                  <span className="gap-bar-track">
+                    <span className="gap-bar-fill value" style={{ width: `${t.value}%` }} />
+                  </span>
+                  <span className="gap-pct">{formatPercent(t.value, 0)}</span>
+                </span>
+                <span className="gap-line">
+                  <span className="gap-bar-track">
+                    <span className="gap-bar-fill accounts" style={{ width: `${t.accounts}%` }} />
+                  </span>
+                  <span className="gap-pct">{formatPercent(t.accounts, 0)}</span>
+                </span>
+              </span>
+            </li>
+          ))}
+        </ul>
+        <div className="gap-legend">
+          <span><span className="gap-key value" /> Share of headroom</span>
+          <span><span className="gap-key accounts" /> Share of sellers</span>
+        </div>
+        <div style={{ marginTop: "var(--space-4)" }}>
+          <Insight>
+            <strong>Hot + Warm are {formatPercent(priorityAccounts, 0)} of sellers but {formatPercent(priorityValue, 0)} of headroom.</strong>{" "}
+            Point outreach at the value, not the account count.
+          </Insight>
+        </div>
+      </Card>
+
       {/* Opportunity distribution + revenue split */}
       <div className="grid grid-2-1">
         <Card
@@ -92,7 +143,7 @@ export default function Overview() {
               label="Daily marketplace views and buyer contacts over the observed period"
               series={[
                 { key: "views", name: "Views", color: "var(--series-1)" },
-                { key: "leads", name: "Buyer contacts", color: "var(--series-6)" },
+                { key: "leads", name: "Buyer contacts", color: "var(--text-faint)" },
               ]}
               xFormatter={(v) => new Date(v).toLocaleDateString("en-GB", { day: "2-digit", month: "short" })}
               valueFormatter={(v) => formatNumber(v)}
@@ -142,7 +193,6 @@ export default function Overview() {
               meta: `${c.advertisers}/${c.sellers} advertising`,
             }))}
             valueFormat={(v) => formatIDR(v)}
-            color={(_, i) => `var(--series-${(i % 9) + 1})`}
           />
         </Card>
 
@@ -159,7 +209,6 @@ export default function Overview() {
             height={200}
             label="Monthly headroom split between sellers who have never advertised and existing advertisers"
             series={[{ key: "value", name: "Monthly headroom" }]}
-            colorByIndex
             valueFormatter={(v) => formatIDR(v)}
           />
           <div className="definition" style={{ marginTop: "var(--space-5)" }}>

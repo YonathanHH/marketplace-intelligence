@@ -42,7 +42,7 @@ export function Kpi({
   label: string; value: ReactNode; meta?: ReactNode; accent?: boolean; hint?: string;
 }) {
   return (
-    <div className={`kpi ${accent ? "kpi-accent" : ""}`}>
+    <div className={`kpi ${accent ? "kpi-lead" : ""}`}>
       <div className="kpi-label">{label}</div>
       <div className="kpi-value">{value}</div>
       {meta && <div className="kpi-meta">{meta}</div>}
@@ -87,17 +87,20 @@ export function ScoreMeter({ score, tier }: { score: number; tier?: string }) {
 }
 
 /* --------------------------------------------------------------- Bar list -- */
+/** One hue by default: a ranked bar list is a single measure, so colouring each
+ *  bar differently would imply a category that is not there. A per-item colour
+ *  is allowed only for semantic status (won/lost, outcome), never a rainbow. */
 export function BarList({
   items, valueFormat = formatCompact, color = "var(--accent)",
 }: {
   items: { label: string; value: number; meta?: string }[];
   valueFormat?: (v: number) => string;
-  color?: string | ((item: { label: string; value: number }, i: number) => string);
+  color?: string | ((item: { label: string; value: number; meta?: string }) => string);
 }) {
   const max = Math.max(...items.map((i) => i.value), 1);
   return (
     <ul className="bar-list">
-      {items.map((item, i) => (
+      {items.map((item) => (
         <li className="bar-row" key={item.label}>
           <span className="bar-label" title={item.label}>{item.label}</span>
           <span className="bar-value">
@@ -109,7 +112,7 @@ export function BarList({
               className="bar-fill"
               style={{
                 width: `${(item.value / max) * 100}%`,
-                background: typeof color === "function" ? color(item, i) : color,
+                background: typeof color === "function" ? color(item) : color,
               }}
             />
           </span>

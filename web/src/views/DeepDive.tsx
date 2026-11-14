@@ -50,7 +50,7 @@ export default function DeepDive() {
 
       <EngineStrip engine={data.engine} />
 
-      <div className="grid grid-4">
+      <div className="kpi-strip">
         <Kpi
           accent
           label="Week-3 organic reach"
@@ -142,7 +142,7 @@ function DecayCard({ data }: { data: OlapAnalytics }) {
   return (
     <Card
       title="Organic demand decays within a fortnight"
-      subtitle="Average daily views per listing, indexed to its own first week — every category, same shape"
+      subtitle="Average daily views per listing, indexed to its own first week; every category, same shape"
     >
       <div className="grid grid-2-1" style={{ gap: "var(--space-5)" }}>
         <LineTrend
@@ -170,7 +170,7 @@ function DecayCard({ data }: { data: OlapAnalytics }) {
             </strong>{" "}
             by week {last?.week_since_post}. The collapse is the same in all{" "}
             {categories.length} categories, which makes it a property of the ranking surface
-            rather than of any one market — and the reason Bump Up and Search Boost have
+            rather than of any one market, and the reason Bump Up and Search Boost have
             something real to sell.
           </p>
 
@@ -223,7 +223,6 @@ function MomentumCard({ data }: { data: OlapAnalytics }) {
           `${rising.length} of ${rows.length} categories are growing.`
         }
         series={[{ key: "momentum_pct", name: "Momentum" }]}
-        colorByIndex
         valueFormatter={(v) => formatPercent(v, 1)}
       />
       <p className="small faint" style={{ marginTop: "var(--space-4)", lineHeight: 1.55 }}>
@@ -288,7 +287,7 @@ function DistributionCard({ data }: { data: OlapAnalytics }) {
       <Insight>
         <strong>{formatNumber(data.headlines.underdog_sellers)} sellers</strong> who have never
         bought advertising already out-perform the median <em>paying</em> seller in their own
-        category — {formatIDR(data.headlines.underdog_headroom)}/month of headroom sitting in
+        category: {formatIDR(data.headlines.underdog_headroom)}/month of headroom sitting in
         accounts that look, on demand alone, like existing customers.{" "}
         <Link to="/opportunities?advertiser_status=never&tier=Hot&tier=Warm">
           Open that segment <IconArrowUpRight size={12} />
@@ -381,7 +380,7 @@ function ConversionCard({ data }: { data: OlapAnalytics }) {
           </pre>
           <p className="small faint" style={{ margin: 0, lineHeight: 1.55 }}>
             An <span className="mono">ASOF JOIN</span> takes the most recent row at or before each
-            call — a point-in-time lookup SQLite cannot express, and the reason this analysis runs
+            call, a point-in-time lookup SQLite cannot express, and the reason this analysis runs
             on DuckDB.
           </p>
         </div>

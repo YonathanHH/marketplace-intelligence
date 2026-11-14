@@ -5,22 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>OLX Ads Intelligence</title>
     <meta name="description" content="Sales intelligence for marketplace advertising - find high-potential advertisers, understand why they matter, and know what they are worth." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet" /> <!-- taste-skill-ignore: mono is the code face -->
   </head>
   <body>
     <div id="root"></div>
     <!-- Stamp the theme before first paint. React sets the same attribute on
          mount, but that is one frame too late: without this the page flashes
-         the default theme at anyone whose choice is the other one. -->
+         the default theme at anyone whose choice is the other one. Light is the
+         framed-sheet default; an explicit stored choice always wins. -->
     <script>
       (function () {
         try {
           var stored = localStorage.getItem("olxads-theme");
-          var theme = stored === "light" || stored === "dark"
-            ? stored
-            : (window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark");
+          var theme = stored === "light" || stored === "dark" ? stored : "light";
           document.documentElement.setAttribute("data-theme", theme);
         } catch (e) {
-          document.documentElement.setAttribute("data-theme", "dark");
+          document.documentElement.setAttribute("data-theme", "light");
         }
       })();
     </script>

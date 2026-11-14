@@ -60,7 +60,7 @@ export default function Coverage() {
         description="Whether sales effort is landing on the accounts worth calling. Every contacted seller is compared against what the opportunity model says they were worth."
       />
 
-      <div className="grid grid-4">
+      <div className="kpi-strip">
         <Kpi
           label="Targeting precision"
           value={formatPercent(precision, 1)}
@@ -140,7 +140,6 @@ export default function Coverage() {
             height={300}
             label="Uncovered monthly headroom by province, largest first"
             series={[{ key: "uncovered_headroom", name: "Uncovered headroom" }]}
-            colorByIndex
             valueFormatter={(v) => formatIDR(v)}
           />
         </Card>

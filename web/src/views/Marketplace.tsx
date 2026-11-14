@@ -25,7 +25,7 @@ export default function Marketplace() {
         description="The demand side of the business: what sellers list, how buyers engage with it, and which categories generate the attention that advertising can amplify."
       />
 
-      <div className="grid grid-4">
+      <div className="kpi-strip">
         <Kpi label="Total impressions" value={formatCompact(f.impressions)} meta="Search and browse surfaces" />
         <Kpi label="Listing views" value={formatCompact(f.views)} meta={`${formatPercent(viewRate)} of impressions`} />
         <Kpi label="Buyer contacts" value={formatCompact(f.chats + f.phone_reveals)} meta={`${formatPercent(contactRate, 2)} of views`} />
@@ -107,7 +107,6 @@ export default function Marketplace() {
               meta: `${formatNumber(c.listings)} listings`,
             }))}
             valueFormat={formatCompact}
-            color={(_, i) => SERIES[i % SERIES.length]}
           />
         </Card>
 

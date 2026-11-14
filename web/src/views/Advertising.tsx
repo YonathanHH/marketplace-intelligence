@@ -22,7 +22,7 @@ export default function Advertising() {
         description="What the existing advertiser base spends, which products they buy, and how efficiently that spend converts into buyer contacts."
       />
 
-      <div className="grid grid-4">
+      <div className="kpi-strip">
         <Kpi label="Total ad spend" value={formatIDR(t.total_spend)} meta={`${formatNumber(t.campaigns)} campaigns`} accent />
         <Kpi label="Active advertisers" value={formatNumber(t.advertisers)} meta="Sellers with at least one campaign" />
         <Kpi label="Blended CTR" value={formatPercent(t.blended_ctr, 2)} meta="Clicks per impression, all placements" />
@@ -62,7 +62,6 @@ export default function Advertising() {
             horizontal
             height={240}
             series={[{ key: "spend", name: "Spend" }]}
-            colorByIndex
             xFormatter={titleCase}
             valueFormatter={(v) => formatIDR(v)}
           />
@@ -164,7 +163,6 @@ export default function Advertising() {
             horizontal
             height={260}
             series={[{ key: "sellers", name: "Sellers" }]}
-            colorByIndex
             valueFormatter={(v) => formatNumber(v)}
           />
         </Card>

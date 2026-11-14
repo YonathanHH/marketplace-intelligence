@@ -32,7 +32,7 @@ export default function Pipeline() {
         description="How outreach is actually performing: stage distribution, outcome mix, and per-rep results against the accounts they work."
       />
 
-      <div className="grid grid-4">
+      <div className="kpi-strip">
         <Kpi label="Accounts touched" value={formatNumber(t.accounts_touched)} meta={`${formatNumber(t.activities)} logged activities`} />
         <Kpi label="Closed won" value={formatNumber(t.wins)} meta={`${formatPercent(winRate, 1)} of contacted accounts`} />
         <Kpi label="Open pipeline value" value={formatIDR(openPipeline)} meta="Monthly headroom in active stages" accent />
@@ -132,7 +132,6 @@ export default function Pipeline() {
             height={240}
             label="Number of logged activities by outreach type"
             series={[{ key: "activities", name: "Activities" }]}
-            colorByIndex
             xFormatter={titleCase}
             valueFormatter={(v) => formatNumber(v)}
           />

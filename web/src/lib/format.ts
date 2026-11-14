@@ -85,6 +85,6 @@ export function tierClass(tier: string): string {
  * test renderer with no layout, say).
  */
 export const SERIES = [
-  "#2ed3c3", "#63acff", "#f2b431", "#ff8060", "#a78bfa",
+  "#2ed3c3", "#63acff", "#f2b431", "#ff8060", "#c08a5a",
   "#4bcd91", "#f38fb8", "#c3cf5a", "#7fd3e0",
 ];

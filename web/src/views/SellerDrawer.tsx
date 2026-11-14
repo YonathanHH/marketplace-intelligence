@@ -186,8 +186,8 @@ function OpportunityTab({ data }: { data: SellerDetail }) {
   const s = data.seller;
   return (
     <>
-      <div className="grid grid-3">
-        <div className="kpi kpi-accent">
+      <div className="kpi-strip cols-3">
+        <div className="kpi kpi-lead">
           <div className="kpi-label">Opportunity score</div>
           <div className="kpi-value">{s.opportunity_score.toFixed(1)}</div>
           <div className="kpi-meta">{s.priority_tier} priority · rank #{s.rank}</div>
@@ -317,7 +317,7 @@ function TractionTab({ data }: { data: SellerDetail }) {
   const s = data.seller;
   return (
     <>
-      <div className="grid grid-4">
+      <div className="kpi-strip">
         <div className="kpi"><div className="kpi-label">Impressions</div><div className="kpi-value sm">{formatCompact(s.total_impressions)}</div></div>
         <div className="kpi"><div className="kpi-label">Views</div><div className="kpi-value sm">{formatCompact(s.total_views)}</div></div>
         <div className="kpi"><div className="kpi-label">Buyer chats</div><div className="kpi-value sm">{formatCompact(s.total_chats)}</div></div>
@@ -399,7 +399,7 @@ function AdvertisingTab({ data }: { data: SellerDetail }) {
   }
   return (
     <>
-      <div className="grid grid-4">
+      <div className="kpi-strip">
         <div className="kpi"><div className="kpi-label">Total spend</div><div className="kpi-value sm">{formatIDR(s.total_ad_spend)}</div></div>
         <div className="kpi"><div className="kpi-label">Campaigns</div><div className="kpi-value sm">{formatNumber(s.campaign_count)}</div></div>
         <div className="kpi"><div className="kpi-label">Conversions</div><div className="kpi-value sm">{formatNumber(s.total_conversions)}</div></div>

@@ -23,3 +23,6 @@ web/dist/
 # Cached Natural Earth download for scripts/build_geo.py
 # (the built asset web/src/data/indonesia.json IS committed)
 .tmpgeo/
+
+# Taste-skill working files: direction sheets, before/after renders, gate reports
+.taste-skill/

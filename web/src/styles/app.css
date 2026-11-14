@@ -1,8 +1,9 @@
 /* ==========================================================================
-   Base + layout + components
-   Written against the tokens in tokens.css. Organised by: reset, app shell,
-   primitives (card/button/input/badge), data table, charts, and view-specific
-   blocks.
+   Base + layout + components — framed-sheet direction.
+   Written against the tokens in tokens.css. The chrome is a tinted L-frame
+   (sidebar + top bar on --bg, no rule between them); the page sits on a white
+   sheet inset 8px from the right and bottom, radius 16, a 1px edge, no shadow.
+   Colour lives on data, status and the one primary action.
    ========================================================================== */
 
 /* ---------------------------------------------------------------- Reset -- */
@@ -60,8 +61,7 @@ th.num,
   border-radius: var(--radius-xs);
 }
 
-/* Visually hidden, still read aloud. Used for the parts of a control that a
-   sighted user infers from position or colour — sort direction, badge units. */
+/* Visually hidden, still read aloud. */
 .sr-only {
   position: absolute;
   width: 1px;
@@ -82,19 +82,17 @@ th.num,
   z-index: 100;
   transform: translateY(calc(-100% - var(--space-4)));
   padding: var(--space-2) var(--space-4);
-  background: var(--accent);
-  color: var(--on-accent);
+  background: var(--primary);
+  color: var(--on-primary);
   border-radius: var(--radius-sm);
   font-size: var(--text-sm);
   font-weight: var(--weight-semibold);
-  box-shadow: var(--shadow-md);
   transition: transform var(--duration) var(--ease);
 }
 .skip-link:focus-visible {
   transform: translateY(0);
 }
 
-/* Programmatic focus target for the skip link; no ring, the jump is the cue. */
 #main-content:focus {
   outline: none;
 }
@@ -116,18 +114,20 @@ th.num,
 }
 
 /* ------------------------------------------------------------ App shell -- */
+/* The frame: one tinted ground under the sidebar, the top bar and the gutter
+   around the sheet. No rule between sidebar and top bar. */
 .app {
   display: grid;
   grid-template-columns: var(--sidebar-width) 1fr;
   min-height: 100vh;
+  background: var(--bg);
 }
 
 .sidebar {
   position: sticky;
   top: 0;
   height: 100vh;
-  background: var(--bg-subtle);
-  border-right: 1px solid var(--border);
+  background: transparent;
   display: flex;
   flex-direction: column;
   padding: var(--space-4) var(--space-3);
@@ -141,18 +141,20 @@ th.num,
   padding: var(--space-2) var(--space-2) 0;
 }
 
+/* The product's mark: four ascending bars (the opportunity ladder), drawn in
+   the accent. Not a letter in a box. */
 .brand-mark {
   width: 30px;
   height: 30px;
-  border-radius: var(--radius-sm);
-  background: var(--accent);
+  flex-shrink: 0;
   display: grid;
   place-items: center;
-  color: var(--on-accent);
-  font-weight: var(--weight-bold);
-  font-size: var(--text-sm);
-  letter-spacing: -0.02em;
-  flex-shrink: 0;
+  color: var(--accent);
+}
+.brand-mark svg {
+  width: 26px;
+  height: 26px;
+  display: block;
 }
 
 .brand-text {
@@ -169,8 +171,6 @@ th.num,
 .brand-sub {
   font-size: var(--text-2xs);
   color: var(--text-faint);
-  text-transform: uppercase;
-  letter-spacing: 0.07em;
 }
 
 .nav {
@@ -181,10 +181,8 @@ th.num,
 
 .nav-section {
   padding: var(--space-4) var(--space-2) var(--space-1);
-  font-size: var(--text-2xs);
-  font-weight: var(--weight-semibold);
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
+  font-size: var(--text-xs);
+  font-weight: var(--weight-medium);
   color: var(--text-faint);
 }
 
@@ -205,18 +203,20 @@ th.num,
   background: var(--surface-hover);
   color: var(--text);
 }
+/* Active item: a neutral grey pill on light, a brightness step on dark. The
+   accent stays off the chrome. */
 .nav-item.active {
-  background: var(--accent-soft);
+  background: var(--surface-hover);
   color: var(--text);
-}
-.nav-item.active .nav-icon {
-  color: var(--accent);
 }
 .nav-icon {
   width: 16px;
   height: 16px;
   flex-shrink: 0;
   color: var(--text-faint);
+}
+.nav-item.active .nav-icon {
+  color: var(--text-muted);
 }
 .nav-badge {
   margin-left: auto;
@@ -246,11 +246,10 @@ th.num,
   flex-direction: column;
 }
 
+/* Top bar sits on the frame: solid ground, no rule, no glass. */
 .topbar {
   height: var(--topbar-height);
-  border-bottom: 1px solid var(--border);
-  background: color-mix(in srgb, var(--bg) 85%, transparent);
-  backdrop-filter: blur(8px);
+  background: transparent;
   position: sticky;
   top: 0;
   z-index: 30;
@@ -264,7 +263,6 @@ th.num,
   min-width: 0;
 }
 
-/* Shown only once the sidebar collapses. */
 .nav-trigger {
   display: none;
   margin-left: calc(var(--space-2) * -1);
@@ -289,21 +287,25 @@ th.num,
   gap: var(--space-2);
 }
 
+/* The sheet: white, inset 8px from the frame's right and bottom, one 1px edge,
+   radius 16, no shadow. It fills the main area to the right edge. */
 .content {
-  padding: var(--space-6);
-  max-width: var(--content-max);
-  width: 100%;
-  margin-inline: auto;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sheet);
+  margin: 0 var(--sheet-inset) var(--sheet-inset) var(--sheet-inset);
+  padding: var(--pad);
+  width: auto;
   display: flex;
   flex-direction: column;
-  gap: var(--space-5);
+  gap: var(--gap);
 }
 
 /* ---------------------------------------------------------- Primitives -- */
 .card {
   background: var(--surface);
   border: 1px solid var(--border);
-  border-radius: var(--radius-lg);
+  border-radius: var(--radius-md);
   overflow: hidden;
 }
 
@@ -319,7 +321,7 @@ th.num,
 }
 .card-title {
   margin: 0;
-  font-size: var(--text-base);
+  font-size: var(--text-md);
   font-weight: var(--weight-semibold);
   letter-spacing: -0.005em;
 }
@@ -343,7 +345,7 @@ th.num,
 
 .grid {
   display: grid;
-  gap: var(--space-4);
+  gap: var(--gap);
 }
 .grid-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .grid-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
@@ -351,21 +353,28 @@ th.num,
 .grid-5 { grid-template-columns: repeat(5, minmax(0, 1fr)); }
 .grid-2-1 { grid-template-columns: 2fr 1fr; }
 .grid-1-2 { grid-template-columns: 1fr 2fr; }
+.grid-rail { grid-template-columns: minmax(0, 1fr) 384px; }
 
 @media (max-width: 1280px) {
   .grid-4, .grid-5 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .grid-3 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .grid-2-1, .grid-1-2 { grid-template-columns: 1fr; }
+  .grid-2-1, .grid-1-2, .grid-rail { grid-template-columns: 1fr; }
 }
 
-/* Below this the sidebar is replaced by the overlay nav, not simply removed —
-   hiding it outright left the product with no navigation at all on a phone. */
+/* Below this the sidebar is replaced by the overlay nav and the frame
+   disappears: the sheet goes full-bleed under a 48px top bar. */
 @media (max-width: 860px) {
   .app { grid-template-columns: 1fr; }
   .sidebar { display: none; }
   .nav-trigger { display: inline-flex; }
   .grid-2, .grid-3, .grid-4, .grid-5 { grid-template-columns: 1fr; }
-  .content { padding: var(--space-4); gap: var(--space-4); }
+  .content {
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    padding: var(--space-4);
+    gap: var(--space-4);
+  }
   .topbar { padding: 0 var(--space-4); }
   .topbar-sub { display: none; }
   .card-body { padding: var(--space-4); }
@@ -376,29 +385,25 @@ th.num,
   .funnel-step { grid-template-columns: 92px 1fr 72px; }
 }
 
-/* Phone. The queue is still usable here: filters wrap to one per row and the
-   table scrolls sideways inside its own focusable region. */
 @media (max-width: 480px) {
-  .content { padding: var(--space-3); }
-  .topbar { padding: 0 var(--space-3); }
   .page-title { font-size: var(--text-lg); }
-  .kpi { padding: var(--space-3) var(--space-4); }
-  .kpi-value { font-size: var(--text-xl); }
   .card-header { flex-wrap: wrap; }
   .card-header-actions { margin-left: 0; }
   .pagination { flex-wrap: wrap; }
 }
 
+/* Buttons: one filled primary per screen, near-black (inverted on dark). A
+   secondary is a 1px border; a tertiary is text. The accent is not a button. */
 .btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: var(--space-2);
   padding: 6px var(--space-3);
-  min-height: var(--tap-target);
+  min-height: var(--control-height);
   border-radius: var(--radius-sm);
   border: 1px solid var(--border-strong);
-  background: var(--surface-raised);
+  background: var(--surface);
   color: var(--text);
   font-size: var(--text-sm);
   font-weight: var(--weight-medium);
@@ -411,13 +416,13 @@ th.num,
   border-color: var(--text-faint);
 }
 .btn-primary {
-  background: var(--accent);
-  border-color: var(--accent);
-  color: var(--on-accent);
+  background: var(--primary);
+  border-color: var(--primary);
+  color: var(--on-primary);
 }
 .btn-primary:hover {
-  background: var(--accent-hover);
-  border-color: var(--accent-hover);
+  background: var(--text);
+  border-color: var(--text);
 }
 .btn-ghost {
   background: transparent;
@@ -433,7 +438,6 @@ th.num,
   min-height: 28px;
   font-size: var(--text-xs);
 }
-/* Square, label-less controls still have to be big enough to hit. */
 .btn-icon {
   width: var(--tap-target);
   min-width: var(--tap-target);
@@ -448,8 +452,8 @@ th.num,
 .select {
   width: 100%;
   padding: 6px var(--space-3);
-  min-height: var(--tap-target);
-  background: var(--bg-subtle);
+  min-height: var(--control-height);
+  background: var(--surface);
   border: 1px solid var(--border-strong);
   border-radius: var(--radius-sm);
   color: var(--text);
@@ -465,13 +469,6 @@ th.num,
   border-color: var(--accent);
 }
 .select {
-  appearance: none;
-  background-image: linear-gradient(45deg, transparent 50%, var(--text-faint) 50%),
-    linear-gradient(135deg, var(--text-faint) 50%, transparent 50%);
-  background-position: calc(100% - 14px) 52%, calc(100% - 9px) 52%;
-  background-size: 5px 5px, 5px 5px;
-  background-repeat: no-repeat;
-  padding-right: var(--space-8);
   cursor: pointer;
 }
 
@@ -481,11 +478,9 @@ th.num,
   gap: 5px;
 }
 .field-label {
-  font-size: var(--text-2xs);
-  font-weight: var(--weight-semibold);
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  color: var(--text-faint);
+  font-size: var(--text-xs);
+  font-weight: var(--weight-medium);
+  color: var(--text-muted);
 }
 
 .search {
@@ -505,18 +500,19 @@ th.num,
   pointer-events: none;
 }
 
-/* Badges */
+/* Badges: a pale tint with dark text of the same hue. */
 .badge {
   display: inline-flex;
   align-items: center;
   gap: 5px;
   padding: 1.5px 8px;
-  border-radius: var(--radius-full);
+  border-radius: var(--radius-xs);
   font-size: var(--text-2xs);
   font-weight: var(--weight-semibold);
-  letter-spacing: 0.02em;
+  letter-spacing: 0.01em;
   border: 1px solid transparent;
   white-space: nowrap;
+  flex: none;
 }
 .badge-dot {
   width: 5px;
@@ -536,6 +532,7 @@ th.num,
 .badge-info    { color: var(--info);    background: var(--info-soft);    border-color: color-mix(in srgb, var(--info) 30%, transparent); }
 .badge-accent  { color: var(--accent);  background: var(--accent-soft);  border-color: var(--accent-border); }
 
+/* Filter chips: selection is a neutral pill, not an accent fill. */
 .chip {
   display: inline-flex;
   align-items: center;
@@ -544,19 +541,21 @@ th.num,
   min-height: 28px;
   border-radius: var(--radius-full);
   border: 1px solid var(--border-strong);
-  background: var(--surface-raised);
+  background: var(--surface);
   font-size: var(--text-xs);
   color: var(--text-muted);
-  transition: all var(--duration-fast) var(--ease);
+  transition: background var(--duration-fast) var(--ease),
+    border-color var(--duration-fast) var(--ease), color var(--duration-fast) var(--ease);
 }
 .chip:hover {
   border-color: var(--text-faint);
   color: var(--text);
 }
 .chip.active {
-  background: var(--accent-soft);
-  border-color: var(--accent-border);
-  color: var(--accent);
+  background: var(--surface-hover);
+  border-color: var(--text-faint);
+  color: var(--text);
+  font-weight: var(--weight-medium);
 }
 .chip-remove {
   background: none;
@@ -570,23 +569,26 @@ th.num,
 .chip-remove:hover { opacity: 1; }
 
 /* --------------------------------------------------------------- KPIs --- */
+/* One container split by 1px hairlines into equal columns. Label over value,
+   no icon, no sparkline, no tinted tile. The 1px gap over a --border ground
+   draws the dividers on both axes, so the phone 2-up needs no extra rules. */
+.kpi-strip {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1px;
+  background: var(--border);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+.kpi-strip.cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 .kpi {
   background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: var(--radius-lg);
   padding: var(--space-4) var(--space-5);
   display: flex;
   flex-direction: column;
   gap: var(--space-2);
-  position: relative;
-  overflow: hidden;
-}
-.kpi-accent::before {
-  content: "";
-  position: absolute;
-  inset: 0 auto 0 0;
-  width: 3px;
-  background: var(--accent);
+  min-width: 0;
 }
 .kpi-label {
   font-size: var(--text-xs);
@@ -597,10 +599,14 @@ th.num,
   gap: 6px;
 }
 .kpi-value {
-  font-size: var(--text-2xl);
-  font-weight: var(--weight-bold);
-  letter-spacing: -0.025em;
-  line-height: 1.1;
+  font-size: 24px;
+  font-weight: var(--weight-semibold);
+  letter-spacing: -0.01em;
+  line-height: 1.15;
+}
+/* The answer figure leads: larger than its siblings, still under 36px. */
+.kpi-lead .kpi-value {
+  font-size: 30px;
 }
 .kpi-value.sm { font-size: var(--text-xl); }
 .kpi-meta {
@@ -615,20 +621,29 @@ th.num,
 .kpi-delta.up { color: var(--success); }
 .kpi-delta.down { color: var(--danger); }
 
-/* Real text, not a `title` tooltip: native tooltips never reach keyboard or
-   touch users, so an explanation worth writing is worth rendering. */
 .kpi-hint {
   display: flex;
   align-items: flex-start;
   gap: 5px;
   margin: 0;
   padding-top: var(--space-1);
-  border-top: 1px solid var(--border);
   font-size: var(--text-2xs);
   line-height: 1.45;
   color: var(--text-faint);
 }
 .kpi-hint svg { flex-shrink: 0; margin-top: 2px; }
+
+@media (max-width: 860px) {
+  .kpi-strip { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 480px) {
+  .kpi { padding: var(--space-3) var(--space-4); }
+  .kpi-value { font-size: var(--text-xl); }
+  .kpi-lead .kpi-value { font-size: var(--text-2xl); }
+}
+@media (max-width: 560px) {
+  .kpi-strip.cols-3 { grid-template-columns: 1fr; }
+}
 
 /* --------------------------------------------------------------- Table -- */
 /* Scrollable regions must be reachable by keyboard, so this carries a
@@ -648,20 +663,18 @@ table.data {
   font-size: var(--text-sm);
 }
 
-/* Scoped to the head: rows use <th scope="row"> for the cell that names them,
-   and those must look and behave like data cells, not like sticky headers. */
+/* Sentence-case grey headers, no band: the head reads as a caption row, not a
+   second surface. Sticky so a long queue keeps its column names in view. */
 table.data thead th {
   position: sticky;
   top: 0;
   z-index: 2;
   text-align: left;
   padding: var(--space-3) var(--space-4);
-  background: var(--bg-subtle);
-  border-bottom: 1px solid var(--border);
-  font-size: var(--text-2xs);
-  font-weight: var(--weight-semibold);
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border-strong);
+  font-size: var(--text-xs);
+  font-weight: var(--weight-medium);
   color: var(--text-faint);
   white-space: nowrap;
 }
@@ -685,8 +698,6 @@ table.data thead th .th-sort {
   border: none;
   font: inherit;
   color: inherit;
-  text-transform: inherit;
-  letter-spacing: inherit;
   cursor: pointer;
   user-select: none;
 }
@@ -796,29 +807,30 @@ table.data td.num, table.data th.num { text-align: right; }
   pointer-events: none;
 }
 .donut-center-value {
-  font-size: var(--text-xl);
-  font-weight: var(--weight-bold);
-  letter-spacing: -0.02em;
+  font-size: var(--text-lg);
+  font-weight: var(--weight-semibold);
+  letter-spacing: -0.01em;
 }
 .donut-center-label {
   font-size: var(--text-xs);
   color: var(--text-faint);
 }
+
 .recharts-cartesian-axis-tick text {
   fill: var(--text-faint);
-  font-size: 11px;
+  font-size: 12px;
 }
-.recharts-cartesian-grid line {
-  stroke: var(--grid-line);
-}
+.recharts-cartesian-grid line { stroke: var(--grid-line); }
 .recharts-tooltip-wrapper { outline: none; }
+/* Recharts parks an aria-hidden measuring span off-screen at left:0; visibility hides it from the page without collapsing the offsetWidth it measures. */
+#recharts_measurement_span { visibility: hidden; }
 
 .tooltip {
   background: var(--surface-raised);
   border: 1px solid var(--border-strong);
   border-radius: var(--radius-md);
   padding: var(--space-3);
-  box-shadow: var(--shadow-md);
+  box-shadow: var(--shadow-md); /* taste-skill-ignore: floating tooltip overlay */
   font-size: var(--text-xs);
   min-width: 150px;
 }
@@ -854,18 +866,9 @@ table.data td.num, table.data th.num { text-align: right; }
   font-size: var(--text-xs);
   color: var(--text-muted);
 }
-.legend-item {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-}
-.legend-swatch {
-  width: 9px;
-  height: 9px;
-  border-radius: 2px;
-}
+.legend-item { display: flex; align-items: center; gap: 6px; }
+.legend-swatch { width: 9px; height: 9px; border-radius: 2px; }
 
-/* Horizontal bar list (category rankings etc.) */
 .bar-list {
   display: flex;
   flex-direction: column;
@@ -894,22 +897,19 @@ table.data td.num, table.data th.num { text-align: right; }
 }
 .bar-track {
   grid-column: 1 / -1;
-  height: 6px;
-  border-radius: var(--radius-full);
-  background: var(--border);
+  height: 8px;
+  border-radius: var(--radius-xs);
+  background: var(--surface-raised);
   overflow: hidden;
 }
 .bar-fill {
-  /* A span is inline by default, and width/height do nothing on an inline box —
-     the fill has to be blockified for the bar to render its value at all. */
   display: block;
   height: 100%;
   min-width: 3px;
-  border-radius: var(--radius-full);
+  border-radius: var(--radius-xs);
   transition: width var(--duration) var(--ease);
 }
 
-/* Funnel */
 .funnel {
   display: flex;
   flex-direction: column;
@@ -931,7 +931,7 @@ table.data td.num, table.data th.num { text-align: right; }
 }
 .funnel-bar {
   height: 26px;
-  border-radius: var(--radius-sm);
+  border-radius: var(--radius-xs);
   display: flex;
   align-items: center;
   padding: 0 var(--space-3);
@@ -953,7 +953,6 @@ table.data td.num, table.data th.num { text-align: right; }
   position: fixed;
   inset: 0;
   background: rgba(0, 0, 0, 0.55);
-  backdrop-filter: blur(2px);
   z-index: 60;
   animation: fade var(--duration) var(--ease);
 }
@@ -968,7 +967,7 @@ table.data td.num, table.data th.num { text-align: right; }
   z-index: 61;
   display: flex;
   flex-direction: column;
-  box-shadow: var(--shadow-lg);
+  box-shadow: var(--shadow-lg); /* taste-skill-ignore: dialog overlay above backdrop */
   animation: slide-in var(--duration) var(--ease);
 }
 @keyframes fade { from { opacity: 0; } }
@@ -988,14 +987,7 @@ table.data td.num, table.data th.num { text-align: right; }
   flex-direction: column;
   gap: var(--space-5);
 }
-
-/* Flex children default to shrinking; combined with the cards' `overflow:
-   hidden` that silently squashes their contents to nothing in a scrolling
-   column. Pin them to their natural height and let the container scroll. */
-.drawer-body > *,
-.content > * {
-  flex-shrink: 0;
-}
+.drawer-body > *, .content > * { flex-shrink: 0; }
 .drawer-close {
   margin-left: auto;
   background: none;
@@ -1029,25 +1021,11 @@ table.data td.num, table.data th.num { text-align: right; }
   margin-bottom: -1px;
 }
 .tab:hover { color: var(--text); }
-.tab.active {
-  color: var(--accent);
-  border-bottom-color: var(--accent);
-}
+.tab.active { color: var(--text); border-bottom-color: var(--text); }
 
-.pillar {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-}
-.pillar-head {
-  display: flex;
-  align-items: baseline;
-  gap: var(--space-2);
-}
-.pillar-name {
-  font-size: var(--text-xs);
-  color: var(--text-muted);
-}
+.pillar { display: flex; flex-direction: column; gap: 6px; }
+.pillar-head { display: flex; align-items: baseline; gap: var(--space-2); }
+.pillar-name { font-size: var(--text-xs); color: var(--text-muted); }
 .pillar-score {
   margin-left: auto;
   font-size: var(--text-sm);
@@ -1060,11 +1038,7 @@ table.data td.num, table.data th.num { text-align: right; }
   line-height: 1.45;
 }
 
-.timeline {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-}
+.timeline { display: flex; flex-direction: column; position: relative; }
 .timeline-item {
   display: grid;
   grid-template-columns: 22px 1fr;
@@ -1138,9 +1112,7 @@ table.data td.num, table.data th.num { text-align: right; }
   gap: var(--space-4) var(--space-5);
 }
 .definition dt {
-  font-size: var(--text-2xs);
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
+  font-size: var(--text-xs);
   color: var(--text-faint);
   margin-bottom: 3px;
 }
@@ -1164,7 +1136,7 @@ table.data td.num, table.data th.num { text-align: right; }
 .muted { color: var(--text-muted); }
 .faint { color: var(--text-faint); }
 .small { font-size: var(--text-xs); }
-.mono { font-family: var(--font-mono); }
+.mono { font-family: var(--font-mono); } /* taste-skill-ignore: literal SQL/code spans */
 .strong { font-weight: var(--weight-semibold); }
 .truncate { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .center { text-align: center; }
@@ -1176,9 +1148,9 @@ table.data td.num, table.data th.num { text-align: right; }
   flex-wrap: wrap;
 }
 .page-title {
-  font-size: var(--text-xl);
-  font-weight: var(--weight-bold);
-  letter-spacing: -0.02em;
+  font-size: 24px;
+  font-weight: var(--weight-semibold);
+  letter-spacing: -0.01em;
 }
 .page-desc {
   font-size: var(--text-sm);
@@ -1193,13 +1165,16 @@ table.data td.num, table.data th.num { text-align: right; }
   gap: var(--space-3);
   padding: var(--space-4);
   border-radius: var(--radius-md);
-  background: var(--accent-soft);
-  border: 1px solid var(--accent-border);
+  background: var(--surface-raised);
+  border: 1px solid var(--border);
   font-size: var(--text-sm);
   line-height: 1.55;
 }
 .insight svg { flex-shrink: 0; color: var(--accent); margin-top: 1px; }
-.insight.warning { background: var(--warning-soft); border-color: color-mix(in srgb, var(--warning) 30%, transparent); }
+.insight.warning {
+  background: var(--warning-soft);
+  border-color: color-mix(in srgb, var(--warning) 30%, transparent);
+}
 .insight.warning svg { color: var(--warning); }
 
 .empty {
@@ -1214,35 +1189,17 @@ table.data td.num, table.data th.num { text-align: right; }
 }
 .empty-message { margin: 0; max-width: 46ch; line-height: 1.55; }
 
+/* Loading is a flat grey block, not a shimmer: motion that pretends to be
+   progress is a lie, and a shimmer reads as one more decorative effect. */
 .skeleton {
-  background: linear-gradient(90deg, var(--surface) 25%, var(--surface-hover) 50%, var(--surface) 75%);
-  background-size: 200% 100%;
-  animation: shimmer 1.4s infinite;
+  background: var(--surface-hover);
   border-radius: var(--radius-sm);
 }
-@keyframes shimmer {
-  0% { background-position: 200% 0; }
-  100% { background-position: -200% 0; }
-}
-
-/* A skeleton shaped like the table it replaces, so nothing jumps on arrival. */
-.skeleton-table {
-  display: flex;
-  flex-direction: column;
-  gap: 1px;
-  padding: 0;
-}
-.skeleton-row {
-  height: 44px;
-  border-radius: 0;
-}
+.skeleton-table { display: flex; flex-direction: column; gap: 1px; padding: 0; }
+.skeleton-row { height: 44px; border-radius: 0; }
 .skeleton-row.head { height: 38px; }
 
-.spinner-wrap {
-  display: inline-flex;
-  align-items: center;
-}
-
+.spinner-wrap { display: inline-flex; align-items: center; }
 .spinner {
   width: 15px;
   height: 15px;
@@ -1260,18 +1217,9 @@ table.data td.num, table.data th.num { text-align: right; }
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
-  /* A frozen shimmer is a flat grey block, which is fine; a frozen spinner is
-     an arc that reads as broken, so give it a static ring instead. */
-  .spinner {
-    border-color: var(--border-strong);
-    border-top-color: var(--accent);
-  }
 }
 
-
 /* ---------------------------------------------------- Mobile navigation -- */
-/* The same nav as the sidebar, presented as a modal overlay. Rendered only
-   while open, so its links are never in the tab order behind a closed panel. */
 .nav-backdrop {
   position: fixed;
   inset: 0;
@@ -1279,7 +1227,6 @@ table.data td.num, table.data th.num { text-align: right; }
   z-index: 70;
   animation: fade var(--duration) var(--ease);
 }
-
 .nav-panel {
   position: fixed;
   inset: 0 auto 0 0;
@@ -1291,25 +1238,16 @@ table.data td.num, table.data th.num { text-align: right; }
   flex-direction: column;
   gap: var(--space-4);
   padding: var(--space-4) var(--space-3);
-  box-shadow: var(--shadow-lg);
+  box-shadow: var(--shadow-lg); /* taste-skill-ignore: mobile nav overlay */
   animation: slide-in-left var(--duration) var(--ease);
 }
-@keyframes slide-in-left {
-  from { transform: translateX(-16px); opacity: 0; }
-}
-
-.nav-panel-head {
-  display: flex;
-  align-items: center;
-  gap: var(--space-2);
-}
+@keyframes slide-in-left { from { transform: translateX(-16px); opacity: 0; } }
+.nav-panel-head { display: flex; align-items: center; gap: var(--space-2); }
 .nav-panel-head .brand { padding: 0; flex: 1; min-width: 0; }
 .nav-panel .nav-section { padding-top: var(--space-2); }
 .nav-panel .sidebar-footer { margin-top: auto; }
 
 /* ------------------------------------------------------------- Deep dive -- */
-/* The DuckDB page. Its own block because the shapes here — an engine strip, a
-   percentile plot, a quintile ladder — do not recur anywhere else. */
 .engine-strip {
   display: flex;
   align-items: center;
@@ -1332,13 +1270,11 @@ table.data td.num, table.data th.num { text-align: right; }
   background: var(--accent-soft);
   color: var(--accent);
   font-weight: var(--weight-semibold);
-  font-family: var(--font-mono);
+  font-family: var(--font-mono); /* taste-skill-ignore: engine identifier */
   font-size: var(--text-2xs);
 }
 .engine-strip .sep { color: var(--border-strong); }
 
-/* Percentile plot: p10-p90 whisker with the median marked, one row per row of
-   data. A box plot without a charting library, and readable at any width. */
 .dist-row {
   display: grid;
   grid-template-columns: minmax(120px, 1.4fr) minmax(140px, 3fr) auto;
@@ -1354,10 +1290,7 @@ table.data td.num, table.data th.num { text-align: right; }
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.dist-plot {
-  position: relative;
-  height: 22px;
-}
+.dist-plot { position: relative; height: 22px; }
 .dist-whisker {
   position: absolute;
   top: 10px;
@@ -1389,7 +1322,6 @@ table.data td.num, table.data th.num { text-align: right; }
   white-space: nowrap;
 }
 
-/* Quintile ladder for the conversion analysis. */
 .ladder {
   display: flex;
   flex-direction: column;
@@ -1404,10 +1336,7 @@ table.data td.num, table.data th.num { text-align: right; }
   align-items: center;
   gap: var(--space-3);
 }
-.ladder-label {
-  font-size: var(--text-sm);
-  color: var(--text-muted);
-}
+.ladder-label { font-size: var(--text-sm); color: var(--text-muted); }
 .ladder-label small {
   display: block;
   font-size: var(--text-2xs);
@@ -1422,10 +1351,7 @@ table.data td.num, table.data th.num { text-align: right; }
   min-width: 2px;
   transition: width var(--duration) var(--ease);
 }
-.ladder-bar.best {
-  background: var(--accent);
-  border-color: var(--accent);
-}
+.ladder-bar.best { background: var(--accent); border-color: var(--accent); }
 .ladder-value {
   font-size: var(--text-sm);
   font-weight: var(--weight-semibold);
@@ -1434,7 +1360,6 @@ table.data td.num, table.data th.num { text-align: right; }
   text-align: right;
 }
 
-/* A short, labelled SQL excerpt. The analysis is the SQL, so the page shows it. */
 .sql-block {
   margin: 0;
   padding: var(--space-4);
@@ -1442,34 +1367,84 @@ table.data td.num, table.data th.num { text-align: right; }
   border: 1px solid var(--border);
   border-radius: var(--radius-md);
   overflow-x: auto;
-  font-family: var(--font-mono);
+  font-family: var(--font-mono); /* taste-skill-ignore: literal SQL */
   font-size: var(--text-xs);
   line-height: 1.6;
   color: var(--text-muted);
   white-space: pre;
   tab-size: 2;
 }
-.sql-block:focus-visible {
-  outline: 2px solid var(--accent);
-  outline-offset: -2px;
-}
+.sql-block:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
 .sql-block .kw { color: var(--accent); font-weight: var(--weight-semibold); }
 
-/* The deep-dive rows are three columns of real content; below the phone
-   breakpoint they stack rather than overflow their card. */
 @media (max-width: 560px) {
-  .dist-row {
-    grid-template-columns: 1fr auto;
-  }
-  .dist-plot {
-    grid-column: 1 / -1;
-  }
-  .ladder-step {
-    grid-template-columns: 1fr auto;
-  }
-  .ladder-bar {
-    grid-column: 1 / -1;
-    height: 14px;
-  }
+  .dist-row { grid-template-columns: 1fr auto; }
+  .dist-plot { grid-column: 1 / -1; }
+  .ladder-step { grid-template-columns: 1fr auto; }
+  .ladder-bar { grid-column: 1 / -1; height: 14px; }
   .engine-strip .sep { display: none; }
+}
+
+/* ------------------------------------------- Effort-vs-value signature -- */
+/* Paired share bars per tier: where the headroom is against where the accounts
+   are. One hue for value, one neutral for accounts — the gap between the two
+   bars is the misallocation the page exists to surface. */
+.gap-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.gap-row {
+  display: grid;
+  grid-template-columns: 84px 1fr;
+  gap: var(--space-3);
+  align-items: center;
+}
+.gap-tier { display: flex; align-items: center; }
+.gap-bars { display: flex; flex-direction: column; gap: 5px; min-width: 0; }
+.gap-line {
+  display: grid;
+  grid-template-columns: 1fr 46px;
+  gap: var(--space-2);
+  align-items: center;
+}
+.gap-bar-track {
+  position: relative;
+  height: 9px;
+  border-radius: var(--radius-xs);
+  background: var(--surface-raised);
+  overflow: hidden;
+}
+.gap-bar-fill {
+  display: block;
+  height: 100%;
+  min-width: 2px;
+  border-radius: var(--radius-xs);
+}
+.gap-bar-fill.value { background: var(--accent); }
+.gap-bar-fill.accounts { background: var(--border-strong); }
+.gap-pct {
+  font-size: var(--text-xs);
+  color: var(--text-muted);
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+.gap-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+  font-size: var(--text-xs);
+  color: var(--text-muted);
+  margin-top: var(--space-4);
+}
+.gap-legend span { display: inline-flex; align-items: center; gap: 6px; }
+.gap-key { width: 9px; height: 9px; border-radius: 2px; flex-shrink: 0; }
+.gap-key.value { background: var(--accent); }
+.gap-key.accounts { background: var(--border-strong); }
+
+@media (max-width: 560px) {
+  .gap-row { grid-template-columns: 1fr; gap: var(--space-2); }
 }
