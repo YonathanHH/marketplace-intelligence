@@ -3,6 +3,7 @@ import { Route, Routes, useLocation } from "react-router-dom";
 import { AppShell } from "./components/AppShell";
 import { api, useAsync } from "./api/client";
 import { LoadingCard } from "./components/ui";
+import Landing from "./views/Landing";
 
 // Route-level code splitting: the charting library is heavy and the queue —
 // the view reps actually live in — does not need it up front.
@@ -21,7 +22,8 @@ const TITLES: { prefix: string; title: string; subtitle: string }[] = [
   { prefix: "/pipeline", title: "Pipeline", subtitle: "Sales activity, conversion and rep performance" },
   { prefix: "/coverage", title: "Coverage", subtitle: "Where the sales team is over- and under-invested" },
   { prefix: "/deep-dive", title: "Deep Dive", subtitle: "Columnar analytics over the full metric history" },
-  { prefix: "/", title: "Overview", subtitle: "Where the untapped ad revenue is right now" },
+  { prefix: "/app", title: "Overview", subtitle: "Where the untapped ad revenue is right now" },
+  { prefix: "/", title: "Revenue intelligence", subtitle: "The money is already here" },
 ];
 
 export default function App() {
@@ -37,6 +39,9 @@ export default function App() {
     document.title = `${meta.title} · OLX Ads Intelligence`;
   }, [meta.title]);
 
+  // The marketing landing is its own page, outside the dashboard shell.
+  if (pathname === "/") return <Landing />;
+
   return (
     <AppShell
       title={meta.title}
@@ -47,7 +52,7 @@ export default function App() {
       <p aria-live="polite" className="sr-only">{meta.title} page loaded</p>
       <Suspense fallback={<LoadingCard height={420} label={`Loading ${meta.title}`} />}>
         <Routes>
-          <Route path="/" element={<Overview />} />
+          <Route path="/app" element={<Overview />} />
           <Route path="/opportunities" element={<Opportunities />} />
           <Route path="/opportunities/:sellerId" element={<Opportunities />} />
           <Route path="/marketplace" element={<Marketplace />} />

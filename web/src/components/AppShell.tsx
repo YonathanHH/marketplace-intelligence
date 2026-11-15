@@ -7,7 +7,7 @@ import {
 } from "./icons";
 
 const NAV = [
-  { to: "/", label: "Overview", Icon: IconOverview, end: true },
+  { to: "/app", label: "Overview", Icon: IconOverview, end: true },
   { to: "/opportunities", label: "Opportunities", Icon: IconTarget },
   { to: "/marketplace", label: "Marketplace", Icon: IconStore },
   { to: "/advertising", label: "Advertising", Icon: IconMegaphone },
@@ -25,7 +25,7 @@ const THEME_KEY = "olxads-theme";
  * means the user chose explicitly and always wins. The toggle is the only way
  * to change it, so the product never flips under someone mid-session.
  */
-function useTheme(): [Theme, () => void] {
+export function useTheme(): [Theme, () => void] {
   const [theme, setTheme] = useState<Theme>(() => {
     try {
       const stored = localStorage.getItem(THEME_KEY);
@@ -57,7 +57,7 @@ function useTheme(): [Theme, () => void] {
 
 /** The mark: four ascending bars — the opportunity ladder, shortest to tallest.
  *  Drawn rather than a letterform so it reads at 26px and themes with accent. */
-function BrandMark() {
+export function BrandMark() {
   return (
     <div className="brand-mark" aria-hidden="true">
       <svg viewBox="0 0 24 24" fill="currentColor">

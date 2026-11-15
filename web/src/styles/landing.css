@@ -1,0 +1,348 @@
+/* Landing page: the sentence is the layout (tasteskill v2, seed 410058505).
+   Page-level display type on the brand face; running copy at reading size
+   (16px+), labels never under 13px. One pair of margins, one radius, one
+   button shape across the whole page. Colour lives on data and the one
+   primary action; the close is a single inverted field. */
+
+.landing {
+  --land-pad: clamp(20px, 4vw, 64px);
+  --land-radius: 6px;
+  background: var(--bg);
+  color: var(--text);
+  font-size: 16px;
+  line-height: 1.55;
+}
+.landing a:not(.cta-btn) { color: inherit; }
+/* One pair of margins: reserve the scrollbar gutter on both edges so the frame stays centred. */
+html:has(.landing) { scrollbar-gutter: stable both-edges; }
+
+/* ---- Scroll reveal: the motion layer. Parts arrive, the title never waits. -- */
+[data-reveal] { opacity: 0; }
+[data-reveal].is-in { animation: land-rise 0.8s var(--ease) forwards; }
+@keyframes land-rise {
+  from { opacity: 0; transform: translateY(18px); }
+  to { opacity: 1; transform: none; }
+}
+
+/* ---- Nav: wordmark left, a few links, one action. A plain bar, not a pill. -- */
+.land-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  padding: var(--space-5) var(--land-pad);
+}
+.land-brand { display: flex; align-items: center; gap: var(--space-3); }
+.land-brand .brand-mark { width: 26px; height: 26px; }
+.land-brand-text { display: flex; flex-direction: column; line-height: 1.2; }
+.land-brand-name { font-weight: var(--weight-semibold); font-size: var(--text-md); letter-spacing: -0.01em; }
+.land-brand-sub { font-size: var(--text-sm); color: var(--text-muted); }
+.land-links { display: flex; align-items: center; gap: var(--space-5); font-size: var(--text-md); }
+.land-links a { text-decoration: none; color: var(--text-muted); transition: color var(--duration) var(--ease); }
+.land-links a:hover { color: var(--text); }
+.land-nav-actions { display: flex; align-items: center; gap: var(--space-3); }
+.land-nav .land-cta-link { font-size: 13px; }
+
+/* ---- Hero: the sentence, with the product evidence inline where a word sits. */
+.land-hero {
+  padding: 7svh var(--land-pad) 9svh;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: var(--space-8);
+  align-items: center;
+}
+.hero-main { min-width: 0; }
+.land-sentence {
+  margin: 0;
+  font-size: clamp(44px, 9.5vw, 148px);
+  line-height: 0.98;
+  letter-spacing: -0.03em;
+  font-weight: var(--weight-semibold);
+}
+.land-sentence .line { display: block; }
+.hero-slot {
+  display: inline-block;
+  vertical-align: -0.14em;
+  height: 1em;
+  width: 2.2em;
+  margin-inline: 0.1em;
+  border: 1px solid var(--border);
+  border-radius: var(--land-radius);
+  background: var(--surface);
+  overflow: hidden;
+  padding: 0.1em 0.12em;
+}
+.hero-slot .gap-list { gap: 0.05em; height: 100%; justify-content: center; }
+.hero-slot .gap-row { grid-template-columns: 1fr; gap: 0; }
+.hero-slot .gap-tier, .hero-slot .gap-pct, .hero-slot .gap-legend { display: none; }
+.hero-slot .gap-bars { gap: 0.04em; }
+.hero-slot .gap-line { grid-template-columns: 1fr; gap: 0; }
+.hero-slot .gap-bar-track { height: 0.085em; border-radius: 1px; }
+/* The signature move: the evidence bars grow into the sentence on load. */
+.hero-slot .gap-bar-fill { transform-origin: left center; animation: land-grow 0.9s var(--ease) both; }
+@keyframes land-grow { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+.land-support {
+  margin: var(--space-8) 0 0;
+  max-width: 60ch;
+  font-size: 20px;
+  color: var(--text-muted);
+}
+.land-hero-actions { margin: var(--space-6) 0 0; display: flex; align-items: center; gap: var(--space-5); flex-wrap: wrap; }
+.land-hero-note { font-size: var(--text-base); color: var(--text-faint); }
+/* The one fact that closes the far margin: the headroom, set against the sentence. */
+.hero-aside { display: flex; flex-direction: column; align-items: flex-end; gap: var(--space-3); text-align: right; }
+.hero-aside-num {
+  font-size: clamp(40px, 5vw, 84px);
+  line-height: 1;
+  font-weight: var(--weight-semibold);
+  letter-spacing: -0.02em;
+  font-variant-numeric: tabular-nums;
+}
+.hero-aside-cap { font-size: 16px; color: var(--text-muted); max-width: 22ch; }
+
+/* ---- Shared section frame ---- */
+.land-section { padding-block: clamp(88px, 11vw, 168px); }
+.land-grid {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: var(--space-6);
+  margin-inline: var(--land-pad);
+}
+.land-h2 {
+  font-size: clamp(32px, 3.4vw, 52px);
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  font-weight: var(--weight-semibold);
+  margin: 0;
+}
+.land-h2 .soft { color: var(--text-muted); display: block; }
+.land-lede { font-size: 17px; color: var(--text); max-width: 56ch; margin: var(--space-5) 0 0; }
+
+/* ---- Stats: a ledger column aligned on the decimal ---- */
+.stats-head { grid-column: 1 / 6; align-self: center; }
+.stats-figures {
+  grid-column: 7 / 13;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1.2fr);
+  align-items: baseline;
+  row-gap: var(--space-6);
+  column-gap: var(--space-3);
+}
+.fig-num {
+  font-size: clamp(40px, 6.4vw, 104px);
+  line-height: 1;
+  font-weight: var(--weight-semibold);
+  letter-spacing: -0.02em;
+  font-variant-numeric: tabular-nums;
+}
+.fig-whole { text-align: right; }
+.fig-dec { text-align: left; }
+.fig-cap { font-size: 16px; color: var(--text-muted); }
+
+/* ---- Effort: stages as one bar, sized by true counts ---- */
+.effort-head {
+  margin: 0 var(--land-pad);
+  font-size: clamp(40px, 6.4vw, 104px);
+  line-height: 1;
+  letter-spacing: -0.03em;
+  font-weight: var(--weight-semibold);
+}
+.effort-lede { margin: var(--space-6) var(--land-pad) 0; font-size: 17px; color: var(--text); max-width: 64ch; }
+.effort-bar { display: flex; gap: 5px; margin: var(--space-10) var(--land-pad) 0; }
+.effort-seg { height: 20vh; min-height: 132px; border-radius: var(--land-radius); }
+.effort-legend {
+  list-style: none;
+  margin: var(--space-8) var(--land-pad) 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: var(--space-6);
+}
+.effort-item { display: flex; flex-direction: column; gap: var(--space-2); }
+.effort-key { display: flex; align-items: center; gap: var(--space-2); }
+.effort-swatch { width: 12px; height: 12px; border-radius: 3px; flex-shrink: 0; }
+.effort-count { font-size: 28px; font-weight: var(--weight-semibold); font-variant-numeric: tabular-nums; line-height: 1; }
+.effort-label { font-size: 16px; font-weight: var(--weight-medium); }
+.effort-clause { font-size: 16px; color: var(--text-muted); }
+
+/* ---- Proof: a stepped heading over a four-column evidence table ---- */
+.proof-head { grid-column: 1 / 9; }
+.proof-head .indent { display: block; margin-left: 14%; }
+.proof-lede { grid-column: 1 / 9; margin: var(--space-5) 0 0; font-size: 17px; color: var(--text); max-width: 62ch; }
+.proof-frag {
+  grid-column: 1 / 13;
+  margin-top: var(--space-8);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--land-radius);
+  padding: var(--space-6);
+  min-height: 210px;
+  overflow-x: auto;
+}
+.proof-caption { font-size: 16px; color: var(--text-muted); margin-bottom: var(--space-4); }
+.proof-caption strong { color: var(--text); font-weight: var(--weight-semibold); }
+.proof-table table.data th, .proof-table table.data td { border-bottom: none; font-size: 16px; }
+.proof-table table.data th { color: var(--text-muted); font-weight: var(--weight-medium); }
+.proof-note { grid-column: 1 / 13; margin-top: var(--space-5); font-size: 15px; color: var(--text-muted); }
+
+/* ---- Showcase: the headline you can type (the one live thing) ---- */
+.show-head { margin: 0 var(--land-pad) var(--space-6); font-size: clamp(24px, 3.4vw, 52px); line-height: 1.05; letter-spacing: -0.02em; font-weight: var(--weight-semibold); }
+.show-line { display: flex; align-items: baseline; margin-inline: var(--land-pad); }
+.show-input {
+  flex: 1;
+  min-width: 0;
+  border: none;
+  background: transparent;
+  outline: none;
+  font: inherit;
+  font-size: clamp(36px, 8vw, 132px);
+  font-weight: var(--weight-semibold);
+  letter-spacing: -0.03em;
+  color: var(--text);
+  caret-color: var(--accent);
+  padding: 0;
+}
+.show-input::placeholder { color: var(--text-faint); }
+.show-answer {
+  margin: var(--space-8) var(--land-pad) 0;
+  max-width: 620px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--land-radius);
+  padding: var(--space-6);
+}
+.show-answer-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--space-5); }
+.show-metric { display: flex; flex-direction: column; gap: var(--space-1); }
+.show-metric-value { font-size: 28px; font-weight: var(--weight-semibold); font-variant-numeric: tabular-nums; line-height: 1.1; }
+.show-metric-label { font-size: 14px; color: var(--text-muted); }
+.show-empty { font-size: 16px; color: var(--text-muted); }
+.show-examples { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-5); margin: var(--space-6) var(--land-pad) 0; }
+.show-examples-label { font-size: 15px; color: var(--text-faint); }
+.show-example {
+  border: none;
+  background: none;
+  padding: 0;
+  font: inherit;
+  font-size: 16px;
+  color: var(--text-muted);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  cursor: pointer;
+  transition: color var(--duration) var(--ease);
+}
+.show-example:hover { color: var(--accent); }
+
+/* ---- Features: rows with the product in the margin ---- */
+.feat-head { grid-column: 1 / 5; align-self: start; }
+.feat-rows { grid-column: 5 / 13; display: flex; flex-direction: column; gap: clamp(64px, 8vw, 112px); }
+.feat-row { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: var(--space-8); align-items: start; }
+.feat-title { font-size: clamp(26px, 3.4vw, 52px); line-height: 1.05; letter-spacing: -0.02em; font-weight: var(--weight-semibold); margin: 0 0 var(--space-3); }
+.feat-body { font-size: 17px; color: var(--text); max-width: 34ch; margin: 0; }
+.feat-frag { justify-self: end; }
+
+/* ---- Interface fragments: real crops of the product, marked data-ui ---- */
+.frag {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--land-radius);
+  padding: var(--space-4);
+  overflow: hidden;
+  width: 380px;
+  max-width: 100%;
+  min-height: 210px;
+}
+.frag-title { font-size: 13px; color: var(--text-muted); margin-bottom: var(--space-3); }
+.frag .chart-frame { height: 190px; }
+.engine-rows { display: flex; flex-direction: column; gap: var(--space-3); }
+.engine-row { display: flex; align-items: baseline; justify-content: space-between; gap: var(--space-4); }
+.engine-row dt { font-size: 14px; color: var(--text-muted); }
+.engine-row dd { margin: 0; font-size: 16px; font-weight: var(--weight-semibold); font-variant-numeric: tabular-nums; }
+.frag table.data th, .frag table.data td { font-size: 13px; padding: var(--space-2) var(--space-3); }
+
+/* ---- The close: one inverted field, the idea again ---- */
+.land-cta {
+  background: var(--text);
+  color: var(--bg);
+  padding: clamp(96px, 14svh, 160px) var(--land-pad) clamp(72px, 10svh, 120px);
+  display: flex;
+  flex-direction: column;
+}
+.cta-head { font-size: clamp(44px, 9.5vw, 148px); line-height: 0.92; letter-spacing: -0.03em; font-weight: var(--weight-semibold); margin: 0; }
+.cta-foot { margin-top: var(--space-10); display: flex; align-items: flex-end; justify-content: space-between; gap: var(--space-8); }
+.cta-support { font-size: 20px; max-width: 44ch; margin: 0; opacity: 0.85; }
+.cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  height: 56px;
+  padding-inline: var(--space-8);
+  border: none;
+  border-radius: var(--land-radius);
+  background: var(--accent);
+  color: var(--on-accent);
+  font: inherit;
+  font-size: var(--text-md);
+  font-weight: var(--weight-semibold);
+  text-decoration: none;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background var(--duration) var(--ease);
+}
+.cta-btn:hover { background: var(--accent-hover); }
+
+/* ---- Footer: columns above, wordmark below, on the same inverted field ---- */
+.land-footer {
+  background: var(--text);
+  color: var(--bg);
+  padding: clamp(80px, 10svh, 128px) var(--land-pad) var(--space-6);
+  display: grid;
+  grid-template-rows: auto auto auto;
+  gap: var(--space-10);
+}
+.foot-cols { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: var(--space-6); font-size: 16px; }
+.foot-cols h3 { font-size: 16px; font-weight: var(--weight-semibold); margin: 0 0 var(--space-3); }
+.foot-cols ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: var(--space-2); }
+.foot-cols a { color: inherit; opacity: 0.78; text-decoration: none; }
+.foot-cols a:hover { opacity: 1; text-decoration: underline; }
+.foot-cols .dim { opacity: 0.6; }
+.foot-word { align-self: end; display: flex; align-items: center; gap: var(--space-5); font-size: clamp(40px, 6.4vw, 104px); font-weight: var(--weight-semibold); letter-spacing: -0.03em; line-height: 1; }
+.foot-word .brand-mark { width: 0.9em; height: 0.9em; color: var(--accent); }
+.foot-meta { display: flex; justify-content: space-between; gap: var(--space-5); font-size: 14px; opacity: 0.7; }
+
+/* ---- Reduced motion: the finished page, nothing left waiting ---- */
+@media (prefers-reduced-motion: reduce) {
+  [data-reveal] { opacity: 1; animation: none; transform: none; }
+  .hero-slot .gap-bar-fill { animation: none; transform: none; }
+  .cta-btn, .show-example, .land-links a { transition: none; }
+}
+
+/* ---- Below desktop: the sentence takes the full measure again ---- */
+@media (max-width: 1100px) {
+  .land-hero { grid-template-columns: 1fr; }
+  .hero-aside { display: none; }
+}
+
+/* ---- Phone and tablet: one column, the sentence still leads ---- */
+@media (max-width: 860px) {
+  .land-links a:not(.land-cta-link) { display: none; }
+  .land-grid { grid-template-columns: minmax(0, 1fr); }
+  .stats-head, .stats-figures, .proof-head, .proof-lede, .proof-frag, .proof-note, .feat-head, .feat-rows { grid-column: 1 / -1; }
+  .stats-head { align-self: start; }
+  .proof-head .indent { display: inline; margin-left: 0; }
+  .feat-head { position: static; margin-bottom: var(--space-8); }
+  .feat-row { grid-template-columns: 1fr; gap: var(--space-5); }
+  .feat-frag { justify-self: start; width: 100%; }
+  .frag { width: 100%; overflow-x: auto; }
+  .effort-bar { flex-direction: column; }
+  .effort-seg { height: auto; min-height: 64px; }
+  .land-sentence { font-size: 12vw; }
+  .land-support { font-size: 16px; }
+  .cta-head { font-size: 13vw; }
+  .cta-foot { flex-direction: column; align-items: stretch; }
+  .cta-btn { justify-content: center; }
+  .show-answer-grid { grid-template-columns: minmax(0, 1fr); gap: var(--space-4); }
+  .foot-cols { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+  .effort-legend { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+  .foot-word { font-size: 11vw; }
+  .foot-meta { flex-direction: column; gap: var(--space-2); }
+}
